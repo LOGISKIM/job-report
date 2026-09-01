@@ -1,12 +1,15 @@
 """가계부 웹훅 수신 서버 (표준 라이브러리 http.server 기반 — 의존성 0개).
 
 엔드포인트:
-  POST /kakao   카카오 i 오픈빌더 스킬(폴백 블록) 웹훅.
-                userRequest.utterance의 승인 문자를 파싱해 저장하고
-                오픈빌더 응답 포맷(simpleText)으로 결과를 돌려준다.
-  POST /ingest  Macrodroid/Tasker/단축어 등 범용 수신.
-                {"text": "...승인 문자 원문..."} 또는 raw body 텍스트를 받는다.
-  GET  /health  헬스체크.
+  POST /kakao      카카오 i 오픈빌더 스킬(폴백 블록) 웹훅.
+                   userRequest.utterance의 승인 문자를 파싱해 저장하고
+                   오픈빌더 응답 포맷(simpleText)으로 결과를 돌려준다.
+  POST /ingest     Macrodroid/Tasker/단축어 등 범용 수신.
+                   {"text": "...승인 문자 원문..."} 또는 raw body 텍스트를 받는다.
+  GET  /dashboard  월별 대시보드. localhost 접속은 그냥 열리고,
+                   터널 등 외부 접속은 ?token=<LEDGER_TOKEN> 필요.
+                   ?month=YYYY-MM 으로 다른 달 조회.
+  GET  /health     헬스체크.
 
 실행:
   python server.py            # 0.0.0.0:8288
@@ -20,9 +23,12 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import urllib.parse
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
+import dashboard
 import db
 from parser import parse_notification
 
@@ -64,8 +70,31 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:  # noqa: N802 (http.server 규약)
         if self.path == "/health":
             self._send_json(200, {"ok": True, "time": datetime.now().isoformat()})
+        elif self.path.split("?")[0] == "/dashboard":
+            self._handle_dashboard()
         else:
             self._send_json(404, {"error": "not found"})
+
+    def _handle_dashboard(self) -> None:
+        query = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+        # localhost 직접 접속은 프리패스, 터널 등 외부 Host는 토큰 요구
+        host = (self.headers.get("Host") or "").split(":")[0]
+        is_local = host in ("localhost", "127.0.0.1")
+        if TOKEN and not is_local and query.get("token", [""])[0] != TOKEN:
+            self._send_json(401, {"error": "token required (?token=...)"})
+            return
+
+        ym = query.get("month", [datetime.now().strftime("%Y-%m")])[0]
+        if not re.fullmatch(r"\d{4}-\d{2}", ym):
+            self._send_json(400, {"error": "month must be YYYY-MM"})
+            return
+
+        body = dashboard.render(ym).encode("utf-8")
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
 
     def do_POST(self) -> None:  # noqa: N802
         if self.path == "/kakao":
