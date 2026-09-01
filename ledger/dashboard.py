@@ -89,8 +89,10 @@ def build_data(ym: str) -> dict:
     }
 
 
-def render(ym: str) -> str:
+def render(ym: str, static: bool = False) -> str:
+    """static=True면 서버 라우트가 없는 정적 파일용으로 렌더링 (월 이동 내비 숨김)."""
     data = build_data(ym)
+    data["static"] = static
     return TEMPLATE.replace("__DATA__", json.dumps(data, ensure_ascii=False))
 
 
@@ -226,9 +228,15 @@ function monthLink(ym) {
   if (keepToken) p.set("token", keepToken);
   return "/dashboard?" + p.toString();
 }
-document.getElementById("prev").href = monthLink(DATA.prev);
-const nextEl = document.getElementById("next");
-if (DATA.next) nextEl.href = monthLink(DATA.next); else nextEl.style.visibility = "hidden";
+if (DATA.static) {
+  // 정적 내보내기: 서버 라우트가 없으므로 월 이동 숨김
+  document.getElementById("prev").style.display = "none";
+  document.getElementById("next").style.display = "none";
+} else {
+  document.getElementById("prev").href = monthLink(DATA.prev);
+  const nextEl = document.getElementById("next");
+  if (DATA.next) nextEl.href = monthLink(DATA.next); else nextEl.style.visibility = "hidden";
+}
 
 const tip = document.getElementById("tooltip");
 function showTip(evt, html) {

@@ -1,5 +1,6 @@
 ledger.db
 token.txt
+pass.txt
 *.xlsx
 .env
 server.pid
