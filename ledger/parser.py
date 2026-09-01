@@ -25,8 +25,10 @@ AMOUNT_RE = re.compile(r"(?P<sign>-?)\s*(?P<amount>\d{1,3}(?:,\d{3})*|\d+)\s*원
 DATETIME_RE = re.compile(r"(?P<mm>\d{2})/(?P<dd>\d{2})\s+(?P<hh>\d{2}):(?P<mi>\d{2})")
 INSTALLMENT_RE = re.compile(r"(일시불|\d+\s*개월)")
 CANCEL_RE = re.compile(r"취소")
-# 파싱에서 제외할 라인(안내 문구, 발신 표시, 누적 금액 등)
-NOISE_RE = re.compile(r"Web발신|삼성카드|승인|취소|누적|님$|^\[.*\]$")
+# 파싱에서 제외할 라인(안내 문구, 발신 표시, 카드사명, 누적 금액 등)
+NOISE_RE = re.compile(r"Web발신|삼성카드|국민카드|KB\s?Pay|승인|취소|누적|님$|^\[.*\]$", re.IGNORECASE)
+# 가맹점명 뒤에 붙는 결제 문구 (라인 전체가 아니라 해당 문구만 제거)
+PAY_PHRASE_RE = re.compile(r"결제\s*완료|결제\s*되었습니다|정상\s*승인|해외\s*승인|출금")
 
 
 @dataclass
@@ -61,16 +63,23 @@ def parse_notification(text: str, reference: Optional[datetime] = None) -> Optio
     reference = reference or datetime.now()
 
     amount_m = AMOUNT_RE.search(text)
+    if not amount_m:
+        return None
+
     dt_m = DATETIME_RE.search(text)
-    if not amount_m or not dt_m:
+    if dt_m:
+        ts = _resolve_year(
+            int(dt_m.group("mm")), int(dt_m.group("dd")),
+            int(dt_m.group("hh")), int(dt_m.group("mi")),
+            reference,
+        )
+    elif re.search(r"승인|취소|결제|출금|사용", text):
+        # KB Pay 등 날짜 없는 짧은 알림: 수신 시각으로 기록
+        ts = reference.replace(second=0, microsecond=0)
+    else:
         return None
 
     amount = int(amount_m.group("amount").replace(",", ""))
-    ts = _resolve_year(
-        int(dt_m.group("mm")), int(dt_m.group("dd")),
-        int(dt_m.group("hh")), int(dt_m.group("mi")),
-        reference,
-    )
 
     installment_m = INSTALLMENT_RE.search(text)
     installment = installment_m.group(1).replace(" ", "") if installment_m else "일시불"
@@ -91,13 +100,15 @@ def parse_notification(text: str, reference: Optional[datetime] = None) -> Optio
     )
 
 
-def _extract_merchant(text: str, amount_m: re.Match, dt_m: re.Match) -> str:
+def _extract_merchant(text: str, amount_m: re.Match, dt_m: re.Match | None) -> str:
     """금액/일시/안내 문구를 걷어내고 남는 텍스트에서 가맹점명을 고른다."""
     # 날짜·금액 매치 구간과 노이즈를 지운 뒤 남은 토큰 중 가장 그럴듯한 것을 선택
     cleaned = text
-    for m in sorted([amount_m, dt_m], key=lambda x: x.start(), reverse=True):
+    matches = [m for m in (amount_m, dt_m) if m]
+    for m in sorted(matches, key=lambda x: x.start(), reverse=True):
         cleaned = cleaned[: m.start()] + "\n" + cleaned[m.end():]
     cleaned = INSTALLMENT_RE.sub("\n", cleaned)
+    cleaned = PAY_PHRASE_RE.sub("\n", cleaned)
     cleaned = re.sub(r"누적\s*[\d,]+\s*원?", "\n", cleaned)
 
     candidates = []

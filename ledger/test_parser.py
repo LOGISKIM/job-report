@@ -89,8 +89,29 @@ def test_categories():
     assert classify("처음보는가게") == "기타"
 
 
+def test_kbpay_short_format_without_datetime():
+    # KB Pay처럼 날짜/시간 없이 오는 짧은 푸시: 수신 시각으로 기록
+    text = "KB Pay\n스타벅스 5,500원 결제 완료"
+    tx = parse_notification(text, reference=REF)
+    assert tx is not None
+    assert tx.amount == 5500
+    assert tx.merchant == "스타벅스"
+    assert tx.ts == REF  # 수신 시각
+    assert not tx.canceled
+
+
+def test_kb_sms_format():
+    text = "[Web발신]\nKB국민카드1234승인\n김*민\n12,000원 일시불\n08/30 12:34\n김밥천국"
+    tx = parse_notification(text, reference=REF)
+    assert tx is not None
+    assert tx.merchant == "김밥천국"
+    assert tx.amount == 12000
+
+
 def test_unparseable_returns_none():
     assert parse_notification("점심 뭐먹지", reference=REF) is None
+    # 금액이 있어도 결제 관련 단어와 날짜가 모두 없으면 버린다
+    assert parse_notification("5000원만 빌려줘", reference=REF) is None
 
 
 if __name__ == "__main__":
