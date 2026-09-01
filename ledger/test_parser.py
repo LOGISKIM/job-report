@@ -51,6 +51,34 @@ def test_year_rollover():
     assert tx.ts.year == 2025
 
 
+def test_cancel_with_negative_amount():
+    # 취소 알림이 음수 금액으로 오는 형식
+    text = "삼성9238승인취소 김*민\n-3,580원 일시불\n08/31 17:40 이마트에브리데이"
+    tx = parse_notification(text, reference=REF)
+    assert tx is not None
+    assert tx.canceled
+    assert tx.amount == 3580  # 저장은 양수, 합계에서 음수로 차감
+    assert tx.merchant == "이마트에브리데이"
+
+
+def test_negative_amount_alone_means_cancel():
+    # '취소' 단어 없이 음수 금액만 와도 취소로 처리
+    text = "삼성9238승인 김*민\n-12,000원 일시불\n08/31 17:40 쿠팡"
+    tx = parse_notification(text, reference=REF)
+    assert tx is not None
+    assert tx.canceled
+
+
+def test_categories():
+    from categories import classify
+    assert classify("스타벅스") == "카페/간식"
+    assert classify("GS25 역삼점") == "편의점"
+    assert classify("이마트24") == "편의점"       # 이마트(마트)보다 먼저 매치
+    assert classify("이마트에브리데이") == "마트/생활"
+    assert classify("배달의민족") == "식비"
+    assert classify("처음보는가게") == "기타"
+
+
 def test_unparseable_returns_none():
     assert parse_notification("점심 뭐먹지", reference=REF) is None
 

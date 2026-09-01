@@ -6,6 +6,7 @@ import json
 from collections import defaultdict
 from datetime import datetime, timedelta
 
+import categories
 import db
 
 MAX_MERCHANTS = 7  # 이 수를 넘는 가맹점은 '기타'로 접는다
@@ -25,17 +26,19 @@ def build_data(ym: str) -> dict:
     finally:
         conn.close()
 
-    active = [r for r in rows if not r["canceled"]]
-    total = sum(r["amount"] for r in active)
+    # 합계는 전부 순액: 취소 건은 signed_amount()가 음수로 차감한다
+    total = sum(db.signed_amount(r) for r in rows)
+    count = sum(1 for r in rows if not r["canceled"])
     today = datetime.now().strftime("%Y-%m-%d")
-    today_total = sum(r["amount"] for r in active if r["ts"][:10] == today)
+    today_total = sum(db.signed_amount(r) for r in rows if r["ts"][:10] == today)
 
     days_in_month = ((end - timedelta(days=1)).day)
     by_day = defaultdict(lambda: {"amt": 0, "cnt": 0})
-    for r in active:
+    for r in rows:
         d = int(r["ts"][8:10])
-        by_day[d]["amt"] += r["amount"]
-        by_day[d]["cnt"] += 1
+        by_day[d]["amt"] += db.signed_amount(r)
+        if not r["canceled"]:
+            by_day[d]["cnt"] += 1
     days = [{"d": d, "amt": by_day[d]["amt"], "cnt": by_day[d]["cnt"]}
             for d in range(1, days_in_month + 1)]
 
@@ -45,13 +48,23 @@ def build_data(ym: str) -> dict:
     daily_avg = total // elapsed if elapsed else 0
 
     by_merchant = defaultdict(int)
-    for r in active:
-        by_merchant[r["merchant"]] += r["amount"]
-    ranked = sorted(by_merchant.items(), key=lambda kv: kv[1], reverse=True)
+    by_category = defaultdict(int)
+    for r in rows:
+        amt = db.signed_amount(r)
+        by_merchant[r["merchant"]] += amt
+        by_category[r["category"] or categories.classify(r["merchant"])] += amt
+    ranked = sorted(((n, a) for n, a in by_merchant.items() if a > 0),
+                    key=lambda kv: kv[1], reverse=True)
     merchants = [{"name": n, "amt": a} for n, a in ranked[:MAX_MERCHANTS]]
     rest = sum(a for _, a in ranked[MAX_MERCHANTS:])
     if rest:
         merchants.append({"name": "기타", "amt": rest})
+
+    cats = [{"name": n, "amt": a,
+             "light": categories.COLORS.get(n, categories.COLORS[categories.DEFAULT])[0],
+             "dark": categories.COLORS.get(n, categories.COLORS[categories.DEFAULT])[1]}
+            for n, a in sorted(by_category.items(), key=lambda kv: kv[1], reverse=True)
+            if a > 0]
 
     recent = [{
         "ts": r["ts"][5:16].replace("T", " "),
@@ -60,6 +73,7 @@ def build_data(ym: str) -> dict:
         "installment": r["installment"],
         "canceled": bool(r["canceled"]),
         "source": r["source"],
+        "category": r["category"] or categories.classify(r["merchant"]),
     } for r in sorted(rows, key=lambda r: r["ts"], reverse=True)[:20]]
 
     prev_ym = (start - timedelta(days=1)).strftime("%Y-%m")
@@ -69,8 +83,9 @@ def build_data(ym: str) -> dict:
         "ym": ym, "title": f"{start:%Y년 %m월}",
         "prev": prev_ym, "next": next_ym,
         "total": total, "today": today_total,
-        "count": len(active), "dailyAvg": daily_avg,
-        "days": days, "merchants": merchants, "recent": recent,
+        "count": count, "dailyAvg": daily_avg,
+        "days": days, "merchants": merchants, "categories": cats,
+        "recent": recent,
     }
 
 
@@ -144,6 +159,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 tr.canceled td { color: var(--muted); }
 tr.canceled td.merchant { text-decoration: line-through; }
 .badge { font-size: 11px; color: var(--ink-2); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: baseline; }
 .empty { color: var(--muted); text-align: center; padding: 28px 0; }
 </style>
 </head>
@@ -167,6 +183,7 @@ tr.canceled td.merchant { text-decoration: line-through; }
 </div>
 
 <div class="card"><h2>일별 지출</h2><div id="daily"></div></div>
+<div class="card"><h2>카테고리별 지출</h2><div id="cats"></div></div>
 <div class="card"><h2>가맹점별 지출</h2><div id="merchants"></div></div>
 <div class="card"><h2>최근 내역</h2><div id="recent"></div></div>
 
@@ -176,6 +193,9 @@ tr.canceled td.merchant { text-decoration: line-through; }
 const DATA = __DATA__;
 const fmt = n => n.toLocaleString("ko-KR");
 const won = n => fmt(n) + "원";
+const darkMq = matchMedia("(prefers-color-scheme: dark)");
+const catColor = c => darkMq.matches ? c.dark : c.light;
+darkMq.addEventListener("change", () => location.reload());
 
 document.getElementById("month-title").textContent = DATA.title;
 document.getElementById("stamp").textContent = "갱신 " + new Date().toLocaleString("ko-KR");
@@ -241,6 +261,34 @@ function hideTip() { tip.style.display = "none"; }
   });
 })();
 
+// ---- 카테고리별 지출 (가로 막대, 카테고리 고정색) ----
+(function () {
+  const el = document.getElementById("cats");
+  const cs = DATA.categories;
+  if (!cs.length) { el.innerHTML = '<div class="empty">이 달에는 기록이 없어요</div>'; return; }
+  const W = 900, rowH = 30, labelW = 150, valueW = 90;
+  const H = cs.length * rowH;
+  const iw = W - labelW - valueW;
+  const max = Math.max(...cs.map(x => x.amt));
+  let s = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">`;
+  cs.forEach((x, i) => {
+    const yy = i * rowH, bh = 18, by = yy + (rowH - bh) / 2;
+    const bwv = Math.max(3, (x.amt / max) * iw), r = Math.min(4, bh / 2, bwv);
+    s += `<text class="hbar-label" x="${labelW - 10}" y="${yy + rowH / 2 + 4}" text-anchor="end">${x.name}</text>`;
+    s += `<path class="bar" data-i="${i}" style="fill:${catColor(x)}" d="M${labelW},${by} h${bwv - r} a${r},${r} 0 0 1 ${r},${r} v${bh - 2 * r} a${r},${r} 0 0 1 ${-r},${r} h${-(bwv - r)} Z"/>`;
+    s += `<text class="hbar-value" x="${labelW + bwv + 8}" y="${yy + rowH / 2 + 4}">${won(x.amt)}</text>`;
+  });
+  s += "</svg>";
+  el.innerHTML = s;
+  el.querySelectorAll(".bar").forEach(b => {
+    const x = cs[+b.dataset.i];
+    const share = DATA.total ? Math.round(x.amt / DATA.total * 100) : 0;
+    const html = `${x.name}<br><b>${won(x.amt)}</b> · 전체의 ${share}%`;
+    b.addEventListener("mousemove", e => showTip(e, html));
+    b.addEventListener("mouseleave", hideTip);
+  });
+})();
+
 // ---- 가맹점별 지출 (가로 막대, 직접 라벨) ----
 (function () {
   const el = document.getElementById("merchants");
@@ -273,16 +321,19 @@ function hideTip() { tip.style.display = "none"; }
 (function () {
   const el = document.getElementById("recent");
   if (!DATA.recent.length) { el.innerHTML = '<div class="empty">기록이 없어요</div>'; return; }
+  const catColors = {};
+  DATA.categories.forEach(c => { catColors[c.name] = catColor(c); });
   let rows = DATA.recent.map(r => `
     <tr class="${r.canceled ? "canceled" : ""}">
       <td>${r.ts}</td>
       <td class="merchant">${r.merchant}</td>
-      <td class="num">${won(r.amount)}</td>
+      <td class="num">${r.canceled ? "−" : ""}${won(r.amount)}</td>
+      <td><span class="dot" style="background:${catColors[r.category] || "var(--muted)"}"></span>${r.category}</td>
       <td>${r.installment}${r.canceled ? ' <span class="badge">취소</span>' : ""}</td>
       <td><span class="badge">${r.source}</span></td>
     </tr>`).join("");
   el.innerHTML = `<div style="overflow-x:auto"><table>
-    <thead><tr><th>일시</th><th>가맹점</th><th class="num">금액</th><th>구분</th><th>수집</th></tr></thead>
+    <thead><tr><th>일시</th><th>가맹점</th><th class="num">금액</th><th>카테고리</th><th>구분</th><th>수집</th></tr></thead>
     <tbody>${rows}</tbody></table></div>`;
 })();
 </script>

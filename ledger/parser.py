@@ -21,7 +21,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional
 
-AMOUNT_RE = re.compile(r"(?P<amount>\d{1,3}(?:,\d{3})*|\d+)\s*원")
+AMOUNT_RE = re.compile(r"(?P<sign>-?)\s*(?P<amount>\d{1,3}(?:,\d{3})*|\d+)\s*원")
 DATETIME_RE = re.compile(r"(?P<mm>\d{2})/(?P<dd>\d{2})\s+(?P<hh>\d{2}):(?P<mi>\d{2})")
 INSTALLMENT_RE = re.compile(r"(일시불|\d+\s*개월)")
 CANCEL_RE = re.compile(r"취소")
@@ -74,7 +74,8 @@ def parse_notification(text: str, reference: Optional[datetime] = None) -> Optio
 
     installment_m = INSTALLMENT_RE.search(text)
     installment = installment_m.group(1).replace(" ", "") if installment_m else "일시불"
-    canceled = bool(CANCEL_RE.search(text))
+    # '취소' 문구 또는 음수 금액(-3,580원) 둘 중 하나면 취소 건으로 본다
+    canceled = bool(CANCEL_RE.search(text)) or amount_m.group("sign") == "-"
 
     merchant = _extract_merchant(text, amount_m, dt_m)
     if not merchant:

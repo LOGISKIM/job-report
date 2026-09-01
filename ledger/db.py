@@ -66,6 +66,11 @@ def insert_many(conn: sqlite3.Connection, txs: Iterable[Transaction],
     return added, skipped
 
 
+def signed_amount(row: sqlite3.Row) -> int:
+    """합계 계산용 부호 있는 금액: 취소 건은 음수로 차감된다."""
+    return -row["amount"] if row["canceled"] else row["amount"]
+
+
 def fetch_between(conn: sqlite3.Connection, start: datetime, end: datetime) -> list[sqlite3.Row]:
     return conn.execute(
         "SELECT * FROM transactions WHERE ts >= ? AND ts < ? ORDER BY ts",

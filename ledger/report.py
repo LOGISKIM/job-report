@@ -21,6 +21,7 @@ import urllib.request
 from collections import defaultdict
 from datetime import datetime, timedelta
 
+import categories
 import db
 
 KAKAO_MEMO_URL = "https://kapi.kakao.com/v2/api/talk/memo/default/send"
@@ -33,19 +34,22 @@ def build_summary(start: datetime, end: datetime, title: str) -> str:
     finally:
         conn.close()
 
-    spent = sum(r["amount"] for r in rows if not r["canceled"])
+    # 순액 기준: 취소 건은 음수로 차감
+    spent = sum(db.signed_amount(r) for r in rows)
     refunded = sum(r["amount"] for r in rows if r["canceled"])
-    by_merchant: dict[str, int] = defaultdict(int)
+    count = sum(1 for r in rows if not r["canceled"])
+    by_category: dict[str, int] = defaultdict(int)
     for r in rows:
-        if not r["canceled"]:
-            by_merchant[r["merchant"]] += r["amount"]
+        cat = r["category"] or categories.classify(r["merchant"])
+        by_category[cat] += db.signed_amount(r)
 
-    lines = [f"💳 {title}", f"지출 {spent:,}원 ({len(rows)}건)"]
+    lines = [f"💳 {title}", f"지출 {spent:,}원 ({count}건)"]
     if refunded:
-        lines.append(f"취소/환불 {refunded:,}원")
-    top = sorted(by_merchant.items(), key=lambda kv: kv[1], reverse=True)[:5]
+        lines.append(f"취소/환불 -{refunded:,}원 반영됨")
+    top = sorted(((c, a) for c, a in by_category.items() if a > 0),
+                 key=lambda kv: kv[1], reverse=True)[:5]
     if top:
-        lines.append("— 상위 지출 —")
+        lines.append("— 카테고리별 —")
         lines += [f"{name}: {amt:,}원" for name, amt in top]
     else:
         lines.append("기록된 지출이 없어요.")
