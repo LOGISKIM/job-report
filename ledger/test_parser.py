@@ -100,6 +100,17 @@ def test_kbpay_short_format_without_datetime():
     assert not tx.canceled
 
 
+def test_kb_real_cancel_format():
+    # 사용자 실제 KB국민카드 취소 알림 형식 (가맹점명에 괄호 포함)
+    text = "KB국민카드1068취소\n김*민님\n13,040원 일시불\n09/01 21:23\n쿠팡(쿠페이)\n누적489,977원"
+    tx = parse_notification(text, reference=datetime(2026, 9, 1, 22, 0))
+    assert tx is not None
+    assert tx.canceled
+    assert tx.amount == 13040
+    assert tx.merchant == "쿠팡(쿠페이)"
+    assert tx.ts == datetime(2026, 9, 1, 21, 23)
+
+
 def test_kb_sms_format():
     text = "[Web발신]\nKB국민카드1234승인\n김*민\n12,000원 일시불\n08/30 12:34\n김밥천국"
     tx = parse_notification(text, reference=REF)

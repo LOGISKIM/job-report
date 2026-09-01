@@ -113,7 +113,10 @@ def _extract_merchant(text: str, amount_m: re.Match, dt_m: re.Match | None) -> s
 
     candidates = []
     for line in re.split(r"[\n\r]+", cleaned):
-        token = line.strip().strip("[]()")
+        token = line.strip()
+        # 토큰 전체를 감싼 괄호만 벗긴다 ('쿠팡(쿠페이)'처럼 이름 일부인 괄호는 유지)
+        if len(token) >= 2 and token[0] in "[(" and token[-1] in "])":
+            token = token[1:-1].strip()
         if not token or NOISE_RE.search(token):
             continue
         candidates.append(token)
