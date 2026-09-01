@@ -1,0 +1,5 @@
+ledger.db
+*.xlsx
+.env
+server.pid
+__pycache__/
