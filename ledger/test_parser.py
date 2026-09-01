@@ -61,6 +61,16 @@ def test_cancel_with_negative_amount():
     assert tx.merchant == "이마트에브리데이"
 
 
+def test_cancel_without_word_seungin():
+    # 실제 카톡 취소 알림: '승인'이 '취소'로 바뀌어 와서 '승인'이란 단어가 없음
+    text = "삼성9238취소 김*민\n-3,580원 일시불\n08/31 17:40 이마트에브리데이"
+    tx = parse_notification(text, reference=REF)
+    assert tx is not None
+    assert tx.canceled
+    assert tx.amount == 3580
+    assert tx.merchant == "이마트에브리데이"
+
+
 def test_negative_amount_alone_means_cancel():
     # '취소' 단어 없이 음수 금액만 와도 취소로 처리
     text = "삼성9238승인 김*민\n-12,000원 일시불\n08/31 17:40 쿠팡"

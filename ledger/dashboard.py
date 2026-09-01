@@ -160,6 +160,18 @@ tr.canceled td { color: var(--muted); }
 tr.canceled td.merchant { text-decoration: line-through; }
 .badge { font-size: 11px; color: var(--ink-2); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: baseline; }
+
+.split { display: flex; gap: 24px; align-items: center; }
+.split .bars { flex: 1 1 auto; min-width: 0; }
+.split .donut { flex: 0 0 230px; }
+@media (max-width: 720px) {
+  .split { flex-direction: column; }
+  .split .donut { flex: none; width: 230px; }
+}
+.slice:hover { opacity: .82; }
+.donut-center { fill: var(--ink); font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.donut-sub { fill: var(--muted); font-size: 11px; }
+.pct { fill: var(--ink-2); font-size: 11px; font-variant-numeric: tabular-nums; }
 .empty { color: var(--muted); text-align: center; padding: 28px 0; }
 </style>
 </head>
@@ -183,8 +195,12 @@ tr.canceled td.merchant { text-decoration: line-through; }
 </div>
 
 <div class="card"><h2>일별 지출</h2><div id="daily"></div></div>
-<div class="card"><h2>카테고리별 지출</h2><div id="cats"></div></div>
-<div class="card"><h2>가맹점별 지출</h2><div id="merchants"></div></div>
+<div class="card"><h2>카테고리별 지출</h2>
+  <div class="split"><div class="bars" id="cats"></div><div class="donut" id="cats-donut"></div></div>
+</div>
+<div class="card"><h2>가맹점별 지출</h2>
+  <div class="split"><div class="bars" id="merchants"></div><div class="donut" id="merchants-donut"></div></div>
+</div>
 <div class="card"><h2>최근 내역</h2><div id="recent"></div></div>
 
 <div id="tooltip"></div>
@@ -261,61 +277,80 @@ function hideTip() { tip.style.display = "none"; }
   });
 })();
 
-// ---- 카테고리별 지출 (가로 막대, 카테고리 고정색) ----
-(function () {
-  const el = document.getElementById("cats");
-  const cs = DATA.categories;
-  if (!cs.length) { el.innerHTML = '<div class="empty">이 달에는 기록이 없어요</div>'; return; }
-  const W = 900, rowH = 30, labelW = 150, valueW = 90;
-  const H = cs.length * rowH;
-  const iw = W - labelW - valueW;
-  const max = Math.max(...cs.map(x => x.amt));
-  let s = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">`;
-  cs.forEach((x, i) => {
-    const yy = i * rowH, bh = 18, by = yy + (rowH - bh) / 2;
-    const bwv = Math.max(3, (x.amt / max) * iw), r = Math.min(4, bh / 2, bwv);
-    s += `<text class="hbar-label" x="${labelW - 10}" y="${yy + rowH / 2 + 4}" text-anchor="end">${x.name}</text>`;
-    s += `<path class="bar" data-i="${i}" style="fill:${catColor(x)}" d="M${labelW},${by} h${bwv - r} a${r},${r} 0 0 1 ${r},${r} v${bh - 2 * r} a${r},${r} 0 0 1 ${-r},${r} h${-(bwv - r)} Z"/>`;
-    s += `<text class="hbar-value" x="${labelW + bwv + 8}" y="${yy + rowH / 2 + 4}">${won(x.amt)}</text>`;
-  });
-  s += "</svg>";
-  el.innerHTML = s;
-  el.querySelectorAll(".bar").forEach(b => {
-    const x = cs[+b.dataset.i];
-    const share = DATA.total ? Math.round(x.amt / DATA.total * 100) : 0;
-    const html = `${x.name}<br><b>${won(x.amt)}</b> · 전체의 ${share}%`;
-    b.addEventListener("mousemove", e => showTip(e, html));
-    b.addEventListener("mouseleave", hideTip);
-  });
-})();
+// ---- 구성비 섹션 공통 렌더러: 왼쪽 가로 막대 + 오른쪽 도넛 ----
+const PALETTE_L = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#4a3aa7", "#e34948"];
+const PALETTE_D = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
+const GRAY = "#898781";
 
-// ---- 가맹점별 지출 (가로 막대, 직접 라벨) ----
-(function () {
-  const el = document.getElementById("merchants");
-  const ms = DATA.merchants;
-  if (!ms.length) { el.innerHTML = '<div class="empty">이 달에는 기록이 없어요</div>'; return; }
-  const W = 900, rowH = 30, labelW = 150, valueW = 90;
-  const H = ms.length * rowH;
+function breakdown(barsId, donutId, items, colorOf) {
+  const barsEl = document.getElementById(barsId);
+  const donutEl = document.getElementById(donutId);
+  if (!items.length) {
+    barsEl.innerHTML = '<div class="empty">이 달에는 기록이 없어요</div>';
+    donutEl.innerHTML = "";
+    return;
+  }
+  const sum = items.reduce((a, x) => a + x.amt, 0);
+  const tipHtml = x => `${x.name}<br><b>${won(x.amt)}</b> · ${sum ? Math.round(x.amt / sum * 100) : 0}%`;
+  const attachTips = (root, cls) => root.querySelectorAll("." + cls).forEach(el => {
+    const x = items[+el.dataset.i];
+    el.addEventListener("mousemove", e => showTip(e, tipHtml(x)));
+    el.addEventListener("mouseleave", hideTip);
+  });
+
+  // 왼쪽: 가로 막대 (축소판)
+  const W = 560, rowH = 30, labelW = 120, valueW = 84;
   const iw = W - labelW - valueW;
-  const max = Math.max(...ms.map(x => x.amt));
-  let s = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">`;
-  ms.forEach((x, i) => {
+  const max = Math.max(...items.map(x => x.amt));
+  let s = `<svg viewBox="0 0 ${W} ${items.length * rowH}" style="width:100%;height:auto;display:block">`;
+  items.forEach((x, i) => {
     const yy = i * rowH, bh = 18, by = yy + (rowH - bh) / 2;
     const bwv = Math.max(3, (x.amt / max) * iw), r = Math.min(4, bh / 2, bwv);
-    s += `<text class="hbar-label" x="${labelW - 10}" y="${yy + rowH / 2 + 4}" text-anchor="end">${x.name.length > 10 ? x.name.slice(0, 10) + "…" : x.name}</text>`;
-    s += `<path class="bar" data-i="${i}" d="M${labelW},${by} h${bwv - r} a${r},${r} 0 0 1 ${r},${r} v${bh - 2 * r} a${r},${r} 0 0 1 ${-r},${r} h${-(bwv - r)} Z"/>`;
+    const name = x.name.length > 8 ? x.name.slice(0, 8) + "…" : x.name;
+    s += `<text class="hbar-label" x="${labelW - 10}" y="${yy + rowH / 2 + 4}" text-anchor="end">${name}</text>`;
+    s += `<path class="bar" data-i="${i}" style="fill:${colorOf(x, i)}" d="M${labelW},${by} h${bwv - r} a${r},${r} 0 0 1 ${r},${r} v${bh - 2 * r} a${r},${r} 0 0 1 ${-r},${r} h${-(bwv - r)} Z"/>`;
     s += `<text class="hbar-value" x="${labelW + bwv + 8}" y="${yy + rowH / 2 + 4}">${won(x.amt)}</text>`;
   });
   s += "</svg>";
-  el.innerHTML = s;
-  el.querySelectorAll(".bar").forEach(b => {
-    const x = ms[+b.dataset.i];
-    const share = DATA.total ? Math.round(x.amt / DATA.total * 100) : 0;
-    const html = `${x.name}<br><b>${won(x.amt)}</b> · 전체의 ${share}%`;
-    b.addEventListener("mousemove", e => showTip(e, html));
-    b.addEventListener("mouseleave", hideTip);
-  });
-})();
+  barsEl.innerHTML = s;
+  attachTips(barsEl, "bar");
+
+  // 오른쪽: 도넛 (비율)
+  const size = 250, cx = size / 2, cy = size / 2, R = 78, sw = 28;
+  const pt = (deg, rad) => {
+    const a = (deg - 90) * Math.PI / 180;
+    return `${(cx + rad * Math.cos(a)).toFixed(2)},${(cy + rad * Math.sin(a)).toFixed(2)}`;
+  };
+  let d = `<svg viewBox="0 0 ${size} ${size}" style="width:100%;height:auto;display:block">`;
+  if (items.length === 1) {
+    d += `<circle class="slice" data-i="0" cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${colorOf(items[0], 0)}" stroke-width="${sw}"/>`;
+    d += `<text class="pct" x="${cx}" y="${cy - R}" text-anchor="middle">100%</text>`;
+  } else {
+    let angle = 0;
+    items.forEach((x, i) => {
+      const sweep = x.amt / sum * 360;
+      const gap = Math.min(2.5, sweep * 0.25); // 조각 사이 살짝 벌어진 간격
+      const a0 = angle + gap / 2, a1 = angle + sweep - gap / 2;
+      const large = (a1 - a0) > 180 ? 1 : 0;
+      d += `<path class="slice" data-i="${i}" fill="none" stroke="${colorOf(x, i)}" stroke-width="${sw}" d="M${pt(a0, R)} A${R},${R} 0 ${large} 1 ${pt(a1, R)}"/>`;
+      if (x.amt / sum >= 0.08) {
+        const mid = angle + sweep / 2;
+        d += `<text class="pct" x="${pt(mid, R + sw / 2 + 13).split(",")[0]}" y="${pt(mid, R + sw / 2 + 13).split(",")[1]}" text-anchor="middle" dominant-baseline="middle">${Math.round(x.amt / sum * 100)}%</text>`;
+      }
+      angle += sweep;
+    });
+  }
+  d += `<text class="donut-center" x="${cx}" y="${cy - 2}" text-anchor="middle">${fmt(sum)}</text>`;
+  d += `<text class="donut-sub" x="${cx}" y="${cy + 16}" text-anchor="middle">원 · 합계</text>`;
+  d += "</svg>";
+  donutEl.innerHTML = d;
+  attachTips(donutEl, "slice");
+}
+
+// 카테고리: 카테고리 고정색 / 가맹점: 팔레트 순서색('기타'는 회색), 막대와 도넛 색 일치
+breakdown("cats", "cats-donut", DATA.categories, x => catColor(x));
+breakdown("merchants", "merchants-donut", DATA.merchants,
+  (x, i) => x.name === "기타" ? GRAY : (darkMq.matches ? PALETTE_D : PALETTE_L)[i % 8]);
 
 // ---- 최근 내역 테이블 ----
 (function () {
