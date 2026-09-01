@@ -3,15 +3,18 @@
 삼성카드 승인 알림(문자/앱 푸시)을 웹훅으로 받아 SQLite에 쌓고, 요약 리포트를 카카오톡으로 받아보는 개인 가계부.
 
 ```
-[결제] → 승인 문자/푸시
-           ├─ Macrodroid/Tasker 자동 전달 → POST /ingest ─┐
-           └─ 카카오톡 내 챗봇방에 붙여넣기 → POST /kakao ─┤→ ledger.db
-[월 1회 보정] 삼성카드 홈페이지 엑셀 → excel_import.py ───┘
-                                        ↓
-                     report.py → 콘솔 / 카카오톡 "나에게 보내기"
+[결제] → 승인/취소 알림 (카톡 알림톡, KB Pay 푸시)
+           ├─ Macrodroid 자동 전달 → POST /ingest ─┐
+           └─ 카카오톡 챗봇방에 붙여넣기 → POST /kakao ─┤→ ledger.db
+[월 1회 보정] 카드사 홈페이지 엑셀 → excel_import.py ────┘
+                          ↓                        ↓
+        localhost:8288/dashboard        publish_static.py (매일 1회)
+             (실시간 확인)            → 암호화된 index.html → GitHub Pages
+                                          (가족이 폰으로 확인)
 ```
 
-의존성: 파이썬 3.10+ 표준 라이브러리만 사용. 엑셀 임포트만 `pip install openpyxl` 필요.
+의존성: 파이썬 3.10+ 표준 라이브러리 위주. 엑셀 임포트는 `openpyxl`,
+정적 발행은 `cryptography` 필요.
 
 ## 1. 서버 실행
 
@@ -20,12 +23,26 @@ cd ledger
 LEDGER_TOKEN=아무비밀문자열 python server.py   # 기본 포트 8288
 ```
 
-외부에서 접근할 공개 URL이 필요하면 (무료):
+윈도우에서는 `token.txt`에 토큰을 넣고 `start_ledger.bat` 실행.
+부팅 시 자동 시작하려면 `Win+R` → `shell:startup` 폴더에 이 배치 파일의
+바로가기를 넣는다.
 
-```bash
-cloudflared tunnel --url http://localhost:8288
-# → https://xxxx.trycloudflare.com 발급됨
-```
+### 폰에서 접근할 고정 주소 (Tailscale)
+
+폰의 Macrodroid가 서버로 POST하려면 고정 주소가 필요하다.
+`cloudflared tunnel --url`(임시 터널)은 재시작마다 주소가 바뀌고,
+Cloudflare 고정 터널은 자기 도메인이 있어야 하며,
+ngrok 무료는 세션이 2시간 제한이라 상시 운영에 맞지 않는다.
+
+[Tailscale](https://tailscale.com)은 무료(6명, 기기 무제한)이고 주소가 영구 고정이며,
+공개 인터넷에 노출되지 않고 내 기기끼리만 연결된다.
+
+1. PC와 폰에 Tailscale 설치 후 같은 계정으로 로그인
+2. PC 호스트명 확인 (예: `desktop-abc123`)
+3. Macrodroid HTTP 요청 URL을 `http://desktop-abc123:8288/ingest`로 설정
+   (호스트명이 안 되면 Tailscale이 보여주는 `100.x.x.x` IP를 써도 된다)
+
+이 구성에서는 cloudflared가 필요 없다.
 
 | 엔드포인트 | 용도 |
 |---|---|
@@ -41,20 +58,22 @@ cloudflared tunnel --url http://localhost:8288
 
 Macrodroid 기준:
 
-1. 트리거: **알림 수신** → 앱 = 삼성카드(또는 메시지 앱), 텍스트에 "승인" 포함
+1. 트리거 2개 (OR 조건이라 하나만 걸려도 실행):
+   - 알림 수신 → 앱 = 카카오톡/KB Pay 등 알림이 오는 앱, 텍스트에 `승인` 포함
+   - 같은 조건에 텍스트 `취소` 포함 (취소 알림에는 '승인'이라는 단어가 없다)
 2. 액션: **HTTP 요청** POST
-   - URL: `https://xxxx.trycloudflare.com/ingest`
+   - URL: `http://<tailscale-호스트명>:8288/ingest`
    - 헤더: `X-Ledger-Token: 아무비밀문자열`
-   - Content-Type: `application/json`
-   - Body: `{"text": "[notification]"}` (알림 본문 매직 변수)
+   - Body: 매직 텍스트로 알림 제목 + 알림 본문 (직접 타이핑 대신 `...` 버튼 사용)
 
 결제하면 몇 초 안에 자동 기록된다.
+배터리 최적화가 매크로를 재우지 않도록 설정 → 앱 → Macrodroid → 배터리 → 제한 없음.
 
 ### B. 카카오톡 챗봇방 (반자동)
 
 1. [카카오톡 채널](https://center-pf.kakao.com) 개설 (무료)
 2. [카카오 i 오픈빌더](https://i.kakao.com)에서 봇 생성 → 채널 연결
-3. **폴백 블록** → 스킬 연결 → 스킬 URL에 `https://xxxx.trycloudflare.com/kakao` 등록 → 배포
+3. **폴백 블록** → 스킬 연결 → 스킬 URL 등록 (공개 URL 필요) → 배포
 4. 승인 문자가 오면 챗봇방에 복사-붙여넣기 → "기록 완료 ✅" 응답 확인
 
 ### C. 엑셀 보정 (월 1회 — 자동 수집이 놓친 건 잡기)
