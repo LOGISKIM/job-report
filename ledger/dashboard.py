@@ -49,10 +49,13 @@ def build_data(ym: str) -> dict:
 
     by_merchant = defaultdict(int)
     by_category = defaultdict(int)
+    cat_merchants = defaultdict(lambda: defaultdict(int))
     for r in rows:
         amt = db.signed_amount(r)
+        cat = r["category"] or categories.classify(r["merchant"])
         by_merchant[r["merchant"]] += amt
-        by_category[r["category"] or categories.classify(r["merchant"])] += amt
+        by_category[cat] += amt
+        cat_merchants[cat][r["merchant"]] += amt
     ranked = sorted(((n, a) for n, a in by_merchant.items() if a > 0),
                     key=lambda kv: kv[1], reverse=True)
     merchants = [{"name": n, "amt": a} for n, a in ranked[:MAX_MERCHANTS]]
@@ -62,10 +65,15 @@ def build_data(ym: str) -> dict:
 
     cats = [{"name": n, "amt": a,
              "light": categories.COLORS.get(n, categories.COLORS[categories.DEFAULT])[0],
-             "dark": categories.COLORS.get(n, categories.COLORS[categories.DEFAULT])[1]}
+             "dark": categories.COLORS.get(n, categories.COLORS[categories.DEFAULT])[1],
+             "merchants": [{"name": mn, "amt": ma}
+                           for mn, ma in sorted(cat_merchants[n].items(),
+                                                key=lambda kv: kv[1], reverse=True)
+                           if ma > 0]}
             for n, a in sorted(by_category.items(), key=lambda kv: kv[1], reverse=True)
             if a > 0]
 
+    # 해당 월 전체 내역 (최신순)
     recent = [{
         "ts": r["ts"][5:16].replace("T", " "),
         "merchant": r["merchant"],
@@ -74,7 +82,7 @@ def build_data(ym: str) -> dict:
         "canceled": bool(r["canceled"]),
         "source": r["source"],
         "category": r["category"] or categories.classify(r["merchant"]),
-    } for r in sorted(rows, key=lambda r: r["ts"], reverse=True)[:20]]
+    } for r in sorted(rows, key=lambda r: r["ts"], reverse=True)]
 
     prev_ym = (start - timedelta(days=1)).strftime("%Y-%m")
     next_ym = end.strftime("%Y-%m") if end <= datetime.now() else None
@@ -140,6 +148,12 @@ header .stamp { color: var(--muted); font-size: 12px; }
 
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
 .card h2 { font-size: 14px; margin: 0 0 12px; font-weight: 600; color: var(--ink-2); }
+.card h2 .hint { font-weight: 400; font-size: 11px; color: var(--muted); margin-left: 6px; }
+#cat-detail { margin-top: 14px; border-top: 1px dashed var(--grid); padding-top: 12px; }
+#cat-detail h3 { font-size: 13px; margin: 0 0 10px; font-weight: 600; }
+#cat-detail h3 .close { float: right; font-size: 12px; font-weight: 400; color: var(--muted);
+  background: none; border: 0; cursor: pointer; }
+.clickable { cursor: pointer; }
 svg text { font: 11px system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--muted); font-variant-numeric: tabular-nums; }
 .bar { fill: var(--series); }
 .bar:hover { opacity: .82; }
@@ -197,13 +211,14 @@ tr.canceled td.merchant { text-decoration: line-through; }
 </div>
 
 <div class="card"><h2>일별 지출</h2><div id="daily"></div></div>
-<div class="card"><h2>카테고리별 지출</h2>
+<div class="card"><h2>카테고리별 지출 <span class="hint">카테고리를 누르면 가맹점 상세</span></h2>
   <div class="split"><div class="bars" id="cats"></div><div class="donut" id="cats-donut"></div></div>
+  <div id="cat-detail" hidden></div>
 </div>
 <div class="card"><h2>가맹점별 지출</h2>
   <div class="split"><div class="bars" id="merchants"></div><div class="donut" id="merchants-donut"></div></div>
 </div>
-<div class="card"><h2>최근 내역</h2><div id="recent"></div></div>
+<div class="card"><h2 id="recent-title">결제 내역</h2><div id="recent"></div></div>
 
 <div id="tooltip"></div>
 
@@ -290,7 +305,23 @@ const PALETTE_L = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#0083
 const PALETTE_D = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
 const GRAY = "#898781";
 
-function breakdown(barsId, donutId, items, colorOf) {
+function hbarsSvg(items, colorOf) {
+  const W = 560, rowH = 30, labelW = 120, valueW = 84;
+  const iw = W - labelW - valueW;
+  const max = Math.max(...items.map(x => x.amt));
+  let s = `<svg viewBox="0 0 ${W} ${items.length * rowH}" style="width:100%;height:auto;display:block;max-width:640px">`;
+  items.forEach((x, i) => {
+    const yy = i * rowH, bh = 18, by = yy + (rowH - bh) / 2;
+    const bwv = Math.max(3, (x.amt / max) * iw), r = Math.min(4, bh / 2, bwv);
+    const name = x.name.length > 8 ? x.name.slice(0, 8) + "…" : x.name;
+    s += `<text class="hbar-label" x="${labelW - 10}" y="${yy + rowH / 2 + 4}" text-anchor="end">${name}</text>`;
+    s += `<path class="bar" data-i="${i}" style="fill:${colorOf(x, i)}" d="M${labelW},${by} h${bwv - r} a${r},${r} 0 0 1 ${r},${r} v${bh - 2 * r} a${r},${r} 0 0 1 ${-r},${r} h${-(bwv - r)} Z"/>`;
+    s += `<text class="hbar-value" x="${labelW + bwv + 8}" y="${yy + rowH / 2 + 4}">${won(x.amt)}</text>`;
+  });
+  return s + "</svg>";
+}
+
+function breakdown(barsId, donutId, items, colorOf, onSelect) {
   const barsEl = document.getElementById(barsId);
   const donutEl = document.getElementById(donutId);
   if (!items.length) {
@@ -304,23 +335,14 @@ function breakdown(barsId, donutId, items, colorOf) {
     const x = items[+el.dataset.i];
     el.addEventListener("mousemove", e => showTip(e, tipHtml(x)));
     el.addEventListener("mouseleave", hideTip);
+    if (onSelect) {
+      el.classList.add("clickable");
+      el.addEventListener("click", () => onSelect(x));
+    }
   });
 
   // 왼쪽: 가로 막대 (축소판)
-  const W = 560, rowH = 30, labelW = 120, valueW = 84;
-  const iw = W - labelW - valueW;
-  const max = Math.max(...items.map(x => x.amt));
-  let s = `<svg viewBox="0 0 ${W} ${items.length * rowH}" style="width:100%;height:auto;display:block">`;
-  items.forEach((x, i) => {
-    const yy = i * rowH, bh = 18, by = yy + (rowH - bh) / 2;
-    const bwv = Math.max(3, (x.amt / max) * iw), r = Math.min(4, bh / 2, bwv);
-    const name = x.name.length > 8 ? x.name.slice(0, 8) + "…" : x.name;
-    s += `<text class="hbar-label" x="${labelW - 10}" y="${yy + rowH / 2 + 4}" text-anchor="end">${name}</text>`;
-    s += `<path class="bar" data-i="${i}" style="fill:${colorOf(x, i)}" d="M${labelW},${by} h${bwv - r} a${r},${r} 0 0 1 ${r},${r} v${bh - 2 * r} a${r},${r} 0 0 1 ${-r},${r} h${-(bwv - r)} Z"/>`;
-    s += `<text class="hbar-value" x="${labelW + bwv + 8}" y="${yy + rowH / 2 + 4}">${won(x.amt)}</text>`;
-  });
-  s += "</svg>";
-  barsEl.innerHTML = s;
+  barsEl.innerHTML = hbarsSvg(items, colorOf);
   attachTips(barsEl, "bar");
 
   // 오른쪽: 도넛 (비율)
@@ -355,14 +377,38 @@ function breakdown(barsId, donutId, items, colorOf) {
   attachTips(donutEl, "slice");
 }
 
+// 카테고리 클릭 → 그 카테고리 안의 가맹점별 그래프 펼치기
+let openCat = null;
+function showCatDetail(cat) {
+  const el = document.getElementById("cat-detail");
+  if (openCat === cat.name) { el.hidden = true; openCat = null; return; }
+  openCat = cat.name;
+  el.hidden = false;
+  el.innerHTML = `<h3><span class="dot" style="background:${catColor(cat)}"></span>${cat.name} · 가맹점별`
+    + `<button class="close" type="button">닫기 ✕</button></h3>`
+    + (cat.merchants.length ? hbarsSvg(cat.merchants, () => catColor(cat))
+                            : '<div class="empty">내역이 없어요</div>');
+  el.querySelector(".close").onclick = () => { el.hidden = true; openCat = null; };
+  const catSum = cat.merchants.reduce((a, x) => a + x.amt, 0);
+  el.querySelectorAll(".bar").forEach(b => {
+    const x = cat.merchants[+b.dataset.i];
+    const html = `${x.name}<br><b>${won(x.amt)}</b> · ${cat.name}의 ${catSum ? Math.round(x.amt / catSum * 100) : 0}%`;
+    b.addEventListener("mousemove", e => showTip(e, html));
+    b.addEventListener("mouseleave", hideTip);
+  });
+  el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
 // 카테고리: 카테고리 고정색 / 가맹점: 팔레트 순서색('기타'는 회색), 막대와 도넛 색 일치
-breakdown("cats", "cats-donut", DATA.categories, x => catColor(x));
+breakdown("cats", "cats-donut", DATA.categories, x => catColor(x), showCatDetail);
 breakdown("merchants", "merchants-donut", DATA.merchants,
   (x, i) => x.name === "기타" ? GRAY : (darkMq.matches ? PALETTE_D : PALETTE_L)[i % 8]);
 
-// ---- 최근 내역 테이블 ----
+// ---- 해당 월 전체 결제 내역 테이블 ----
 (function () {
   const el = document.getElementById("recent");
+  document.getElementById("recent-title").textContent =
+    `${DATA.title} 결제 내역 (${DATA.recent.length}건)`;
   if (!DATA.recent.length) { el.innerHTML = '<div class="empty">기록이 없어요</div>'; return; }
   const catColors = {};
   DATA.categories.forEach(c => { catColors[c.name] = catColor(c); });
