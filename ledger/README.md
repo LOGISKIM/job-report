@@ -23,9 +23,24 @@ cd ledger
 LEDGER_TOKEN=아무비밀문자열 python server.py   # 기본 포트 8288
 ```
 
-윈도우에서는 `token.txt`에 토큰을 넣고 `start_ledger.bat` 실행.
+윈도우에서는 `token.txt`에 토큰을 넣고 **`start_all.bat`** 실행 —
+서버와 cloudflared 터널을 한 번에 띄우고, 새로 발급된 터널 주소를
+창에 크게 보여주며 `tunnel_url.txt`에도 기록한다.
 부팅 시 자동 시작하려면 `Win+R` → `shell:startup` 폴더에 이 배치 파일의
-바로가기를 넣는다.
+바로가기를 넣는다. (서버만 띄우려면 `start_ledger.bat`)
+
+임시 터널은 재시작마다 주소가 바뀌므로, 재부팅 후에는 Macrodroid의 URL을
+새 주소로 바꿔야 한다. 이걸 자동화하려면 `start_all.bat PUBLISH` 로 실행한다:
+바뀐 주소가 깃허브에 올라가고, 폰은 아래 주소에서 그 값을 읽어
+자기 변수에 저장한 뒤 요청에 사용한다.
+
+```
+https://raw.githubusercontent.com/LOGISKIM/job-report/claude/samsung-card-usage-api-pzm0rk/ledger/tunnel_url.txt
+```
+
+단, 이 방식은 터널 주소가 공개 저장소에 노출된다(엔드포인트는 토큰으로
+보호되지만 주소 자체는 누구나 볼 수 있다). 주소 고정이 목적이라면
+아래 Tailscale 쪽이 더 깔끔하고 안전하다.
 
 ### 폰에서 접근할 고정 주소 (Tailscale)
 
@@ -124,3 +139,8 @@ python test_parser.py   # 또는 pytest
 - `server.py` — 웹훅 서버 (`/kakao`, `/ingest`)
 - `excel_import.py` — 홈페이지 엑셀 임포트
 - `report.py` — 일간/월간 요약 + 카카오톡 나에게 보내기
+- `dashboard.py` — 대시보드 HTML 생성 (KPI, 일별/카테고리별/가맹점별, 전체 내역)
+- `categories.py` — 가맹점명 키워드 기반 카테고리 분류
+- `publish_static.py` — 대시보드를 암호화해 정적 페이지로 발행
+- `tunnel.py` — cloudflared 터널 실행 + 발급 주소 기록/공개
+- `start_all.bat` / `start_ledger.bat` / `publish_daily.bat` — 윈도우 실행 스크립트
