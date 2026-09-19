@@ -1,0 +1,42 @@
+{
+  "title": "아직도 5억으로 서울에 84㎡를 살 수 있다고?",
+  "asof": "2026-09-19",
+  "note": "화면은 sudozip.pages.dev 의 '예산으로 찾기'를 그대로 찍은 것. 자료가 갱신되면 build_reel_b2.py 로 다시 찍어 이 폴더를 바꾼다.",
+  "cover": {
+    "png": "cover.png",
+    "say": "아직도 오억으로 서울에서 국민평형을 살 수 있을까요?"
+  },
+  "scenes": [
+    {
+      "name": "all5",
+      "png": "site_all5.png",
+      "content_css": 1500,
+      "lines": [
+        { "png": "s10.png", "sub": "예산에 5억만 넣으면", "say": "예산에 오억만 넣으면" },
+        { "png": "s11.png", "sub": "수도권 186곳이 바로 나와요", "say": "수도권 백팔십육 곳이 바로 나옵니다." }
+      ]
+    },
+    {
+      "name": "seoul5",
+      "png": "site_seoul5.png",
+      "content_css": 731,
+      "lines": [
+        { "png": "s20.png", "sub": "그런데 서울만 보면", "say": "그런데 서울만 보면" },
+        { "png": "s21.png", "sub": "딱 5곳이에요", "say": "딱 다섯 곳입니다. 도봉 셋, 양천 하나, 노원 하나." }
+      ]
+    },
+    {
+      "name": "seoul7",
+      "png": "site_seoul7.png",
+      "content_css": 1500,
+      "lines": [
+        { "png": "s30.png", "sub": "7억으로 올리면", "say": "칠억으로 올리면" },
+        { "png": "s31.png", "sub": "81곳으로 늘어요", "say": "여든한 곳으로 늘어납니다." }
+      ]
+    }
+  ],
+  "cta": {
+    "png": "cta.png",
+    "say": "댓글에 코드 남기고 팔로우하면, 디엠으로 입장코드를 보내드려요."
+  }
+}
