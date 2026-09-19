@@ -95,25 +95,38 @@ body{{width:{W}px;height:{H}px;overflow:hidden;font-family:P,sans-serif}}
 <div class="t">{text}</div><div class="mark">수도<i>.</i>zip</div></div>'''
 
 def sub(text, small=""):
-    """본문 자막 — 투명 배경, 아래쪽 흰 알약에 까만 글씨. 화면을 안 가린다."""
-    extra = f'<div class="srow"><div class="s">{small}</div></div>' if small else ""
+    """본문 자막 — 네모 없이 글씨만, 화면 위쪽에. 말하듯 한 문장씩 얹는다.
+
+    사이트가 흰 바탕이라 까만 글씨로 읽힌다. 다만 파란 호선 배지나 까만
+    번호 원 위에 글자가 겹치는 순간이 있어, 네모 대신 흰 번짐(글로)만
+    깔아 둔다 — 테두리가 보이지 않으면서 글자는 안 묻힌다.
+    """
+    extra = f'<div class="s">{small}</div>' if small else ""
     return f'''<!doctype html><meta charset="utf-8"><style>{FONT_CSS}
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:{W}px;height:{H}px;overflow:hidden;background:transparent;font-family:P,sans-serif}}
 #c{{position:relative;width:{W}px;height:{H}px}}
-.box{{position:absolute;left:54px;right:54px;bottom:540px;text-align:center}}
-.b{{display:inline-block;background:#fff;border-radius:28px;padding:26px 38px;
-  box-shadow:0 14px 40px rgba(13,17,22,.28);font-size:56px;font-weight:900;color:#0d1116;
-  line-height:1.3;letter-spacing:-.03em;word-break:keep-all}}
+/* 테두리를 두르지 않는다 — 위쪽만 하얗게 흐려 자막 자리를 비워 둔다.
+   경계가 보이지 않으면서 목록 글자와 자막이 겹쳐 읽히는 일이 없어진다. */
+.fade{{position:absolute;left:0;right:0;top:0;height:620px;
+  background:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.95) 42%,
+    rgba(255,255,255,.78) 68%,rgba(255,255,255,0) 100%)}}
+.box{{position:absolute;left:60px;right:60px;top:240px;text-align:center}}
+.b{{font-size:72px;font-weight:900;color:#0d1116;line-height:1.26;letter-spacing:-.035em;
+  word-break:keep-all;
+  text-shadow:0 0 26px rgba(255,255,255,.98), 0 0 14px rgba(255,255,255,.98),
+              0 0 6px rgba(255,255,255,.95), 0 3px 10px rgba(255,255,255,.9)}}
 .b em{{font-style:normal;color:#1b64da}}
-.srow{{display:block;margin-top:16px}}
-.s{{font-size:30px;font-weight:700;color:#0d1116;
-  background:rgba(255,255,255,.92);border-radius:18px;padding:12px 22px;display:inline-block}}
-.wm{{position:absolute;right:44px;top:56px;font-size:34px;font-weight:900;color:#0d1116;
-  background:rgba(255,255,255,.86);border-radius:14px;padding:8px 18px;letter-spacing:-.02em}}
+.s{{margin-top:20px;font-size:38px;font-weight:800;color:#3a4250;letter-spacing:-.02em;
+  text-shadow:0 0 20px rgba(255,255,255,.98), 0 0 10px rgba(255,255,255,.98),
+              0 0 5px rgba(255,255,255,.95)}}
+/* 워터마크는 자막과 같은 흰 자리 안에 둔다 — 목록 위에 띄우면 얼룩처럼 보인다 */
+.wm{{position:absolute;left:0;right:0;top:140px;text-align:center;font-size:30px;
+  font-weight:900;color:#8b95a1;letter-spacing:-.02em}}
 .wm i{{color:#3182f6;font-style:normal}}</style>
-<div id="c"><div class="wm">수도<i>.</i>zip</div>
-<div class="box"><div class="b">{text}</div>{extra}</div></div>'''
+<div id="c"><div class="fade"></div><div class="fadeb"></div>
+<div class="box"><div class="b">{text}</div>{extra}</div>
+<div class="wm">수도<i>.</i>zip</div></div>'''
 
 def cta():
     steps = [('1', '이 릴스에 댓글 <span class="kw">코드</span> 남기기'),
