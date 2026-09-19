@@ -135,7 +135,7 @@ def rows_html(items, upto=None, hot=1):
 
 B = [
  (2.4, f'''<div class="wrap"><div class="eye">예산으로 찾기</div>
-   <div class="q"><b>5억</b>으로 서울에서<br>국민평형 <span class="bl">84㎡</span><br>살 수 있을까?</div>
+   <div class="q">아직도 <b>5억</b>으로<br>서울에 <span class="bl">84㎡</span>를<br>살 수 있다고?</div>
    <div class="pill">300세대 이상 · 최근 3개월 평균</div>
    <div class="sub" style="margin-top:44px">몇 곳일까요? 댓글로 먼저 맞혀보세요 👇</div></div>{TAG}'''),
  (2.6, f'''<div class="wrap"><div class="eye">서울 25개 구 전체에서</div>
