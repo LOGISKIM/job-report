@@ -119,6 +119,26 @@ def test_kb_sms_format():
     assert tx.amount == 12000
 
 
+def test_trusted_peer_source_addresses():
+    """대시보드 접근 허용은 소스 IP로만 판단해야 한다 (Host 헤더는 위조 가능)."""
+    import server
+
+    def trusted(addr: str) -> bool:
+        fake = server.Handler.__new__(server.Handler)
+        fake.client_address = (addr, 12345)
+        return server.Handler._is_trusted_peer(fake)
+
+    assert trusted("127.0.0.1")        # 같은 PC
+    assert trusted("::1")              # IPv6 루프백
+    assert trusted("100.101.102.103")  # Tailscale 대역
+    assert trusted("::ffff:100.64.0.1")  # IPv4-mapped Tailscale
+    assert not trusted("192.168.0.10")  # 가정 내 LAN이라도 토큰 필요
+    assert not trusted("8.8.8.8")       # 공인 IP
+    assert not trusted("100.63.255.255")  # Tailscale 대역 바로 바깥
+    assert not trusted("100.128.0.0")     # 대역 바로 바깥 (상단)
+    assert not trusted("nonsense")
+
+
 def test_unparseable_returns_none():
     assert parse_notification("점심 뭐먹지", reference=REF) is None
     # 금액이 있어도 결제 관련 단어와 날짜가 모두 없으면 버린다

@@ -6,8 +6,8 @@
                    오픈빌더 응답 포맷(simpleText)으로 결과를 돌려준다.
   POST /ingest     Macrodroid/Tasker/단축어 등 범용 수신.
                    {"text": "...승인 문자 원문..."} 또는 raw body 텍스트를 받는다.
-  GET  /dashboard  월별 대시보드. localhost 접속은 그냥 열리고,
-                   터널 등 외부 접속은 ?token=<LEDGER_TOKEN> 필요.
+  GET  /dashboard  월별 대시보드. 같은 PC(루프백)와 내 Tailscale 기기는
+                   바로 열리고, 그 외(터널 등)는 ?token=<LEDGER_TOKEN> 필요.
                    ?month=YYYY-MM 으로 다른 달 조회.
   GET  /health     헬스체크.
 
@@ -21,6 +21,7 @@
 
 from __future__ import annotations
 
+import ipaddress
 import json
 import os
 import re
@@ -34,6 +35,8 @@ from parser import parse_notification
 
 PORT = int(os.environ.get("LEDGER_PORT", "8288"))
 TOKEN = os.environ.get("LEDGER_TOKEN", "")
+# Tailscale이 기기에 배정하는 대역 (계정 인증을 통과한 내 기기들)
+TAILSCALE_NET = ipaddress.ip_network("100.64.0.0/10")
 
 
 def handle_text(text: str, source: str) -> str:
@@ -75,12 +78,25 @@ class Handler(BaseHTTPRequestHandler):
         else:
             self._send_json(404, {"error": "not found"})
 
+    def _is_trusted_peer(self) -> bool:
+        """이 연결이 신뢰된 출발지에서 왔는가.
+
+        Host 헤더는 요청자가 마음대로 넣을 수 있으므로 쓰지 않는다.
+        실제 TCP 소스 주소만 본다: 같은 PC(루프백) 또는 내 Tailscale 망
+        (100.64.0.0/10, 계정 인증을 통과한 기기만 이 대역을 받는다).
+        """
+        try:
+            peer = ipaddress.ip_address(self.client_address[0])
+        except ValueError:
+            return False
+        if isinstance(peer, ipaddress.IPv6Address) and peer.ipv4_mapped:
+            peer = peer.ipv4_mapped
+        return peer.is_loopback or peer in TAILSCALE_NET
+
     def _handle_dashboard(self) -> None:
         query = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
-        # localhost 직접 접속은 프리패스, 터널 등 외부 Host는 토큰 요구
-        host = (self.headers.get("Host") or "").split(":")[0]
-        is_local = host in ("localhost", "127.0.0.1")
-        if TOKEN and not is_local and query.get("token", [""])[0] != TOKEN:
+        # 루프백/Tailscale 접속은 프리패스, 그 외(터널 등)는 토큰 요구
+        if TOKEN and not self._is_trusted_peer() and query.get("token", [""])[0] != TOKEN:
             self._send_json(401, {"error": "token required (?token=...)"})
             return
 

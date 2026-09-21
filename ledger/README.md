@@ -56,8 +56,13 @@ ngrok 무료는 세션이 2시간 제한이라 상시 운영에 맞지 않는다
 2. PC 호스트명 확인 (예: `desktop-abc123`)
 3. Macrodroid HTTP 요청 URL을 `http://desktop-abc123:8288/ingest`로 설정
    (호스트명이 안 되면 Tailscale이 보여주는 `100.x.x.x` IP를 써도 된다)
+4. 폰에서 `http://desktop-abc123:8288/dashboard` 로 실시간 대시보드 확인
 
 이 구성에서는 cloudflared가 필요 없다.
+
+대시보드 접근 허용은 **TCP 소스 주소**로만 판단한다: 루프백과 Tailscale
+대역(100.64.0.0/10)은 토큰 없이 열리고, 그 외에는 `?token=`이 필요하다.
+`Host` 헤더는 요청자가 임의로 넣을 수 있어 판단 근거로 쓰지 않는다.
 
 | 엔드포인트 | 용도 |
 |---|---|
