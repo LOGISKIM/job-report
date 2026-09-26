@@ -103,16 +103,19 @@ export function Wizard({ templateId }: { templateId: string }) {
       if (!prep.ok) throw new Error(prep.error);
       const supabase = createClient();
       let done = 0;
-      await Promise.all(
+      // 모든 업로드가 끝날 때까지 기다린 뒤에 성공 여부를 본다. 하나가 실패해도 나머지가 뒤늦게 올라가
+      // 다시 시도한 업로드와 섞이는 일이 없게 하기 위해서다.
+      const results = await Promise.allSettled(
         prep.uploads.map(async (u, i) => {
           const { error } = await supabase.storage
             .from("photos")
             .uploadToSignedUrl(u.path, u.token, photos[i].blob, { contentType: "image/jpeg" });
-          if (error) throw new Error("사진을 올리지 못했어요. 다시 시도해 주세요");
+          if (error) throw error;
           done++;
           setBusy(`사진을 안전하게 올리고 있어요 (${done}/${photos.length})`);
         }),
       );
+      if (results.some((r) => r.status === "rejected")) throw new Error("사진을 올리지 못했어요. 다시 시도해 주세요");
       const fin = await finalizeUploads(orderId);
       if (!fin.ok) throw new Error(fin.error);
       router.push(`/order/${orderId}/pay`);

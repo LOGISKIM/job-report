@@ -39,7 +39,7 @@ export default async function PayPage(props: PageProps<"/order/[id]/pay">) {
         </dl>
         <dl className="total"><dt>결제 금액</dt><dd>{won(order.amount)}</dd></dl>
         <TossPay orderId={order.id} amount={order.amount} orderName={`첫돌필름 ${t.name}`} customerKey={user.id} />
-        <p className="fine">카드 정보는 결제대행사(토스페이먼츠)가 처리하고 첫돌필름에는 저장되지 않아요. 결제하지 않은 주문은 하루 뒤 사진과 함께 자동으로 지워져요.</p>
+        <p className="fine">카드 정보는 결제대행사(토스페이먼츠)가 처리하고 첫돌필름에는 저장되지 않아요. 결제하지 않은 주문은 이틀 뒤 사진과 함께 자동으로 지워져요.</p>
       </main>
     </div>
   );

@@ -9,7 +9,7 @@ describe("safeNext (로그인 후 이동 주소)", () => {
   it("사이트 안의 경로는 그대로 쓴다", () => {
     expect(safeNext("/orders/abc?x=1")).toBe("/orders/abc?x=1");
   });
-  it.each(["https://evil.com", "//evil.com", "/\\evil.com", "javascript:alert(1)", "", null, undefined])(
+  it.each(["https://evil.com", "//evil.com", "/\\evil.com", "/\t/evil.com", "/\n/evil.com", "javascript:alert(1)", "", null, undefined])(
     "외부로 나가는 주소 %s 는 막는다",
     (v) => {
       expect(safeNext(v)).toBe("/");

@@ -9,6 +9,7 @@ export function fakeSupabase(tables: Record<string, Row[]>) {
     const filters: Filter[] = [];
     let op: "select" | "update" | "insert" | "delete" = "select";
     let values: Row | undefined;
+    let returning = false;
     const rows = () => (tables[table] ?? []).filter((r) => filters.every((f) => f(r)));
     const run = () => {
       const matched = rows();
@@ -22,10 +23,15 @@ export function fakeSupabase(tables: Record<string, Row[]>) {
         tables[table] = (tables[table] ?? []).filter((r) => !matched.includes(r));
         writes.push({ table, op, matched: matched.length });
       }
-      return { data: op === "select" ? matched : null, error: null, count: matched.length };
+      // 실제 Supabase처럼 행의 복사본을 돌려준다
+      const data = op === "select" || returning ? matched.map((r) => ({ ...r })) : null;
+      return { data, error: null, count: matched.length };
     };
     const b = {
-      select: () => b,
+      select: () => {
+        if (op !== "select") returning = true;
+        return b;
+      },
       update: (v: Row) => ((op = "update"), (values = v), b),
       insert: (v: Row) => ((op = "insert"), (values = v), b),
       delete: () => ((op = "delete"), b),

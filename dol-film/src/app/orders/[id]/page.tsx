@@ -30,7 +30,7 @@ export default async function OrderPage(props: PageProps<"/orders/[id]">) {
         <AppBar backHref="/orders" />
         <main className="view">
           <h1 className="h2">취소된 주문이에요</h1>
-          <p className="sub">결제하지 않은 주문은 하루 뒤 사진과 함께 자동으로 지워져요.</p>
+          <p className="sub">사진과 요청 내용은 모두 지웠어요. 결제한 주문이었다면 전액 환불됐어요.</p>
         </main>
         <CTA><LinkButton href="/">새로 만들기</LinkButton></CTA>
       </div>

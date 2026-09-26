@@ -117,6 +117,29 @@ describe("결제 승인", () => {
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
+  it("승인 요청은 결제 키 기준 멱등키를 쓴다 (실패 후 재결제 가능)", async () => {
+    const fetchMock = tossReturns({ status: "DONE", totalAmount: 49000 });
+    await call(49000, "pk_retry");
+    const init = (fetchMock.mock.calls[0] as unknown as [string, RequestInit])[1];
+    expect((init.headers as Record<string, string>)["Idempotency-Key"]).toBe("confirm-pk_retry");
+  });
+
+  it("승인 직후 주문이 취소돼 있으면(자동 정리와 경합) 결제를 바로 취소한다", async () => {
+    const fetchMock = vi.fn(async (url: string) => {
+      if (url.endsWith("/confirm")) {
+        fake.tables.orders[0].status = "canceled"; // 승인 도중 다른 곳에서 취소됨
+        return new Response(JSON.stringify({ status: "DONE", totalAmount: 49000 }));
+      }
+      return new Response(JSON.stringify({ status: "CANCELED" }));
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    const res = await call(49000);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    expect(String(fetchMock.mock.calls[1][0])).toContain("/v1/payments/pk_123/cancel");
+    expect(decodeURIComponent(res.headers.get("location") ?? "")).toContain("자동으로 취소");
+    expect(fake.tables.orders[0].status).toBe("canceled");
+  });
+
   it("주문 ID 형식이 이상하면 바로 실패", async () => {
     const res = await GET(new NextRequest("https://dol.test/api/payments/success?orderId=../../x&paymentKey=a&amount=1"));
     expect(res.headers.get("location")).toContain("/pay/fail");

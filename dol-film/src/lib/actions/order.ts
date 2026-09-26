@@ -6,6 +6,7 @@ import { z } from "zod";
 import { CUSTOM, MOODS, MUSIC, PHOTO_MAX, PHOTO_MIN, getTemplate } from "@/lib/catalog";
 import { CONSENTS, CONSENT_VERSION } from "@/lib/consents";
 import { addDays } from "@/lib/dates";
+import { ERASED_FIELDS } from "@/lib/retention";
 import { listOrderPhotos, photoFolder, removeOrderPhotos } from "@/lib/storage";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { getUser } from "@/lib/supabase/server";
@@ -59,13 +60,17 @@ export async function createOrder(raw: OrderInput): Promise<Result<{ orderId: st
 
   const admin = createAdminClient();
 
-  // 결제 안 된 주문을 계속 만드는 것을 막는다.
-  const { count } = await admin
+  // 결제 대기 주문은 한 사람당 하나만 둔다. 새로 신청하면 이전 결제 대기 주문은 사진과 함께 정리한다.
+  // (이전 주문이 동시에 결제되더라도 결제 승인 단계에서 상태가 바뀐 것을 알아채고 자동 취소한다)
+  const { data: stale } = await admin
     .from("orders")
-    .select("id", { count: "exact", head: true })
+    .update({ status: "canceled", photos_deleted_at: new Date().toISOString(), ...ERASED_FIELDS })
     .eq("user_id", user.id)
-    .eq("status", "pending_payment");
-  if ((count ?? 0) >= 3) return { ok: false, error: "결제하지 않은 주문이 너무 많아요. 잠시 뒤 다시 시도해 주세요" };
+    .eq("status", "pending_payment")
+    .select("id");
+  for (const o of stale ?? []) {
+    await removeOrderPhotos(admin, user.id, o.id).catch((e) => console.error("이전 주문 사진 삭제 실패", o.id, e));
+  }
 
   const now = new Date().toISOString();
   const { data, error } = await admin
@@ -100,7 +105,7 @@ export async function prepareUploads(
 ): Promise<Result<{ uploads: { path: string; token: string }[] }>> {
   const found = await ownOrder(orderId);
   if (!found) return { ok: false, error: "주문을 찾을 수 없어요" };
-  if (found.order.status !== "pending_payment") return { ok: false, error: "이미 결제된 주문이에요" };
+  if (found.order.status !== "pending_payment") return { ok: false, error: "이미 결제됐거나 취소된 주문이에요" };
   if (!Number.isInteger(count) || count < PHOTO_MIN || count > PHOTO_MAX) {
     return { ok: false, error: `사진은 ${PHOTO_MIN}~${PHOTO_MAX}장 올려 주세요` };
   }
@@ -124,7 +129,9 @@ export async function finalizeUploads(orderId: string): Promise<Result> {
   if (!found) return { ok: false, error: "주문을 찾을 수 없어요" };
   if (found.order.status !== "pending_payment") return { ok: false, error: "이미 결제된 주문이에요" };
   const paths = await listOrderPhotos(found.admin, found.user.id, orderId);
-  if (paths.length < PHOTO_MIN) return { ok: false, error: "사진이 모두 올라가지 않았어요. 다시 시도해 주세요" };
+  if (paths.length < PHOTO_MIN || paths.length > PHOTO_MAX) {
+    return { ok: false, error: "사진이 제대로 올라가지 않았어요. 다시 시도해 주세요" };
+  }
   await found.admin.from("orders").update({ photo_count: paths.length }).eq("id", orderId);
   return { ok: true };
 }
@@ -138,15 +145,22 @@ export async function requestRevision(orderId: string, text: string): Promise<Re
   if (o.status !== "delivered" || o.revision_left < 1) return { ok: false, error: "수정 요청을 할 수 없는 상태예요" };
   if (o.photos_deleted_at) return { ok: false, error: "원본 사진이 삭제되어 수정할 수 없어요" };
 
-  await found.admin
+  // 조건부 갱신: 그 사이 자동 삭제가 사진을 지웠다면 한 건도 바뀌지 않는다.
+  const { data: updated } = await found.admin
     .from("orders")
     .update({
       status: "in_production",
       revision_left: o.revision_left - 1,
       revision_request: body.data,
-      photos_purge_after: null, // 다시 납품하면 그때부터 7일
+      // 다시 납품할 때 보관 기간을 새로 잡는다. 그동안은 자동 삭제 대상에서 빠진다.
+      photos_purge_after: null,
+      result_purge_after: null,
     })
-    .eq("id", orderId);
+    .eq("id", orderId)
+    .eq("status", "delivered")
+    .is("photos_deleted_at", null)
+    .select("id");
+  if (!updated?.length) return { ok: false, error: "수정 요청을 할 수 없는 상태예요" };
   revalidatePath(`/orders/${orderId}`);
   return { ok: true };
 }
@@ -156,8 +170,9 @@ export async function deletePhotosNow(orderId: string): Promise<Result> {
   if (!found) return { ok: false, error: "주문을 찾을 수 없어요" };
   const o = found.order;
   if (o.photos_deleted_at) return { ok: true };
-  if (["paid", "in_production", "review"].includes(o.status)) {
-    return { ok: false, error: "제작 중에는 사진을 지울 수 없어요. 완성 후에 지워 주세요" };
+  // 완성된 주문만. 결제 전 주문은 이틀 뒤 자동으로 정리되고, 제작 중에는 사진이 필요하다.
+  if (o.status !== "delivered") {
+    return { ok: false, error: "완성된 뒤에 지울 수 있어요" };
   }
   await removeOrderPhotos(found.admin, found.user.id, orderId);
   await found.admin
