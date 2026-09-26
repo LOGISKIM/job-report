@@ -24,3 +24,15 @@ export async function removeResult(admin: SupabaseClient, path: string | null) {
   const { error } = await admin.storage.from("results").remove([path]);
   if (error) throw error;
 }
+
+// 폴더 안의 파일을 지운다. keep에 적은 파일은 남긴다. 지운 개수를 돌려준다.
+export async function removeFolder(admin: SupabaseClient, bucket: "photos" | "results", folder: string, keep?: string | null) {
+  const { data, error } = await admin.storage.from(bucket).list(folder, { limit: 100 });
+  if (error) throw error;
+  const paths = (data ?? []).map((f) => `${folder}/${f.name}`).filter((p) => p !== keep);
+  if (paths.length) {
+    const { error: removeError } = await admin.storage.from(bucket).remove(paths);
+    if (removeError) throw removeError;
+  }
+  return paths.length;
+}

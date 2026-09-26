@@ -39,6 +39,7 @@ export function fakeSupabase(tables: Record<string, Row[]>) {
       neq: (k: string, v: unknown) => (filters.push((r) => r[k] !== v), b),
       in: (k: string, v: unknown[]) => (filters.push((r) => v.includes(r[k])), b),
       is: (k: string, v: unknown) => (filters.push((r) => (r[k] ?? null) === v), b),
+      gt: (k: string, v: string) => (filters.push((r) => r[k] != null && String(r[k]) > v), b),
       lt: (k: string, v: string) => (filters.push((r) => r[k] != null && String(r[k]) < v), b),
       order: () => b,
       limit: () => b,
