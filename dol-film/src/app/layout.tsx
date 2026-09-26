@@ -1,13 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans_KR } from "next/font/google";
+// Pretendard (SIL OFL 1.1). 화면에 쓰인 글자가 속한 조각 파일만 내려받는 dynamic subset 방식이다.
+import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "./globals.css";
-
-const noto = Noto_Sans_KR({
-  variable: "--font-noto",
-  weight: ["400", "500", "700", "800"],
-  preload: false,
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "첫돌필름 · 우리 아이 첫 생일 영상",
@@ -22,7 +16,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ko" className={noto.variable}>
+    <html lang="ko">
       <body>{children}</body>
     </html>
   );

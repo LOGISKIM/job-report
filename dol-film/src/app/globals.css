@@ -16,7 +16,7 @@
   --green-weak: #e5f8ef;
   --red: #f04452;
   --dim: rgba(0, 0, 0, 0.45);
-  --font: var(--font-noto), "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {

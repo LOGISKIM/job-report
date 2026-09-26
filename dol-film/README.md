@@ -12,6 +12,7 @@
 | 로그인 | 카카오 (Supabase Auth) |
 | 결제 | 토스페이먼츠 결제위젯 |
 | 알림 | 카카오 알림톡 (솔라피, 선택) |
+| 글꼴 | Pretendard (SIL OFL, 화면에 쓰인 글자 조각만 내려받는 dynamic subset) |
 
 ## 화면
 
