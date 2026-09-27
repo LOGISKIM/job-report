@@ -1,0 +1,3802 @@
+[
+ {
+  "id": "fairy",
+  "name": "동화 속 첫 생일",
+  "mood": "몽환, 파스텔",
+  "style": "soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "구름 위의 성",
+    "desc": "분홍 구름 위에 떠 있는 성, 창문으로 다가감",
+    "prompt": "Wide establishing shot of a pastel castle floating on fluffy pink clouds at sunrise, tiny sparkles drifting through the air. Slow aerial push-in toward a round castle window. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "창가에서 깨어나는 아기",
+    "desc": "별무늬 이불 침대에서 눈 비비며 웃음",
+    "prompt": "Medium shot through a round castle window: the baby wakes up in a soft canopy bed with star-patterned blankets, rubs the eyes and smiles at the morning light. Slow dolly-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "요정 친구 등장",
+    "desc": "빛나는 요정 셋이 날아와 아기 손에 반짝이",
+    "prompt": "Close-up: three tiny glowing fairies with translucent wings flutter around the baby; the baby reaches out and giggles as sparkles land on the baby's hand. Shallow depth of field. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 3,
+    "title": "요정의 선물 망토",
+    "desc": "반짝이 망토와 꽃 왕관을 씌워 줌",
+    "prompt": "The fairies drape a tiny glittering cape over the baby's shoulders and place a small flower crown on the baby's head; the baby looks up in wonder. Gentle orbit camera. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 5,
+    "title": "구름 정원 산책",
+    "desc": "커다란 빛나는 꽃 사이를 기어감",
+    "prompt": "The baby crawls along a path of soft cloud through a garden of oversized glowing flowers and floating bubbles, fairies leading the way. Low tracking shot at the baby's eye level. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 3,
+    "title": "무지개 미끄럼틀",
+    "desc": "무지개 미끄럼틀을 타고 구름 쿠션으로",
+    "prompt": "The baby slides gently down a short pastel rainbow slide into a pile of cloud pillows, laughing while the fairies clap. Slow motion, side angle. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 5,
+    "title": "아기 유니콘",
+    "desc": "하얀 아기 유니콘이 다가와 비빔",
+    "prompt": "A fluffy white baby unicorn trots up and nuzzles the baby; the baby pats its soft mane and smiles. Warm backlight, medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 1,
+    "title": "파티장 입장",
+    "desc": "구름을 타고 풍선 가득한 성 홀로",
+    "prompt": "The baby rides a small floating cloud into a grand castle hall decorated with pastel balloons, ribbons and fairy lights while confetti drifts down. Wide shot, slow crane down. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 5,
+    "title": "빛나는 선물 상자",
+    "desc": "상자에서 별빛이 쏟아짐",
+    "prompt": "Close-up of the baby opening a small glowing gift box; golden light and tiny stars float out and reflect on the baby's delighted face. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 1,
+    "title": "생일 케이크",
+    "desc": "숫자 1 초가 꽂힌 파스텔 케이크",
+    "prompt": "A tall pastel birthday cake with a single candle shaped like the number 1 is placed in front of the baby; candlelight glows on the baby's face as fairies gather around. Slow push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 1,
+    "title": "촛불 끄기",
+    "desc": "후~ 불자 반짝이와 꽃가루가 터짐",
+    "prompt": "The candle flame goes out with a gentle puff and a burst of sparkles and confetti fills the air while the fairies cheer around the baby. Medium close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 5,
+    "title": "요정들과 춤",
+    "desc": "떠 있는 등불 아래 빙글빙글",
+    "prompt": "The fairies and the baby dance in a circle on the cloud floor under floating lanterns; the baby bounces happily. Circular tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 3,
+    "title": "별빛 마차",
+    "desc": "나비가 끄는 수정 마차로 밤하늘 비행",
+    "prompt": "The baby rides in a small crystal carriage pulled by glowing butterflies, flying over the castle into a twilight sky. Wide aerial tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "별 따기",
+    "desc": "마차 창밖으로 손을 뻗어 별을 잡음",
+    "prompt": "From the carriage window the baby reaches up and catches a small shining star, holding it with both hands as it glows softly. Close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 3,
+    "title": "꿈나라로",
+    "desc": "별 인형을 안고 하품",
+    "prompt": "Back in the canopy bed, the baby hugs a star-shaped plush and yawns while the fairies pull up a moonlight blanket. Soft night lighting, slow dolly-out. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "별밤의 성, 제목 넣을 빈 공간",
+    "prompt": "Wide shot of the floating castle under a starry night sky with a big crescent moon; the camera slowly pulls back into the clouds, leaving empty space in the lower third for a title. Style: soft pastel fairytale world, dreamy volumetric light, gentle bokeh, storybook cinematic look, warm and magical. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 11
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "hanbok",
+  "name": "한복 돌잔치",
+  "mood": "전통, 따뜻함",
+  "style": "warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "한옥 마당의 아침",
+    "desc": "처마 사이 햇살, 등과 비단 깃발",
+    "prompt": "Wide establishing shot of a traditional Korean hanok courtyard in the morning, sunlight falling through the eaves, paper lanterns and a colorful silk banner swaying gently. Slow crane down. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "색동저고리",
+    "desc": "마루 위에 놓인 색동 한복과 굴레",
+    "prompt": "Close-up of a small saekdong hanbok with rainbow-striped sleeves and a tiny traditional baby hat (gulle) laid on a wooden floor, dust sparkling in the sunbeams. Slow slide. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "한복 입은 아기",
+    "desc": "비단 방석에 앉아 카메라 보며 웃음",
+    "prompt": "Medium shot: the baby wearing a colorful saekdong hanbok and a gulle hat sits on a silk cushion on the wooden maru floor, smiling at the camera. Gentle push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 3,
+    "title": "첫걸음",
+    "desc": "어른 손가락 잡고 마루를 걸음(손만 보임)",
+    "prompt": "The baby toddles a few steps across the wooden maru holding an adult's fingers, only the adult's hands visible, hanbok sleeves fluttering. Low tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 5,
+    "title": "전통 놀잇감",
+    "desc": "팽이와 복주머니로 놀기",
+    "prompt": "The baby plays with a traditional wooden spinning top and colorful silk pouches on a woven mat, laughing. Top-down shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 1,
+    "title": "돌상",
+    "desc": "떡과 과일탑이 차려진 돌상 앞",
+    "prompt": "Wide shot of a traditional first-birthday table (doljanchi) piled with rice cakes and fruit towers in front of a red folding screen; the baby sits before it on a silk cushion. Slow dolly-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 3,
+    "title": "돌잡이 물건",
+    "desc": "실, 연필, 마이크, 청진기, 복주머니",
+    "prompt": "Close-up of doljabi items arranged on a tray: a skein of thread, a pencil, a microphone, a stethoscope and a small coin pouch. Slow focus pull across them. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 1,
+    "title": "돌잡이!",
+    "desc": "하나를 번쩍 잡아 들고 까르르",
+    "prompt": "The baby reaches forward, firmly grabs one item from the tray, lifts it high and giggles while flower petals fall. Medium close-up, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 5,
+    "title": "가족들의 박수",
+    "desc": "흐릿한 가족들 박수, 아기만 선명",
+    "prompt": "Blurred family members in hanbok clap and laugh in the background while the baby, in sharp focus, looks around proudly. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 3,
+    "title": "큰절",
+    "desc": "두 손 모아 서툰 절",
+    "prompt": "The baby in hanbok bows clumsily on the cushion in a traditional greeting with both hands together. Warm backlight, side angle. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 5,
+    "title": "무지개떡",
+    "desc": "무지개떡을 오물오물",
+    "prompt": "Close-up of the baby holding a small colorful layered rice cake (mujigae tteok) and taking a messy, happy bite. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 5,
+    "title": "매화나무 아래",
+    "desc": "떨어지는 꽃잎을 잡으려 손 뻗음",
+    "prompt": "The baby sits under a blooming plum tree in the courtyard as pink petals drift down, reaching for them. Slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 3,
+    "title": "등불 켜진 저녁",
+    "desc": "등불을 신기하게 바라봄",
+    "prompt": "Evening: paper lanterns glow in the courtyard while the baby in hanbok sits on the maru gazing at them in wonder. Warm golden light, slow orbit. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "수복 베개",
+    "desc": "수놓은 비단 베개 위의 작은 손",
+    "prompt": "Close-up of the baby's small hand resting on an embroidered silk pillow with a traditional longevity pattern, the light gently shifting. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "손 흔들기",
+    "desc": "소매를 흔들며 활짝 웃음",
+    "prompt": "The baby waves both hands at the camera in the courtyard, hanbok sleeves swinging, with a big smile. Medium shot, slight push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "노을 속 한옥 지붕, 제목 공간",
+    "prompt": "Wide shot of the hanok courtyard at dusk with glowing lanterns; the camera slowly rises above the roof tiles into a clear sky, leaving space in the center for a title. Style: warm natural morning light, traditional Korean aesthetics, soft film grain, elegant and heartfelt, rich red and gold accents. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 6
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 10
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "space",
+  "name": "우주 탐험 첫돌",
+  "mood": "신비, 모험",
+  "style": "whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "발사대",
+    "desc": "장난감 같은 로켓, 카운트다운 불빛",
+    "prompt": "Wide shot of a small round white-and-orange toy-like rocket on a launch pad at dawn, steam puffing and a countdown light blinking. Slow push-in. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "조종석",
+    "desc": "우주복(헬멧 없음) 입고 버튼 누르기",
+    "prompt": "Inside a cozy round cockpit with soft padded walls, the baby sits in a plush seat wearing a tiny astronaut jumpsuit without a helmet, pressing big colorful buttons and giggling. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "이륙",
+    "desc": "파스텔 구름 꼬리를 남기며 발사",
+    "prompt": "The rocket lifts off gently, leaving a trail of pastel clouds as it rises into a starry sky. Wide shot, camera tilts up. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 3,
+    "title": "창밖의 지구",
+    "desc": "창에 손 대고 지구를 바라봄",
+    "prompt": "Through the round cockpit window the baby presses both hands on the glass, looking at the glowing blue Earth below. Over-the-shoulder shot, then the baby's amazed face. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 1,
+    "title": "무중력",
+    "desc": "장난감과 함께 둥둥",
+    "prompt": "Zero gravity: the baby floats softly inside the cabin while toys and a small plush moon drift around; the baby laughs and reaches for them. Slow orbit shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 5,
+    "title": "로봇 친구",
+    "desc": "동그란 로봇이 별 쿠키를 건넴",
+    "prompt": "A friendly little round robot with glowing eyes waves at the baby and offers a floating star-shaped cookie. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 3,
+    "title": "고리 행성",
+    "desc": "파스텔 고리 행성 옆을 지나감",
+    "prompt": "Wide shot of the rocket flying past a planet with pastel rings and sparkling ice while stars twinkle. Tracking shot. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 5,
+    "title": "혜성",
+    "desc": "창밖을 지나는 무지개 혜성",
+    "prompt": "Close-up of the baby watching colorful comets streak past the window, eyes following them, mouth open in wonder. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 1,
+    "title": "달 착륙",
+    "desc": "부드럽게 착륙, 먼지가 천천히",
+    "prompt": "The rocket lands softly on a glowing moon surface with small craters while dust puffs up in slow motion. Wide shot. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 3,
+    "title": "달 위의 첫걸음",
+    "desc": "헬멧 없는 동화풍, 작은 발자국",
+    "prompt": "Storybook-style moon walk without a helmet: the baby toddles across the soft moon surface leaving tiny footprints, the Earth in the sky behind. Low tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 5,
+    "title": "깃발 꽂기",
+    "desc": "숫자 1 깃발을 꽂고 박수",
+    "prompt": "The baby plants a small flag with a big number 1 on it into the moon surface and claps. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 5,
+    "title": "통통 점프",
+    "desc": "낮은 중력에서 통통 튀어 오름",
+    "prompt": "The baby bounces in low gravity, floating up a little with each step and landing softly while giggling. Side angle, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 3,
+    "title": "케이크 별자리",
+    "desc": "별들이 이어져 케이크 모양 별자리",
+    "prompt": "Stars connect with lines of light to form a constellation shaped like a birthday cake while the baby points up at it. Wide shot, camera tilts up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "달 돌멩이",
+    "desc": "반짝이는 달 돌을 두 손으로",
+    "prompt": "Close-up of the baby holding a glowing moon rock that sparkles in the baby's hands. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "우주 생일 파티",
+    "desc": "로봇 친구와 숫자 1 초 케이크",
+    "prompt": "Back in the cabin, the baby sits before a small birthday cake with a single candle shaped like the number 1 while the robot friend claps; stars shine outside the window. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "하트 궤적을 그리며 지구로",
+    "prompt": "Wide shot of the rocket flying toward Earth through a field of stars, its glowing trail curling into a heart shape, leaving empty space for a title. Style: whimsical storybook space adventure, soft glowing colors, cute rounded toy-like spaceship, cinematic but gentle, nothing scary. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 5
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 10
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "seasons",
+  "name": "사계절 성장 여행",
+  "mood": "감성, 자연광",
+  "style": "natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "봄 · 벚꽃 피크닉",
+    "desc": "벚꽃 아래 돗자리, 꽃잎이 흩날림",
+    "prompt": "Spring: the baby sits on a picnic blanket under blooming cherry blossom trees as petals fall. Wide shot, slow push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "코끝의 꽃잎",
+    "desc": "꽃잎이 코에 내려앉아 까르르",
+    "prompt": "Close-up: a cherry blossom petal lands on the baby's nose; the baby blinks and laughs. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 3,
+    "title": "봄 · 꽃길 유모차",
+    "desc": "개나리와 튤립 길을 지나감",
+    "prompt": "Spring: the baby rides in a stroller along a path lined with yellow forsythia and tulips, looking around curiously. Side tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 5,
+    "title": "봄비",
+    "desc": "노란 우비, 창문의 빗방울 만지기",
+    "prompt": "Spring rain: the baby in a tiny yellow raincoat watches raindrops on a window and touches the glass. Close-up, soft light. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 1,
+    "title": "여름 · 바닷가",
+    "desc": "모자 쓰고 파도에 발가락",
+    "prompt": "Summer: the baby sits on the sand of a calm beach in a sun hat while gentle waves touch the baby's toes; the baby squeals with joy. Low angle, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 3,
+    "title": "여름 · 물놀이",
+    "desc": "마당 풀장에서 오리 인형과 첨벙",
+    "prompt": "Summer: the baby splashes in a small inflatable pool with rubber ducks in a sunny backyard. Top-down shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 5,
+    "title": "여름밤 반딧불",
+    "desc": "마루에서 반딧불에 손 뻗기",
+    "prompt": "Summer night: fireflies glow around the baby sitting on a wooden porch; the baby reaches toward one glowing firefly. Warm dusk light. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 5,
+    "title": "수박",
+    "desc": "볼에 수박즙 묻히고 싱글벙글",
+    "prompt": "Summer: close-up of the baby eating a slice of watermelon, juice on the cheeks, grinning. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 1,
+    "title": "가을 · 단풍",
+    "desc": "단풍 더미에서 잎을 던지며 놀기",
+    "prompt": "Autumn: the baby sits in a pile of orange and red maple leaves in a park, throwing leaves into the air. Medium shot, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 3,
+    "title": "가을 · 억새밭",
+    "desc": "노을 속 억새 사이를 기어감",
+    "prompt": "Autumn: the baby in a knitted sweater crawls through a field of golden pampas grass at sunset. Low tracking shot, backlight. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 5,
+    "title": "도토리",
+    "desc": "도토리와 단풍잎을 진지하게 관찰",
+    "prompt": "Autumn: close-up of the baby holding a big shiny acorn and a red leaf, examining them seriously. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 1,
+    "title": "겨울 · 첫눈",
+    "desc": "처음 보는 눈을 손과 입으로 받기",
+    "prompt": "Winter: the baby in a fluffy snowsuit sees falling snow for the first time, catching snowflakes with open hands and mouth. Medium close-up, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 3,
+    "title": "겨울 · 눈사람",
+    "desc": "작은 눈사람을 장갑 낀 손으로 토닥",
+    "prompt": "Winter: the baby sits next to a tiny snowman with a carrot nose, patting it with mittens. Wide shot, soft blue light. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "겨울밤 창가",
+    "desc": "눈 오는 창가에서 곰 인형 안기",
+    "prompt": "Winter night: the baby sits by a window with warm indoor lights and snow falling outside, hugging a plush bear. Slow dolly-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "첫 생일",
+    "desc": "사계절 소품에 둘러싸인 숫자 1 케이크",
+    "prompt": "A year later: the baby sits before a birthday cake with a number 1 candle, surrounded by small decorations of all four seasons: cherry blossoms, a seashell, a maple leaf and a snowflake. Warm indoor light, slow push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩 · 한 그루 나무",
+    "desc": "뒤의 나무가 봄→겨울로 변함",
+    "prompt": "One continuous shot: the same tree behind the smiling baby changes through spring, summer, autumn and winter, ending with empty space for a title. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: natural cinematic look, soft golden-hour light, gentle film grain, true-to-life colors, heartfelt family documentary feel. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 9
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 12
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 5
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "submarine",
+  "name": "바닷속 잠수함 모험",
+  "mood": "청량, 신기함",
+  "style": "bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "노란 잠수함",
+    "desc": "잔잔한 바다에서 거품과 함께 잠수",
+    "prompt": "Wide shot of a small round yellow submarine with big porthole windows bobbing on a calm turquoise sea, then gently diving under the surface with bubbles. Slow push-in. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "잠수함 안",
+    "desc": "줄무늬 세일러복, 작은 핸들 돌리기",
+    "prompt": "Inside a cozy submarine cabin with brass details and soft cushions, the baby in a little striped sailor outfit turns a small toy steering wheel and giggles. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "창밖의 고래",
+    "desc": "둥근 창에 손 대고 고래를 봄",
+    "prompt": "Close-up of the baby with both hands on a big round porthole as a friendly smiling whale swims past outside, the baby's face lit by blue light. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 3,
+    "title": "물고기 떼",
+    "desc": "알록달록 물고기가 소용돌이",
+    "prompt": "Outside the porthole a school of colorful tropical fish swirls in a spiral while the baby follows them with wide eyes. Over-the-shoulder shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 5,
+    "title": "아기 거북",
+    "desc": "거북이 지느러미로 인사, 아기도 손 흔듦",
+    "prompt": "A baby sea turtle swims close to the window and seems to wave a flipper; the baby waves back. Medium close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 3,
+    "title": "산호초",
+    "desc": "햇살 비치는 산호초 위를 지나감",
+    "prompt": "Wide shot of the submarine gliding over a vibrant coral reef with anemones and sea stars, sunbeams falling from above. Tracking shot. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 5,
+    "title": "문어 친구",
+    "desc": "파스텔 문어가 유리를 톡톡",
+    "prompt": "A curious pastel-colored octopus gently taps the glass; the baby taps back and laughs. Close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 1,
+    "title": "산호 궁전",
+    "desc": "조개 탑과 진주 조명의 궁전 도착",
+    "prompt": "The submarine arrives at a glowing coral palace with seashell towers and pearl lights. Wide shot, slow crane. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 5,
+    "title": "거품 돔",
+    "desc": "커다란 조개 쿠션에 앉아 거품 구경",
+    "prompt": "Inside a large air-filled bubble dome in the coral palace, the baby sits on a giant seashell cushion while bubbles float around. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 3,
+    "title": "진주 놀이",
+    "desc": "빛나는 진주를 두 손으로 굴림",
+    "prompt": "Close-up of the baby rolling a big shiny glowing pearl between both hands. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 1,
+    "title": "바닷속 생일 케이크",
+    "desc": "산호빛 케이크, 창밖에 모인 물고기",
+    "prompt": "A coral-colored birthday cake with a single candle shaped like the number 1 is placed before the baby inside the bubble dome while fish gather outside. Slow push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 5,
+    "title": "해파리 조명쇼",
+    "desc": "해파리가 무지개빛으로 반짝",
+    "prompt": "Glowing jellyfish outside the dome light up in rainbow colors like a party light show; the baby claps. Wide shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 3,
+    "title": "돌고래 축하",
+    "desc": "돌고래들이 돔 주위를 돌며 춤",
+    "prompt": "Dolphins leap and swim in a circle around the dome as if dancing for the birthday. Tracking shot. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "졸린 아기",
+    "desc": "조개 베개에 기대 하품",
+    "prompt": "The baby yawns sleepily, resting on a seashell pillow as soft blue light flickers. Close-up, slow dolly. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "수면 위로",
+    "desc": "햇살을 향해 떠오르는 잠수함",
+    "prompt": "The submarine rises toward the bright surface through sun rays, bubbles trailing behind. Camera looks up from below. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "노을 바다와 무지개, 제목 공간",
+    "prompt": "The submarine pops up on a calm sea at sunset with a rainbow in the sky; slow aerial pull-back, leaving space for a title. Style: bright whimsical underwater adventure seen from inside a cute submarine, clear turquoise water, soft caustic light patterns, storybook colors, no scary creatures. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 11
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "forest",
+  "name": "숲속 동물 친구들의 생일파티",
+  "mood": "귀여움, 포근함",
+  "style": "cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "숲속 오두막",
+    "desc": "햇살 드는 숲속 빈터의 작은 집",
+    "prompt": "Wide establishing shot of a small wooden cottage in a sunlit forest clearing with wildflowers and drifting butterflies. Slow push-in. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "문 밖으로 빼꼼",
+    "desc": "동그란 문으로 얼굴을 내밂",
+    "prompt": "The baby in a soft knitted outfit peeks out of the cottage's round door, blinking at the sunshine. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "토끼 친구",
+    "desc": "하얀 토끼가 손 냄새를 맡음",
+    "prompt": "A fluffy white bunny hops up and sniffs the baby's hand; the baby laughs. Low angle close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 3,
+    "title": "아기곰의 산딸기",
+    "desc": "아기곰이 산딸기 바구니를 가져옴",
+    "prompt": "A baby bear cub carries a basket of berries toward the baby and sits down beside the baby. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 5,
+    "title": "파티 준비",
+    "desc": "다람쥐들이 가랜드와 등을 매닮",
+    "prompt": "Squirrels hang paper bunting and small lanterns between tree branches, busy preparing a party. Wide shot, camera tilts up. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 3,
+    "title": "꽃 선물",
+    "desc": "여우와 아기사슴이 꽃을 놓고 감",
+    "prompt": "A little fox and a fawn bring flowers and place them in front of the baby. Medium shot, soft backlight. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 5,
+    "title": "이끼 둥지",
+    "desc": "무릎 위에 토끼, 꽃 둥지에 앉음",
+    "prompt": "The baby sits in a nest of moss and flowers while a bunny rests on the baby's lap. Close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 1,
+    "title": "나뭇잎 왕관",
+    "desc": "동물들이 나뭇잎 왕관을 씌워 줌",
+    "prompt": "The animals place a crown of green leaves and small flowers on the baby's head; the baby smiles proudly. Close-up, slow push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 5,
+    "title": "산딸기 나눠 먹기",
+    "desc": "볼에 산딸기즙, 아기곰과 나눔",
+    "prompt": "Close-up of the baby and the bear cub sharing berries, berry juice on the baby's cheeks. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 3,
+    "title": "새들의 노래",
+    "desc": "가지 위 새들을 보며 박수",
+    "prompt": "Birds sing on a branch above the baby while the baby looks up and claps. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 1,
+    "title": "숲속 케이크",
+    "desc": "그루터기 위 숫자 1 초, 반딧불 시작",
+    "prompt": "Dusk: a forest birthday cake decorated with berries and flowers and a single candle shaped like the number 1 sits on a tree stump in front of the baby while fireflies begin to glow. Slow dolly-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 1,
+    "title": "반딧불 축하",
+    "desc": "촛불이 꺼지며 반딧불 수백 마리가 솟음",
+    "prompt": "The candle goes out and hundreds of fireflies rise into the air around the baby and the animals. Wide shot, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 5,
+    "title": "동그랗게 춤",
+    "desc": "등불 아래 동물들과 흔들흔들",
+    "prompt": "The animals and the baby sit in a circle on the grass, swaying to music under glowing lanterns. Circular tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 3,
+    "title": "아기곰에 기대 잠들기",
+    "desc": "별 아래 아기곰에 기대어 잠듦",
+    "prompt": "The baby falls asleep leaning on the soft bear cub while the bunny curls up nearby under the stars. Close-up, soft night light. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 5,
+    "title": "부엉이",
+    "desc": "보름달 앞 부엉이가 지켜봄",
+    "prompt": "An owl on a branch watches over them, blinking slowly, a full moon behind it. Medium shot. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "반딧불 가득한 밤 숲, 제목 공간",
+    "prompt": "Wide shot of the glowing forest clearing at night with fireflies and a starry sky; the camera slowly rises above the trees, leaving space for a title. Style: cozy storybook forest, soft warm light filtering through leaves, realistic cute animals, gentle and magical, warm color palette. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 12
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 11
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 12
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "patissier",
+  "name": "꼬마 파티시에",
+  "mood": "달콤, 발랄",
+  "style": "bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "디저트 세상",
+    "desc": "생크림 언덕, 딸기 바위, 쿠키 길",
+    "prompt": "Wide shot of a giant dessert world: hills of whipped cream, strawberry boulders, chocolate rivers and cookie roads under a pastel sky. Slow aerial push-in. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 3,
+    "title": "마카롱 위의 셰프",
+    "desc": "작은 셰프 모자와 앞치마",
+    "prompt": "The baby in a tiny white chef hat and apron sits on a giant macaron, looking around with delight. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 5,
+    "title": "생크림 맛보기",
+    "desc": "생크림에 손가락 쿡, 표정 변화",
+    "prompt": "Close-up: the baby pokes a finger into a huge mound of whipped cream, tastes it, makes a funny face and then smiles. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 1,
+    "title": "쿠키 계단",
+    "desc": "셰프 모자 쓰고 쿠키 계단을 기어오름",
+    "prompt": "The baby in a tiny chef hat crawls up a staircase made of giant cookies, each step crunching softly. Low angle tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 5,
+    "title": "스프링클 비",
+    "desc": "하늘에서 스프링클이 비처럼",
+    "prompt": "Colorful sprinkles rain gently from the sky like confetti while the baby catches them with open hands. Slow motion, medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 3,
+    "title": "초콜릿 미끄럼틀",
+    "desc": "초콜릿 미끄럼틀로 마시멜로 더미에",
+    "prompt": "The baby slides down a smooth chocolate slide into a pile of soft marshmallows, giggling. Side angle. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 5,
+    "title": "거대한 딸기",
+    "desc": "몸만 한 딸기를 꼭 안음",
+    "prompt": "Close-up of the baby hugging a strawberry as big as the baby's body, green leaves on top. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 1,
+    "title": "크림 젓기",
+    "desc": "큰 나무 주걱으로 분홍 크림 젓기",
+    "prompt": "The baby in a chef hat stirs a giant mixing bowl of pink frosting with a big wooden spoon, frosting splashing playfully. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 5,
+    "title": "사탕 꽃",
+    "desc": "사탕 꽃이 빠르게 피어남",
+    "prompt": "Close-up time-lapse of candy flowers blooming open around the baby. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 3,
+    "title": "케이크 꾸미기",
+    "desc": "작은 손으로 딸기를 올림",
+    "prompt": "The baby carefully places strawberries on top of a cake with tiny hands, very focused. Close-up, shallow depth of field. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 1,
+    "title": "케이크 꼭대기",
+    "desc": "높은 케이크 위, 숫자 1 초가 켜짐",
+    "prompt": "The baby sits on top of a tall layered birthday cake as a candle shaped like the number 1 lights up beside the baby. Wide shot, slow crane up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 3,
+    "title": "스프링클 불꽃놀이",
+    "desc": "촛불이 꺼지며 스프링클이 폭죽처럼",
+    "prompt": "The candle goes out and colorful sprinkles burst into the air like fireworks around the baby. Medium shot, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 5,
+    "title": "젤리곰 친구들",
+    "desc": "젤리곰들이 케이크 주위를 돌며 춤",
+    "prompt": "Gummy bear friends dance in a circle around the cake where the baby sits. Wide shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "막대사탕",
+    "desc": "끈적한 볼로 막대사탕 핥기",
+    "prompt": "Close-up of the baby licking a big swirl lollipop, cheeks sticky, laughing. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "코에 묻은 크림",
+    "desc": "코에 크림 묻히고 손 흔들기",
+    "prompt": "The baby waves from the top of the cake with a dab of frosting on the nose. Medium close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "솜사탕빛 노을, 제목 공간",
+    "prompt": "Wide shot of the dessert world at sunset in cotton-candy colors; the camera pulls back, leaving space for a title. Style: bright candy-colored dessert world, soft pastel palette, glossy textures, playful miniature scale, cheerful lighting. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 4
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 11
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 12
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "retro",
+  "name": "레트로 필름 앨범",
+  "mood": "향수, 부모 세대 감성",
+  "style": "1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "비디오테이프 시작",
+    "desc": "지직거림 후 90년대 거실",
+    "prompt": "Opening styled like an old VHS tape: static flickers, then clears to reveal a cozy 1990s living room with patterned wallpaper, a wooden TV cabinet and afternoon sunlight. Handheld camera. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "캠코더 켜기",
+    "desc": "빨간 불 깜빡, 빛샘",
+    "prompt": "Close-up of a retro camcorder being switched on, its red light blinking, warm light leaks sweeping across the frame. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "풍선 속 아기",
+    "desc": "꽃무늬 카펫 위에서 카메라 보며 웃음",
+    "prompt": "The baby sits on a floral patterned carpet surrounded by colorful balloons, looking at the camera and laughing. Handheld medium shot, slight zoom in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 3,
+    "title": "보행기",
+    "desc": "90년대 보행기로 소파에 콩",
+    "prompt": "The baby rides a classic 1990s baby walker across the wooden floor and bumps gently into a sofa. Handheld tracking shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 5,
+    "title": "옛날 장난감",
+    "desc": "나무 실로폰과 양철 장난감",
+    "prompt": "The baby plays with a vintage wooden xylophone and tin toys on the floor. Top-down handheld shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 3,
+    "title": "아기 의자 식사",
+    "desc": "레트로 식탁의자에서 이유식",
+    "prompt": "The baby sits in a retro high chair eating from a plastic bowl with a spoon, food on the cheeks. Handheld medium close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 5,
+    "title": "낮잠",
+    "desc": "햇살 드는 소파, 꽃무늬 담요",
+    "prompt": "The baby naps on a floral blanket on a sunny sofa with dust particles floating in the sunlight. Slow handheld pan. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 1,
+    "title": "옛날 생일상",
+    "desc": "고깔모자와 생크림 케이크",
+    "prompt": "A retro birthday table with a cream cake, colorful paper cone hats and a single candle; the baby sits in front wearing a paper party hat. Handheld slow zoom. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 3,
+    "title": "촛불 끄기",
+    "desc": "박수와 색종이, 테이프 흔들림",
+    "prompt": "The candle goes out, blurred hands clap and confetti falls while the image flickers slightly like old tape. Medium shot. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 5,
+    "title": "선글라스 패션",
+    "desc": "큰 선글라스와 벙거지",
+    "prompt": "The baby tries on oversized sunglasses and a bucket hat, looking funny and serious. Handheld close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 5,
+    "title": "놀이터 스프링 말",
+    "desc": "스프링 말을 타고 흔들흔들",
+    "prompt": "An outdoor 1990s playground: the baby rocks back and forth on a small spring rider horse. Handheld medium shot, warm faded sunlight. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 3,
+    "title": "안아 줘",
+    "desc": "두 팔 벌리고 카메라로 걸어옴",
+    "prompt": "The baby toddles toward the camera with open arms across a sunlit yard. Handheld, slight zoom out as the baby approaches. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 5,
+    "title": "앨범 넘기기",
+    "desc": "빈 사진 틀이 빛남 (실제 사진 합성용)",
+    "prompt": "Close-up of old photo album pages turning slowly, with empty photo frames glowing softly. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 1,
+    "title": "현재로",
+    "desc": "테이프 되감기 → 요즘 밝은 거실",
+    "prompt": "The tape rewinds with a flicker transition and the room becomes a bright modern living room; the same baby sits there smiling. Seamless transition. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "손 키스",
+    "desc": "요즘 화질로 손 키스 → 다시 VHS",
+    "prompt": "Close-up: the baby blows a kiss toward the camera in clean modern light, then the image softly returns to VHS grain. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "옛날 TV 지직 → 따뜻한 흰 화면",
+    "prompt": "An old TV screen in the living room shows static, then fades to warm white, leaving space for a title. Style: 1990s home video camcorder look, VHS grain and slight color bleed, warm faded colors, soft light leaks, nostalgic family film, no on-screen date stamp. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "balloon",
+  "name": "열기구 꿈나라 여행",
+  "mood": "서정적, 여유",
+  "style": "dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "창가의 낮잠",
+    "desc": "종이 열기구 모빌 아래 낮잠",
+    "prompt": "The baby naps by a sunny window under a slowly turning mobile of paper hot-air balloons. Slow push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 3,
+    "title": "모빌이 진짜로",
+    "desc": "종이 열기구가 빛나며 진짜로 커짐",
+    "prompt": "One paper balloon from the mobile glows and grows into a real colorful hot-air balloon outside the window. Wide shot, magical transformation. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "이륙",
+    "desc": "무지개 열기구 바구니에서 웃음",
+    "prompt": "The baby sits in the wicker basket of a rainbow-striped hot-air balloon, holding the edge and smiling as it lifts off from a green hill. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 5,
+    "title": "구름 만지기",
+    "desc": "지나가는 구름을 손으로",
+    "prompt": "Close-up of the baby's hands touching a passing puffy cloud that feels soft like cotton; the baby giggles. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 3,
+    "title": "장난감 마을 위",
+    "desc": "알록달록 지붕 위를 둥실",
+    "prompt": "Wide aerial shot of the balloon floating over a small toy-like town with colorful rooftops. Slow tracking shot. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 5,
+    "title": "새 떼",
+    "desc": "하얀 새들이 옆에서 함께 날아감",
+    "prompt": "A flock of white birds flies alongside the basket while the baby points at them excitedly. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 1,
+    "title": "설산의 아침",
+    "desc": "분홍빛 설산 봉우리를 지나감",
+    "prompt": "Wide aerial shot of the balloon gliding past snowy mountain peaks glowing pink at sunrise. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 5,
+    "title": "폭포와 무지개",
+    "desc": "물안개 무지개에 손 뻗기",
+    "prompt": "The balloon passes a waterfall with a small rainbow in the mist; the baby reaches toward the rainbow. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 3,
+    "title": "무지개 통과",
+    "desc": "무지개 아치를 통과, 얼굴에 색이 비침",
+    "prompt": "The balloon floats through a big rainbow arch, its colors reflecting on the baby's face. Slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 5,
+    "title": "열기구 친구들",
+    "desc": "파스텔 열기구들이 함께 떠다님",
+    "prompt": "Other small pastel hot-air balloons float nearby in the sky like friends. Wide shot. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 1,
+    "title": "노을 생일",
+    "desc": "바구니 안 숫자 1 초 케이크",
+    "prompt": "At sunset a small birthday cake with a single candle shaped like the number 1 sits in the basket; the baby gazes at the flame in golden light. Close-up, slow push-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 3,
+    "title": "밤하늘",
+    "desc": "별이 뜨고 열기구가 따뜻하게 빛남",
+    "prompt": "Night falls, stars appear and the balloon glows warmly while the baby looks up at the starry sky. Wide shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 5,
+    "title": "별똥별",
+    "desc": "별똥별에 박수",
+    "prompt": "Shooting stars streak across the sky and the baby claps. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "초승달 착륙",
+    "desc": "초승달에 내려앉아 손 흔들기",
+    "prompt": "The balloon lands softly on a crescent moon and the baby waves from the basket. Wide shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "꿈에서 깸",
+    "desc": "열기구 인형을 안고 깨어나 미소",
+    "prompt": "Back in the bedroom, the baby wakes up hugging a small plush hot-air balloon and smiles. Slow dolly-in. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "별밤 마을 위로 멀어지는 열기구",
+    "prompt": "Wide shot of the rainbow balloon drifting away into a starry sky over the sleeping town, leaving space for a title. Style: dreamy soft painterly look, pastel sky gradients, gentle lens flares, peaceful and airy, storybook cinematic. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 7
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 11
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 12
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "awards",
+  "name": "첫돌 영화 시상식",
+  "mood": "유쾌, SNS 공유용",
+  "style": "glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny",
+  "clips": [
+   {
+    "no": 1,
+    "tier": 1,
+    "title": "레드카펫",
+    "desc": "밤의 극장 입구, 금빛 조명",
+    "prompt": "Wide shot of a glamorous theater entrance at night with a red carpet, velvet ropes, golden lights and a crowd of blurred silhouettes. Slow push-in. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 2,
+    "tier": 5,
+    "title": "리무진 도착",
+    "desc": "장난감 같은 리무진 문이 열림",
+    "prompt": "A small toy-like limousine pulls up to the red carpet and its door opens slowly. Low angle shot. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 3,
+    "tier": 1,
+    "title": "레드카펫 입장",
+    "desc": "턱시도(또는 드레스), 플래시 세례",
+    "prompt": "The baby in a tiny tuxedo crawls confidently down the red carpet as camera flashes pop. Low tracking shot, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 4,
+    "tier": 3,
+    "title": "스타의 눈빛",
+    "desc": "멈춰서 진지한 표정으로 카메라 응시",
+    "prompt": "The baby pauses on the red carpet and looks at the cameras with a serious star face while flashes go off. Medium close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 5,
+    "tier": 5,
+    "title": "선글라스",
+    "desc": "작은 선글라스 끼고 손 흔들기",
+    "prompt": "The baby wears tiny sunglasses and waves to the crowd like a celebrity. Close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 6,
+    "tier": 3,
+    "title": "시상식장",
+    "desc": "스포트라이트와 금빛 커튼",
+    "prompt": "Inside a grand theater hall, spotlights sweep across the stage and a big golden curtain. Wide shot. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 7,
+    "tier": 5,
+    "title": "객석",
+    "desc": "빨간 벨벳 의자에서 다리 달랑달랑 박수",
+    "prompt": "The baby sits in a plush red velvet chair in the front row, legs dangling, clapping. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 8,
+    "tier": 1,
+    "title": "수상자 발표",
+    "desc": "스포트라이트가 아기에게, 꽃가루",
+    "prompt": "A spotlight lands on the baby and confetti falls as if the baby has just been announced as the winner. Wide shot, slow crane. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 9,
+    "tier": 3,
+    "title": "트로피 받기",
+    "desc": "숫자 1 모양 금색 트로피",
+    "prompt": "The baby is carried onto the stage and receives a golden trophy shaped like the number 1, holding it with both hands. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 10,
+    "tier": 5,
+    "title": "트로피 깨물기",
+    "desc": "트로피를 깨물어 보고 웃음",
+    "prompt": "Close-up of the baby trying to bite the trophy, then laughing. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 11,
+    "tier": 1,
+    "title": "기립박수",
+    "desc": "트로피를 번쩍, 금빛 꽃가루",
+    "prompt": "The baby holds a golden number 1 trophy high as golden confetti and streamers fall and blurred silhouettes give a standing ovation. Medium shot, slow motion. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 12,
+    "tier": 3,
+    "title": "백스테이지 케이크",
+    "desc": "꽃다발 사이 숫자 1 초 케이크",
+    "prompt": "Backstage, a birthday cake with a single candle shaped like the number 1 is brought to the baby among bouquets of flowers. Medium shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 13,
+    "tier": 5,
+    "title": "포토월",
+    "desc": "금빛 배경 앞에서 트로피 들고 포즈",
+    "prompt": "The baby poses with the trophy in front of a golden backdrop while photographers' flashes go off. Close-up, rapid flashes. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 14,
+    "tier": 5,
+    "title": "무대 위 댄스",
+    "desc": "색색 조명 아래 신나게 춤",
+    "prompt": "The baby dances happily on the stage under colorful spotlights. Wide shot. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 15,
+    "tier": 1,
+    "title": "손 키스 인사",
+    "desc": "관객에게 손 키스와 손 흔들기",
+    "prompt": "The baby blows a kiss to the audience and waves goodbye. Close-up. The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone exactly the same as the reference. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   },
+   {
+    "no": 16,
+    "tier": 1,
+    "title": "엔딩",
+    "desc": "커튼이 닫히고 빈 무대에 조명 (크레딧 공간)",
+    "prompt": "The theater curtain slowly closes, then a warm spotlight lights the empty stage, leaving space for end credits. Wide shot. Style: glamorous award-show look, warm spotlights, golden and red color palette, lens flares, cinematic shallow depth of field, playful and funny. 8-second shot, 16:9. No text, no subtitles, no logos, no dialogue."
+   }
+  ],
+  "versions": {
+   "1": {
+    "label": "1분",
+    "ai_clips": 6,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "0:36",
+      "seconds": 12,
+      "photos": 2,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:36",
+      "end": "0:44",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "0:44",
+      "end": "0:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "0:52",
+      "end": "1:00",
+      "clip": 16
+     }
+    ]
+   },
+   "3": {
+    "label": "3분",
+    "ai_clips": 10,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:24",
+      "end": "1:14",
+      "seconds": 50,
+      "photos": 10,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:14",
+      "end": "1:22",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:22",
+      "end": "1:30",
+      "clip": 8
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 11
+     },
+     {
+      "type": "photo",
+      "start": "1:46",
+      "end": "2:36",
+      "seconds": 50,
+      "photos": 10,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:36",
+      "end": "2:44",
+      "clip": 12
+     },
+     {
+      "type": "ai",
+      "start": "2:44",
+      "end": "2:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "2:52",
+      "end": "3:00",
+      "clip": 16
+     }
+    ]
+   },
+   "5": {
+    "label": "5분",
+    "ai_clips": 16,
+    "timeline": [
+     {
+      "type": "ai",
+      "start": "0:00",
+      "end": "0:08",
+      "clip": 1
+     },
+     {
+      "type": "ai",
+      "start": "0:08",
+      "end": "0:16",
+      "clip": 2
+     },
+     {
+      "type": "ai",
+      "start": "0:16",
+      "end": "0:24",
+      "clip": 3
+     },
+     {
+      "type": "ai",
+      "start": "0:24",
+      "end": "0:32",
+      "clip": 4
+     },
+     {
+      "type": "photo",
+      "start": "0:32",
+      "end": "1:30",
+      "seconds": 58,
+      "photos": 12,
+      "block": 1
+     },
+     {
+      "type": "ai",
+      "start": "1:30",
+      "end": "1:38",
+      "clip": 5
+     },
+     {
+      "type": "ai",
+      "start": "1:38",
+      "end": "1:46",
+      "clip": 6
+     },
+     {
+      "type": "ai",
+      "start": "1:46",
+      "end": "1:54",
+      "clip": 7
+     },
+     {
+      "type": "ai",
+      "start": "1:54",
+      "end": "2:02",
+      "clip": 8
+     },
+     {
+      "type": "photo",
+      "start": "2:02",
+      "end": "2:59",
+      "seconds": 57,
+      "photos": 11,
+      "block": 2
+     },
+     {
+      "type": "ai",
+      "start": "2:59",
+      "end": "3:07",
+      "clip": 9
+     },
+     {
+      "type": "ai",
+      "start": "3:07",
+      "end": "3:15",
+      "clip": 10
+     },
+     {
+      "type": "ai",
+      "start": "3:15",
+      "end": "3:23",
+      "clip": 11
+     },
+     {
+      "type": "ai",
+      "start": "3:23",
+      "end": "3:31",
+      "clip": 12
+     },
+     {
+      "type": "photo",
+      "start": "3:31",
+      "end": "4:28",
+      "seconds": 57,
+      "photos": 11,
+      "block": 3
+     },
+     {
+      "type": "ai",
+      "start": "4:28",
+      "end": "4:36",
+      "clip": 13
+     },
+     {
+      "type": "ai",
+      "start": "4:36",
+      "end": "4:44",
+      "clip": 14
+     },
+     {
+      "type": "ai",
+      "start": "4:44",
+      "end": "4:52",
+      "clip": 15
+     },
+     {
+      "type": "ai",
+      "start": "4:52",
+      "end": "5:00",
+      "clip": 16
+     }
+    ]
+   }
+  }
+ }
+]
