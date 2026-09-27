@@ -60,8 +60,30 @@ FLOW = [
 # 사진 구간 길이(초): 길이별로 다르게
 PHOTO_SECONDS = {"birth": {5: 30}, "memory": {3: 20, 5: 40}, "letter": {3: 25, 5: 40}}
 
-# "레퍼런스 얼굴을 똑같이" 같은 표현은 실존 인물 재현으로 읽혀 Flow가 거절할 수 있어서 부드럽게 쓴다.
-FACE = "The baby character looks like the cute toddler in the reference image, with the same hairstyle and outfit colors."
+# 얼굴 정확도: 고객 사진 → 이미지 편집(Nano Banana)으로 "얼굴 기준 이미지"를 먼저 만들고,
+# 그 이미지를 첫 프레임으로 넣어 영상을 만든다(Frames to Video). 영상 프롬프트는 첫 프레임의 얼굴을 유지하라고만 쓴다.
+# 실제 사진을 두고 "똑같이 재현"하라는 표현은 Flow가 실존 인물 재현으로 보고 거절할 수 있어서 영상 쪽에는 쓰지 않는다.
+FACE = (
+    "Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, "
+    "hair and skin tone, with no change to the face."
+)
+
+KEEP = (
+    "Edit this photo. Keep the baby's face exactly as it is in the photo: same face shape, eyes, eyelids, eyebrows, "
+    "nose, lips, ears, cheeks, skin tone, hair and hairline. Do not beautify, smooth, slim, age up or restyle the face, "
+    "and keep realistic skin texture."
+)
+
+
+def still_prompt(c, scene=None):
+    scene = scene or (
+        f"the baby, wearing {c['outfit']}, sits facing the camera. Setting: {c['set'][0].lower() + c['set'][1:]}"
+    )
+    return (
+        f"{KEEP} Change only the clothes, pose and background: {scene[0].lower() + scene[1:].rstrip('.')}. "
+        f"Face clearly visible and evenly lit, looking toward the camera, mouth gently closed. "
+        f"Lighting and mood: {c['style']}. Medium close-up, 16:9."
+    )
 
 # Flow에 넣는 대사에는 실명·별명을 넣지 않는다(유명인 정책에 걸림). 입모양만 맞으면 되므로
 # 이름 칸은 비슷한 길이의 일반 단어로 바꾸고, 진짜 이름은 TTS 대본에만 들어간다.
@@ -102,10 +124,12 @@ def build():
                 line = line(c)
             item = {"no": no, "tier": tier, "kind": kind, "q": q.get(qkey) if qkey else None}
             if kind == "open":
-                item.update(title="오프닝", line=None, prompt=action_prompt(c, c["opener"]))
+                item.update(title="오프닝", line=None, prompt=action_prompt(c, c["opener"]),
+                            still=still_prompt(c, f"{c['opener']} The baby wears {c['outfit']}"))
             elif kind == "vo":
                 visual, vo = line
-                item.update(title="행동 장면 (목소리만)", line=vo, prompt=action_prompt(c, visual))
+                item.update(title="행동 장면 (목소리만)", line=vo, prompt=action_prompt(c, visual),
+                            still=still_prompt(c, f"{visual} The baby wears {c['outfit']}"))
             elif kind == "photo":
                 item.update(title="고객 사진 구간", line=line, prompt=None, seconds=PHOTO_SECONDS[qkey])
             else:
@@ -113,14 +137,15 @@ def build():
             clips.append(item)
         out.append({
             "id": c["id"], "name": c["name"], "show": c["show"], "style": c["style"],
-            "outfit": c["outfit"], "set": c["set"], "clips": clips,
+            "outfit": c["outfit"], "set": c["set"], "still": still_prompt(c), "clips": clips,
         })
 
     data = {"fields": [{"key": k, "label": l, "example": e} for k, l, e in FIELDS], "concepts": out}
     (HERE / "interview.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 
     for n, c in enumerate(out, start=1):
-        lines = [f"# {n:02d}. {c['name']} · {c['show']}", "", "tier 1 = 1분·3분·5분, 3 = 3분·5분, 5 = 5분만", ""]
+        lines = [f"# {n:02d}. {c['name']} · {c['show']}", "", "tier 1 = 1분·3분·5분, 3 = 3분·5분, 5 = 5분만", "",
+                 "## 00 얼굴 기준 이미지 (말하는 장면 전부 이 이미지를 첫 프레임으로)", "", "```", c["still"], "```", ""]
         for clip in c["clips"]:
             head = f"## {clip['no']:02d} [{clip['tier']}] {clip['title']}"
             if clip["q"]:
@@ -130,6 +155,8 @@ def build():
                 lines.append(f"대사: {clip['line']}")
             if clip["kind"] == "photo":
                 lines.append("길이: " + ", ".join(f"{k}분 {v}초" for k, v in clip["seconds"].items()))
+            if clip.get("still"):
+                lines += ["", "첫 프레임 이미지:", "```", clip["still"], "```"]
             if clip["prompt"]:
                 if clip.get("veo") and clip["veo"] != clip["line"]:
                     lines.append(f"Flow용 대사(이름 뺌): {clip['veo']}")
