@@ -28,10 +28,10 @@ A professional TV news studio with a sleek anchor desk, blue studio lights and b
 
 ## 03 [1] 말하는 장면
 대사: 저는 돌잔치 현장의 {이름} 앵커입니다.
-Flow용 대사(이름 뺌): 저는 돌잔치 현장의 우리 아기 앵커입니다.
+Flow용 대사(성 뺀 이름): 저는 돌잔치 현장의 {애칭} 앵커입니다.
 
 ```
-A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "저는 돌잔치 현장의 우리 아기 앵커입니다." then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "저는 돌잔치 현장의 {애칭} 앵커입니다." then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 04 [5] 고객 사진 구간 · Q. 태어난 날, 기억나요?
@@ -40,15 +40,15 @@ A professional TV news studio with a sleek anchor desk, blue studio lights and b
 
 ## 05 [5] 말하는 장면 · Q. 현장 인터뷰, 이름이 어떻게 되시죠?
 대사: 저는 한 살, {이름}입니다.
-Flow용 대사(이름 뺌): 저는 한 살, 우리 아기입니다.
+Flow용 대사(성 뺀 이름): 저는 한 살, {애칭}입니다.
 
 ```
-A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, 우리 아기입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, {애칭}입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 06 [1] 말하는 장면 · Q. 엄마 아빠는 누구예요?
 대사: 엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.
-Flow용 대사(이름 뺌): 엄마, 아빠의 아기예요.
+Flow용 대사(성 뺀 이름): 엄마, 아빠의 아기예요.
 
 ```
 A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "엄마, 아빠의 아기예요." then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
@@ -56,10 +56,9 @@ A professional TV news studio with a sleek anchor desk, blue studio lights and b
 
 ## 07 [3] 말하는 장면 · Q. 집에서는 뭐라고 불러요?
 대사: 집에서는 제 별명이 '{별명}'래요.
-Flow용 대사(이름 뺌): 집에서는 제 별명이 '아가'래요.
 
 ```
-A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "집에서는 제 별명이 '아가'래요." then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "집에서는 제 별명이 '{별명}'래요." then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 08 [3] 말하는 장면 · Q. 올 한 해를 돌아본다면요?
@@ -148,10 +147,9 @@ A professional TV news studio with a sleek anchor desk, blue studio lights and b
 
 ## 19 [5] 말하는 장면 · Q. 우리 가족을 더 소개해 주세요!
 대사: 그리고 우리 집엔 {가족소개}도 있어요!
-Flow용 대사(이름 뺌): 그리고 우리 집엔 우리 가족도 있어요!
 
 ```
-A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "그리고 우리 집엔 우리 가족도 있어요!" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "그리고 우리 집엔 {가족소개}도 있어요!" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 20 [3] 말하는 장면 · Q. 오늘 가장 기대되는 건요?
@@ -188,16 +186,14 @@ A professional TV news studio with a sleek anchor desk, blue studio lights and b
 
 ## 25 [3] 말하는 장면
 대사: 와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!
-Flow용 대사(이름 뺌): 와 주신 모든 분들 감사합니다! 우리 아기 많이 응원해 주세요!
 
 ```
-A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "와 주신 모든 분들 감사합니다! 우리 아기 많이 응원해 주세요!" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 26 [1] 말하는 장면
 대사: 이상 {애칭} 앵커였습니다. 식사 꼭 하고 가세요~
-Flow용 대사(이름 뺌): 이상 우리 아기 앵커였습니다. 식사 꼭 하고 가세요~
 
 ```
-A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "이상 우리 아기 앵커였습니다. 식사 꼭 하고 가세요~" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: "이상 {애칭} 앵커였습니다. 식사 꼭 하고 가세요~" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```

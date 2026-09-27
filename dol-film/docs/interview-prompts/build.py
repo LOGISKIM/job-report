@@ -85,11 +85,10 @@ def still_prompt(c, scene=None):
         f"Lighting and mood: {c['style']}. Medium close-up, 16:9."
     )
 
-# Flow에 넣는 대사에는 실명·별명을 넣지 않는다(유명인 정책에 걸림). 입모양만 맞으면 되므로
-# 이름 칸은 비슷한 길이의 일반 단어로 바꾸고, 진짜 이름은 TTS 대본에만 들어간다.
+# Flow에 넣는 대사에는 성까지 붙은 실명을 넣지 않는다(유명인 정책에 걸림). 아기는 성 뺀 이름({애칭})으로 부르고,
+# 엄마·아빠 실명은 빼서 TTS 대본에만 남긴다.
 NEUTRAL = [
-    (r"\s*\{엄마이름\}", ""), (r"\s*\{아빠이름\}", ""),
-    (r"\{이름\}", "우리 아기"), (r"\{애칭\}", "우리 아기"), (r"\{별명\}", "아가"), (r"\{가족소개\}", "우리 가족"),
+    (r"\s*\{엄마이름\}", ""), (r"\s*\{아빠이름\}", ""), (r"\{이름\}", "{애칭}"),
 ]
 
 
@@ -159,7 +158,7 @@ def build():
                 lines += ["", "첫 프레임 이미지:", "```", clip["still"], "```"]
             if clip["prompt"]:
                 if clip.get("veo") and clip["veo"] != clip["line"]:
-                    lines.append(f"Flow용 대사(이름 뺌): {clip['veo']}")
+                    lines.append(f"Flow용 대사(성 뺀 이름): {clip['veo']}")
                 lines += ["", "```", clip["prompt"].replace("{LINE}", clip.get("veo") or ""), "```"]
             lines.append("")
         (HERE / f"{n:02d}-{c['id']}.md").write_text("\n".join(lines), encoding="utf-8")

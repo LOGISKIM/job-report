@@ -21,18 +21,17 @@ The baby CEO spins slowly in a big leather office chair, stops, and points at th
 
 ## 02 [1] 말하는 장면
 대사: 안녕하세요! 오늘의 주인공 {이름}입니다.
-Flow용 대사(이름 뺌): 안녕하세요! 오늘의 주인공 우리 아기입니다.
+Flow용 대사(성 뺀 이름): 안녕하세요! 오늘의 주인공 {애칭}입니다.
 
 ```
-A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "안녕하세요! 오늘의 주인공 우리 아기입니다." then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
+A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "안녕하세요! 오늘의 주인공 {애칭}입니다." then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 03 [1] 말하는 장면
 대사: {애칭} 주식회사 창립 1주년에 오신 걸 환영합니다!
-Flow용 대사(이름 뺌): 우리 아기 주식회사 창립 1주년에 오신 걸 환영합니다!
 
 ```
-A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "우리 아기 주식회사 창립 1주년에 오신 걸 환영합니다!" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
+A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "{애칭} 주식회사 창립 1주년에 오신 걸 환영합니다!" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 04 [5] 고객 사진 구간 · Q. 태어난 날, 기억나요?
@@ -41,15 +40,15 @@ A luxurious executive office with a big wooden desk, a leather chair and a city 
 
 ## 05 [5] 말하는 장면 · Q. 이름이 뭐예요?
 대사: 저는 한 살, {이름}입니다.
-Flow용 대사(이름 뺌): 저는 한 살, 우리 아기입니다.
+Flow용 대사(성 뺀 이름): 저는 한 살, {애칭}입니다.
 
 ```
-A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, 우리 아기입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
+A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, {애칭}입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 06 [1] 말하는 장면 · Q. 엄마 아빠는 누구예요?
 대사: 엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.
-Flow용 대사(이름 뺌): 엄마, 아빠의 아기예요.
+Flow용 대사(성 뺀 이름): 엄마, 아빠의 아기예요.
 
 ```
 A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "엄마, 아빠의 아기예요." then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
@@ -57,10 +56,9 @@ A luxurious executive office with a big wooden desk, a leather chair and a city 
 
 ## 07 [3] 말하는 장면 · Q. 집에서는 뭐라고 불러요?
 대사: 집에서는 제 별명이 '{별명}'래요.
-Flow용 대사(이름 뺌): 집에서는 제 별명이 '아가'래요.
 
 ```
-A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "집에서는 제 별명이 '아가'래요." then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
+A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "집에서는 제 별명이 '{별명}'래요." then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 08 [3] 말하는 장면 · Q. 올해 실적은 어땠나요?
@@ -149,10 +147,9 @@ A luxurious executive office with a big wooden desk, a leather chair and a city 
 
 ## 19 [5] 말하는 장면 · Q. 우리 가족을 더 소개해 주세요!
 대사: 그리고 우리 집엔 {가족소개}도 있어요!
-Flow용 대사(이름 뺌): 그리고 우리 집엔 우리 가족도 있어요!
 
 ```
-A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "그리고 우리 집엔 우리 가족도 있어요!" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
+A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "그리고 우리 집엔 {가족소개}도 있어요!" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 20 [3] 말하는 장면 · Q. 오늘 가장 기대되는 건요?
@@ -189,10 +186,9 @@ A luxurious executive office with a big wooden desk, a leather chair and a city 
 
 ## 25 [3] 말하는 장면
 대사: 와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!
-Flow용 대사(이름 뺌): 와 주신 모든 분들 감사합니다! 우리 아기 많이 응원해 주세요!
 
 ```
-A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "와 주신 모든 분들 감사합니다! 우리 아기 많이 응원해 주세요!" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
+A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 26 [1] 말하는 장면
