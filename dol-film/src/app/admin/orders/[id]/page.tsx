@@ -5,7 +5,7 @@ import { audit, requireAdmin } from "@/lib/admin-auth";
 import { CUSTOM, MUSIC, STATUS_LABEL, getTemplate, won } from "@/lib/catalog";
 import { formatKDateTime } from "@/lib/dates";
 import { buildPrompts } from "@/lib/prompts";
-import { listOrderPhotos } from "@/lib/storage";
+import { listOrderPhotos, signedReadUrl } from "@/lib/storage";
 import { AdminControls } from "./controls";
 
 export const metadata: Metadata = { title: "주문 상세 · 관리자", robots: { index: false, follow: false } };
@@ -22,10 +22,9 @@ export default async function AdminOrderPage(props: PageProps<"/admin/orders/[id
   // 사진은 10분짜리 링크로만 보여 주고, 열람 기록을 남긴다.
   let photos: string[] = [];
   if (!o.photos_deleted_at) {
-    const paths = await listOrderPhotos(admin, o.user_id, o.id);
+    const paths = await listOrderPhotos(o.user_id, o.id);
     if (paths.length) {
-      const { data } = await admin.storage.from("photos").createSignedUrls(paths, 600);
-      photos = (data ?? []).flatMap((d) => (d.signedUrl ? [d.signedUrl] : []));
+      photos = await Promise.all(paths.map((p) => signedReadUrl(p, 600)));
       await audit(user.id, o.id, "view_photos");
     }
   }

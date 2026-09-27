@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { cancelOrder, createResultUpload, markDelivered, setStatus } from "@/lib/actions/admin";
-import { createClient } from "@/lib/supabase/client";
+import { uploadWithPolicy } from "@/lib/upload";
 
 const STEPS = [
   ["paid", "접수 완료"],
@@ -33,11 +33,11 @@ export function AdminControls({ orderId, status, hasResult }: { orderId: string;
       setMsg("영상을 올리고 있어요…");
       const prep = await createResultUpload(orderId);
       if (!prep.ok) return setMsg(prep.error);
-      const supabase = createClient();
-      const { error } = await supabase.storage
-        .from("results")
-        .uploadToSignedUrl(prep.path, prep.token, file, { contentType: "video/mp4" });
-      if (error) return setMsg(`업로드 실패: ${error.message}`);
+      try {
+        await uploadWithPolicy(prep.policy, file);
+      } catch (e) {
+        return setMsg(e instanceof Error ? e.message : "업로드 실패");
+      }
       const res = await markDelivered(orderId, prep.path);
       setMsg(res.ok ? "납품했어요. 고객에게 알림톡이 나가요" : res.error);
       router.refresh();

@@ -55,24 +55,28 @@ export function fakeSupabase(tables: Record<string, Row[]>) {
     return b;
   }
 
+  // 파일 저장소(Google Cloud Storage) 대역: 전체 경로 목록으로 흉내 낸다.
+  const files: string[] = [];
   const removed: string[] = [];
-  const storageFiles: Record<string, string[]> = {};
-  const storage = {
-    from: (bucket: string) => ({
-      list: async (folder: string) => ({
-        data: (storageFiles[bucket] ?? [])
-          .filter((p) => p.startsWith(folder + "/"))
-          .map((p) => ({ name: p.slice(folder.length + 1) })),
-        error: null,
-      }),
-      remove: async (paths: string[]) => {
-        removed.push(...paths.map((p) => `${bucket}:${p}`));
-        storageFiles[bucket] = (storageFiles[bucket] ?? []).filter((p) => !paths.includes(p));
-        return { data: null, error: null };
-      },
-      createSignedUploadUrl: async (path: string) => ({ data: { path, token: "tok-" + path }, error: null }),
+  const written: Record<string, string> = {};
+  const driver = {
+    list: async (prefix: string) => files.filter((p) => p.startsWith(prefix.endsWith("/") ? prefix : prefix + "/")),
+    remove: async (paths: string[]) => {
+      removed.push(...paths);
+      for (const p of paths) {
+        const i = files.indexOf(p);
+        if (i >= 0) files.splice(i, 1);
+      }
+    },
+    signedReadUrl: async (path: string, ttl: number) => `https://signed.test/${path}?ttl=${ttl}`,
+    uploadPolicy: async (path: string, contentType: string, maxBytes: number) => ({
+      url: "https://upload.test",
+      fields: { key: path, "Content-Type": contentType, max: String(maxBytes) },
     }),
+    write: async (path: string, body: string) => {
+      written[path] = body;
+    },
   };
 
-  return { client: { from: builder, storage }, tables, writes, removed, storageFiles };
+  return { client: { from: builder }, driver, tables, writes, files, removed, written };
 }

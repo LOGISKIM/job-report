@@ -8,7 +8,7 @@ import { createOrder, finalizeUploads, prepareUploads } from "@/lib/actions/orde
 import { CUSTOM, MOODS, MUSIC, PHOTO_MAX, PHOTO_MIN, getTemplate } from "@/lib/catalog";
 import { CONSENTS } from "@/lib/consents";
 import { sanitizePhoto } from "@/lib/image";
-import { createClient } from "@/lib/supabase/client";
+import { uploadWithPolicy } from "@/lib/upload";
 
 type Step = "mood" | "scene" | "photos" | "caption" | "consent";
 type Photo = { blob: Blob; url: string };
@@ -101,16 +101,12 @@ export function Wizard({ templateId }: { templateId: string }) {
       setBusy("사진을 안전하게 올리고 있어요");
       const prep = await prepareUploads(orderId, photos.length);
       if (!prep.ok) throw new Error(prep.error);
-      const supabase = createClient();
       let done = 0;
       // 모든 업로드가 끝날 때까지 기다린 뒤에 성공 여부를 본다. 하나가 실패해도 나머지가 뒤늦게 올라가
       // 다시 시도한 업로드와 섞이는 일이 없게 하기 위해서다.
       const results = await Promise.allSettled(
-        prep.uploads.map(async (u, i) => {
-          const { error } = await supabase.storage
-            .from("photos")
-            .uploadToSignedUrl(u.path, u.token, photos[i].blob, { contentType: "image/jpeg" });
-          if (error) throw error;
+        prep.uploads.map(async (policy, i) => {
+          await uploadWithPolicy(policy, photos[i].blob);
           done++;
           setBusy(`사진을 안전하게 올리고 있어요 (${done}/${photos.length})`);
         }),

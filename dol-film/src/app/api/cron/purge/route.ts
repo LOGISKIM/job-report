@@ -1,7 +1,7 @@
 import { timingSafeEqual } from "node:crypto";
 import { NextResponse, type NextRequest } from "next/server";
 import { ABANDON_AFTER_MS, DAY_MS, ERASED_FIELDS } from "@/lib/retention";
-import { photoFolder, removeFolder, removeOrderPhotos, removeResult } from "@/lib/storage";
+import { photoFolder, removeFile, removeFolder, removeOrderPhotos, resultFolder, writeFile } from "@/lib/storage";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 // 매일 한 번 Vercel Cron이 호출한다. 보관 기간이 지난 사진과 영상을 지운다.
@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
   const abandonCutoff = new Date(nowDate.getTime() - ABANDON_AFTER_MS).toISOString();
   const overdueCutoff = new Date(nowDate.getTime() - 30 * DAY_MS).toISOString();
   const sweepSince = new Date(nowDate.getTime() - 7 * DAY_MS).toISOString();
-  const report = { photos: 0, abandoned: 0, results: 0, leftovers: 0, overdue: 0, errors: 0 };
+  const report = { photos: 0, abandoned: 0, results: 0, leftovers: 0, overdue: 0, backup: false, errors: 0 };
 
   // 1) 납품 후 7일 지난 원본 사진
   const { data: photoOrders } = await admin
@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
     if (error) { report.errors++; continue; }
     if (!claimed?.length) continue;
     try {
-      await removeOrderPhotos(admin, o.user_id, o.id);
+      await removeOrderPhotos(o.user_id, o.id);
       report.photos++;
     } catch (e) {
       report.errors++;
@@ -73,7 +73,7 @@ export async function GET(request: NextRequest) {
     if (error) { report.errors++; continue; }
     if (!claimed?.length) continue;
     try {
-      await removeOrderPhotos(admin, o.user_id, o.id);
+      await removeOrderPhotos(o.user_id, o.id);
       report.abandoned++;
     } catch (e) {
       report.errors++;
@@ -101,7 +101,7 @@ export async function GET(request: NextRequest) {
     if (error) { report.errors++; continue; }
     if (!claimed?.length) continue;
     try {
-      await removeResult(admin, o.result_path);
+      await removeFile(o.result_path);
       await admin.from("share_links").delete().eq("order_id", o.id);
       report.results++;
     } catch (e) {
@@ -124,10 +124,10 @@ export async function GET(request: NextRequest) {
     .limit(500);
   for (const o of recent ?? []) {
     try {
-      if (o.photos_deleted_at) report.leftovers += await removeFolder(admin, "photos", photoFolder(o.user_id, o.id));
-      if (o.result_deleted_at || o.status === "canceled") report.leftovers += await removeFolder(admin, "results", o.id);
+      if (o.photos_deleted_at) report.leftovers += await removeFolder(photoFolder(o.user_id, o.id));
+      if (o.result_deleted_at || o.status === "canceled") report.leftovers += await removeFolder(resultFolder(o.id));
       else if (o.status === "delivered" && o.result_path) {
-        report.leftovers += await removeFolder(admin, "results", o.id, o.result_path);
+        report.leftovers += await removeFolder(resultFolder(o.id), o.result_path);
       }
     } catch (e) {
       report.errors++;
@@ -144,6 +144,23 @@ export async function GET(request: NextRequest) {
     .limit(200);
   report.overdue = overdue?.length ?? 0;
   if (report.overdue) console.warn("납품 기한을 크게 넘긴 주문", overdue?.map((o) => o.id));
+
+  // 7) DB 백업: 무료 플랜에는 자동 백업이 없어서 매일 JSON으로 저장한다.
+  //    버킷 수명 규칙으로 14일 뒤 자동 삭제된다 (지운 개인정보가 백업에 오래 남지 않게).
+  try {
+    const [orders, profiles, audits] = await Promise.all([
+      admin.from("orders").select("*").limit(50000),
+      admin.from("profiles").select("*").limit(50000),
+      admin.from("admin_audit").select("*").gt("created_at", new Date(nowDate.getTime() - 90 * DAY_MS).toISOString()).limit(50000),
+    ]);
+    if (orders.error || profiles.error || audits.error) throw orders.error ?? profiles.error ?? audits.error;
+    const body = JSON.stringify({ at: now, orders: orders.data, profiles: profiles.data, admin_audit: audits.data });
+    await writeFile(`backups/db-${now.slice(0, 10)}.json`, body, "application/json");
+    report.backup = true;
+  } catch (e) {
+    report.errors++;
+    console.error("DB 백업 실패", e);
+  }
 
   return NextResponse.json(report);
 }

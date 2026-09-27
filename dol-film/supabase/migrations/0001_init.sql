@@ -107,10 +107,5 @@ create table public.admin_audit (
 
 alter table public.admin_audit enable row level security;
 
--- 5) 저장소: 둘 다 비공개. 업로드는 서버가 발급한 1회용 업로드 URL로만 가능하다.
-insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
-values
-  ('photos', 'photos', false, 10485760, array['image/jpeg']),
-  ('results', 'results', false, 524288000, array['video/mp4']);
--- results 500MB 제한은 Supabase Pro 이상에서만 적용된다. 무료 플랜은 파일당 50MB가 최대이니
--- 무료로 시작할 때는 영상을 50MB 이하로 인코딩하자 (3분 1080p, 약 2Mbps).
+-- 5) 파일(사진, 영상, 백업)은 Supabase가 아니라 Google Cloud Storage 비공개 버킷에 둔다.
+--    설정은 scripts/setup-gcs.mjs 참고.

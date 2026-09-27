@@ -8,7 +8,7 @@ import { getTemplate } from "@/lib/catalog";
 import { addDays } from "@/lib/dates";
 import { notify } from "@/lib/notify";
 import { ERASED_FIELDS } from "@/lib/retention";
-import { photoFolder, removeFolder } from "@/lib/storage";
+import { type UploadPolicy, photoFolder, removeFile, removeFolder, resultFolder, uploadPolicy } from "@/lib/storage";
 import { tossCancel } from "@/lib/toss";
 
 type Result<T = object> = ({ ok: true } & T) | { ok: false; error: string };
@@ -32,21 +32,24 @@ export async function setStatus(id: string, status: string): Promise<Result> {
 }
 
 // 완성 영상 업로드용 1회용 URL. 영상은 관리자 브라우저에서 저장소로 바로 올라간다.
-export async function createResultUpload(id: string): Promise<Result<{ path: string; token: string }>> {
+export async function createResultUpload(id: string): Promise<Result<{ path: string; policy: UploadPolicy }>> {
   const { admin } = await requireAdmin();
   if (!orderId.safeParse(id).success) return { ok: false, error: "잘못된 요청이에요" };
   // 납품 전 주문에만 올린다. (납품 완료 주문의 폴더는 자동 정리가 현재 영상만 남기고 비우기 때문)
   const { data: order } = await admin.from("orders").select("status").eq("id", id).single();
   if (!order || !MOVABLE.includes(order.status)) return { ok: false, error: "납품할 수 없는 상태예요" };
-  const path = `${id}/${randomUUID()}.mp4`;
-  const { data, error } = await admin.storage.from("results").createSignedUploadUrl(path);
-  if (error || !data) return { ok: false, error: error?.message ?? "업로드를 준비하지 못했어요" };
-  return { ok: true, path: data.path, token: data.token };
+  const path = `${resultFolder(id)}/${randomUUID()}.mp4`;
+  try {
+    // 영상은 크기가 커서 업로드 권한을 1시간으로 준다.
+    return { ok: true, path, policy: await uploadPolicy("results", path, 60 * 60) };
+  } catch (e) {
+    return { ok: false, error: e instanceof Error ? e.message : "업로드를 준비하지 못했어요" };
+  }
 }
 
 export async function markDelivered(id: string, path: string): Promise<Result> {
   const { user, admin } = await requireAdmin();
-  if (!orderId.safeParse(id).success || !path.startsWith(`${id}/`) || !path.endsWith(".mp4")) {
+  if (!orderId.safeParse(id).success || !path.startsWith(`${resultFolder(id)}/`) || !path.endsWith(".mp4")) {
     return { ok: false, error: "잘못된 요청이에요" };
   }
   const { data: order } = await admin.from("orders").select("*").eq("id", id).single();
@@ -74,8 +77,7 @@ export async function markDelivered(id: string, path: string): Promise<Result> {
   // 수정본이면 예전 영상은 DB 갱신이 끝난 뒤에 지운다.
   // 실패해도 매일 자동 삭제의 "남은 파일 정리" 단계가 다시 지운다.
   if (order.result_path && order.result_path !== path) {
-    const { error: removeError } = await admin.storage.from("results").remove([order.result_path]);
-    if (removeError) console.error("예전 영상 삭제 실패", id, removeError.message);
+    await removeFile(order.result_path).catch((e) => console.error("예전 영상 삭제 실패", id, e));
   }
 
   await audit(user.id, id, "delivered");
@@ -120,8 +122,8 @@ export async function cancelOrder(id: string, reason: string): Promise<Result> {
     .update({ photos_deleted_at: now, result_deleted_at: now, result_path: null, ...ERASED_FIELDS })
     .eq("id", id);
   if (error) console.error("취소 주문 개인정보 삭제 실패", id, error.message);
-  await removeFolder(admin, "photos", photoFolder(order.user_id, id)).catch((e) => console.error("취소 주문 사진 삭제 실패", id, e));
-  await removeFolder(admin, "results", id).catch((e) => console.error("취소 주문 영상 삭제 실패", id, e));
+  await removeFolder(photoFolder(order.user_id, id)).catch((e) => console.error("취소 주문 사진 삭제 실패", id, e));
+  await removeFolder(resultFolder(id)).catch((e) => console.error("취소 주문 영상 삭제 실패", id, e));
   await audit(user.id, id, `canceled:${parsed.data.reason}`);
   revalidatePath(`/admin/orders/${id}`);
   return { ok: true };

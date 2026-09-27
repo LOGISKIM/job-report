@@ -1,4 +1,5 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { setStorageDriverForTest } from "@/lib/storage";
 import { fakeSupabase } from "./fake-supabase";
 
 const ID = "3f2b8c1e-5d4a-4b6c-9e8f-1a2b3c4d5e6f";
@@ -18,8 +19,8 @@ function setup(extra: Record<string, unknown> = {}) {
   fake = fakeSupabase({
     orders: [{ id: ID, user_id: U, status: "in_production", payment_key: "pk_1", nickname: "서아", caption: "축하해", contact_phone: "01012345678", result_path: null, template_id: "fairy", ...extra }],
   });
-  fake.storageFiles.photos = [`${U}/${ID}/a.jpg`, `${U}/${ID}/b.jpg`];
-  fake.storageFiles.results = [];
+  fake.files.push(`photos/${U}/${ID}/a.jpg`, `photos/${U}/${ID}/b.jpg`);
+  setStorageDriverForTest(fake.driver);
 }
 
 const toss = (ok: boolean) => {
@@ -33,6 +34,7 @@ beforeEach(() => {
   vi.unstubAllGlobals();
   setup();
 });
+afterEach(() => setStorageDriverForTest(null));
 
 describe("관리자 취소·환불", () => {
   it("환불에 성공하면 취소 처리하고 사진과 개인정보를 지운다", async () => {
@@ -45,7 +47,7 @@ describe("관리자 취소·환불", () => {
     expect(o.nickname).toBe("-");
     expect(o.contact_phone).toBeNull();
     expect(o.photos_deleted_at).toBeTruthy();
-    expect(fake.storageFiles.photos).toHaveLength(0);
+    expect(fake.files).toHaveLength(0);
   });
 
   it("환불이 실패하면 원래 상태로 되돌리고 아무것도 지우지 않는다", async () => {
@@ -55,7 +57,7 @@ describe("관리자 취소·환불", () => {
     const o = fake.tables.orders[0];
     expect(o.status).toBe("in_production");
     expect(o.nickname).toBe("서아");
-    expect(fake.storageFiles.photos).toHaveLength(2);
+    expect(fake.files).toHaveLength(2);
   });
 
   it("결제 키가 없으면 환불 없이 취소하지 않는다", async () => {
@@ -77,7 +79,7 @@ describe("관리자 취소·환불", () => {
   it("취소된 주문에는 납품도, 영상 업로드도 할 수 없다", async () => {
     toss(true);
     await cancelOrder(ID, "고객 요청");
-    expect((await markDelivered(ID, `${ID}/x.mp4`)).ok).toBe(false);
+    expect((await markDelivered(ID, `results/${ID}/x.mp4`)).ok).toBe(false);
     expect((await createResultUpload(ID)).ok).toBe(false);
   });
 });
@@ -85,7 +87,7 @@ describe("관리자 취소·환불", () => {
 describe("납품", () => {
   it("납품하면 보관 기간을 잡고 삭제 표시를 초기화한다", async () => {
     setup({ result_deleted_at: "2026-01-01T00:00:00.000Z" });
-    const res = await markDelivered(ID, `${ID}/new.mp4`);
+    const res = await markDelivered(ID, `results/${ID}/new.mp4`);
     expect(res.ok).toBe(true);
     const o = fake.tables.orders[0];
     expect(o.status).toBe("delivered");
@@ -95,6 +97,16 @@ describe("납품", () => {
   });
 
   it("다른 주문 폴더의 영상 경로는 거부한다", async () => {
-    expect((await markDelivered(ID, "other-order/x.mp4")).ok).toBe(false);
+    expect((await markDelivered(ID, "results/other-order/x.mp4")).ok).toBe(false);
+    expect((await markDelivered(ID, `photos/${U}/${ID}/a.jpg`)).ok).toBe(false);
+  });
+
+  it("영상 업로드 권한은 이 주문 폴더, mp4, 크기 제한으로 묶인다", async () => {
+    const res = await createResultUpload(ID);
+    expect(res.ok).toBe(true);
+    if (!res.ok) return;
+    expect(res.path.startsWith(`results/${ID}/`)).toBe(true);
+    expect(res.policy.fields["Content-Type"]).toBe("video/mp4");
+    expect(Number(res.policy.fields.max)).toBeGreaterThan(0);
   });
 });

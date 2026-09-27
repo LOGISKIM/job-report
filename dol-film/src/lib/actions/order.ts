@@ -7,7 +7,7 @@ import { CUSTOM, MOODS, MUSIC, PHOTO_MAX, PHOTO_MIN, getTemplate } from "@/lib/c
 import { CONSENTS, CONSENT_VERSION } from "@/lib/consents";
 import { addDays } from "@/lib/dates";
 import { ERASED_FIELDS } from "@/lib/retention";
-import { listOrderPhotos, photoFolder, removeOrderPhotos } from "@/lib/storage";
+import { type UploadPolicy, listOrderPhotos, photoFolder, removeOrderPhotos, uploadPolicy } from "@/lib/storage";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { getUser } from "@/lib/supabase/server";
 
@@ -69,7 +69,7 @@ export async function createOrder(raw: OrderInput): Promise<Result<{ orderId: st
     .eq("status", "pending_payment")
     .select("id");
   for (const o of stale ?? []) {
-    await removeOrderPhotos(admin, user.id, o.id).catch((e) => console.error("이전 주문 사진 삭제 실패", o.id, e));
+    await removeOrderPhotos(user.id, o.id).catch((e) => console.error("이전 주문 사진 삭제 실패", o.id, e));
   }
 
   const now = new Date().toISOString();
@@ -102,7 +102,7 @@ export async function createOrder(raw: OrderInput): Promise<Result<{ orderId: st
 export async function prepareUploads(
   orderId: string,
   count: number,
-): Promise<Result<{ uploads: { path: string; token: string }[] }>> {
+): Promise<Result<{ uploads: UploadPolicy[] }>> {
   const found = await ownOrder(orderId);
   if (!found) return { ok: false, error: "주문을 찾을 수 없어요" };
   if (found.order.status !== "pending_payment") return { ok: false, error: "이미 결제됐거나 취소된 주문이에요" };
@@ -111,24 +111,26 @@ export async function prepareUploads(
   }
 
   // 다시 시도하는 경우를 위해 기존 사진을 지우고 새로 받는다.
-  await removeOrderPhotos(found.admin, found.user.id, orderId);
+  await removeOrderPhotos(found.user.id, orderId);
 
+  // 사진마다 경로, 형식(JPEG), 크기(10MB)가 고정된 15분짜리 업로드 권한을 만든다. 남의 폴더에는 올릴 수 없다.
   const folder = photoFolder(found.user.id, orderId);
-  const uploads: { path: string; token: string }[] = [];
-  for (let i = 0; i < count; i++) {
-    const path = `${folder}/${randomUUID()}.jpg`;
-    const { data, error } = await found.admin.storage.from("photos").createSignedUploadUrl(path);
-    if (error || !data) return { ok: false, error: "업로드를 준비하지 못했어요" };
-    uploads.push({ path: data.path, token: data.token });
+  try {
+    const uploads = await Promise.all(
+      Array.from({ length: count }, () => uploadPolicy("photos", `${folder}/${randomUUID()}.jpg`)),
+    );
+    return { ok: true, uploads };
+  } catch (e) {
+    console.error("업로드 준비 실패", orderId, e);
+    return { ok: false, error: "업로드를 준비하지 못했어요" };
   }
-  return { ok: true, uploads };
 }
 
 export async function finalizeUploads(orderId: string): Promise<Result> {
   const found = await ownOrder(orderId);
   if (!found) return { ok: false, error: "주문을 찾을 수 없어요" };
   if (found.order.status !== "pending_payment") return { ok: false, error: "이미 결제된 주문이에요" };
-  const paths = await listOrderPhotos(found.admin, found.user.id, orderId);
+  const paths = await listOrderPhotos(found.user.id, orderId);
   if (paths.length < PHOTO_MIN || paths.length > PHOTO_MAX) {
     return { ok: false, error: "사진이 제대로 올라가지 않았어요. 다시 시도해 주세요" };
   }
@@ -174,7 +176,7 @@ export async function deletePhotosNow(orderId: string): Promise<Result> {
   if (o.status !== "delivered") {
     return { ok: false, error: "완성된 뒤에 지울 수 있어요" };
   }
-  await removeOrderPhotos(found.admin, found.user.id, orderId);
+  await removeOrderPhotos(found.user.id, orderId);
   await found.admin
     .from("orders")
     .update({ photos_deleted_at: new Date().toISOString(), revision_left: 0 })

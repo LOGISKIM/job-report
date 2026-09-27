@@ -8,7 +8,8 @@
 |---|---|
 | 화면과 서버 | Next.js 16 (App Router) |
 | 호스팅, 자동 삭제 예약 작업 | Vercel (+ Vercel Cron) |
-| DB, 로그인, 파일 저장 | Supabase (서울 리전 권장) |
+| DB, 로그인 | Supabase (서울 리전 권장, 무료 플랜으로 시작) |
+| 사진·영상·DB 백업 | Google Cloud Storage (서울, Google AI Pro 구독의 월 $10 Cloud 크레딧 안에서) |
 | 로그인 | 카카오 (Supabase Auth) |
 | 결제 | 토스페이먼츠 결제위젯 |
 | 알림 | 카카오 알림톡 (솔라피, 선택) |
@@ -29,7 +30,8 @@
 ## 개인정보와 보안 설계
 
 - **브라우저는 DB에 쓸 수 없음:** 모든 쓰기는 서버에서 로그인 사용자와 주문 소유자를 확인한 뒤 비밀 키로만 합니다. 사용자는 RLS로 자기 주문만 읽을 수 있습니다.
-- **비공개 저장소:** `photos`와 `results` 버킷은 비공개입니다. 업로드는 서버가 경로를 정해 발급한 1회용 URL로만 가능하고, 열람은 만료되는 링크로만 합니다.
+- **비공개 저장소:** Google Cloud Storage 버킷은 공개 접근이 원천 차단돼 있습니다. 업로드는 서버가 경로, 형식, 최대 크기를 정해 발급한 15분짜리 권한으로만 가능하고(사진 JPEG 10MB, 영상 MP4 1GB), 열람은 만료되는 링크로만 합니다.
+- **백업:** 매일 DB를 JSON으로 버킷에 저장하고, 14일 뒤 자동 삭제합니다. 버킷 수명 규칙이 사진 45일, 영상 60일이 지나면 한 번 더 지우는 안전장치 역할을 합니다.
 - **촬영 위치 정보 제거:** 사진은 올리기 전에 브라우저에서 다시 그려 저장하므로 EXIF(GPS 등)가 지워집니다. 긴 변은 2048px로 줄입니다.
 - **결제 금액 검증:** 가격은 서버의 `src/lib/catalog.ts` 기준입니다. 결제 승인도 서버에서 하고, DB 금액과 토스 응답 금액을 모두 비교합니다.
 - **자동 삭제:** 매일 03:00(KST)에 실행됩니다. 원본 사진은 납품 7일 뒤, 영상과 휴대폰 번호는 30일 뒤, 결제하지 않은 주문은 이틀 뒤 삭제됩니다. 결제 후 30일이 지나도록 납품하지 않은 주문은 로그로 경고합니다.
@@ -50,7 +52,22 @@
    ```
 6. 관리자 계정은 **카카오 계정 2단계 인증**을 꼭 켭니다.
 
-> Supabase 무료 플랜은 파일 하나가 최대 50MB입니다. 3분 1080p 영상은 약 2Mbps로 인코딩하면 50MB 안에 들어갑니다. 더 큰 파일은 Pro 플랜이 필요합니다.
+### 1-1. Google Cloud Storage (파일 보관)
+Google AI Pro 구독에 포함된 월 $10 Cloud 크레딧으로 운영합니다.
+1. [console.cloud.google.com](https://console.cloud.google.com)에서 프로젝트를 만들고, 결제(Billing) → 크레딧에서 AI Pro 크레딧이 적용됐는지 확인합니다.
+2. **결제 → 예산 및 알림**에서 월 $10 예산을 만들고 50%/90%/100% 알림을 켭니다 (크레딧을 넘으면 카드로 청구되므로).
+3. Cloud Storage → 버킷 만들기
+   - 이름: 예) `dolfilm-files` (전 세계에서 유일해야 함)
+   - 위치: **Region → asia-northeast3 (서울)**
+   - 스토리지 클래스: Standard
+   - **공개 액세스 방지 적용**, 액세스 제어는 **균일(Uniform)**
+4. IAM → 서비스 계정 만들기 (예: `dolfilm-storage`). 역할은 주지 말고 만든 뒤, **버킷의 권한 탭에서 이 계정에만 "스토리지 객체 관리자"** 를 줍니다 (다른 버킷은 못 건드리게).
+5. 서비스 계정 → 키 → JSON 키 만들기. 받은 파일을 `base64 -w0 key.json` 으로 바꿔 `GCP_SERVICE_ACCOUNT_KEY`에 넣고, **원본 JSON 파일은 지웁니다**.
+   (조직 정책 때문에 키 생성이 막혀 있으면 IAM → 조직 정책에서 `iam.disableServiceAccountKeyCreation`을 이 프로젝트만 해제합니다.)
+6. 버킷 보안 설정(공개 차단, CORS, 자동 삭제 안전장치)을 한 번에 적용합니다.
+   ```bash
+   GCS_BUCKET=dolfilm-files GCP_SERVICE_ACCOUNT_KEY=... node scripts/setup-gcs.mjs https://내도메인
+   ```
 
 ### 2. 카카오 개발자센터
 - 애플리케이션을 만들고 카카오 로그인을 켭니다.
@@ -70,7 +87,7 @@ npm run dev                  # http://localhost:3000
 
 ### 5. 배포 (Vercel)
 - GitHub 저장소를 Vercel에 연결하고, Root Directory를 `dol-film`으로 설정합니다.
-- `.env.example`의 값을 Vercel 환경변수에 넣습니다. `CRON_SECRET`은 긴 무작위 문자열로 만듭니다.
+- `.env.example`의 값을 Vercel 환경변수에 넣습니다 (Google Cloud 값 2개 포함). `CRON_SECRET`은 긴 무작위 문자열로 만듭니다.
 - `vercel.json`의 Cron이 매일 자동 삭제를 실행합니다.
 
 ### 6. 알림톡 (선택)

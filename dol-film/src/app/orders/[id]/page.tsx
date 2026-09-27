@@ -3,7 +3,7 @@ import { Check, Info } from "@/components/icons";
 import { AppBar, CTA, LinkButton } from "@/components/ui";
 import { CUSTOM, getTemplate, stageOf } from "@/lib/catalog";
 import { addBusinessDays, formatKDate } from "@/lib/dates";
-import { createAdminClient } from "@/lib/supabase/admin";
+import { signedReadUrl } from "@/lib/storage";
 import { createClient } from "@/lib/supabase/server";
 import { ResultActions } from "./result-actions";
 
@@ -39,21 +39,20 @@ export default async function OrderPage(props: PageProps<"/orders/[id]">) {
 
   if (order.status === "delivered" && order.result_path) {
     // 본인 주문임을 위에서 RLS로 확인했으므로 1시간짜리 재생 링크를 만든다.
-    const admin = createAdminClient();
-    const { data: signed } = await admin.storage.from("results").createSignedUrl(order.result_path, 60 * 60, {
-      download: `${order.nickname}_첫돌영상.mp4`,
-    });
-    const { data: stream } = await admin.storage.from("results").createSignedUrl(order.result_path, 60 * 60);
+    const [downloadUrl, streamUrl] = await Promise.all([
+      signedReadUrl(order.result_path, 60 * 60, `${order.nickname}_첫돌영상.mp4`),
+      signedReadUrl(order.result_path, 60 * 60),
+    ]).catch(() => [null, null]);
     return (
       <div className="app">
         <AppBar backHref="/orders" />
         <main className="view">
-          {stream && <video className="video" src={stream.signedUrl} controls playsInline preload="metadata" />}
+          {streamUrl && <video className="video" src={streamUrl} controls playsInline preload="metadata" />}
           <h1 className="h2">{order.nickname}의 첫돌 영상이<br />완성됐어요</h1>
           <p className="sub">{t.name} · 영상은 {order.result_purge_after ? formatKDate(order.result_purge_after) : "30일 뒤"}까지 받을 수 있어요</p>
           <ResultActions
             orderId={order.id}
-            downloadUrl={signed?.signedUrl ?? null}
+            downloadUrl={downloadUrl}
             revisionLeft={order.photos_deleted_at ? 0 : order.revision_left}
             photoCount={order.photo_count}
             photosDeletedAt={order.photos_deleted_at}
