@@ -85,9 +85,32 @@ def still_prompt(c, scene=None):
         f"Lighting and mood: {c['style']}. Medium close-up, 16:9."
     )
 
-def talk_prompt(c, gesture):
+# 말하는 장면이 모두 같은 첫 프레임에서 시작하면 컷마다 자세가 똑같아 보인다. 기준 이미지 A를 먼저 만들고,
+# A를 편집해 구도만 다른 B·C를 만든 뒤 말하는 장면마다 A→B→C 순서로 돌려 쓴다.
+# (키, 이름, 영상 프롬프트의 구도, 영상 속 자세, A를 편집할 때 바꿀 구도)
+FRAMES = [
+    ("A", "정면 기본", "Medium close-up", "sits facing the camera", None),
+    ("B", "얼굴 가까이", "Close-up on the face and shoulders", "sits turned slightly to one side, looking at the camera",
+     "a close-up on the face and shoulders, camera slightly to the left, the baby's body turned a little to the right "
+     "and the head tilted slightly"),
+    ("C", "조금 넓게", "Medium shot showing the upper body and more of the setting", "sits facing the camera",
+     "a slightly wider medium shot showing the baby's upper body and more of the setting, camera slightly to the right, "
+     "both little hands visible in front"),
+]
+
+
+def frame_prompt(desc):
     return (
-        f"{c['set']}. Medium close-up: the baby, wearing {c['outfit']}, sits facing the camera, starts with a bright happy smile, and happily says in a cute, slow "
+        "Edit this image. Keep the same baby with exactly the same face, eyes, nose, mouth, hair, skin tone, outfit and "
+        f"setting. Change only the camera framing and pose: {desc}. Keep the bright, happy, natural baby smile and "
+        "realistic skin texture. 16:9."
+    )
+
+
+def talk_prompt(c, gesture, frame):
+    _, _, framing, pose, _ = frame
+    return (
+        f"{c['set']}. {framing}: the baby, wearing {c['outfit']}, {pose}, starts with a bright happy smile, and happily says in a cute, slow "
         f"toddler voice: \"{{LINE}}\" then {gesture}. The mouth moves naturally with the Korean words. {FACE} "
         f"Style: {c['style']}. 8-second shot, 16:9. No text, no subtitles, no logos."
     )
@@ -105,6 +128,7 @@ def build():
     for c in CONCEPTS:
         q = {**QUESTIONS, **c.get("q", {})}
         clips = []
+        talk_no = 0
         for no, (tier, kind, qkey, line, gesture) in enumerate(FLOW, start=1):
             if callable(line):
                 line = line(c)
@@ -119,11 +143,14 @@ def build():
             elif kind == "photo":
                 item.update(title="고객 사진 구간", line=line, prompt=None, seconds=PHOTO_SECONDS[qkey])
             else:
-                item.update(title="말하는 장면", line=line, prompt=talk_prompt(c, gesture))
+                frame = FRAMES[talk_no % len(FRAMES)]
+                talk_no += 1
+                item.update(title="말하는 장면", line=line, frame=frame[0], prompt=talk_prompt(c, gesture, frame))
             clips.append(item)
         out.append({
             "id": c["id"], "name": c["name"], "show": c["show"], "style": c["style"],
             "outfit": c["outfit"], "set": c["set"], "still": still_prompt(c), "clips": clips,
+            "frames": [{"key": k, "label": l, "prompt": frame_prompt(d) if d else None} for k, l, _, _, d in FRAMES],
         })
 
     data = {"fields": [{"key": k, "label": l, "example": e} for k, l, e in FIELDS], "concepts": out}
@@ -131,7 +158,9 @@ def build():
 
     for n, c in enumerate(out, start=1):
         lines = [f"# {n:02d}. {c['name']} · {c['show']}", "", "tier 1 = 1분·3분·5분, 3 = 3분·5분, 5 = 5분만", "",
-                 "## 00 얼굴 기준 이미지 (말하는 장면 전부 이 이미지를 첫 프레임으로)", "", "```", c["still"], "```", ""]
+                 "## 00 얼굴 기준 이미지 A (고객 사진으로)", "", "```", c["still"], "```", ""]
+        for f in c["frames"][1:]:
+            lines += [f"## 00-{f['key']} 기준 이미지 {f['key']} · {f['label']} (A 이미지를 편집)", "", "```", f["prompt"], "```", ""]
         for clip in c["clips"]:
             head = f"## {clip['no']:02d} [{clip['tier']}] {clip['title']}"
             if clip["q"]:
@@ -141,6 +170,8 @@ def build():
                 lines.append(f"대사: {clip['line']}")
             if clip["kind"] == "photo":
                 lines.append("길이: " + ", ".join(f"{k}분 {v}초" for k, v in clip["seconds"].items()))
+            if clip.get("frame"):
+                lines.append(f"첫 프레임: 기준 이미지 {clip['frame']}")
             if clip.get("still"):
                 lines += ["", "첫 프레임 이미지:", "```", clip["still"], "```"]
             if clip["prompt"]:
