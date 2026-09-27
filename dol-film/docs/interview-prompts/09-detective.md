@@ -21,10 +21,9 @@ The baby detective peers at the camera through a big magnifying glass, one eye l
 
 ## 02 [1] 말하는 장면
 대사: 안녕하세요! 오늘의 주인공 {이름}입니다.
-Flow용 대사(성 뺀 이름): 안녕하세요! 오늘의 주인공 {애칭}입니다.
 
 ```
-A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: "안녕하세요! 오늘의 주인공 {애칭}입니다." then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos.
+A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: "안녕하세요! 오늘의 주인공 {이름}입니다." then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 03 [1] 말하는 장면
@@ -40,18 +39,16 @@ A cozy vintage detective office with a desk lamp, a magnifying glass and a corkb
 
 ## 05 [5] 말하는 장면 · Q. 이름이 뭐예요?
 대사: 저는 한 살, {이름}입니다.
-Flow용 대사(성 뺀 이름): 저는 한 살, {애칭}입니다.
 
 ```
-A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, {애칭}입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos.
+A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, {이름}입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 06 [1] 말하는 장면 · Q. 엄마 아빠는 누구예요?
 대사: 엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.
-Flow용 대사(성 뺀 이름): 엄마, 아빠의 아기예요.
 
 ```
-A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: "엄마, 아빠의 아기예요." then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos.
+A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요." then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 07 [3] 말하는 장면 · Q. 집에서는 뭐라고 불러요?

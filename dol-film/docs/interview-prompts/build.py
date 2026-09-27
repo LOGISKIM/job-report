@@ -1,6 +1,5 @@
 """인터뷰형 컨셉(concepts.py) + 공통 흐름(FLOW)으로 interview.json과 컨셉별 마크다운을 만든다. 실행: python3 build.py"""
 import json
-import re
 from pathlib import Path
 
 from concepts import CONCEPTS, FIELDS
@@ -85,19 +84,6 @@ def still_prompt(c, scene=None):
         f"Lighting and mood: {c['style']}. Medium close-up, 16:9."
     )
 
-# Flow에 넣는 대사에는 성까지 붙은 실명을 넣지 않는다(유명인 정책에 걸림). 아기는 성 뺀 이름({애칭})으로 부르고,
-# 엄마·아빠 실명은 빼서 TTS 대본에만 남긴다.
-NEUTRAL = [
-    (r"\s*\{엄마이름\}", ""), (r"\s*\{아빠이름\}", ""), (r"\{이름\}", "{애칭}"),
-]
-
-
-def veo_line(line):
-    for pat, rep in NEUTRAL:
-        line = re.sub(pat, rep, line)
-    return line
-
-
 def talk_prompt(c, gesture):
     return (
         f"{c['set']}. Medium close-up: the baby, wearing {c['outfit']}, sits facing the camera and happily says in a cute, slow "
@@ -132,7 +118,7 @@ def build():
             elif kind == "photo":
                 item.update(title="고객 사진 구간", line=line, prompt=None, seconds=PHOTO_SECONDS[qkey])
             else:
-                item.update(title="말하는 장면", line=line, veo=veo_line(line), prompt=talk_prompt(c, gesture))
+                item.update(title="말하는 장면", line=line, prompt=talk_prompt(c, gesture))
             clips.append(item)
         out.append({
             "id": c["id"], "name": c["name"], "show": c["show"], "style": c["style"],
@@ -157,9 +143,7 @@ def build():
             if clip.get("still"):
                 lines += ["", "첫 프레임 이미지:", "```", clip["still"], "```"]
             if clip["prompt"]:
-                if clip.get("veo") and clip["veo"] != clip["line"]:
-                    lines.append(f"Flow용 대사(성 뺀 이름): {clip['veo']}")
-                lines += ["", "```", clip["prompt"].replace("{LINE}", clip.get("veo") or ""), "```"]
+                lines += ["", "```", clip["prompt"].replace("{LINE}", clip["line"] or ""), "```"]
             lines.append("")
         (HERE / f"{n:02d}-{c['id']}.md").write_text("\n".join(lines), encoding="utf-8")
 

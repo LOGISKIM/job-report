@@ -98,7 +98,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "안녕하세요! 오늘의 주인공 {이름}입니다.",
-     "veo": "안녕하세요! 오늘의 주인공 {애칭}입니다.",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -108,7 +107,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "1년간의 지구 탐사 임무를 마치고 돌아왔습니다!",
-     "veo": "1년간의 지구 탐사 임무를 마치고 돌아왔습니다!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -130,7 +128,6 @@
      "q": "이름이 뭐예요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -140,7 +137,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -150,7 +146,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -160,7 +155,6 @@
      "q": "지구 생활 1년, 어땠나요?",
      "title": "말하는 장면",
      "line": "지구 생활, 생각보다 어려웠어요.",
-     "veo": "지구 생활, 생각보다 어려웠어요.",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -170,7 +164,6 @@
      "q": "지구 생활 1년, 어땠나요?",
      "title": "말하는 장면",
      "line": "중력 때문에 걷는 게 제일 힘들었거든요.",
-     "veo": "중력 때문에 걷는 게 제일 힘들었거든요.",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -190,7 +183,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -213,7 +205,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 우주에서도 이것만큼은 1등이에요!",
-     "veo": "제 취미는 {좋아하는놀이}! 우주에서도 이것만큼은 1등이에요!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -223,7 +214,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 우주인은 체력이 기본이죠.",
-     "veo": "특기는 {특기}! 우주인은 체력이 기본이죠.",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -243,7 +233,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -253,7 +242,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -263,7 +251,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -273,7 +260,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -283,7 +269,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -293,7 +278,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "우주 최고의 선택을 보여 드릴게요!",
-     "veo": "우주 최고의 선택을 보여 드릴게요!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -303,7 +287,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -326,7 +309,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -336,7 +318,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -346,7 +327,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "오늘 임무 완료! 밥은 꼭 드시고 가세요~",
-     "veo": "오늘 임무 완료! 밥은 꼭 드시고 가세요~",
      "prompt": "A cute toy-like mission briefing room with a small podium and a few toy microphones, in front of a large round window showing a space station and the blue Earth. Medium close-up: the baby, wearing a tiny white astronaut suit with colorful patches, the helmet resting beside, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright playful sci-fi, soft studio light, clean white and navy palette, cute and cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -377,7 +357,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "안녕하세요! 오늘의 주인공 {이름}입니다.",
-     "veo": "안녕하세요! 오늘의 주인공 {애칭}입니다.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -387,7 +366,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "오늘은 제 1년 건강검진 결과를 발표하겠습니다.",
-     "veo": "오늘은 제 1년 건강검진 결과를 발표하겠습니다.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -409,7 +387,6 @@
      "q": "환자분, 아니 선생님 성함이요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -419,7 +396,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -429,7 +405,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -439,7 +414,6 @@
      "q": "1년 동안 건강은 어땠나요?",
      "title": "말하는 장면",
      "line": "키도 쑥쑥, 몸무게도 쑥쑥!",
-     "veo": "키도 쑥쑥, 몸무게도 쑥쑥!",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -449,7 +423,6 @@
      "q": "1년 동안 건강은 어땠나요?",
      "title": "말하는 장면",
      "line": "진단 결과, 귀여움 수치가 정상 범위를 넘었습니다.",
-     "veo": "진단 결과, 귀여움 수치가 정상 범위를 넘었습니다.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -469,7 +442,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -492,7 +464,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 스트레스 해소에 최고예요.",
-     "veo": "제 취미는 {좋아하는놀이}! 스트레스 해소에 최고예요.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -502,7 +473,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 의사 선생님도 인정했어요.",
-     "veo": "특기는 {특기}! 의사 선생님도 인정했어요.",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -522,7 +492,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -532,7 +501,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -542,7 +510,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -552,7 +519,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -562,7 +528,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -572,7 +537,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "청진기를 잡으면 진짜 의사가 되는 걸까요?",
-     "veo": "청진기를 잡으면 진짜 의사가 되는 걸까요?",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -582,7 +546,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -605,7 +568,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -615,7 +577,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -625,7 +586,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "처방전 드려요. 맛있게 드시고 많이 웃기!",
-     "veo": "처방전 드려요. 맛있게 드시고 많이 웃기!",
      "prompt": "A bright, cheerful pediatric clinic room with a small desk, toy medical tools and colorful pictures on the wall. Medium close-up: the baby, wearing a tiny white doctor's coat with a toy stethoscope around the neck, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright clean pastel clinic, soft window light, warm and friendly, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -656,7 +616,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "속보입니다! 오늘 한 아기가 첫 생일을 맞았습니다.",
-     "veo": "속보입니다! 오늘 한 아기가 첫 생일을 맞았습니다.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -666,7 +625,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "저는 돌잔치 현장의 {이름} 앵커입니다.",
-     "veo": "저는 돌잔치 현장의 {애칭} 앵커입니다.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -688,7 +646,6 @@
      "q": "현장 인터뷰, 이름이 어떻게 되시죠?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -698,7 +655,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -708,7 +664,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -718,7 +673,6 @@
      "q": "올 한 해를 돌아본다면요?",
      "title": "말하는 장면",
      "line": "올해 가장 뜨거운 뉴스는 바로 저였죠.",
-     "veo": "올해 가장 뜨거운 뉴스는 바로 저였죠.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -728,7 +682,6 @@
      "q": "올 한 해를 돌아본다면요?",
      "title": "말하는 장면",
      "line": "하루하루가 특종이었습니다.",
-     "veo": "하루하루가 특종이었습니다.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -748,7 +701,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -771,7 +723,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 이건 단독 보도입니다!",
-     "veo": "제 취미는 {좋아하는놀이}! 이건 단독 보도입니다!",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -781,7 +732,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 방금 들어온 소식이에요.",
-     "veo": "특기는 {특기}! 방금 들어온 소식이에요.",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -801,7 +751,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -811,7 +760,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -821,7 +769,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -831,7 +778,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -841,7 +787,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -851,7 +796,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "결과는 잠시 후 생중계로 전해 드립니다!",
-     "veo": "결과는 잠시 후 생중계로 전해 드립니다!",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -861,7 +805,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -884,7 +827,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -894,7 +836,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -904,7 +845,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "이상 {애칭} 앵커였습니다. 식사 꼭 하고 가세요~",
-     "veo": "이상 {애칭} 앵커였습니다. 식사 꼭 하고 가세요~",
      "prompt": "A professional TV news studio with a sleek anchor desk, blue studio lights and blurred monitors in the background. Medium close-up: the baby, wearing a tiny navy suit and tie, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: polished broadcast studio look, crisp lighting, blue and white palette, playful and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -935,7 +875,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "안녕하세요! 오늘의 주인공 {이름}입니다.",
-     "veo": "안녕하세요! 오늘의 주인공 {애칭}입니다.",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -945,7 +884,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "연습생 기간 1년, 드디어 오늘 데뷔합니다!",
-     "veo": "연습생 기간 1년, 드디어 오늘 데뷔합니다!",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -967,7 +905,6 @@
      "q": "이름이 뭐예요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -977,7 +914,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -987,7 +923,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -997,7 +932,6 @@
      "q": "연습생 1년, 어땠어요?",
      "title": "말하는 장면",
      "line": "매일 밤낮 없이 연습했어요.",
-     "veo": "매일 밤낮 없이 연습했어요.",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1007,7 +941,6 @@
      "q": "연습생 1년, 어땠어요?",
      "title": "말하는 장면",
      "line": "새벽 연습은 엄마 아빠가 더 힘들었대요.",
-     "veo": "새벽 연습은 엄마 아빠가 더 힘들었대요.",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1027,7 +960,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1050,7 +982,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 제 무대의 킬링 파트예요!",
-     "veo": "제 취미는 {좋아하는놀이}! 제 무대의 킬링 파트예요!",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1060,7 +991,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 제 필살기예요.",
-     "veo": "특기는 {특기}! 제 필살기예요.",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1080,7 +1010,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1090,7 +1019,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1100,7 +1028,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1110,7 +1037,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1120,7 +1046,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1130,7 +1055,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "마이크를 잡으면 진짜 가수 데뷔일까요?",
-     "veo": "마이크를 잡으면 진짜 가수 데뷔일까요?",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1140,7 +1064,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1163,7 +1086,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1173,7 +1095,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1183,7 +1104,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "여러분 사랑해요! 식사 꼭 하고 가세요~",
-     "veo": "여러분 사랑해요! 식사 꼭 하고 가세요~",
      "prompt": "A glittering showcase stage with pink and purple spotlights and a small microphone stand. Medium close-up: the baby, wearing a sparkly stage outfit with a tiny headset microphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: playful kids' stage show look, colorful stage lighting, glitter and lens flares, cute and energetic. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -1214,7 +1134,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "안녕하세요! 오늘의 주인공 {이름}입니다.",
-     "veo": "안녕하세요! 오늘의 주인공 {애칭}입니다.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1224,7 +1143,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "오늘을 위해 첫돌 특선 코스를 준비했습니다.",
-     "veo": "오늘을 위해 첫돌 특선 코스를 준비했습니다.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1246,7 +1164,6 @@
      "q": "이름이 뭐예요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1256,7 +1173,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1266,7 +1182,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1276,7 +1191,6 @@
      "q": "1년 동안 어떻게 지냈어요?",
      "title": "말하는 장면",
      "line": "1년 동안 세상의 모든 맛을 연구했어요.",
-     "veo": "1년 동안 세상의 모든 맛을 연구했어요.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1286,7 +1200,6 @@
      "q": "1년 동안 어떻게 지냈어요?",
      "title": "말하는 장면",
      "line": "이유식부터 간식까지, 미식 인생 시작이죠.",
-     "veo": "이유식부터 간식까지, 미식 인생 시작이죠.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1306,7 +1219,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1329,7 +1241,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 요리하다 쉴 때 최고예요.",
-     "veo": "제 취미는 {좋아하는놀이}! 요리하다 쉴 때 최고예요.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1339,7 +1250,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 셰프는 먹는 것도 실력이죠.",
-     "veo": "특기는 {특기}! 셰프는 먹는 것도 실력이죠.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1359,7 +1269,6 @@
      "q": "셰프의 추천 메뉴는요?",
      "title": "말하는 장면",
      "line": "제 추천 메뉴는 {좋아하는음식}! 강력 추천해요.",
-     "veo": "제 추천 메뉴는 {좋아하는음식}! 강력 추천해요.",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1369,7 +1278,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1379,7 +1287,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1389,7 +1296,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1399,7 +1305,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1409,7 +1314,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "주걱을 잡을까요? 그건 비밀이에요!",
-     "veo": "주걱을 잡을까요? 그건 비밀이에요!",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1419,7 +1323,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1442,7 +1345,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1452,7 +1354,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1462,7 +1363,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "오늘의 코스, 맛있게 드시고 가세요~",
-     "veo": "오늘의 코스, 맛있게 드시고 가세요~",
      "prompt": "A warm restaurant kitchen with copper pots, fresh vegetables and a small wooden counter. Medium close-up: the baby, wearing a tiny white chef jacket and a tall chef hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm cozy kitchen, golden light, appetizing colors, cute cinematic food-show look. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -1493,7 +1393,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "안녕하세요! 오늘의 주인공 {이름}입니다.",
-     "veo": "안녕하세요! 오늘의 주인공 {애칭}입니다.",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1503,7 +1402,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "뒤집기 종목 국가대표, 금메달리스트입니다!",
-     "veo": "뒤집기 종목 국가대표, 금메달리스트입니다!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1525,7 +1423,6 @@
      "q": "이름이 뭐예요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1535,7 +1432,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1545,7 +1441,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1555,7 +1450,6 @@
      "q": "금메달까지의 1년, 어땠나요?",
      "title": "말하는 장면",
      "line": "정말 강도 높은 훈련을 했어요.",
-     "veo": "정말 강도 높은 훈련을 했어요.",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1565,7 +1459,6 @@
      "q": "금메달까지의 1년, 어땠나요?",
      "title": "말하는 장면",
      "line": "뒤집기, 배밀이, 잡고 서기까지 전 종목 석권!",
-     "veo": "뒤집기, 배밀이, 잡고 서기까지 전 종목 석권!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1585,7 +1478,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1608,7 +1500,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 이 종목만큼은 세계 신기록이에요.",
-     "veo": "제 취미는 {좋아하는놀이}! 이 종목만큼은 세계 신기록이에요.",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1618,7 +1509,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 매일 훈련한 결과죠.",
-     "veo": "특기는 {특기}! 매일 훈련한 결과죠.",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1638,7 +1528,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1648,7 +1537,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1658,7 +1546,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1668,7 +1555,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1678,7 +1564,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1688,7 +1573,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "오늘 돌잡이도 금메달 따러 갑니다!",
-     "veo": "오늘 돌잡이도 금메달 따러 갑니다!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1698,7 +1582,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1721,7 +1604,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1731,7 +1613,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1741,7 +1622,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "응원 감사합니다! 식사 꼭 하고 가세요~",
-     "veo": "응원 감사합니다! 식사 꼭 하고 가세요~",
      "prompt": "A stadium medal-ceremony backdrop with bright lights and a blurred cheering crowd. Medium close-up: the baby, wearing a tiny national-team tracksuit with a shiny gold medal, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sporty stadium look, bright energetic lighting, bold colors, cute and triumphant. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -1772,7 +1652,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "승객 여러분, 기장 {이름}입니다.",
-     "veo": "승객 여러분, 기장 {애칭}입니다.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1782,7 +1661,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "이 비행기는 첫 번째 생일로 향합니다.",
-     "veo": "이 비행기는 첫 번째 생일로 향합니다.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1804,7 +1682,6 @@
      "q": "기장님, 자기소개 부탁드려요!",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1814,7 +1691,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1824,7 +1700,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1834,7 +1709,6 @@
      "q": "1년 비행, 어떠셨어요?",
      "title": "말하는 장면",
      "line": "지난 1년, 약간의 난기류가 있었지만",
-     "veo": "지난 1년, 약간의 난기류가 있었지만",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1844,7 +1718,6 @@
      "q": "1년 비행, 어떠셨어요?",
      "title": "말하는 장면",
      "line": "엄마 아빠 부기장과 무사히 비행했어요.",
-     "veo": "엄마 아빠 부기장과 무사히 비행했어요.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1864,7 +1737,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1887,7 +1759,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 비행 중 최고의 기분 전환이죠.",
-     "veo": "제 취미는 {좋아하는놀이}! 비행 중 최고의 기분 전환이죠.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1897,7 +1768,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 기장의 필수 능력이에요.",
-     "veo": "특기는 {특기}! 기장의 필수 능력이에요.",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1917,7 +1787,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1927,7 +1796,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1937,7 +1805,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1947,7 +1814,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1957,7 +1823,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1967,7 +1832,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "곧 돌잡이 공항에 착륙합니다. 목적지는 비밀!",
-     "veo": "곧 돌잡이 공항에 착륙합니다. 목적지는 비밀!",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -1977,7 +1841,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2000,7 +1863,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2010,7 +1872,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2020,7 +1881,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "승객 여러분, 즐거운 식사 되십시오~",
-     "veo": "승객 여러분, 즐거운 식사 되십시오~",
      "prompt": "An airplane cockpit with softly glowing instrument panels and fluffy clouds outside the windshield. Medium close-up: the baby, wearing a tiny pilot uniform and a captain's hat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright aviation look, sunny sky light, clean blue and gold palette, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -2051,7 +1911,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "안녕하세요! 오늘의 주인공 {이름}입니다.",
-     "veo": "안녕하세요! 오늘의 주인공 {애칭}입니다.",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2061,7 +1920,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "{애칭} 주식회사 창립 1주년에 오신 걸 환영합니다!",
-     "veo": "{애칭} 주식회사 창립 1주년에 오신 걸 환영합니다!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2083,7 +1941,6 @@
      "q": "이름이 뭐예요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2093,7 +1950,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2103,7 +1959,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2113,7 +1968,6 @@
      "q": "올해 실적은 어땠나요?",
      "title": "말하는 장면",
      "line": "올해 실적을 발표하겠습니다.",
-     "veo": "올해 실적을 발표하겠습니다.",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2123,7 +1977,6 @@
      "q": "올해 실적은 어땠나요?",
      "title": "말하는 장면",
      "line": "몸무게 세 배 성장, 웃음은 무한 성장!",
-     "veo": "몸무게 세 배 성장, 웃음은 무한 성장!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2143,7 +1996,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2166,7 +2018,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 회사의 핵심 복지예요.",
-     "veo": "제 취미는 {좋아하는놀이}! 회사의 핵심 복지예요.",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2176,7 +2027,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 우리 회사 핵심 역량이죠.",
-     "veo": "특기는 {특기}! 우리 회사 핵심 역량이죠.",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2196,7 +2046,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2206,7 +2055,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2216,7 +2064,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2226,7 +2073,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2236,7 +2082,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2246,7 +2091,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "오늘 돌잡이는 최대 투자 결정입니다!",
-     "veo": "오늘 돌잡이는 최대 투자 결정입니다!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2256,7 +2100,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2279,7 +2122,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2289,7 +2131,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2299,7 +2140,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "배당은 맛있는 식사로 드릴게요~",
-     "veo": "배당은 맛있는 식사로 드릴게요~",
      "prompt": "A luxurious executive office with a big wooden desk, a leather chair and a city skyline window. Medium close-up: the baby, wearing a tiny suit and tie holding a toy smartphone, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: sleek corporate office look, warm afternoon light, rich wood tones, cute and confident. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -2330,7 +2170,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "안녕하세요! 오늘의 주인공 {이름}입니다.",
-     "veo": "안녕하세요! 오늘의 주인공 {애칭}입니다.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2340,7 +2179,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "1년 동안 우리 집 사건을 해결해 왔습니다.",
-     "veo": "1년 동안 우리 집 사건을 해결해 왔습니다.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2362,7 +2200,6 @@
      "q": "이름이 뭐예요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2372,7 +2209,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2382,7 +2218,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2392,7 +2227,6 @@
      "q": "올해 가장 큰 사건은요?",
      "title": "말하는 장면",
      "line": "첫 번째 사건, 사라진 아빠의 잠!",
-     "veo": "첫 번째 사건, 사라진 아빠의 잠!",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2402,7 +2236,6 @@
      "q": "올해 가장 큰 사건은요?",
      "title": "말하는 장면",
      "line": "범인은… 바로 저였죠.",
-     "veo": "범인은… 바로 저였죠.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2422,7 +2255,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2445,7 +2277,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 추리할 때 집중력이 올라가요.",
-     "veo": "제 취미는 {좋아하는놀이}! 추리할 때 집중력이 올라가요.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2455,7 +2286,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 탐정의 기본기입니다.",
-     "veo": "특기는 {특기}! 탐정의 기본기입니다.",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2475,7 +2305,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2485,7 +2314,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2495,7 +2323,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2505,7 +2332,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2515,7 +2341,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2525,7 +2350,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "마지막 미스터리, 정답은 곧 공개됩니다!",
-     "veo": "마지막 미스터리, 정답은 곧 공개됩니다!",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2535,7 +2359,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2558,7 +2381,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2568,7 +2390,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2578,7 +2399,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "사건 종결! 모두 식사하고 가세요~",
-     "veo": "사건 종결! 모두 식사하고 가세요~",
      "prompt": "A cozy vintage detective office with a desk lamp, a magnifying glass and a corkboard with photos connected by red string. Medium close-up: the baby, wearing a tiny checkered deerstalker hat and a trench coat, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: warm vintage mystery look, amber lamp light, cozy and playful, cute cinematic. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]
@@ -2609,7 +2429,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "구독자 여러분, 안녕하세요!",
-     "veo": "구독자 여러분, 안녕하세요!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves both hands with a big smile. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2619,7 +2438,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "첫돌 기념 감사 라이브, 지금 시작합니다!",
-     "veo": "첫돌 기념 감사 라이브, 지금 시작합니다!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then nods proudly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2641,7 +2459,6 @@
      "q": "이름이 뭐예요?",
      "title": "말하는 장면",
      "line": "저는 한 살, {이름}입니다.",
-     "veo": "저는 한 살, {애칭}입니다.",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2651,7 +2468,6 @@
      "q": "엄마 아빠는 누구예요?",
      "title": "말하는 장면",
      "line": "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.",
-     "veo": "엄마, 아빠의 아기예요.",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2661,7 +2477,6 @@
      "q": "집에서는 뭐라고 불러요?",
      "title": "말하는 장면",
      "line": "집에서는 제 별명이 '{별명}'래요.",
-     "veo": "집에서는 제 별명이 '{별명}'래요.",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then tilts the head and giggles. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2671,7 +2486,6 @@
      "q": "크리에이터 1년 차, 어땠어요?",
      "title": "말하는 장면",
      "line": "영상 찍고, 사진 찍고… 정말 바빴어요.",
-     "veo": "영상 찍고, 사진 찍고… 정말 바빴어요.",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then sighs dramatically. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2681,7 +2495,6 @@
      "q": "크리에이터 1년 차, 어땠어요?",
      "title": "말하는 장면",
      "line": "인생 첫 1년, 조회수 폭발이었죠.",
-     "veo": "인생 첫 1년, 조회수 폭발이었죠.",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then shakes the head playfully. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2701,7 +2514,6 @@
      "q": "가장 기억에 남는 일은요?",
      "title": "말하는 장면",
      "line": "아, 잠시만요! 가장 기억에 남는 건요…",
-     "veo": "아, 잠시만요! 가장 기억에 남는 건요…",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then raises one finger as if thinking. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2724,7 +2536,6 @@
      "q": "가장 좋아하는 놀이는요?",
      "title": "말하는 장면",
      "line": "제 취미는 {좋아하는놀이}! 제 채널 인기 콘텐츠예요!",
-     "veo": "제 취미는 {좋아하는놀이}! 제 채널 인기 콘텐츠예요!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a proud face. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2734,7 +2545,6 @@
      "q": "특기가 있다면요?",
      "title": "말하는 장면",
      "line": "특기는 {특기}! 구독자들이 제일 좋아해요.",
-     "veo": "특기는 {특기}! 구독자들이 제일 좋아해요.",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then flexes tiny arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2754,7 +2564,6 @@
      "q": "가장 좋아하는 음식은요?",
      "title": "말하는 장면",
      "line": "요즘 최애 메뉴는 {좋아하는음식}!",
-     "veo": "요즘 최애 메뉴는 {좋아하는음식}!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then rubs the tummy happily. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2764,7 +2573,6 @@
      "q": "엄마는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 엄마는요, {엄마는}",
-     "veo": "우리 엄마는요, {엄마는}",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then puts both hands on the cheeks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2774,7 +2582,6 @@
      "q": "아빠는 어떤 사람이에요?",
      "title": "말하는 장면",
      "line": "우리 아빠는요, {아빠는}",
-     "veo": "우리 아빠는요, {아빠는}",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then giggles with a mischievous look. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2784,7 +2591,6 @@
      "q": "우리 가족을 더 소개해 주세요!",
      "title": "말하는 장면",
      "line": "그리고 우리 집엔 {가족소개}도 있어요!",
-     "veo": "그리고 우리 집엔 {가족소개}도 있어요!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then spreads both arms wide. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2794,7 +2600,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
-     "veo": "돌잡이가 제일 기대돼요! 뭘 잡을지는 비밀!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then covers the mouth shyly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2804,7 +2609,6 @@
      "q": "오늘 가장 기대되는 건요?",
      "title": "말하는 장면",
      "line": "결과는 이 방송에서 최초 공개합니다!",
-     "veo": "결과는 이 방송에서 최초 공개합니다!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then winks. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2814,7 +2618,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "엄마, 아빠. 저는 아직 배울 게 많지만",
-     "veo": "엄마, 아빠. 저는 아직 배울 게 많지만",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then looks at the camera softly. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2837,7 +2640,6 @@
      "q": "마지막으로 엄마 아빠에게 한마디!",
      "title": "말하는 장면",
      "line": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
-     "veo": "앞으로도 오래오래 행복하게 지내요. 사랑해요!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then makes a heart with both arms. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2847,7 +2649,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
-     "veo": "와 주신 모든 분들 감사합니다! {애칭} 많이 응원해 주세요!",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then bows politely. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     },
     {
@@ -2857,7 +2658,6 @@
      "q": null,
      "title": "말하는 장면",
      "line": "구독, 좋아요, 그리고 식사 꼭 하세요~",
-     "veo": "구독, 좋아요, 그리고 식사 꼭 하세요~",
      "prompt": "A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: \"{LINE}\" then waves goodbye. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos."
     }
    ]

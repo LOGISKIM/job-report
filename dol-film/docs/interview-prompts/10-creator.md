@@ -39,18 +39,16 @@ A colorful streaming room with a ring light, a big studio microphone and neon he
 
 ## 05 [5] 말하는 장면 · Q. 이름이 뭐예요?
 대사: 저는 한 살, {이름}입니다.
-Flow용 대사(성 뺀 이름): 저는 한 살, {애칭}입니다.
 
 ```
-A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, {애칭}입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: "저는 한 살, {이름}입니다." then points at itself. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 06 [1] 말하는 장면 · Q. 엄마 아빠는 누구예요?
 대사: 엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요.
-Flow용 대사(성 뺀 이름): 엄마, 아빠의 아기예요.
 
 ```
-A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: "엄마, 아빠의 아기예요." then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
+A colorful streaming room with a ring light, a big studio microphone and neon heart lights. Medium close-up: the baby, wearing a tiny hoodie and oversized headphones, sits facing the camera and happily says in a cute, slow toddler voice: "엄마 {엄마이름}, 아빠 {아빠이름}의 아기예요." then claps both hands. The mouth moves naturally with the Korean words. Keep the baby looking the same as in the starting frame for the whole shot: same face, eyes, nose, mouth, hair and skin tone, with no change to the face. Style: bright streamer room look, colorful neon and ring light, lively and cute. 8-second shot, 16:9. No text, no subtitles, no logos.
 ```
 
 ## 07 [3] 말하는 장면 · Q. 집에서는 뭐라고 불러요?
