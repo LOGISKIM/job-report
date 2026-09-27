@@ -1,5 +1,6 @@
 """인터뷰형 컨셉(concepts.py) + 공통 흐름(FLOW)으로 interview.json과 컨셉별 마크다운을 만든다. 실행: python3 build.py"""
 import json
+import re
 from pathlib import Path
 
 from concepts import CONCEPTS, FIELDS
@@ -59,15 +60,26 @@ FLOW = [
 # 사진 구간 길이(초): 길이별로 다르게
 PHOTO_SECONDS = {"birth": {5: 30}, "memory": {3: 20, 5: 40}, "letter": {3: 25, 5: 40}}
 
-FACE = (
-    "The baby is the one-year-old Korean baby from the reference image; keep the face, hair and skin tone "
-    "exactly the same as the reference."
-)
+# "레퍼런스 얼굴을 똑같이" 같은 표현은 실존 인물 재현으로 읽혀 Flow가 거절할 수 있어서 부드럽게 쓴다.
+FACE = "The baby character looks like the cute toddler in the reference image, with the same hairstyle and outfit colors."
+
+# Flow에 넣는 대사에는 실명·별명을 넣지 않는다(유명인 정책에 걸림). 입모양만 맞으면 되므로
+# 이름 칸은 비슷한 길이의 일반 단어로 바꾸고, 진짜 이름은 TTS 대본에만 들어간다.
+NEUTRAL = [
+    (r"\s*\{엄마이름\}", ""), (r"\s*\{아빠이름\}", ""),
+    (r"\{이름\}", "우리 아기"), (r"\{애칭\}", "우리 아기"), (r"\{별명\}", "아가"), (r"\{가족소개\}", "우리 가족"),
+]
+
+
+def veo_line(line):
+    for pat, rep in NEUTRAL:
+        line = re.sub(pat, rep, line)
+    return line
 
 
 def talk_prompt(c, gesture):
     return (
-        f"{c['set']}. Medium close-up: the baby, wearing {c['outfit']}, sits facing the camera and says in a cute, slow "
+        f"{c['set']}. Medium close-up: the baby, wearing {c['outfit']}, sits facing the camera and happily says in a cute, slow "
         f"toddler voice: \"{{LINE}}\" then {gesture}. The mouth moves naturally with the Korean words. {FACE} "
         f"Style: {c['style']}. 8-second shot, 16:9. No text, no subtitles, no logos."
     )
@@ -97,7 +109,7 @@ def build():
             elif kind == "photo":
                 item.update(title="고객 사진 구간", line=line, prompt=None, seconds=PHOTO_SECONDS[qkey])
             else:
-                item.update(title="말하는 장면", line=line, prompt=talk_prompt(c, gesture))
+                item.update(title="말하는 장면", line=line, veo=veo_line(line), prompt=talk_prompt(c, gesture))
             clips.append(item)
         out.append({
             "id": c["id"], "name": c["name"], "show": c["show"], "style": c["style"],
@@ -119,7 +131,9 @@ def build():
             if clip["kind"] == "photo":
                 lines.append("길이: " + ", ".join(f"{k}분 {v}초" for k, v in clip["seconds"].items()))
             if clip["prompt"]:
-                lines += ["", "```", clip["prompt"].replace("{LINE}", clip["line"] or ""), "```"]
+                if clip.get("veo") and clip["veo"] != clip["line"]:
+                    lines.append(f"Flow용 대사(이름 뺌): {clip['veo']}")
+                lines += ["", "```", clip["prompt"].replace("{LINE}", clip.get("veo") or ""), "```"]
             lines.append("")
         (HERE / f"{n:02d}-{c['id']}.md").write_text("\n".join(lines), encoding="utf-8")
 
