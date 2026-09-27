@@ -80,13 +80,14 @@ def still_prompt(c, scene=None):
     )
     return (
         f"{KEEP} Change only the clothes, pose and background: {scene[0].lower() + scene[1:].rstrip('.')}. "
-        f"Face clearly visible and evenly lit, looking toward the camera, mouth gently closed. "
+        f"Face clearly visible and evenly lit, looking toward the camera with a bright, happy, natural baby smile, "
+        f"keeping the same eyes and face shape as in the photo. "
         f"Lighting and mood: {c['style']}. Medium close-up, 16:9."
     )
 
 def talk_prompt(c, gesture):
     return (
-        f"{c['set']}. Medium close-up: the baby, wearing {c['outfit']}, sits facing the camera and happily says in a cute, slow "
+        f"{c['set']}. Medium close-up: the baby, wearing {c['outfit']}, sits facing the camera, starts with a bright happy smile, and happily says in a cute, slow "
         f"toddler voice: \"{{LINE}}\" then {gesture}. The mouth moves naturally with the Korean words. {FACE} "
         f"Style: {c['style']}. 8-second shot, 16:9. No text, no subtitles, no logos."
     )
