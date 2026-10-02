@@ -1,0 +1,327 @@
+<title>주식과 금리 캐러셀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800;900&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a working sheet — header, then the 10 Instagram cards (4:5) in a grid, then caption copy and production notes. */
+:root{
+  /* page (theme-aware) */
+  --page:#E6E9EE; --page-ink:#18233A; --page-mute:#5A6478; --page-line:#C9CFD9; --page-panel:#F4F6F9;
+  /* card (fixed brand look, same in both themes) */
+  --c-paper:#F3F4F0; --c-ink:#14213D; --c-mute:#5D6679; --c-line:#D4D8DE;
+  --c-rise:#D9442B; --c-teal:#2E7A77; --c-navy:#14213D; --c-navy-ink:#EEF0F4;
+  --f-display:"Gothic A1","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#0F1522;--page-ink:#E4E8F0;--page-mute:#98A2B6;--page-line:#2A3448;--page-panel:#161E2E;color-scheme:dark}}
+:root[data-theme="dark"]{--page:#0F1522;--page-ink:#E4E8F0;--page-mute:#98A2B6;--page-line:#2A3448;--page-panel:#161E2E;color-scheme:dark}
+
+body{background:var(--page);color:var(--page-ink);font-family:var(--f-body);font-size:15px;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:40px 16px 64px;display:grid;gap:40px}
+header{display:grid;gap:8px;max-width:68ch}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--page-mute)}
+h1{font-family:var(--f-display);font-weight:900;font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0;text-wrap:balance}
+header p{margin:0;color:var(--page-mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:24px}
+figure.slot{margin:0;display:grid;gap:8px;min-width:0}
+figure.slot figcaption{font-family:var(--f-mono);font-size:12px;color:var(--page-mute);display:flex;justify-content:space-between}
+
+/* ---------- card ---------- */
+.card{container-type:inline-size;aspect-ratio:4/5;width:100%;max-width:100%;background:var(--c-paper);color:var(--c-ink);
+  position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(10,20,40,.12),0 8px 24px rgba(10,20,40,.10)}
+.in{position:absolute;inset:0;padding:7cqw 7cqw 6cqw;display:flex;flex-direction:column;gap:3.4cqw}
+.top{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--f-mono);font-size:2.4cqw;letter-spacing:.06em;color:var(--c-mute);text-transform:uppercase}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-family:var(--f-mono);font-size:2.3cqw;color:var(--c-mute);border-top:.25cqw solid var(--c-line);padding-top:2.4cqw}
+.kicker{font-family:var(--f-display);font-weight:800;font-size:3.3cqw;color:var(--c-rise);letter-spacing:.02em}
+.h{font-family:var(--f-display);font-weight:900;font-size:7cqw;line-height:1.22;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.h.s{font-size:6cqw}
+.p{font-size:3.5cqw;line-height:1.6;margin:0}
+.mute{color:var(--c-mute)}
+.rise{color:var(--c-rise)}
+.num{font-family:var(--f-mono);font-weight:600;font-variant-numeric:tabular-nums}
+b{font-weight:700}
+
+/* cover */
+.cover{background:var(--c-navy);color:var(--c-navy-ink)}
+.cover .top,.cover .foot{color:#9AA5BC;border-color:#2C3A5A}
+.cover .big{font-family:var(--f-mono);font-weight:600;font-size:27cqw;line-height:.9;letter-spacing:-.04em;color:var(--c-navy-ink);margin-top:2cqw}
+.cover .big small{font-size:12cqw;color:var(--c-rise)}
+.cover .label{font-family:var(--f-mono);font-size:2.8cqw;color:#9AA5BC;letter-spacing:.04em}
+.cover .h{font-size:7.6cqw;color:#fff}
+.cover .swipe{font-family:var(--f-display);font-weight:800;font-size:3cqw;color:var(--c-rise)}
+
+/* source tags */
+.tag{font-family:var(--f-mono);font-weight:600;font-size:2.3cqw;letter-spacing:.04em;text-transform:none;padding:.6cqw 1.8cqw;border-radius:.6cqw;white-space:nowrap}
+.tag.bv{background:var(--c-navy);color:var(--c-navy-ink)}
+.tag.ed{background:var(--c-teal);color:#fff}
+.tag.dt{background:transparent;color:var(--c-mute);box-shadow:inset 0 0 0 .25cqw var(--c-line)}
+.top{align-items:center}
+.legend{display:grid;grid-template-columns:auto 1fr;gap:1.4cqw 2cqw;align-items:center;font-size:2.7cqw}
+.legend .tag{justify-self:start}
+/* lists */
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:3.2cqw}
+.tl li{display:grid;grid-template-columns:7cqw 1fr;gap:2cqw;font-size:3.5cqw;line-height:1.55}
+.tl li .n{font-family:var(--f-mono);font-weight:600;font-size:3.4cqw;color:var(--c-rise);padding-top:.2cqw}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.stat div{border-top:.5cqw solid var(--c-ink);padding-top:1.6cqw;display:grid;gap:.4cqw}
+.stat .k{font-size:2.7cqw;color:var(--c-mute)}
+.stat .v{font-family:var(--f-mono);font-weight:600;font-size:7.4cqw;line-height:1.05;letter-spacing:-.02em}
+.stat .d{font-family:var(--f-mono);font-size:2.7cqw;color:var(--c-rise)}
+.quote{border-left:1cqw solid var(--c-rise);padding:.6cqw 0 .6cqw 3.4cqw;font-size:3.6cqw;line-height:1.55;margin:0}
+.quote cite{display:block;font-style:normal;font-family:var(--f-mono);font-size:2.4cqw;color:var(--c-mute);margin-top:1.4cqw}
+
+/* positioning table */
+.pos{width:100%;border-collapse:collapse;font-size:3.3cqw}
+.pos td{padding:2.1cqw 0;border-bottom:.25cqw solid var(--c-line);vertical-align:middle}
+.pos td:last-child{text-align:right;white-space:nowrap}
+.chip{display:inline-block;font-family:var(--f-mono);font-weight:600;font-size:2.6cqw;padding:.7cqw 1.8cqw;border-radius:99px;letter-spacing:.02em}
+.chip.uw{background:var(--c-rise);color:#fff}
+.chip.ow{background:var(--c-teal);color:#fff}
+.chip.nt{background:var(--c-line);color:var(--c-ink)}
+
+/* term cards */
+.term{display:grid;gap:1.2cqw;padding-bottom:3cqw;border-bottom:.25cqw solid var(--c-line)}
+.term:last-of-type{border-bottom:0}
+.term .t{font-family:var(--f-display);font-weight:900;font-size:4.6cqw}
+.term .t span{font-family:var(--f-mono);font-weight:500;font-size:2.6cqw;color:var(--c-mute);margin-left:1.6cqw}
+
+.chart{width:100%;height:auto;display:block}
+.src{font-size:2.3cqw;color:var(--c-mute);line-height:1.5;margin:0}
+
+/* ---------- caption & notes ---------- */
+.below{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px}
+.panel{background:var(--page-panel);border:1px solid var(--page-line);padding:20px;display:grid;gap:12px;align-content:start;min-width:0}
+.panel h2{font-family:var(--f-display);font-weight:800;font-size:18px;margin:0}
+.panel pre{white-space:pre-wrap;word-break:keep-all;font-family:var(--f-body);font-size:14px;line-height:1.7;margin:0}
+.panel ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.panel a{color:inherit}
+button{font:600 13px var(--f-body);background:var(--page-ink);color:var(--page);border:0;padding:8px 14px;cursor:pointer;justify-self:start}
+button:focus-visible{outline:2px solid var(--page-mute);outline-offset:2px}
+</style>
+
+<style>
+.formula{font-family:var(--f-display);font-weight:900;font-size:5.4cqw;line-height:1.3;display:flex;align-items:center;gap:3cqw;padding:3cqw 0;border-block:.25cqw solid var(--c-line);white-space:nowrap}
+.formula .frac{display:grid;justify-items:center}
+.formula .nu{border-bottom:.5cqw solid var(--c-ink);padding:0 2cqw .6cqw;justify-self:stretch;text-align:center}
+.formula .de{padding-top:.6cqw}
+.formula .r{color:var(--c-rise)} .formula .g{color:var(--c-teal)}
+.flow{display:grid;gap:2.4cqw}
+.flow div{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2cqw;font-size:3.4cqw;padding:2.2cqw 2.6cqw;background:#E7E9E4}
+.flow b.r{color:var(--c-rise)} .flow b.g{color:var(--c-teal)}
+.flow .res{font-family:var(--f-mono);font-weight:600;font-size:3.2cqw;white-space:nowrap}
+.bars{display:grid;gap:3.4cqw}
+.bar{display:grid;gap:1.2cqw}
+.bar .lab{display:flex;justify-content:space-between;font-size:3.2cqw}
+.bar .lab b{font-family:var(--f-mono);font-size:4.4cqw}
+.bar .track{height:5cqw;background:#E2E5DF;position:relative}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--c-ink)}
+.bar.long .fill{background:var(--c-teal)}
+.cover .vs{display:grid;grid-template-columns:1fr 1fr;gap:4cqw;margin-top:1cqw}
+.cover .vs div{display:grid;gap:.6cqw;border-top:.5cqw solid #2C3A5A;padding-top:2cqw}
+.cover .vs .k{font-family:var(--f-mono);font-size:2.6cqw;color:#9AA5BC;letter-spacing:.04em}
+.cover .vs .v{font-family:var(--f-mono);font-weight:600;font-size:13.5cqw;line-height:.95;letter-spacing:-.04em}
+.cover .vs .v.up{color:#7FC8B8} .cover .vs .v.dn{color:var(--c-rise)}
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">샘플 캐러셀 #2 · 2026년 10월 2일 기준</div>
+  <h1>금리 5%인데 주식은 왜 버틸까</h1>
+  <p>모건스탠리의 무료 팟캐스트 <b>Thoughts on the Market</b> 10월 2일 방송(앤드루 시츠, 글로벌 채권 리서치 헤드)을 스크립트 원문으로 읽고 10장으로 정리했어요. 8장은 같은 회사 마이크 윌슨의 9월 28일 방송이에요. 지수와 금리 수치는 FRED 데이터예요. 리포트 내용은 <b>Morgan Stanley View</b>, 운영자 해석은 <b>Editor's Note</b> 태그로 구분했어요.</p>
+</header>
+
+<section class="grid" aria-label="캐러셀 10장">
+
+<!-- 1 COVER -->
+<figure class="slot"><div class="card cover"><div class="in">
+  <div class="top"><span>Macro Brief · Equities × Rates</span><span>2026.10</span></div>
+  <div class="label">올해 들어 (2025년 말 → 2026.10.1)</div>
+  <div class="vs">
+    <div><span class="k">S&amp;P 500</span><span class="v up">+12%</span></div>
+    <div><span class="k">미국 10년물 금리</span><span class="v dn">+1.06<small style="font-size:6cqw">%p</small></span></div>
+  </div>
+  <h2 class="h">금리가 이렇게 올랐는데<br>주식은 왜 안 빠질까?</h2>
+  <div class="foot"><span>@macro.brief.kr</span><span class="swipe">넘겨보기 →</span></div>
+</div></div><figcaption><span>01 표지 (훅)</span><span>1/10</span></figcaption></figure>
+
+<!-- 2 TL;DR -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>3줄 요약</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">바쁘면 이 장만 보세요</h2>
+  <ul class="tl">
+    <li><span class="n">01</span><span>금리가 오르면 주식은 원래 불리해요. 그런데 <b>기업 이익이 금리보다 더 빨리</b> 늘었어요.</span></li>
+    <li><span class="n">02</span><span>주식을 팔고 채권으로 옮기는 <b>자금 이동도 아직 안 보여요.</b> 돈은 둘 다로 들어가고 있어요.</span></li>
+    <li><span class="n">03</span><span>다만 금리가 높을수록 <b class="rise">실적이 실망스러울 여유가 줄어요.</b> 이익이 계속 빠르게 늘어야 해요.</span></li>
+  </ul>
+  <div class="foot"><span>Thoughts on the Market 2026.10.2 · 앤드루 시츠</span><span>2/10</span></div>
+</div></div><figcaption><span>02 TL;DR</span><span>2/10</span></figcaption></figure>
+
+<!-- 3 CHART -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>올해 무슨 일이 있었나</span><span class="tag dt">Data · FRED</span></div>
+  <h2 class="h s">금리도 오르고<br>주가도 올랐어요</h2>
+  <svg class="chart" id="ch-two" viewBox="0 0 1000 700" role="img" aria-label="2026년 S&amp;P 500 지수와 미국 10년물 금리 추이"></svg>
+  <p class="src">일별 종가, 2025.12.31 ~ 2026.10.1 · 자료: FRED (SP500, DGS10)</p>
+  <div class="foot"><span>@macro.brief.kr</span><span>3/10</span></div>
+</div></div><figcaption><span>03 차트: 지수와 금리</span><span>3/10</span></figcaption></figure>
+
+<!-- 4 EARNINGS -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>이유 ① 이익</span><span class="tag bv">Morgan Stanley View</span></div>
+  <div class="kicker">비싸진 게 아니라, 이익이 더 커졌다</div>
+  <h2 class="h s">S&amp;P 500 기업 이익<br>1년 새 약 30% 증가</h2>
+  <div class="stat">
+    <div><span class="k">S&amp;P 500 이익 (최근 1년)</span><span class="v">+30%</span><span class="d">대형주 중심</span></div>
+    <div><span class="k">중간값 기업의 이익 증가율</span><span class="v">10%대 중반</span><span class="d">대형주만의 얘기가 아님</span></div>
+  </div>
+  <p class="p">금리가 오르면서 주가수익비율(PER)은 <b>오히려 크게 낮아졌어요.</b> 그런데 이익이 훨씬 더 많이 늘어서 주가는 올랐어요. 주식과 채권의 상대 매력을 보여주는 <b>주식 위험 프리미엄도 연초와 비슷</b>해요.</p>
+  <div class="foot"><span>Thoughts on the Market 2026.10.2</span><span>4/10</span></div>
+</div></div><figcaption><span>04 이유 ① 이익 성장</span><span>4/10</span></figcaption></figure>
+
+<!-- 5 FORMULA -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>공식으로 보면</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">주가에는 움직이는<br>부품이 두 개 있어요</h2>
+  <div class="formula">
+    <span>기업 가치 =</span>
+    <span class="frac"><span class="nu">배당</span><span class="de"><span class="r">요구수익률</span> − <span class="g">성장률</span></span></span>
+  </div>
+  <div class="flow">
+    <div><span>금리 ↑ → <b class="r">요구수익률 ↑</b> → 분모가 커져요</span><span class="res rise">가치 ↓</span></div>
+    <div><span>이익 ↑ → <b class="g">성장률 ↑</b> → 분모가 작아져요</span><span class="res" style="color:var(--c-teal)">가치 ↑</span></div>
+  </div>
+  <p class="p mute" style="font-size:3.1cqw">배당할인모형(고든 성장 모형)이에요. 올해는 두 번째 힘이 첫 번째 힘을 이기고 있다는 게 모건스탠리의 설명이에요.</p>
+  <div class="foot"><span>Thoughts on the Market 2026.10.2</span><span>5/10</span></div>
+</div></div><figcaption><span>05 공식 설명</span><span>5/10</span></figcaption></figure>
+
+<!-- 6 FLOWS -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>이유 ② 돈의 흐름</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">"주식 팔고 채권 산다"는<br>아직 안 일어났어요</h2>
+  <ul class="tl">
+    <li><span class="n">01</span><span>모건스탠리가 추적하는 자금 흐름을 보면 돈은 <b>주식과 채권 양쪽</b>으로 계속 들어가고 있어요.</span></li>
+    <li><span class="n">02</span><span>두 시장은 날마다 <b>같은 방향</b>으로 움직여요. 돈을 옮기는 중이라면 반대로 움직였을 거예요.</span></li>
+    <li><span class="n">03</span><span>AI 투자를 하는 대형 기술 기업들은 지금 금리에서도 <b>회사채 발행이 주식 발행보다 낫다</b>고 판단하고 있어요.</span></li>
+  </ul>
+  <div class="foot"><span>Thoughts on the Market 2026.10.2</span><span>6/10</span></div>
+</div></div><figcaption><span>06 이유 ② 자금 흐름</span><span>6/10</span></figcaption></figure>
+
+<!-- 7 VALUATION IS SLOW -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>밸류에이션은 느린 힘</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">"비싸다"는 판단은<br>길게 봐야 맞아요</h2>
+  <p class="p">주식 이익수익률과 채권 금리의 차이가 이후 주식 대비 채권 성과를 얼마나 설명했는지예요.</p>
+  <div class="bars">
+    <div class="bar"><div class="lab"><span>다음 1개월</span><b>약 10%</b></div><div class="track"><div class="fill" style="width:10%"></div></div></div>
+    <div class="bar long"><div class="lab"><span>다음 3년</span><b>약 50%</b></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+  </div>
+  <blockquote class="quote">시장은 분기마다 한 번 푸는 방정식이 아니라, 미래를 두고 벌이는 계속되는 논쟁이다.<cite>앤드루 시츠, Thoughts on the Market 2026.10.2 (번역)</cite></blockquote>
+  <div class="foot"><span>@macro.brief.kr</span><span>7/10</span></div>
+</div></div><figcaption><span>07 밸류에이션의 예측력</span><span>7/10</span></figcaption></figure>
+
+<!-- 8 COUNTER (MS Wilson) -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>반대 시각 · 리스크</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">같은 회사 안에서도<br>나온 경고</h2>
+  <p class="p mute" style="font-size:3cqw">마이크 윌슨 (모건스탠리 CIO·미국 주식 전략가), 9월 28일 방송</p>
+  <ul class="tl">
+    <li><span class="n">A</span><span>상승을 끄는 종목 수가 줄고 있어요. 러셀3000 종목의 <b>절반 이상이 6월 고점보다 20% 이상</b> 빠져 있어요.</span></li>
+    <li><span class="n">B</span><span>200일 이동평균 위에 있는 S&amp;P 500 종목 비중이 <b>약 75%에서 50% 아래로</b> 떨어졌어요. 지수는 훨씬 잘 버텼고요.</span></li>
+    <li><span class="n">C</span><span>채권 변동성이 주식으로 번지면 S&amp;P 500이 <b class="rise">5~10% 조정</b>받을 수 있다고 봤어요. 윌슨은 이를 "반길 일"이라고 했어요.</span></li>
+  </ul>
+  <div class="foot"><span>Thoughts on the Market 2026.9.28</span><span>8/10</span></div>
+</div></div><figcaption><span>08 반대 시각 (윌슨)</span><span>8/10</span></figcaption></figure>
+
+<!-- 9 KOREA -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>한국 투자자 체크포인트</span><span class="tag ed">Editor's Note</span></div>
+  <h2 class="h s">내 계좌에는<br>어떤 의미일까?</h2>
+  <p class="p mute" style="font-size:3cqw">모건스탠리 방송에는 한국 관련 내용이 없어요. 운영자의 해석이에요.</p>
+  <ul class="tl">
+    <li><span class="n">01</span><span>미국 주식을 갖고 있다면 이번 랠리는 <b>이익이 받치는 구조</b>예요. 10월 중순부터 3분기 실적 시즌이니 <b>이익 전망이 꺾이는지</b>를 보세요.</span></li>
+    <li><span class="n">02</span><span>주식과 채권이 <b>같은 방향</b>으로 움직이면 "주식이 빠질 때 채권이 받쳐준다"는 분산 효과가 약해져요. 두 자산을 같이 들고 있다면 비중을 점검해 보세요.</span></li>
+    <li><span class="n">03</span><span>지수만 보면 놓치는 게 있어요. <b>내 종목이 지수만큼 올랐는지</b> 비교해 보세요.</span></li>
+  </ul>
+  <div class="foot"><span>운영자 해석 · 투자 권유 아님</span><span>9/10</span></div>
+</div></div><figcaption><span>09 한국 시사점</span><span>9/10</span></figcaption></figure>
+
+<!-- 10 TERMS + SOURCES -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>오늘의 용어 · 출처</span><span>10</span></div>
+  <div class="term"><div class="t">주식 위험 프리미엄<span>Equity Risk Premium</span></div><p class="p" style="font-size:3.2cqw">주식 이익수익률(PER의 역수)에서 채권 금리를 뺀 값이에요. 클수록 채권보다 주식이 상대적으로 싸다는 뜻이에요.</p></div>
+  <div class="term"><div class="t">시장 폭<span>Market Breadth</span></div><p class="p" style="font-size:3.2cqw">지수 상승에 참여하는 종목이 얼마나 많은지를 말해요. 지수는 오르는데 폭이 좁으면 소수 종목에 기댄 상승이에요.</p></div>
+  <div class="legend"><span class="tag bv">Morgan Stanley View</span><span>방송 내용을 옮긴 장</span><span class="tag ed">Editor's Note</span><span>운영자 해석</span></div>
+  <p class="src" style="font-size:2.5cqw">출처: Morgan Stanley Thoughts on the Market (2026.10.2 앤드루 시츠, 2026.9.28 마이크 윌슨) · FRED SP500, DGS10<br>번역·요약 과정에서 표현이 달라질 수 있어요. 본 콘텐츠는 정보 제공용이며, 특정 상품의 매수·매도를 권유하지 않아요.</p>
+  <div class="foot"><span>저장하고 다음 브리프도 받아보세요</span><span>10/10</span></div>
+</div></div><figcaption><span>10 용어 + 출처 + 고지</span><span>10/10</span></figcaption></figure>
+
+</section>
+
+<section class="below">
+  <div class="panel">
+    <h2>캡션 (복사해서 사용)</h2>
+<pre id="caption">미국 10년물 금리는 올해 1%p 넘게 올랐는데, S&amp;P 500은 12% 올랐어요. 원래라면 금리가 오를 때 주식은 불리한데 왜일까요?
+
+모건스탠리 채권 리서치 헤드 앤드루 시츠의 10월 2일 방송을 정리했어요.
+
+✔️ 이유 ①: 기업 이익이 1년 새 약 30% 늘었어요
+✔️ 이유 ②: 주식에서 채권으로 돈이 빠지는 움직임이 아직 없어요
+✔️ 단, 금리가 높을수록 실적 실망을 버틸 여유는 줄어요
+✔️ 같은 회사 마이크 윌슨은 "상승 종목 수가 줄고 있다"고 경고했어요
+
+여러분은 지금 주식과 채권 중 어디에 더 무게를 두고 계신가요? 👇
+
+출처: Morgan Stanley Thoughts on the Market (2026.10.2, 9.28), FRED
+※ 공개 자료를 요약한 정보 제공용 콘텐츠이며 투자 권유가 아닙니다.
+
+#미국주식 #SP500 #미국채 #금리 #모건스탠리 #주식투자 #채권투자 #거시경제 #매크로 #경제공부 #재테크 #실적시즌</pre>
+    <button type="button" id="copy">캡션 복사</button>
+  </div>
+  <div class="panel">
+    <h2>제작 메모</h2>
+    <ul>
+      <li><b>원문:</b> Morgan Stanley <i>Thoughts on the Market</i> "The Tension Between Equities and Bonds" (2026.10.2, 앤드루 시츠)와 "The Stock Market's Bad Breadth" (2026.9.28, 마이크 윌슨). 팟캐스트 RSS에 들어 있는 스크립트 전문을 직접 읽고 썼어요 (<code>macro-brief/out/2026-10-02/texts/</code>).</li>
+      <li><b>표지 숫자:</b> FRED 기준 S&amp;P 500은 +12.0% (6,845.50 → 7,666.45), 10년물은 4.18% → 5.24% (+106bp)예요. 방송에서는 "약 13%, 약 100bp"라고 했어요. 표지에는 FRED 수치를 썼어요.</li>
+      <li><b>4장 "이익 +30%"</b>는 방송에서 말한 수치예요. 원문에 산출 기준(주당순이익, 12개월 선행 등)은 나오지 않아요.</li>
+      <li><b>8장은 반대 시각이지만 Morgan Stanley View 태그</b>예요. 운영자 의견이 아니라 같은 회사 다른 전략가의 방송 내용이라서요.</li>
+      <li><b>9장 "10월 중순 실적 시즌"</b>은 통상적인 일정이에요. 대형 은행들의 발표일을 확인하고 넣으세요.</li>
+      <li><b>게시 전 체크:</b> 오늘 발표된 9월 고용지표(FRED 기준 실업률 4.2%)로 금리가 크게 움직였다면 표지 숫자를 업데이트하세요.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<script>
+const D = {"sp":[["2025-12-31",6845.5],["2026-01-02",6858.47],["2026-01-05",6902.05],["2026-01-06",6944.82],["2026-01-07",6920.93],["2026-01-08",6921.46],["2026-01-09",6966.28],["2026-01-12",6977.27],["2026-01-13",6963.74],["2026-01-14",6926.6],["2026-01-15",6944.47],["2026-01-16",6940.01],["2026-01-20",6796.86],["2026-01-21",6875.62],["2026-01-22",6913.35],["2026-01-23",6915.61],["2026-01-26",6950.23],["2026-01-27",6978.6],["2026-01-28",6978.03],["2026-01-29",6969.01],["2026-01-30",6939.03],["2026-02-02",6976.44],["2026-02-03",6917.81],["2026-02-04",6882.72],["2026-02-05",6798.4],["2026-02-06",6932.3],["2026-02-09",6964.82],["2026-02-10",6941.81],["2026-02-11",6941.47],["2026-02-12",6832.76],["2026-02-13",6836.17],["2026-02-17",6843.22],["2026-02-18",6881.31],["2026-02-19",6861.89],["2026-02-20",6909.51],["2026-02-23",6837.75],["2026-02-24",6890.07],["2026-02-25",6946.13],["2026-02-26",6908.86],["2026-02-27",6878.88],["2026-03-02",6881.62],["2026-03-03",6816.63],["2026-03-04",6869.5],["2026-03-05",6830.71],["2026-03-06",6740.02],["2026-03-09",6795.99],["2026-03-10",6781.48],["2026-03-11",6775.8],["2026-03-12",6672.62],["2026-03-13",6632.19],["2026-03-16",6699.38],["2026-03-17",6716.09],["2026-03-18",6624.7],["2026-03-19",6606.49],["2026-03-20",6506.48],["2026-03-23",6581.0],["2026-03-24",6556.37],["2026-03-25",6591.9],["2026-03-26",6477.16],["2026-03-27",6368.85],["2026-03-30",6343.72],["2026-03-31",6528.52],["2026-04-01",6575.32],["2026-04-02",6582.69],["2026-04-06",6611.83],["2026-04-07",6616.85],["2026-04-08",6782.81],["2026-04-09",6824.66],["2026-04-10",6816.89],["2026-04-13",6886.24],["2026-04-14",6967.38],["2026-04-15",7022.95],["2026-04-16",7041.28],["2026-04-17",7126.06],["2026-04-20",7109.14],["2026-04-21",7064.01],["2026-04-22",7137.9],["2026-04-23",7108.4],["2026-04-24",7165.08],["2026-04-27",7173.91],["2026-04-28",7138.8],["2026-04-29",7135.95],["2026-04-30",7209.01],["2026-05-01",7230.12],["2026-05-04",7200.75],["2026-05-05",7259.22],["2026-05-06",7365.12],["2026-05-07",7337.11],["2026-05-08",7398.93],["2026-05-11",7412.84],["2026-05-12",7400.96],["2026-05-13",7444.25],["2026-05-14",7501.24],["2026-05-15",7408.5],["2026-05-18",7403.05],["2026-05-19",7353.61],["2026-05-20",7432.97],["2026-05-21",7445.72],["2026-05-22",7473.47],["2026-05-26",7519.12],["2026-05-27",7520.36],["2026-05-28",7563.63],["2026-05-29",7580.06],["2026-06-01",7599.96],["2026-06-02",7609.78],["2026-06-03",7553.68],["2026-06-04",7584.31],["2026-06-05",7383.74],["2026-06-08",7405.73],["2026-06-09",7386.65],["2026-06-10",7266.99],["2026-06-11",7394.3],["2026-06-12",7431.46],["2026-06-15",7554.29],["2026-06-16",7511.35],["2026-06-17",7420.1],["2026-06-18",7500.58],["2026-06-22",7472.79],["2026-06-23",7365.46],["2026-06-24",7358.22],["2026-06-25",7357.49],["2026-06-26",7354.02],["2026-06-29",7440.43],["2026-06-30",7499.36],["2026-07-01",7483.23],["2026-07-02",7483.24],["2026-07-06",7537.43],["2026-07-07",7503.85],["2026-07-08",7482.71],["2026-07-09",7543.64],["2026-07-10",7575.39],["2026-07-13",7515.34],["2026-07-14",7543.59],["2026-07-15",7572.4],["2026-07-16",7533.77],["2026-07-17",7457.69],["2026-07-20",7443.28],["2026-07-21",7509.2],["2026-07-22",7498.96],["2026-07-23",7408.3],["2026-07-24",7411.98],["2026-07-27",7413.18],["2026-07-28",7428.78],["2026-07-29",7316.15],["2026-07-30",7437.63],["2026-07-31",7489.72],["2026-08-03",7600.5],["2026-08-04",7736.52],["2026-08-05",7723.55],["2026-08-06",7709.96],["2026-08-07",7757.64],["2026-08-10",7753.11],["2026-08-11",7728.2],["2026-08-12",7748.5],["2026-08-13",7798.99],["2026-08-14",7785.76],["2026-08-17",7745.06],["2026-08-18",7691.76],["2026-08-19",7707.98],["2026-08-20",7641.16],["2026-08-21",7674.37],["2026-08-24",7652.86],["2026-08-25",7677.28],["2026-08-26",7675.7],["2026-08-27",7730.99],["2026-08-28",7711.76],["2026-08-31",7686.14],["2026-09-01",7631.47],["2026-09-02",7666.6],["2026-09-03",7747.71],["2026-09-04",7718.6],["2026-09-08",7673.52],["2026-09-09",7636.36],["2026-09-10",7591.7],["2026-09-11",7656.98],["2026-09-14",7619.98],["2026-09-15",7585.73],["2026-09-16",7551.81],["2026-09-17",7637.76],["2026-09-18",7650.5],["2026-09-21",7764.7],["2026-09-22",7764.64],["2026-09-23",7706.03],["2026-09-24",7704.13],["2026-09-25",7743.41],["2026-09-28",7683.69],["2026-09-29",7670.84],["2026-09-30",7651.54],["2026-10-01",7666.45]],"y":[["2025-12-31",4.18],["2026-01-02",4.19],["2026-01-05",4.17],["2026-01-06",4.18],["2026-01-07",4.15],["2026-01-08",4.19],["2026-01-09",4.18],["2026-01-12",4.19],["2026-01-13",4.18],["2026-01-14",4.15],["2026-01-15",4.17],["2026-01-16",4.24],["2026-01-20",4.3],["2026-01-21",4.26],["2026-01-22",4.26],["2026-01-23",4.24],["2026-01-26",4.22],["2026-01-27",4.24],["2026-01-28",4.26],["2026-01-29",4.24],["2026-01-30",4.26],["2026-02-02",4.29],["2026-02-03",4.28],["2026-02-04",4.29],["2026-02-05",4.21],["2026-02-06",4.22],["2026-02-09",4.22],["2026-02-10",4.16],["2026-02-11",4.18],["2026-02-12",4.09],["2026-02-13",4.04],["2026-02-17",4.05],["2026-02-18",4.09],["2026-02-19",4.08],["2026-02-20",4.08],["2026-02-23",4.03],["2026-02-24",4.04],["2026-02-25",4.05],["2026-02-26",4.02],["2026-02-27",3.97],["2026-03-02",4.05],["2026-03-03",4.06],["2026-03-04",4.09],["2026-03-05",4.13],["2026-03-06",4.15],["2026-03-09",4.12],["2026-03-10",4.15],["2026-03-11",4.21],["2026-03-12",4.27],["2026-03-13",4.28],["2026-03-16",4.23],["2026-03-17",4.2],["2026-03-18",4.26],["2026-03-19",4.25],["2026-03-20",4.39],["2026-03-23",4.34],["2026-03-24",4.39],["2026-03-25",4.33],["2026-03-26",4.42],["2026-03-27",4.44],["2026-03-30",4.35],["2026-03-31",4.3],["2026-04-01",4.33],["2026-04-02",4.31],["2026-04-03",4.35],["2026-04-06",4.34],["2026-04-07",4.33],["2026-04-08",4.29],["2026-04-09",4.29],["2026-04-10",4.31],["2026-04-13",4.3],["2026-04-14",4.26],["2026-04-15",4.29],["2026-04-16",4.32],["2026-04-17",4.26],["2026-04-20",4.26],["2026-04-21",4.3],["2026-04-22",4.3],["2026-04-23",4.34],["2026-04-24",4.31],["2026-04-27",4.35],["2026-04-28",4.36],["2026-04-29",4.42],["2026-04-30",4.4],["2026-05-01",4.39],["2026-05-04",4.45],["2026-05-05",4.43],["2026-05-06",4.36],["2026-05-07",4.41],["2026-05-08",4.38],["2026-05-11",4.42],["2026-05-12",4.46],["2026-05-13",4.46],["2026-05-14",4.47],["2026-05-15",4.59],["2026-05-18",4.61],["2026-05-19",4.67],["2026-05-20",4.57],["2026-05-21",4.57],["2026-05-22",4.56],["2026-05-26",4.5],["2026-05-27",4.48],["2026-05-28",4.45],["2026-05-29",4.45],["2026-06-01",4.47],["2026-06-02",4.46],["2026-06-03",4.49],["2026-06-04",4.47],["2026-06-05",4.55],["2026-06-08",4.56],["2026-06-09",4.53],["2026-06-10",4.55],["2026-06-11",4.45],["2026-06-12",4.48],["2026-06-15",4.47],["2026-06-16",4.43],["2026-06-17",4.49],["2026-06-18",4.46],["2026-06-22",4.51],["2026-06-23",4.5],["2026-06-24",4.41],["2026-06-25",4.4],["2026-06-26",4.38],["2026-06-29",4.38],["2026-06-30",4.44],["2026-07-01",4.48],["2026-07-02",4.49],["2026-07-06",4.48],["2026-07-07",4.55],["2026-07-08",4.56],["2026-07-09",4.54],["2026-07-10",4.56],["2026-07-13",4.62],["2026-07-14",4.58],["2026-07-15",4.55],["2026-07-16",4.57],["2026-07-17",4.55],["2026-07-20",4.6],["2026-07-21",4.63],["2026-07-22",4.67],["2026-07-23",4.71],["2026-07-24",4.69],["2026-07-27",4.65],["2026-07-28",4.61],["2026-07-29",4.67],["2026-07-30",4.68],["2026-07-31",4.75],["2026-08-03",4.7],["2026-08-04",4.63],["2026-08-05",4.63],["2026-08-06",4.69],["2026-08-07",4.65],["2026-08-10",4.72],["2026-08-11",4.7],["2026-08-12",4.68],["2026-08-13",4.63],["2026-08-14",4.68],["2026-08-17",4.72],["2026-08-18",4.71],["2026-08-19",4.65],["2026-08-20",4.69],["2026-08-21",4.74],["2026-08-24",4.7],["2026-08-25",4.64],["2026-08-26",4.66],["2026-08-27",4.67],["2026-08-28",4.73],["2026-08-31",4.75],["2026-09-01",4.79],["2026-09-02",4.79],["2026-09-03",4.77],["2026-09-04",4.78],["2026-09-08",4.8],["2026-09-09",4.83],["2026-09-10",4.95],["2026-09-11",4.96],["2026-09-14",4.97],["2026-09-15",5.0],["2026-09-16",5.01],["2026-09-17",4.94],["2026-09-18",5.01],["2026-09-21",4.96],["2026-09-22",4.96],["2026-09-23",5.11],["2026-09-24",5.18],["2026-09-25",5.17],["2026-09-28",5.24],["2026-09-29",5.26],["2026-09-30",5.29],["2026-10-01",5.24]]};
+const NS = "http://www.w3.org/2000/svg";
+const C = {ink:"#14213D", mute:"#5D6679", line:"#D4D8DE", rise:"#D9442B", teal:"#2E7A77"};
+function el(tag, a, p, t){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(t!=null)e.textContent=t;p.appendChild(e);return e;}
+const svg=document.getElementById("ch-two");
+const t0=Date.parse(D.sp[0][0]), t1=Date.parse("2026-10-01");
+const L=96, R=840;
+const X=d=>L+(R-L)*(Date.parse(d)-t0)/(t1-t0);
+function panel(rows, top, h, step, fmt, color, title, endLabel){
+  const vals=rows.map(r=>r[1]); const lo=Math.floor(Math.min(...vals)/step)*step, hi=Math.ceil(Math.max(...vals)/step)*step;
+  const Y=v=>top+h*(hi-v)/(hi-lo);
+  el("text",{x:L,y:top-18,"font-size":24,"font-weight":700,fill:C.ink,"font-family":"IBM Plex Sans KR, sans-serif"},svg,title);
+  for(let v=lo; v<=hi+1e-9; v+=step){
+    el("line",{x1:L,x2:R,y1:Y(v),y2:Y(v),stroke:C.line,"stroke-width":1.5},svg);
+    el("text",{x:L-12,y:Y(v)+8,"text-anchor":"end","font-size":21,fill:C.mute,"font-family":"IBM Plex Mono, monospace"},svg,fmt(v));
+  }
+  el("path",{d:rows.map((r,i)=>(i?"L":"M")+X(r[0]).toFixed(1)+","+Y(r[1]).toFixed(1)).join(""),fill:"none",stroke:color,"stroke-width":4,"stroke-linejoin":"round"},svg);
+  const last=rows[rows.length-1];
+  el("circle",{cx:X(last[0]),cy:Y(last[1]),r:8,fill:color},svg);
+  el("text",{x:X(last[0])+16,y:Y(last[1])+2,"font-size":28,"font-weight":600,fill:color,"font-family":"IBM Plex Mono, monospace"},svg,endLabel);
+  el("text",{x:X(last[0])+16,y:Y(last[1])+30,"font-size":20,fill:C.mute,"font-family":"IBM Plex Mono, monospace"},svg,fmt(last[1]));
+}
+panel(D.sp, 60, 250, 400, v=>v.toLocaleString("en-US",{maximumFractionDigits:0}), C.ink, "S&P 500", "+12.0%");
+panel(D.y, 400, 230, 0.5, v=>v.toFixed(1)+"%", C.rise, "미국 10년물 금리", "+1.06%p");
+["1월","4월","7월","10월"].forEach((m,i)=>{const d=["2026-01-01","2026-04-01","2026-07-01","2026-10-01"][i];
+  el("text",{x:X(d),y:690,"text-anchor":"middle","font-size":21,fill:C.mute,"font-family":"IBM Plex Sans KR, sans-serif"},svg,m);});
+
+document.getElementById("copy").addEventListener("click",e=>{
+  const t=document.getElementById("caption").textContent, b=e.currentTarget;
+  navigator.clipboard.writeText(t).then(()=>{b.textContent="복사됨";setTimeout(()=>b.textContent="캡션 복사",1600)}).catch(()=>{
+    const r=document.createRange();r.selectNodeContents(document.getElementById("caption"));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="텍스트를 선택했어요. Ctrl+C로 복사하세요";});
+});
+</script>

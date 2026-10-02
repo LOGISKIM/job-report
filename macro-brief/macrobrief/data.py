@@ -28,6 +28,7 @@ FRED_PACK = {
     "DEXKOUS": "원/달러 환율",
     "DCOILBRENTEU": "브렌트유",
     "BAMLH0A0HYM2": "미국 하이일드 스프레드",
+    "SP500": "S&P 500 지수 (최근 10년)",
 }
 
 
