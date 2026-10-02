@@ -1,0 +1,8002 @@
+[
+ {
+  "no": 1,
+  "day": 1,
+  "word": "make",
+  "en": "Make yourself at home.",
+  "ko": "편하게 있어.",
+  "note": "make oneself at home = 편히 지내다"
+ },
+ {
+  "no": 2,
+  "day": 1,
+  "word": "get",
+  "en": "I get it.",
+  "ko": "이해했어.",
+  "note": "get = 이해하다"
+ },
+ {
+  "no": 3,
+  "day": 1,
+  "word": "take",
+  "en": "Take your time.",
+  "ko": "천천히 해.",
+  "note": "take time = 여유를 갖다"
+ },
+ {
+  "no": 4,
+  "day": 1,
+  "word": "go",
+  "en": "How's it going?",
+  "ko": "어떻게 지내?",
+  "note": "go = 진행되다"
+ },
+ {
+  "no": 5,
+  "day": 1,
+  "word": "have",
+  "en": "Have a good one.",
+  "ko": "좋은 하루 보내.",
+  "note": "have = 보내다"
+ },
+ {
+  "no": 6,
+  "day": 2,
+  "word": "come",
+  "en": "Come on!",
+  "ko": "에이, 왜 그래! / 어서!",
+  "note": "come on = 재촉/항의"
+ },
+ {
+  "no": 7,
+  "day": 2,
+  "word": "give",
+  "en": "Give me a break!",
+  "ko": "좀 봐줘! / 말도 안 돼!",
+  "note": "give a break = 봐주다"
+ },
+ {
+  "no": 8,
+  "day": 2,
+  "word": "keep",
+  "en": "Keep the change.",
+  "ko": "잔돈은 가지세요.",
+  "note": "keep = 가지다"
+ },
+ {
+  "no": 9,
+  "day": 2,
+  "word": "put",
+  "en": "Put it on my tab.",
+  "ko": "제 외상으로 달아 주세요.",
+  "note": "put on = 달다"
+ },
+ {
+  "no": 10,
+  "day": 2,
+  "word": "run",
+  "en": "I'm running late.",
+  "ko": "나 좀 늦어.",
+  "note": "run late = 늦어지다"
+ },
+ {
+  "no": 11,
+  "day": 3,
+  "word": "look",
+  "en": "Look out!",
+  "ko": "조심해!",
+  "note": "look out = 조심하다"
+ },
+ {
+  "no": 12,
+  "day": 3,
+  "word": "turn",
+  "en": "Turn left here.",
+  "ko": "여기서 좌회전해.",
+  "note": "turn = 돌다"
+ },
+ {
+  "no": 13,
+  "day": 3,
+  "word": "break",
+  "en": "I broke my phone.",
+  "ko": "폰 고장 냈어.",
+  "note": "break = 고장 내다"
+ },
+ {
+  "no": 14,
+  "day": 3,
+  "word": "work",
+  "en": "It works!",
+  "ko": "된다! / 작동해!",
+  "note": "work = 작동하다"
+ },
+ {
+  "no": 15,
+  "day": 3,
+  "word": "set",
+  "en": "Are you all set?",
+  "ko": "준비 다 됐어?",
+  "note": "all set = 준비 완료"
+ },
+ {
+  "no": 16,
+  "day": 4,
+  "word": "hold",
+  "en": "Hold on a second.",
+  "ko": "잠깐만 기다려.",
+  "note": "hold on = 기다리다"
+ },
+ {
+  "no": 17,
+  "day": 4,
+  "word": "catch",
+  "en": "Catch you later.",
+  "ko": "나중에 봐.",
+  "note": "catch = 만나다"
+ },
+ {
+  "no": 18,
+  "day": 4,
+  "word": "call",
+  "en": "I'll call you back.",
+  "ko": "다시 전화할게.",
+  "note": "call back = 회신 전화하다"
+ },
+ {
+  "no": 19,
+  "day": 4,
+  "word": "cut",
+  "en": "Cut it out!",
+  "ko": "그만해!",
+  "note": "cut it out = 그만두다"
+ },
+ {
+  "no": 20,
+  "day": 4,
+  "word": "pull",
+  "en": "Pull over here.",
+  "ko": "여기 차 세워.",
+  "note": "pull over = 차를 대다"
+ },
+ {
+  "no": 21,
+  "day": 5,
+  "word": "hit",
+  "en": "That really hit the spot.",
+  "ko": "딱 원하던 거였어.",
+  "note": "hit the spot = 딱 만족시키다"
+ },
+ {
+  "no": 22,
+  "day": 5,
+  "word": "feel",
+  "en": "I feel you.",
+  "ko": "네 맘 알아.",
+  "note": "feel = 공감하다"
+ },
+ {
+  "no": 23,
+  "day": 5,
+  "word": "mind",
+  "en": "Do you mind if I sit here?",
+  "ko": "여기 앉아도 될까요?",
+  "note": "mind = 꺼리다"
+ },
+ {
+  "no": 24,
+  "day": 5,
+  "word": "play",
+  "en": "Don't play dumb.",
+  "ko": "모르는 척하지 마.",
+  "note": "play dumb = 모르는 척하다"
+ },
+ {
+  "no": 25,
+  "day": 5,
+  "word": "check",
+  "en": "Check it out!",
+  "ko": "이것 좀 봐!",
+  "note": "check out = 보다"
+ },
+ {
+  "no": 26,
+  "day": 6,
+  "word": "stand",
+  "en": "I can't stand him.",
+  "ko": "그 사람 못 참겠어.",
+  "note": "stand = 참다"
+ },
+ {
+  "no": 27,
+  "day": 6,
+  "word": "deal",
+  "en": "It's a deal.",
+  "ko": "좋아, 그렇게 하자.",
+  "note": "deal = 거래/합의"
+ },
+ {
+  "no": 28,
+  "day": 6,
+  "word": "pass",
+  "en": "Can you pass the salt?",
+  "ko": "소금 좀 건네줄래?",
+  "note": "pass = 건네다"
+ },
+ {
+  "no": 29,
+  "day": 6,
+  "word": "let",
+  "en": "Let me know.",
+  "ko": "알려 줘.",
+  "note": "let know = 알리다"
+ },
+ {
+  "no": 30,
+  "day": 6,
+  "word": "make",
+  "en": "I made it!",
+  "ko": "해냈어! / 도착했어!",
+  "note": "make it = 성공하다/도착하다"
+ },
+ {
+  "no": 31,
+  "day": 7,
+  "word": "get",
+  "en": "Did you get my text?",
+  "ko": "내 문자 받았어?",
+  "note": "get = 받다"
+ },
+ {
+  "no": 32,
+  "day": 7,
+  "word": "take",
+  "en": "It takes 20 minutes to get there.",
+  "ko": "거기 가는 데 20분 걸려.",
+  "note": "take = (시간이) 걸리다"
+ },
+ {
+  "no": 33,
+  "day": 7,
+  "word": "pick",
+  "en": "Pick a card.",
+  "ko": "카드 하나 골라.",
+  "note": "pick = 고르다"
+ },
+ {
+  "no": 34,
+  "day": 7,
+  "word": "drop",
+  "en": "Drop it.",
+  "ko": "그 얘기 그만해.",
+  "note": "drop = 그만두다"
+ },
+ {
+  "no": 35,
+  "day": 7,
+  "word": "stick",
+  "en": "Stick with it.",
+  "ko": "포기하지 말고 계속해.",
+  "note": "stick with = 고수하다"
+ },
+ {
+  "no": 36,
+  "day": 8,
+  "word": "tell",
+  "en": "I can tell.",
+  "ko": "딱 보면 알아.",
+  "note": "tell = 알아보다"
+ },
+ {
+  "no": 37,
+  "day": 8,
+  "word": "hang",
+  "en": "Hang on a sec.",
+  "ko": "잠깐만.",
+  "note": "hang on = 기다리다"
+ },
+ {
+  "no": 38,
+  "day": 8,
+  "word": "miss",
+  "en": "I miss you.",
+  "ko": "보고 싶어.",
+  "note": "miss = 그리워하다"
+ },
+ {
+  "no": 39,
+  "day": 8,
+  "word": "mean",
+  "en": "What do you mean?",
+  "ko": "무슨 뜻이야?",
+  "note": "mean = 의미하다"
+ },
+ {
+  "no": 40,
+  "day": 8,
+  "word": "move",
+  "en": "Let's get a move on.",
+  "ko": "서두르자.",
+  "note": "get a move on = 서두르다"
+ },
+ {
+  "no": 41,
+  "day": 9,
+  "word": "point",
+  "en": "What's the point?",
+  "ko": "그게 무슨 소용이야?",
+  "note": "point = 요점/의미"
+ },
+ {
+  "no": 42,
+  "day": 9,
+  "word": "bring",
+  "en": "Bring it on!",
+  "ko": "덤벼! / 와 봐!",
+  "note": "bring it on = 해 보자"
+ },
+ {
+  "no": 43,
+  "day": 9,
+  "word": "fall",
+  "en": "I fell for it.",
+  "ko": "나 속았어.",
+  "note": "fall for = 속다"
+ },
+ {
+  "no": 44,
+  "day": 9,
+  "word": "way",
+  "en": "No way!",
+  "ko": "말도 안 돼! / 절대 안 돼!",
+  "note": "no way = 절대 아니다"
+ },
+ {
+  "no": 45,
+  "day": 9,
+  "word": "thing",
+  "en": "It's not my thing.",
+  "ko": "내 취향이 아니야.",
+  "note": "thing = 취향/좋아하는 것"
+ },
+ {
+  "no": 46,
+  "day": 10,
+  "word": "go",
+  "en": "Here we go again.",
+  "ko": "또 시작이네.",
+  "note": "here we go = 또 시작"
+ },
+ {
+  "no": 47,
+  "day": 10,
+  "word": "have",
+  "en": "I have to go.",
+  "ko": "나 가야 해.",
+  "note": "have to = ~해야 한다"
+ },
+ {
+  "no": 48,
+  "day": 10,
+  "word": "show",
+  "en": "Show me around.",
+  "ko": "구경 좀 시켜 줘.",
+  "note": "show around = 안내하다"
+ },
+ {
+  "no": 49,
+  "day": 10,
+  "word": "right",
+  "en": "Right on time.",
+  "ko": "딱 맞춰 왔네.",
+  "note": "right = 정확히"
+ },
+ {
+  "no": 50,
+  "day": 10,
+  "word": "up",
+  "en": "What's up?",
+  "ko": "뭐 해? / 잘 지내?",
+  "note": "up = 일어나는"
+ },
+ {
+  "no": 51,
+  "day": 11,
+  "word": "come",
+  "en": "I'm coming!",
+  "ko": "지금 가!",
+  "note": "come = (상대 쪽으로) 가다"
+ },
+ {
+  "no": 52,
+  "day": 11,
+  "word": "save",
+  "en": "Save me a seat.",
+  "ko": "내 자리 좀 맡아 줘.",
+  "note": "save = 맡아 두다"
+ },
+ {
+  "no": 53,
+  "day": 11,
+  "word": "leave",
+  "en": "Leave me alone.",
+  "ko": "날 좀 내버려 둬.",
+  "note": "leave alone = 혼자 두다"
+ },
+ {
+  "no": 54,
+  "day": 11,
+  "word": "try",
+  "en": "Try this on.",
+  "ko": "이거 입어 봐.",
+  "note": "try on = 입어 보다"
+ },
+ {
+  "no": 55,
+  "day": 11,
+  "word": "blow",
+  "en": "I blew it.",
+  "ko": "내가 망쳤어.",
+  "note": "blow = 망치다"
+ },
+ {
+  "no": 56,
+  "day": 12,
+  "word": "give",
+  "en": "Give it a try.",
+  "ko": "한번 해 봐.",
+  "note": "give it a try = 시도하다"
+ },
+ {
+  "no": 57,
+  "day": 12,
+  "word": "figure",
+  "en": "I figured you'd be here.",
+  "ko": "네가 여기 있을 줄 알았어.",
+  "note": "figure = 생각하다/짐작하다"
+ },
+ {
+  "no": 58,
+  "day": 12,
+  "word": "stop",
+  "en": "Stop it!",
+  "ko": "그만해!",
+  "note": "stop = 멈추다"
+ },
+ {
+  "no": 59,
+  "day": 12,
+  "word": "sound",
+  "en": "Sounds good.",
+  "ko": "좋아.",
+  "note": "sound = ~하게 들리다"
+ },
+ {
+  "no": 60,
+  "day": 12,
+  "word": "cover",
+  "en": "I've got you covered.",
+  "ko": "내가 책임질게.",
+  "note": "cover = 보호하다/책임지다"
+ },
+ {
+  "no": 61,
+  "day": 13,
+  "word": "just",
+  "en": "Just kidding.",
+  "ko": "농담이야.",
+  "note": "just = 그냥"
+ },
+ {
+  "no": 62,
+  "day": 13,
+  "word": "back",
+  "en": "I've got your back.",
+  "ko": "내가 뒤에 있어. / 내가 지켜줄게.",
+  "note": "have one's back = 지지하다"
+ },
+ {
+  "no": 63,
+  "day": 13,
+  "word": "over",
+  "en": "It's over.",
+  "ko": "끝났어.",
+  "note": "over = 끝난"
+ },
+ {
+  "no": 64,
+  "day": 13,
+  "word": "out",
+  "en": "I'm out.",
+  "ko": "난 빠질게.",
+  "note": "out = 빠지는"
+ },
+ {
+  "no": 65,
+  "day": 13,
+  "word": "keep",
+  "en": "Keep going.",
+  "ko": "계속해.",
+  "note": "keep -ing = 계속 ~하다"
+ },
+ {
+  "no": 66,
+  "day": 14,
+  "word": "make",
+  "en": "Can you make it to the party?",
+  "ko": "파티에 올 수 있어?",
+  "note": "make it = 참석하다"
+ },
+ {
+  "no": 67,
+  "day": 14,
+  "word": "get",
+  "en": "I'll get the door.",
+  "ko": "내가 문 열게.",
+  "note": "get the door = 문 열어주다"
+ },
+ {
+  "no": 68,
+  "day": 14,
+  "word": "take",
+  "en": "I'll take it.",
+  "ko": "이걸로 할게요(살게요).",
+  "note": "take = 사다/고르다"
+ },
+ {
+  "no": 69,
+  "day": 14,
+  "word": "put",
+  "en": "Put your coat on.",
+  "ko": "코트 입어.",
+  "note": "put on = 입다"
+ },
+ {
+  "no": 70,
+  "day": 14,
+  "word": "run",
+  "en": "We ran out of milk.",
+  "ko": "우유 다 떨어졌어.",
+  "note": "run out of = 다 쓰다"
+ },
+ {
+  "no": 71,
+  "day": 15,
+  "word": "look",
+  "en": "You look tired.",
+  "ko": "피곤해 보여.",
+  "note": "look = ~해 보이다"
+ },
+ {
+  "no": 72,
+  "day": 15,
+  "word": "matter",
+  "en": "What's the matter?",
+  "ko": "무슨 일이야?",
+  "note": "matter = 문제"
+ },
+ {
+  "no": 73,
+  "day": 15,
+  "word": "sure",
+  "en": "Sure, why not?",
+  "ko": "물론, 안 될 거 있어?",
+  "note": "sure = 물론"
+ },
+ {
+  "no": 74,
+  "day": 15,
+  "word": "fit",
+  "en": "Does it fit?",
+  "ko": "이거 맞아?",
+  "note": "fit = (크기가) 맞다"
+ },
+ {
+  "no": 75,
+  "day": 15,
+  "word": "end",
+  "en": "In the end, it worked out.",
+  "ko": "결국엔 잘 됐어.",
+  "note": "in the end = 결국"
+ },
+ {
+  "no": 76,
+  "day": 16,
+  "word": "count",
+  "en": "Count me in.",
+  "ko": "나도 끼워 줘.",
+  "note": "count in = 포함하다"
+ },
+ {
+  "no": 77,
+  "day": 16,
+  "word": "last",
+  "en": "How long will it last?",
+  "ko": "얼마나 갈까?",
+  "note": "last = 지속되다"
+ },
+ {
+  "no": 78,
+  "day": 16,
+  "word": "even",
+  "en": "We're even.",
+  "ko": "우리 이제 비긴 거야.",
+  "note": "even = 공평한"
+ },
+ {
+  "no": 79,
+  "day": 16,
+  "word": "turn",
+  "en": "Turn off the TV.",
+  "ko": "TV 꺼.",
+  "note": "turn off = 끄다"
+ },
+ {
+  "no": 80,
+  "day": 16,
+  "word": "go",
+  "en": "Go ahead.",
+  "ko": "먼저 해. / 그렇게 해.",
+  "note": "go ahead = 진행하다"
+ },
+ {
+  "no": 81,
+  "day": 17,
+  "word": "break",
+  "en": "They broke up last month.",
+  "ko": "그들은 지난달에 헤어졌어.",
+  "note": "break up = 헤어지다"
+ },
+ {
+  "no": 82,
+  "day": 17,
+  "word": "have",
+  "en": "Let's have lunch.",
+  "ko": "점심 먹자.",
+  "note": "have = 먹다"
+ },
+ {
+  "no": 83,
+  "day": 17,
+  "word": "work",
+  "en": "Does Tuesday work for you?",
+  "ko": "화요일 괜찮아?",
+  "note": "work for = (일정이) 맞다"
+ },
+ {
+  "no": 84,
+  "day": 17,
+  "word": "set",
+  "en": "Let's set a date.",
+  "ko": "날짜를 정하자.",
+  "note": "set = 정하다"
+ },
+ {
+  "no": 85,
+  "day": 17,
+  "word": "hold",
+  "en": "Hold on tight!",
+  "ko": "꽉 잡아!",
+  "note": "hold on = 붙잡다"
+ },
+ {
+  "no": 86,
+  "day": 18,
+  "word": "catch",
+  "en": "I didn't catch your name.",
+  "ko": "성함을 못 들었어요.",
+  "note": "catch = 알아듣다"
+ },
+ {
+  "no": 87,
+  "day": 18,
+  "word": "sort",
+  "en": "Sort of.",
+  "ko": "약간. / 어느 정도.",
+  "note": "sort of = 다소"
+ },
+ {
+  "no": 88,
+  "day": 18,
+  "word": "charge",
+  "en": "Who's in charge here?",
+  "ko": "여기 책임자가 누구예요?",
+  "note": "in charge = 책임지는"
+ },
+ {
+  "no": 89,
+  "day": 18,
+  "word": "wear",
+  "en": "Wear something nice.",
+  "ko": "좀 괜찮은 옷 입어.",
+  "note": "wear = 입다"
+ },
+ {
+  "no": 90,
+  "day": 18,
+  "word": "mess",
+  "en": "What a mess!",
+  "ko": "엉망진창이네!",
+  "note": "mess = 엉망"
+ },
+ {
+  "no": 91,
+  "day": 19,
+  "word": "kind",
+  "en": "Kind of.",
+  "ko": "좀. / 약간.",
+  "note": "kind of = 다소"
+ },
+ {
+  "no": 92,
+  "day": 19,
+  "word": "cool",
+  "en": "Cool!",
+  "ko": "좋아! / 멋지다!",
+  "note": "cool = 좋은"
+ },
+ {
+  "no": 93,
+  "day": 19,
+  "word": "watch",
+  "en": "Watch your step.",
+  "ko": "발밑 조심해.",
+  "note": "watch = 조심하다"
+ },
+ {
+  "no": 94,
+  "day": 19,
+  "word": "come",
+  "en": "It comes with fries.",
+  "ko": "감자튀김이 같이 나와요.",
+  "note": "come with = 딸려 나오다"
+ },
+ {
+  "no": 95,
+  "day": 19,
+  "word": "make",
+  "en": "That makes sense.",
+  "ko": "말 되네.",
+  "note": "make sense = 이해가 되다"
+ },
+ {
+  "no": 96,
+  "day": 20,
+  "word": "call",
+  "en": "Let's call it a day.",
+  "ko": "오늘은 여기까지 하자.",
+  "note": "call it a day = 끝내다"
+ },
+ {
+  "no": 97,
+  "day": 20,
+  "word": "cut",
+  "en": "He cut in line.",
+  "ko": "그가 새치기했어.",
+  "note": "cut in line = 새치기하다"
+ },
+ {
+  "no": 98,
+  "day": 20,
+  "word": "get",
+  "en": "Can I get a coffee, please?",
+  "ko": "커피 한 잔 주시겠어요?",
+  "note": "get = (주문해서) 받다"
+ },
+ {
+  "no": 99,
+  "day": 20,
+  "word": "take",
+  "en": "Take care.",
+  "ko": "잘 지내.",
+  "note": "take care = 몸조심하다"
+ },
+ {
+  "no": 100,
+  "day": 20,
+  "word": "track",
+  "en": "I lost track of time.",
+  "ko": "시간 가는 줄 몰랐어.",
+  "note": "lose track = 놓치다"
+ },
+ {
+  "no": 101,
+  "day": 21,
+  "word": "pretty",
+  "en": "Pretty good.",
+  "ko": "꽤 좋아.",
+  "note": "pretty = 꽤"
+ },
+ {
+  "no": 102,
+  "day": 21,
+  "word": "still",
+  "en": "Hold still.",
+  "ko": "가만히 있어.",
+  "note": "still = 움직이지 않는"
+ },
+ {
+  "no": 103,
+  "day": 21,
+  "word": "bet",
+  "en": "You bet!",
+  "ko": "당연하지!",
+  "note": "you bet = 물론"
+ },
+ {
+  "no": 104,
+  "day": 21,
+  "word": "fine",
+  "en": "I'm fine, thanks.",
+  "ko": "괜찮아, 고마워.",
+  "note": "fine = 괜찮은"
+ },
+ {
+  "no": 105,
+  "day": 21,
+  "word": "open",
+  "en": "We're open until 10.",
+  "ko": "저희 10시까지 영업해요.",
+  "note": "open = 영업하는"
+ },
+ {
+  "no": 106,
+  "day": 22,
+  "word": "carry",
+  "en": "Do you carry this in black?",
+  "ko": "이거 검은색도 있어요?",
+  "note": "carry = (상품을) 취급하다"
+ },
+ {
+  "no": 107,
+  "day": 22,
+  "word": "give",
+  "en": "Give me a call.",
+  "ko": "전화 줘.",
+  "note": "give a call = 전화하다"
+ },
+ {
+  "no": 108,
+  "day": 22,
+  "word": "pull",
+  "en": "You really pulled it off!",
+  "ko": "너 진짜 해냈구나!",
+  "note": "pull off = 해내다"
+ },
+ {
+  "no": 109,
+  "day": 22,
+  "word": "hit",
+  "en": "Let's hit the road.",
+  "ko": "출발하자.",
+  "note": "hit the road = 길을 나서다"
+ },
+ {
+  "no": 110,
+  "day": 22,
+  "word": "feel",
+  "en": "Do you feel like pizza?",
+  "ko": "피자 먹고 싶어?",
+  "note": "feel like = ~하고 싶다"
+ },
+ {
+  "no": 111,
+  "day": 23,
+  "word": "mind",
+  "en": "Never mind.",
+  "ko": "신경 쓰지 마.",
+  "note": "never mind = 됐어"
+ },
+ {
+  "no": 112,
+  "day": 23,
+  "word": "keep",
+  "en": "Keep it down, please.",
+  "ko": "조용히 좀 해 줘.",
+  "note": "keep it down = 소리 낮추다"
+ },
+ {
+  "no": 113,
+  "day": 23,
+  "word": "go",
+  "en": "How did it go?",
+  "ko": "어떻게 됐어?",
+  "note": "go = (일이) 진행되다"
+ },
+ {
+  "no": 114,
+  "day": 23,
+  "word": "put",
+  "en": "He's putting on weight.",
+  "ko": "그는 살이 찌고 있어.",
+  "note": "put on weight = 살찌다"
+ },
+ {
+  "no": 115,
+  "day": 23,
+  "word": "play",
+  "en": "Let's play it by ear.",
+  "ko": "상황 봐서 하자.",
+  "note": "play it by ear = 즉흥적으로 하다"
+ },
+ {
+  "no": 116,
+  "day": 24,
+  "word": "check",
+  "en": "We checked out of the hotel.",
+  "ko": "우리 호텔 체크아웃했어.",
+  "note": "check out = 퇴실하다"
+ },
+ {
+  "no": 117,
+  "day": 24,
+  "word": "stand",
+  "en": "Where do you stand on this?",
+  "ko": "이거에 대해 어떤 입장이야?",
+  "note": "stand = 입장이 ~이다"
+ },
+ {
+  "no": 118,
+  "day": 24,
+  "word": "deal",
+  "en": "What's the big deal?",
+  "ko": "뭐가 그렇게 대수야?",
+  "note": "big deal = 중대한 일"
+ },
+ {
+  "no": 119,
+  "day": 24,
+  "word": "pass",
+  "en": "I'll pass.",
+  "ko": "난 됐어.",
+  "note": "pass = 사양하다"
+ },
+ {
+  "no": 120,
+  "day": 24,
+  "word": "let",
+  "en": "Let's see.",
+  "ko": "어디 보자.",
+  "note": "let's see = 생각해 보자"
+ },
+ {
+  "no": 121,
+  "day": 25,
+  "word": "have",
+  "en": "Have fun!",
+  "ko": "재밌게 놀아!",
+  "note": "have fun = 즐기다"
+ },
+ {
+  "no": 122,
+  "day": 25,
+  "word": "make",
+  "en": "You made my day.",
+  "ko": "덕분에 오늘 기분 최고야.",
+  "note": "make one's day = 기분 좋게 하다"
+ },
+ {
+  "no": 123,
+  "day": 25,
+  "word": "run",
+  "en": "I ran into my ex yesterday.",
+  "ko": "어제 전 애인 우연히 만났어.",
+  "note": "run into = 우연히 만나다"
+ },
+ {
+  "no": 124,
+  "day": 25,
+  "word": "look",
+  "en": "I'm just looking.",
+  "ko": "그냥 구경하는 거예요.",
+  "note": "look = 보다(구경)"
+ },
+ {
+  "no": 125,
+  "day": 25,
+  "word": "get",
+  "en": "It's getting dark.",
+  "ko": "어두워지고 있어.",
+  "note": "get + 형용사 = ~해지다"
+ },
+ {
+  "no": 126,
+  "day": 26,
+  "word": "take",
+  "en": "Don't take it personally.",
+  "ko": "기분 나쁘게 받아들이지 마.",
+  "note": "take = 받아들이다"
+ },
+ {
+  "no": 127,
+  "day": 26,
+  "word": "come",
+  "en": "Something came up.",
+  "ko": "일이 좀 생겼어.",
+  "note": "come up = (일이) 생기다"
+ },
+ {
+  "no": 128,
+  "day": 26,
+  "word": "turn",
+  "en": "Can you turn it up?",
+  "ko": "소리 좀 키워 줄래?",
+  "note": "turn up = (볼륨을) 올리다"
+ },
+ {
+  "no": 129,
+  "day": 26,
+  "word": "pick",
+  "en": "I'll pick you up at 7.",
+  "ko": "7시에 데리러 갈게.",
+  "note": "pick up = 태우러 가다"
+ },
+ {
+  "no": 130,
+  "day": 26,
+  "word": "drop",
+  "en": "I'll drop you off at school.",
+  "ko": "학교에 내려 줄게.",
+  "note": "drop off = 내려 주다"
+ },
+ {
+  "no": 131,
+  "day": 27,
+  "word": "stick",
+  "en": "Let's stick together.",
+  "ko": "우리 뭉치자.",
+  "note": "stick together = 함께하다"
+ },
+ {
+  "no": 132,
+  "day": 27,
+  "word": "tell",
+  "en": "You can't tell them apart.",
+  "ko": "둘이 구별이 안 돼.",
+  "note": "tell apart = 구별하다"
+ },
+ {
+  "no": 133,
+  "day": 27,
+  "word": "fair",
+  "en": "That's not fair.",
+  "ko": "그건 불공평해.",
+  "note": "fair = 공평한"
+ },
+ {
+  "no": 134,
+  "day": 27,
+  "word": "break",
+  "en": "Don't break the rules.",
+  "ko": "규칙 어기지 마.",
+  "note": "break = 어기다"
+ },
+ {
+  "no": 135,
+  "day": 27,
+  "word": "hang",
+  "en": "Do you want to hang out?",
+  "ko": "같이 놀래?",
+  "note": "hang out = 어울려 놀다"
+ },
+ {
+  "no": 136,
+  "day": 28,
+  "word": "miss",
+  "en": "I missed the bus.",
+  "ko": "버스 놓쳤어.",
+  "note": "miss = 놓치다"
+ },
+ {
+  "no": 137,
+  "day": 28,
+  "word": "mean",
+  "en": "I mean it.",
+  "ko": "진심이야.",
+  "note": "mean = 진심으로 말하다"
+ },
+ {
+  "no": 138,
+  "day": 28,
+  "word": "move",
+  "en": "We're moving next month.",
+  "ko": "우리 다음 달에 이사 가.",
+  "note": "move = 이사하다"
+ },
+ {
+  "no": 139,
+  "day": 28,
+  "word": "point",
+  "en": "Get to the point.",
+  "ko": "본론만 말해.",
+  "note": "get to the point = 요점을 말하다"
+ },
+ {
+  "no": 140,
+  "day": 28,
+  "word": "bring",
+  "en": "Don't bring it up again.",
+  "ko": "그 얘기 다시 꺼내지 마.",
+  "note": "bring up = 꺼내다"
+ },
+ {
+  "no": 141,
+  "day": 29,
+  "word": "fall",
+  "en": "She fell for him.",
+  "ko": "그녀는 그에게 반했어.",
+  "note": "fall for = 반하다"
+ },
+ {
+  "no": 142,
+  "day": 29,
+  "word": "way",
+  "en": "By the way, I'm moving.",
+  "ko": "그건 그렇고, 나 이사 가.",
+  "note": "by the way = 그런데"
+ },
+ {
+  "no": 143,
+  "day": 29,
+  "word": "thing",
+  "en": "The thing is, I'm broke.",
+  "ko": "문제는, 나 돈이 없어.",
+  "note": "the thing is = 문제는"
+ },
+ {
+  "no": 144,
+  "day": 29,
+  "word": "work",
+  "en": "That works for me.",
+  "ko": "난 그거 좋아.",
+  "note": "work for = 괜찮다"
+ },
+ {
+  "no": 145,
+  "day": 29,
+  "word": "set",
+  "en": "I set my alarm for 6.",
+  "ko": "알람을 6시로 맞춰 놨어.",
+  "note": "set = 맞추다"
+ },
+ {
+  "no": 146,
+  "day": 30,
+  "word": "hold",
+  "en": "Can you hold the door?",
+  "ko": "문 좀 잡아 줄래?",
+  "note": "hold = 잡다"
+ },
+ {
+  "no": 147,
+  "day": 30,
+  "word": "catch",
+  "en": "I caught a cold.",
+  "ko": "감기 걸렸어.",
+  "note": "catch = (병에) 걸리다"
+ },
+ {
+  "no": 148,
+  "day": 30,
+  "word": "go",
+  "en": "The milk went bad.",
+  "ko": "우유 상했어.",
+  "note": "go + 형용사 = ~하게 되다"
+ },
+ {
+  "no": 149,
+  "day": 30,
+  "word": "make",
+  "en": "Let's make a deal.",
+  "ko": "거래하자.",
+  "note": "make a deal = 합의하다"
+ },
+ {
+  "no": 150,
+  "day": 30,
+  "word": "give",
+  "en": "Don't give up.",
+  "ko": "포기하지 마.",
+  "note": "give up = 포기하다"
+ },
+ {
+  "no": 151,
+  "day": 31,
+  "word": "get",
+  "en": "When did you get here?",
+  "ko": "여기 언제 왔어?",
+  "note": "get = 도착하다"
+ },
+ {
+  "no": 152,
+  "day": 31,
+  "word": "take",
+  "en": "Take a seat.",
+  "ko": "앉으세요.",
+  "note": "take a seat = 앉다"
+ },
+ {
+  "no": 153,
+  "day": 31,
+  "word": "have",
+  "en": "I had my car fixed.",
+  "ko": "차 수리 맡겼어.",
+  "note": "have + 목적어 + p.p. = ~하게 하다"
+ },
+ {
+  "no": 154,
+  "day": 31,
+  "word": "show",
+  "en": "He didn't show up.",
+  "ko": "그는 안 나타났어.",
+  "note": "show up = 나타나다"
+ },
+ {
+  "no": 155,
+  "day": 31,
+  "word": "right",
+  "en": "I'll be right back.",
+  "ko": "금방 올게.",
+  "note": "right = 바로"
+ },
+ {
+  "no": 156,
+  "day": 32,
+  "word": "up",
+  "en": "It's up to you.",
+  "ko": "너한테 달렸어.",
+  "note": "up to = ~에 달린"
+ },
+ {
+  "no": 157,
+  "day": 32,
+  "word": "keep",
+  "en": "Keep in touch.",
+  "ko": "연락하고 지내.",
+  "note": "keep in touch = 연락하다"
+ },
+ {
+  "no": 158,
+  "day": 32,
+  "word": "call",
+  "en": "Good call.",
+  "ko": "좋은 판단이야.",
+  "note": "call = 결정/판단"
+ },
+ {
+  "no": 159,
+  "day": 32,
+  "word": "cut",
+  "en": "Sorry to cut in.",
+  "ko": "끼어들어서 미안해.",
+  "note": "cut in = 끼어들다"
+ },
+ {
+  "no": 160,
+  "day": 32,
+  "word": "put",
+  "en": "Stop putting on an act.",
+  "ko": "연기 그만해.",
+  "note": "put on = ~인 척하다"
+ },
+ {
+  "no": 161,
+  "day": 33,
+  "word": "come",
+  "en": "How come you didn't call?",
+  "ko": "왜 전화 안 했어?",
+  "note": "how come = 왜"
+ },
+ {
+  "no": 162,
+  "day": 33,
+  "word": "run",
+  "en": "She runs a small bakery.",
+  "ko": "그녀는 작은 빵집을 운영해.",
+  "note": "run = 운영하다"
+ },
+ {
+  "no": 163,
+  "day": 33,
+  "word": "look",
+  "en": "Look who's here!",
+  "ko": "이게 누구야!",
+  "note": "look = 봐라(놀람)"
+ },
+ {
+  "no": 164,
+  "day": 33,
+  "word": "save",
+  "en": "You saved my life.",
+  "ko": "네가 날 살렸어.",
+  "note": "save = 구하다"
+ },
+ {
+  "no": 165,
+  "day": 33,
+  "word": "leave",
+  "en": "Leave it to me.",
+  "ko": "나한테 맡겨.",
+  "note": "leave to = 맡기다"
+ },
+ {
+  "no": 166,
+  "day": 34,
+  "word": "try",
+  "en": "Nice try.",
+  "ko": "시도는 좋았어. / 어림없어.",
+  "note": "try = 시도"
+ },
+ {
+  "no": 167,
+  "day": 34,
+  "word": "blow",
+  "en": "That blows my mind.",
+  "ko": "정말 놀라워.",
+  "note": "blow one's mind = 깜짝 놀라게 하다"
+ },
+ {
+  "no": 168,
+  "day": 34,
+  "word": "spend",
+  "en": "How do you spend your weekends?",
+  "ko": "주말엔 뭐 하면서 보내?",
+  "note": "spend = (시간을) 보내다"
+ },
+ {
+  "no": 169,
+  "day": 34,
+  "word": "make",
+  "en": "Don't make a scene.",
+  "ko": "소란 피우지 마.",
+  "note": "make a scene = 소란 피우다"
+ },
+ {
+  "no": 170,
+  "day": 34,
+  "word": "go",
+  "en": "I'll go with the blue one.",
+  "ko": "파란색으로 할게.",
+  "note": "go with = 선택하다"
+ },
+ {
+  "no": 171,
+  "day": 35,
+  "word": "turn",
+  "en": "He didn't turn up.",
+  "ko": "그는 나타나지 않았어.",
+  "note": "turn up = 나타나다"
+ },
+ {
+  "no": 172,
+  "day": 35,
+  "word": "get",
+  "en": "I got this.",
+  "ko": "내가 할게. / 나한테 맡겨.",
+  "note": "got this = 감당할 수 있다"
+ },
+ {
+  "no": 173,
+  "day": 35,
+  "word": "take",
+  "en": "Let's take a break.",
+  "ko": "잠깐 쉬자.",
+  "note": "take a break = 쉬다"
+ },
+ {
+  "no": 174,
+  "day": 35,
+  "word": "pull",
+  "en": "Pull yourself together.",
+  "ko": "정신 차려.",
+  "note": "pull together = 추스르다"
+ },
+ {
+  "no": 175,
+  "day": 35,
+  "word": "hit",
+  "en": "I'm going to hit the gym.",
+  "ko": "헬스장 갈 거야.",
+  "note": "hit = (장소에) 가다"
+ },
+ {
+  "no": 176,
+  "day": 36,
+  "word": "feel",
+  "en": "I don't feel like it.",
+  "ko": "그럴 기분 아니야.",
+  "note": "feel like = 내키다"
+ },
+ {
+  "no": 177,
+  "day": 36,
+  "word": "mind",
+  "en": "Mind your own business.",
+  "ko": "네 일이나 신경 써.",
+  "note": "mind = 신경 쓰다"
+ },
+ {
+  "no": 178,
+  "day": 36,
+  "word": "have",
+  "en": "I have no idea.",
+  "ko": "전혀 모르겠어.",
+  "note": "have no idea = 모르다"
+ },
+ {
+  "no": 179,
+  "day": 36,
+  "word": "break",
+  "en": "I didn't mean to break your heart.",
+  "ko": "네 마음 아프게 하려던 건 아니었어.",
+  "note": "break one's heart = 상처 주다"
+ },
+ {
+  "no": 180,
+  "day": 36,
+  "word": "give",
+  "en": "I gave up sugar.",
+  "ko": "설탕 끊었어.",
+  "note": "give up = 끊다"
+ },
+ {
+  "no": 181,
+  "day": 37,
+  "word": "figure",
+  "en": "I can't figure it out.",
+  "ko": "도저히 모르겠어.",
+  "note": "figure out = 알아내다"
+ },
+ {
+  "no": 182,
+  "day": 37,
+  "word": "stop",
+  "en": "Stop by my office.",
+  "ko": "내 사무실에 들러.",
+  "note": "stop by = 들르다"
+ },
+ {
+  "no": 183,
+  "day": 37,
+  "word": "sound",
+  "en": "Sounds like a plan.",
+  "ko": "좋은 계획이네.",
+  "note": "sound like = ~처럼 들리다"
+ },
+ {
+  "no": 184,
+  "day": 37,
+  "word": "cover",
+  "en": "Can you cover for me?",
+  "ko": "나 대신 좀 해 줄래?",
+  "note": "cover for = 대신하다"
+ },
+ {
+  "no": 185,
+  "day": 37,
+  "word": "just",
+  "en": "I just got here.",
+  "ko": "나 방금 왔어.",
+  "note": "just = 방금"
+ },
+ {
+  "no": 186,
+  "day": 38,
+  "word": "back",
+  "en": "Back off!",
+  "ko": "물러서! / 간섭하지 마!",
+  "note": "back off = 물러서다"
+ },
+ {
+  "no": 187,
+  "day": 38,
+  "word": "over",
+  "en": "Come over tonight.",
+  "ko": "오늘 밤 우리 집에 와.",
+  "note": "come over = 들르다"
+ },
+ {
+  "no": 188,
+  "day": 38,
+  "word": "out",
+  "en": "The secret is out.",
+  "ko": "비밀이 밝혀졌어.",
+  "note": "out = 알려진"
+ },
+ {
+  "no": 189,
+  "day": 38,
+  "word": "play",
+  "en": "What's playing at the theater?",
+  "ko": "극장에서 뭐 상영해?",
+  "note": "play = 상영되다"
+ },
+ {
+  "no": 190,
+  "day": 38,
+  "word": "check",
+  "en": "Can I get the check?",
+  "ko": "계산서 주세요.",
+  "note": "check = 계산서"
+ },
+ {
+  "no": 191,
+  "day": 39,
+  "word": "stand",
+  "en": "What does NBA stand for?",
+  "ko": "NBA가 뭐의 약자야?",
+  "note": "stand for = 약자이다"
+ },
+ {
+  "no": 192,
+  "day": 39,
+  "word": "deal",
+  "en": "Big deal.",
+  "ko": "그게 뭐 어때서.",
+  "note": "big deal = 별일(반어)"
+ },
+ {
+  "no": 193,
+  "day": 39,
+  "word": "pass",
+  "en": "Did you pass the test?",
+  "ko": "시험 통과했어?",
+  "note": "pass = 합격하다"
+ },
+ {
+  "no": 194,
+  "day": 39,
+  "word": "let",
+  "en": "Don't let me down.",
+  "ko": "날 실망시키지 마.",
+  "note": "let down = 실망시키다"
+ },
+ {
+  "no": 195,
+  "day": 39,
+  "word": "work",
+  "en": "The medicine is starting to work.",
+  "ko": "약이 듣기 시작하네.",
+  "note": "work = 효과가 있다"
+ },
+ {
+  "no": 196,
+  "day": 40,
+  "word": "set",
+  "en": "Can you set the table?",
+  "ko": "상 좀 차려 줄래?",
+  "note": "set the table = 상을 차리다"
+ },
+ {
+  "no": 197,
+  "day": 40,
+  "word": "hold",
+  "en": "Please hold.",
+  "ko": "(전화) 잠시만 기다려 주세요.",
+  "note": "hold = 대기하다"
+ },
+ {
+  "no": 198,
+  "day": 40,
+  "word": "catch",
+  "en": "Did you catch the game last night?",
+  "ko": "어젯밤 경기 봤어?",
+  "note": "catch = (방송을) 보다"
+ },
+ {
+  "no": 199,
+  "day": 40,
+  "word": "keep",
+  "en": "Keep an eye on my bag.",
+  "ko": "내 가방 좀 봐 줘.",
+  "note": "keep an eye on = 지켜보다"
+ },
+ {
+  "no": 200,
+  "day": 40,
+  "word": "come",
+  "en": "It'll come to me.",
+  "ko": "곧 생각날 거야.",
+  "note": "come to = 생각나다"
+ },
+ {
+  "no": 201,
+  "day": 41,
+  "word": "make",
+  "en": "I can't make up my mind.",
+  "ko": "결정을 못 하겠어.",
+  "note": "make up one's mind = 결정하다"
+ },
+ {
+  "no": 202,
+  "day": 41,
+  "word": "get",
+  "en": "Don't get me wrong.",
+  "ko": "오해하지 마.",
+  "note": "get ~ wrong = 오해하다"
+ },
+ {
+  "no": 203,
+  "day": 41,
+  "word": "take",
+  "en": "I'll take you home.",
+  "ko": "집까지 데려다줄게.",
+  "note": "take = 데려가다"
+ },
+ {
+  "no": 204,
+  "day": 41,
+  "word": "go",
+  "en": "This wine goes well with fish.",
+  "ko": "이 와인은 생선이랑 잘 어울려.",
+  "note": "go with = 어울리다"
+ },
+ {
+  "no": 205,
+  "day": 41,
+  "word": "put",
+  "en": "I can't put up with this.",
+  "ko": "이건 못 참아.",
+  "note": "put up with = 참다"
+ },
+ {
+  "no": 206,
+  "day": 42,
+  "word": "pick",
+  "en": "Can you pick up some milk?",
+  "ko": "우유 좀 사 올래?",
+  "note": "pick up = 사 오다"
+ },
+ {
+  "no": 207,
+  "day": 42,
+  "word": "drop",
+  "en": "Drop by anytime.",
+  "ko": "언제든 들러.",
+  "note": "drop by = 들르다"
+ },
+ {
+  "no": 208,
+  "day": 42,
+  "word": "stick",
+  "en": "Stick around.",
+  "ko": "좀 더 있다 가.",
+  "note": "stick around = 머무르다"
+ },
+ {
+  "no": 209,
+  "day": 42,
+  "word": "tell",
+  "en": "Tell me about it.",
+  "ko": "내 말이. (완전 공감)",
+  "note": "tell me about it = 누가 아니래"
+ },
+ {
+  "no": 210,
+  "day": 42,
+  "word": "run",
+  "en": "The bus runs every 10 minutes.",
+  "ko": "버스가 10분마다 다녀.",
+  "note": "run = 운행하다"
+ },
+ {
+  "no": 211,
+  "day": 43,
+  "word": "look",
+  "en": "I'm looking for my keys.",
+  "ko": "열쇠 찾고 있어.",
+  "note": "look for = 찾다"
+ },
+ {
+  "no": 212,
+  "day": 43,
+  "word": "matter",
+  "en": "It doesn't matter.",
+  "ko": "상관없어.",
+  "note": "matter = 중요하다"
+ },
+ {
+  "no": 213,
+  "day": 43,
+  "word": "sure",
+  "en": "I'm not sure.",
+  "ko": "잘 모르겠어.",
+  "note": "sure = 확실한"
+ },
+ {
+  "no": 214,
+  "day": 43,
+  "word": "fit",
+  "en": "I'm trying to stay fit.",
+  "ko": "건강 유지하려고 노력 중이야.",
+  "note": "fit = 건강한"
+ },
+ {
+  "no": 215,
+  "day": 43,
+  "word": "end",
+  "en": "We ended up staying home.",
+  "ko": "결국 집에 있었어.",
+  "note": "end up = 결국 ~하게 되다"
+ },
+ {
+  "no": 216,
+  "day": 44,
+  "word": "count",
+  "en": "Count me out.",
+  "ko": "난 빼 줘.",
+  "note": "count out = 빼다"
+ },
+ {
+  "no": 217,
+  "day": 44,
+  "word": "last",
+  "en": "Last but not least.",
+  "ko": "마지막이지만 중요한.",
+  "note": "last = 마지막"
+ },
+ {
+  "no": 218,
+  "day": 44,
+  "word": "even",
+  "en": "Don't even think about it.",
+  "ko": "꿈도 꾸지 마.",
+  "note": "even = 조차"
+ },
+ {
+  "no": 219,
+  "day": 44,
+  "word": "have",
+  "en": "We're having a party on Friday.",
+  "ko": "금요일에 파티 열어.",
+  "note": "have a party = 파티 열다"
+ },
+ {
+  "no": 220,
+  "day": 44,
+  "word": "call",
+  "en": "It's your call.",
+  "ko": "네가 결정해.",
+  "note": "call = 결정"
+ },
+ {
+  "no": 221,
+  "day": 45,
+  "word": "cut",
+  "en": "I need to cut back on coffee.",
+  "ko": "커피를 좀 줄여야 해.",
+  "note": "cut back = 줄이다"
+ },
+ {
+  "no": 222,
+  "day": 45,
+  "word": "make",
+  "en": "Let's make up.",
+  "ko": "우리 화해하자.",
+  "note": "make up = 화해하다"
+ },
+ {
+  "no": 223,
+  "day": 45,
+  "word": "turn",
+  "en": "My phone turned up in the car.",
+  "ko": "내 폰이 차에서 나왔어.",
+  "note": "turn up = (잃어버린 게) 발견되다"
+ },
+ {
+  "no": 224,
+  "day": 45,
+  "word": "hang",
+  "en": "Don't hang up!",
+  "ko": "전화 끊지 마!",
+  "note": "hang up = 끊다"
+ },
+ {
+  "no": 225,
+  "day": 45,
+  "word": "miss",
+  "en": "You can't miss it.",
+  "ko": "금방 찾을 거야.",
+  "note": "can't miss = 못 보고 지나칠 수 없다"
+ },
+ {
+  "no": 226,
+  "day": 46,
+  "word": "mean",
+  "en": "Don't be mean.",
+  "ko": "못되게 굴지 마.",
+  "note": "mean = 못된"
+ },
+ {
+  "no": 227,
+  "day": 46,
+  "word": "move",
+  "en": "That movie really moved me.",
+  "ko": "그 영화 정말 감동적이었어.",
+  "note": "move = 감동시키다"
+ },
+ {
+  "no": 228,
+  "day": 46,
+  "word": "point",
+  "en": "Good point.",
+  "ko": "좋은 지적이야.",
+  "note": "point = 지적/의견"
+ },
+ {
+  "no": 229,
+  "day": 46,
+  "word": "bring",
+  "en": "I was brought up in Texas.",
+  "ko": "난 텍사스에서 자랐어.",
+  "note": "bring up = 키우다"
+ },
+ {
+  "no": 230,
+  "day": 46,
+  "word": "fall",
+  "en": "The plan fell through.",
+  "ko": "계획이 무산됐어.",
+  "note": "fall through = 무산되다"
+ },
+ {
+  "no": 231,
+  "day": 47,
+  "word": "way",
+  "en": "I'm on my way.",
+  "ko": "가는 중이야.",
+  "note": "on one's way = 가는 중"
+ },
+ {
+  "no": 232,
+  "day": 47,
+  "word": "thing",
+  "en": "First things first.",
+  "ko": "중요한 것부터 하자.",
+  "note": "things = 일"
+ },
+ {
+  "no": 233,
+  "day": 47,
+  "word": "give",
+  "en": "Give me a hand with this.",
+  "ko": "이것 좀 도와줘.",
+  "note": "give a hand = 돕다"
+ },
+ {
+  "no": 234,
+  "day": 47,
+  "word": "get",
+  "en": "You'll get used to it.",
+  "ko": "곧 익숙해질 거야.",
+  "note": "get used to = 익숙해지다"
+ },
+ {
+  "no": 235,
+  "day": 47,
+  "word": "take",
+  "en": "Can I take a look?",
+  "ko": "좀 봐도 돼?",
+  "note": "take a look = 보다"
+ },
+ {
+  "no": 236,
+  "day": 48,
+  "word": "come",
+  "en": "When he came to, he was in the hospital.",
+  "ko": "그가 깨어났을 때 병원이었어.",
+  "note": "come to = 의식을 되찾다"
+ },
+ {
+  "no": 237,
+  "day": 48,
+  "word": "go",
+  "en": "Let it go.",
+  "ko": "그냥 잊어. / 놔 줘.",
+  "note": "let go = 놓아주다"
+ },
+ {
+  "no": 238,
+  "day": 48,
+  "word": "break",
+  "en": "We need to break the ice.",
+  "ko": "어색한 분위기를 깨야 해.",
+  "note": "break the ice = 분위기를 풀다"
+ },
+ {
+  "no": 239,
+  "day": 48,
+  "word": "keep",
+  "en": "I can't keep up with you.",
+  "ko": "너 못 따라가겠어.",
+  "note": "keep up with = 따라가다"
+ },
+ {
+  "no": 240,
+  "day": 48,
+  "word": "make",
+  "en": "He made up a story.",
+  "ko": "그는 이야기를 지어냈어.",
+  "note": "make up = 지어내다"
+ },
+ {
+  "no": 241,
+  "day": 49,
+  "word": "have",
+  "en": "Have a seat.",
+  "ko": "앉으세요.",
+  "note": "have a seat = 앉다"
+ },
+ {
+  "no": 242,
+  "day": 49,
+  "word": "put",
+  "en": "Let's put off the meeting.",
+  "ko": "회의 미루자.",
+  "note": "put off = 연기하다"
+ },
+ {
+  "no": 243,
+  "day": 49,
+  "word": "work",
+  "en": "We'll work it out.",
+  "ko": "우리가 잘 해결할 거야.",
+  "note": "work out = 해결하다"
+ },
+ {
+  "no": 244,
+  "day": 49,
+  "word": "set",
+  "en": "The sun is setting.",
+  "ko": "해가 지고 있어.",
+  "note": "set = (해가) 지다"
+ },
+ {
+  "no": 245,
+  "day": 49,
+  "word": "hold",
+  "en": "I'll hold you to that.",
+  "ko": "그 말 꼭 지켜라.",
+  "note": "hold to = 약속을 지키게 하다"
+ },
+ {
+  "no": 246,
+  "day": 50,
+  "word": "catch",
+  "en": "I need to catch the 8:00 train.",
+  "ko": "8시 기차 타야 해.",
+  "note": "catch = (교통수단을) 잡다"
+ },
+ {
+  "no": 247,
+  "day": 50,
+  "word": "pull",
+  "en": "Stop pulling my leg.",
+  "ko": "놀리지 마.",
+  "note": "pull one's leg = 놀리다"
+ },
+ {
+  "no": 248,
+  "day": 50,
+  "word": "show",
+  "en": "Stop showing off.",
+  "ko": "그만 자랑해.",
+  "note": "show off = 과시하다"
+ },
+ {
+  "no": 249,
+  "day": 50,
+  "word": "hit",
+  "en": "I'm hitting the sack.",
+  "ko": "자러 갈게.",
+  "note": "hit the sack = 잠자리에 들다"
+ },
+ {
+  "no": 250,
+  "day": 50,
+  "word": "feel",
+  "en": "Feel free to ask.",
+  "ko": "편하게 물어봐.",
+  "note": "feel free = 마음껏 하다"
+ },
+ {
+  "no": 251,
+  "day": 51,
+  "word": "mind",
+  "en": "I don't mind.",
+  "ko": "난 상관없어.",
+  "note": "mind = 신경 쓰다"
+ },
+ {
+  "no": 252,
+  "day": 51,
+  "word": "sort",
+  "en": "We'll sort it out.",
+  "ko": "우리가 해결할게.",
+  "note": "sort out = 해결하다"
+ },
+ {
+  "no": 253,
+  "day": 51,
+  "word": "right",
+  "en": "Right this way.",
+  "ko": "이쪽으로 오세요.",
+  "note": "right = 바로"
+ },
+ {
+  "no": 254,
+  "day": 51,
+  "word": "charge",
+  "en": "There's no charge.",
+  "ko": "무료예요.",
+  "note": "charge = 요금"
+ },
+ {
+  "no": 255,
+  "day": 51,
+  "word": "wear",
+  "en": "The effect wore off.",
+  "ko": "효과가 떨어졌어.",
+  "note": "wear off = 사라지다"
+ },
+ {
+  "no": 256,
+  "day": 52,
+  "word": "mess",
+  "en": "Don't mess with me.",
+  "ko": "나 건드리지 마.",
+  "note": "mess with = 건드리다"
+ },
+ {
+  "no": 257,
+  "day": 52,
+  "word": "kind",
+  "en": "That's kind of you.",
+  "ko": "친절하시네요.",
+  "note": "kind = 친절한"
+ },
+ {
+  "no": 258,
+  "day": 52,
+  "word": "cool",
+  "en": "Is it cool if I bring a friend?",
+  "ko": "친구 데려가도 괜찮아?",
+  "note": "cool = 괜찮은"
+ },
+ {
+  "no": 259,
+  "day": 52,
+  "word": "up",
+  "en": "What are you up to?",
+  "ko": "뭐 하고 있어?",
+  "note": "up to = ~을 하는"
+ },
+ {
+  "no": 260,
+  "day": 52,
+  "word": "watch",
+  "en": "Watch it!",
+  "ko": "조심해! / 말 조심해!",
+  "note": "watch it = 조심하다"
+ },
+ {
+  "no": 261,
+  "day": 53,
+  "word": "get",
+  "en": "Let's get going.",
+  "ko": "이제 슬슬 가자.",
+  "note": "get going = 출발하다"
+ },
+ {
+  "no": 262,
+  "day": 53,
+  "word": "take",
+  "en": "Take it easy.",
+  "ko": "진정해. / 무리하지 마.",
+  "note": "take it easy = 쉬엄쉬엄 하다"
+ },
+ {
+  "no": 263,
+  "day": 53,
+  "word": "run",
+  "en": "Your nose is running.",
+  "ko": "콧물 나.",
+  "note": "run = (액체가) 흐르다"
+ },
+ {
+  "no": 264,
+  "day": 53,
+  "word": "look",
+  "en": "I'm looking forward to it.",
+  "ko": "그거 기대돼.",
+  "note": "look forward to = 고대하다"
+ },
+ {
+  "no": 265,
+  "day": 53,
+  "word": "go",
+  "en": "What's going on?",
+  "ko": "무슨 일이야?",
+  "note": "go on = 일어나다"
+ },
+ {
+  "no": 266,
+  "day": 54,
+  "word": "come",
+  "en": "That came out wrong.",
+  "ko": "말이 잘못 나왔네.",
+  "note": "come out = (말이) 나오다"
+ },
+ {
+  "no": 267,
+  "day": 54,
+  "word": "play",
+  "en": "Play it safe.",
+  "ko": "안전하게 가.",
+  "note": "play it safe = 신중하게 하다"
+ },
+ {
+  "no": 268,
+  "day": 54,
+  "word": "check",
+  "en": "Let me check.",
+  "ko": "확인해 볼게.",
+  "note": "check = 확인하다"
+ },
+ {
+  "no": 269,
+  "day": 54,
+  "word": "stand",
+  "en": "I won't stand for it.",
+  "ko": "그건 용납 못 해.",
+  "note": "stand for = 용납하다"
+ },
+ {
+  "no": 270,
+  "day": 54,
+  "word": "deal",
+  "en": "What's your deal?",
+  "ko": "너 대체 왜 그래?",
+  "note": "deal = 문제/사정"
+ },
+ {
+  "no": 271,
+  "day": 55,
+  "word": "pass",
+  "en": "I passed out.",
+  "ko": "나 기절했어.",
+  "note": "pass out = 기절하다"
+ },
+ {
+  "no": 272,
+  "day": 55,
+  "word": "let",
+  "en": "Let me in.",
+  "ko": "들여보내 줘.",
+  "note": "let in = 들이다"
+ },
+ {
+  "no": 273,
+  "day": 55,
+  "word": "give",
+  "en": "Let's give him a hand!",
+  "ko": "그에게 박수 쳐 줍시다!",
+  "note": "give a hand = 박수 치다"
+ },
+ {
+  "no": 274,
+  "day": 55,
+  "word": "turn",
+  "en": "She turned down the offer.",
+  "ko": "그녀는 제안을 거절했어.",
+  "note": "turn down = 거절하다"
+ },
+ {
+  "no": 275,
+  "day": 55,
+  "word": "make",
+  "en": "I'll make it up to you.",
+  "ko": "내가 꼭 보상할게.",
+  "note": "make it up to = 보상하다"
+ },
+ {
+  "no": 276,
+  "day": 56,
+  "word": "save",
+  "en": "I'm saving up for a car.",
+  "ko": "차 사려고 돈 모으는 중이야.",
+  "note": "save up = 저축하다"
+ },
+ {
+  "no": 277,
+  "day": 56,
+  "word": "leave",
+  "en": "I left my phone at home.",
+  "ko": "폰 집에 두고 왔어.",
+  "note": "leave = 두고 오다"
+ },
+ {
+  "no": 278,
+  "day": 56,
+  "word": "try",
+  "en": "Try me.",
+  "ko": "나한테 말해 봐. / 해 봐.",
+  "note": "try me = 날 시험해 봐"
+ },
+ {
+  "no": 279,
+  "day": 56,
+  "word": "blow",
+  "en": "It'll blow over.",
+  "ko": "곧 잠잠해질 거야.",
+  "note": "blow over = 가라앉다"
+ },
+ {
+  "no": 280,
+  "day": 56,
+  "word": "call",
+  "en": "They called off the wedding.",
+  "ko": "그들은 결혼식을 취소했어.",
+  "note": "call off = 취소하다"
+ },
+ {
+  "no": 281,
+  "day": 57,
+  "word": "cut",
+  "en": "We got cut off.",
+  "ko": "전화가 끊겼어.",
+  "note": "cut off = 끊기다"
+ },
+ {
+  "no": 282,
+  "day": 57,
+  "word": "keep",
+  "en": "Keep up the good work!",
+  "ko": "지금처럼 계속 잘해!",
+  "note": "keep up = 유지하다"
+ },
+ {
+  "no": 283,
+  "day": 57,
+  "word": "have",
+  "en": "I've had it with you!",
+  "ko": "너한테 질렸어!",
+  "note": "have had it = 참을 만큼 참았다"
+ },
+ {
+  "no": 284,
+  "day": 57,
+  "word": "get",
+  "en": "I need to get some sleep.",
+  "ko": "잠 좀 자야겠어.",
+  "note": "get = 얻다/취하다"
+ },
+ {
+  "no": 285,
+  "day": 57,
+  "word": "take",
+  "en": "I take the bus to work.",
+  "ko": "나는 버스 타고 출근해.",
+  "note": "take = (교통수단을) 타다"
+ },
+ {
+  "no": 286,
+  "day": 58,
+  "word": "break",
+  "en": "My car broke down.",
+  "ko": "차가 고장 났어.",
+  "note": "break down = 고장 나다"
+ },
+ {
+  "no": 287,
+  "day": 58,
+  "word": "pick",
+  "en": "Pick up the phone!",
+  "ko": "전화 좀 받아!",
+  "note": "pick up = 받다"
+ },
+ {
+  "no": 288,
+  "day": 58,
+  "word": "drop",
+  "en": "He dropped out of college.",
+  "ko": "그는 대학을 중퇴했어.",
+  "note": "drop out = 중퇴하다"
+ },
+ {
+  "no": 289,
+  "day": 58,
+  "word": "stick",
+  "en": "Thanks for sticking up for me.",
+  "ko": "내 편 들어줘서 고마워.",
+  "note": "stick up for = 편들다"
+ },
+ {
+  "no": 290,
+  "day": 58,
+  "word": "tell",
+  "en": "I told you so.",
+  "ko": "거봐, 내가 뭐랬어.",
+  "note": "told you so = 내가 말했잖아"
+ },
+ {
+  "no": 291,
+  "day": 59,
+  "word": "put",
+  "en": "The smell put me off.",
+  "ko": "그 냄새 때문에 입맛이 뚝 떨어졌어.",
+  "note": "put off = 정떨어지게 하다"
+ },
+ {
+  "no": 292,
+  "day": 59,
+  "word": "go",
+  "en": "Go on, I'm listening.",
+  "ko": "계속해, 듣고 있어.",
+  "note": "go on = 계속하다"
+ },
+ {
+  "no": 293,
+  "day": 59,
+  "word": "track",
+  "en": "Keep track of your spending.",
+  "ko": "지출 기록해 둬.",
+  "note": "keep track = 기록하다"
+ },
+ {
+  "no": 294,
+  "day": 59,
+  "word": "pretty",
+  "en": "I'm pretty sure.",
+  "ko": "거의 확실해.",
+  "note": "pretty = 꽤"
+ },
+ {
+  "no": 295,
+  "day": 59,
+  "word": "still",
+  "en": "Are you still there?",
+  "ko": "아직 거기 있어?",
+  "note": "still = 아직"
+ },
+ {
+  "no": 296,
+  "day": 60,
+  "word": "bet",
+  "en": "I bet you're hungry.",
+  "ko": "분명 배고프겠다.",
+  "note": "bet = 확신하다"
+ },
+ {
+  "no": 297,
+  "day": 60,
+  "word": "fine",
+  "en": "Fine, have it your way.",
+  "ko": "좋아, 네 마음대로 해.",
+  "note": "fine = 좋아(마지못해)"
+ },
+ {
+  "no": 298,
+  "day": 60,
+  "word": "open",
+  "en": "I'm open to suggestions.",
+  "ko": "제안 환영해.",
+  "note": "open to = 열려 있는"
+ },
+ {
+  "no": 299,
+  "day": 60,
+  "word": "carry",
+  "en": "Carry on.",
+  "ko": "계속해.",
+  "note": "carry on = 계속하다"
+ },
+ {
+  "no": 300,
+  "day": 60,
+  "word": "make",
+  "en": "She makes good money.",
+  "ko": "그녀는 돈을 잘 벌어.",
+  "note": "make money = 돈을 벌다"
+ },
+ {
+  "no": 301,
+  "day": 61,
+  "word": "come",
+  "en": "Her new book comes out next month.",
+  "ko": "그녀의 신간이 다음 달에 나와.",
+  "note": "come out = 출시되다"
+ },
+ {
+  "no": 302,
+  "day": 61,
+  "word": "work",
+  "en": "I work out every morning.",
+  "ko": "난 매일 아침 운동해.",
+  "note": "work out = 운동하다"
+ },
+ {
+  "no": 303,
+  "day": 61,
+  "word": "set",
+  "en": "She's set on going to Paris.",
+  "ko": "그녀는 파리 가기로 마음먹었어.",
+  "note": "be set on = 굳게 결심하다"
+ },
+ {
+  "no": 304,
+  "day": 61,
+  "word": "hold",
+  "en": "Hold that thought.",
+  "ko": "그 얘기 잠깐 기억해 둬.",
+  "note": "hold that thought = 잠시 보류하다"
+ },
+ {
+  "no": 305,
+  "day": 61,
+  "word": "catch",
+  "en": "What's the catch?",
+  "ko": "조건이 뭐야? / 함정이 뭐야?",
+  "note": "catch = 숨은 조건"
+ },
+ {
+  "no": 306,
+  "day": 62,
+  "word": "run",
+  "en": "Don't leave the water running.",
+  "ko": "물 틀어 놓지 마.",
+  "note": "run = (물이) 흐르다"
+ },
+ {
+  "no": 307,
+  "day": 62,
+  "word": "look",
+  "en": "Look it up online.",
+  "ko": "인터넷에서 찾아봐.",
+  "note": "look up = 찾아보다"
+ },
+ {
+  "no": 308,
+  "day": 62,
+  "word": "get",
+  "en": "He got fired last week.",
+  "ko": "그는 지난주에 해고됐어.",
+  "note": "get + p.p. = ~당하다"
+ },
+ {
+  "no": 309,
+  "day": 62,
+  "word": "take",
+  "en": "He took my advice.",
+  "ko": "그는 내 조언을 따랐어.",
+  "note": "take advice = 조언을 받아들이다"
+ },
+ {
+  "no": 310,
+  "day": 62,
+  "word": "give",
+  "en": "Give me a second.",
+  "ko": "잠깐만.",
+  "note": "give a second = 시간을 주다"
+ },
+ {
+  "no": 311,
+  "day": 63,
+  "word": "figure",
+  "en": "Go figure.",
+  "ko": "참 이상하지. / 알다가도 모르겠네.",
+  "note": "go figure = 이해 안 되네"
+ },
+ {
+  "no": 312,
+  "day": 63,
+  "word": "stop",
+  "en": "I'll stop at nothing.",
+  "ko": "무슨 짓이든 할 거야.",
+  "note": "stop at nothing = 물불 안 가리다"
+ },
+ {
+  "no": 313,
+  "day": 63,
+  "word": "sound",
+  "en": "You sound tired.",
+  "ko": "목소리가 피곤해 보여.",
+  "note": "sound = ~하게 들리다"
+ },
+ {
+  "no": 314,
+  "day": 63,
+  "word": "cover",
+  "en": "Drinks are on me. I'll cover it.",
+  "ko": "술은 내가 살게.",
+  "note": "cover = (비용을) 대다"
+ },
+ {
+  "no": 315,
+  "day": 63,
+  "word": "just",
+  "en": "It's just what I needed.",
+  "ko": "딱 내가 필요했던 거야.",
+  "note": "just = 바로"
+ },
+ {
+  "no": 316,
+  "day": 64,
+  "word": "back",
+  "en": "He backed out at the last minute.",
+  "ko": "그는 막판에 발을 뺐어.",
+  "note": "back out = 철회하다"
+ },
+ {
+  "no": 317,
+  "day": 64,
+  "word": "over",
+  "en": "I'm over it.",
+  "ko": "이제 아무렇지 않아.",
+  "note": "over = 극복한"
+ },
+ {
+  "no": 318,
+  "day": 64,
+  "word": "out",
+  "en": "Lights out!",
+  "ko": "불 끄고 자!",
+  "note": "out = 꺼진"
+ },
+ {
+  "no": 319,
+  "day": 64,
+  "word": "have",
+  "en": "I'll have the steak.",
+  "ko": "저는 스테이크로 할게요.",
+  "note": "have = 주문하다"
+ },
+ {
+  "no": 320,
+  "day": 64,
+  "word": "hang",
+  "en": "I'm getting the hang of it.",
+  "ko": "요령이 생기고 있어.",
+  "note": "get the hang of = 요령을 알다"
+ },
+ {
+  "no": 321,
+  "day": 65,
+  "word": "miss",
+  "en": "You missed a spot.",
+  "ko": "여기 한 군데 빠뜨렸어.",
+  "note": "miss = 빠뜨리다"
+ },
+ {
+  "no": 322,
+  "day": 65,
+  "word": "mean",
+  "en": "I didn't mean to.",
+  "ko": "일부러 그런 거 아니야.",
+  "note": "mean to = 의도하다"
+ },
+ {
+  "no": 323,
+  "day": 65,
+  "word": "move",
+  "en": "It's time to move on.",
+  "ko": "이제 털고 나아갈 때야.",
+  "note": "move on = 넘어가다"
+ },
+ {
+  "no": 324,
+  "day": 65,
+  "word": "point",
+  "en": "That's beside the point.",
+  "ko": "그건 핵심이 아니야.",
+  "note": "beside the point = 요점에서 벗어난"
+ },
+ {
+  "no": 325,
+  "day": 65,
+  "word": "bring",
+  "en": "What brings you here?",
+  "ko": "여긴 어쩐 일이야?",
+  "note": "bring = 오게 하다"
+ },
+ {
+  "no": 326,
+  "day": 66,
+  "word": "fall",
+  "en": "We fell out last year.",
+  "ko": "우리 작년에 사이가 틀어졌어.",
+  "note": "fall out = 사이가 틀어지다"
+ },
+ {
+  "no": 327,
+  "day": 66,
+  "word": "way",
+  "en": "Get out of the way!",
+  "ko": "비켜!",
+  "note": "out of the way = 방해되지 않는 곳에"
+ },
+ {
+  "no": 328,
+  "day": 66,
+  "word": "thing",
+  "en": "How are things?",
+  "ko": "요즘 어때?",
+  "note": "things = 상황"
+ },
+ {
+  "no": 329,
+  "day": 66,
+  "word": "pull",
+  "en": "He pulled some strings.",
+  "ko": "그가 연줄을 좀 썼어.",
+  "note": "pull strings = 연줄을 이용하다"
+ },
+ {
+  "no": 330,
+  "day": 66,
+  "word": "hit",
+  "en": "It just hit me.",
+  "ko": "방금 깨달았어.",
+  "note": "hit = (생각이) 떠오르다"
+ },
+ {
+  "no": 331,
+  "day": 67,
+  "word": "feel",
+  "en": "It feels like Monday.",
+  "ko": "월요일 같은 기분이야.",
+  "note": "feel like = ~같은 느낌이다"
+ },
+ {
+  "no": 332,
+  "day": 67,
+  "word": "mind",
+  "en": "Mind the gap.",
+  "ko": "틈을 조심하세요.",
+  "note": "mind = 조심하다"
+ },
+ {
+  "no": 333,
+  "day": 67,
+  "word": "turn",
+  "en": "Turn it down a little.",
+  "ko": "소리 조금만 줄여.",
+  "note": "turn down = 줄이다"
+ },
+ {
+  "no": 334,
+  "day": 67,
+  "word": "keep",
+  "en": "Sorry to keep you waiting.",
+  "ko": "기다리게 해서 미안해.",
+  "note": "keep + 사람 + -ing = 계속 ~하게 하다"
+ },
+ {
+  "no": 335,
+  "day": 67,
+  "word": "go",
+  "en": "The alarm went off at 6.",
+  "ko": "알람이 6시에 울렸어.",
+  "note": "go off = 울리다"
+ },
+ {
+  "no": 336,
+  "day": 68,
+  "word": "make",
+  "en": "What makes you say that?",
+  "ko": "왜 그렇게 말해?",
+  "note": "make = ~하게 만들다"
+ },
+ {
+  "no": 337,
+  "day": 68,
+  "word": "get",
+  "en": "What time do you get off work?",
+  "ko": "몇 시에 퇴근해?",
+  "note": "get off = 끝나다/퇴근하다"
+ },
+ {
+  "no": 338,
+  "day": 68,
+  "word": "take",
+  "en": "Take a guess.",
+  "ko": "맞혀 봐.",
+  "note": "take a guess = 추측하다"
+ },
+ {
+  "no": 339,
+  "day": 68,
+  "word": "come",
+  "en": "I came across an old photo.",
+  "ko": "옛날 사진을 우연히 발견했어.",
+  "note": "come across = 우연히 발견하다"
+ },
+ {
+  "no": 340,
+  "day": 68,
+  "word": "put",
+  "en": "Put it away.",
+  "ko": "그거 치워.",
+  "note": "put away = 치우다"
+ },
+ {
+  "no": 341,
+  "day": 69,
+  "word": "break",
+  "en": "She broke down in tears.",
+  "ko": "그녀는 울음을 터뜨렸어.",
+  "note": "break down = 무너지다"
+ },
+ {
+  "no": 342,
+  "day": 69,
+  "word": "call",
+  "en": "What do you call this in English?",
+  "ko": "이거 영어로 뭐라고 해?",
+  "note": "call = 부르다"
+ },
+ {
+  "no": 343,
+  "day": 69,
+  "word": "cut",
+  "en": "A car cut me off.",
+  "ko": "차 한 대가 내 앞에 확 끼어들었어.",
+  "note": "cut off = 앞을 가로막다"
+ },
+ {
+  "no": 344,
+  "day": 69,
+  "word": "play",
+  "en": "She's playing hard to get.",
+  "ko": "그녀는 튕기고 있어.",
+  "note": "play hard to get = 비싸게 굴다"
+ },
+ {
+  "no": 345,
+  "day": 69,
+  "word": "check",
+  "en": "Just checking in.",
+  "ko": "그냥 잘 있나 연락해 봤어.",
+  "note": "check in = 안부 확인하다"
+ },
+ {
+  "no": 346,
+  "day": 70,
+  "word": "stand",
+  "en": "Stand back!",
+  "ko": "물러서!",
+  "note": "stand back = 물러서다"
+ },
+ {
+  "no": 347,
+  "day": 70,
+  "word": "deal",
+  "en": "I'll deal with it.",
+  "ko": "내가 처리할게.",
+  "note": "deal with = 처리하다"
+ },
+ {
+  "no": 348,
+  "day": 70,
+  "word": "pass",
+  "en": "His grandmother passed away.",
+  "ko": "그의 할머니가 돌아가셨어.",
+  "note": "pass away = 돌아가시다"
+ },
+ {
+  "no": 349,
+  "day": 70,
+  "word": "let",
+  "en": "Let it be.",
+  "ko": "그냥 내버려 둬.",
+  "note": "let be = 그대로 두다"
+ },
+ {
+  "no": 350,
+  "day": 70,
+  "word": "have",
+  "en": "Do you have a minute?",
+  "ko": "잠깐 시간 있어?",
+  "note": "have = 가지다"
+ },
+ {
+  "no": 351,
+  "day": 71,
+  "word": "show",
+  "en": "It shows.",
+  "ko": "티 나.",
+  "note": "show = 드러나다"
+ },
+ {
+  "no": 352,
+  "day": 71,
+  "word": "right",
+  "en": "You have every right to be upset.",
+  "ko": "네가 화날 만도 해.",
+  "note": "right = 권리"
+ },
+ {
+  "no": 353,
+  "day": 71,
+  "word": "up",
+  "en": "Time's up.",
+  "ko": "시간 다 됐어.",
+  "note": "up = 끝난"
+ },
+ {
+  "no": 354,
+  "day": 71,
+  "word": "give",
+  "en": "Something's got to give.",
+  "ko": "뭔가 하나는 포기해야 해.",
+  "note": "give = 무너지다/양보하다"
+ },
+ {
+  "no": 355,
+  "day": 71,
+  "word": "make",
+  "en": "Make sure you lock the door.",
+  "ko": "문 꼭 잠가.",
+  "note": "make sure = 확실히 하다"
+ },
+ {
+  "no": 356,
+  "day": 72,
+  "word": "run",
+  "en": "Let me run something by you.",
+  "ko": "너한테 뭐 좀 물어볼게.",
+  "note": "run by = 의견을 묻다"
+ },
+ {
+  "no": 357,
+  "day": 72,
+  "word": "look",
+  "en": "Things are looking up.",
+  "ko": "상황이 나아지고 있어.",
+  "note": "look up = 좋아지다"
+ },
+ {
+  "no": 358,
+  "day": 72,
+  "word": "matter",
+  "en": "No matter what, I'll be there.",
+  "ko": "무슨 일이 있어도 갈게.",
+  "note": "no matter what = 무슨 일이 있어도"
+ },
+ {
+  "no": 359,
+  "day": 72,
+  "word": "sure",
+  "en": "Make sure you eat.",
+  "ko": "꼭 밥 챙겨 먹어.",
+  "note": "make sure = 반드시 ~하다"
+ },
+ {
+  "no": 360,
+  "day": 72,
+  "word": "fit",
+  "en": "He threw a fit.",
+  "ko": "그는 성질을 부렸어.",
+  "note": "throw a fit = 발끈하다"
+ },
+ {
+  "no": 361,
+  "day": 73,
+  "word": "end",
+  "en": "It's not the end of the world.",
+  "ko": "세상 끝난 거 아니야.",
+  "note": "end of the world = 세상의 끝"
+ },
+ {
+  "no": 362,
+  "day": 73,
+  "word": "count",
+  "en": "You can count on me.",
+  "ko": "날 믿어도 돼.",
+  "note": "count on = 믿다/의지하다"
+ },
+ {
+  "no": 363,
+  "day": 73,
+  "word": "last",
+  "en": "That's the last thing I need.",
+  "ko": "그건 정말 최악이야.",
+  "note": "last thing = 가장 원하지 않는 것"
+ },
+ {
+  "no": 364,
+  "day": 73,
+  "word": "even",
+  "en": "I didn't even notice.",
+  "ko": "눈치도 못 챘어.",
+  "note": "even = ~조차"
+ },
+ {
+  "no": 365,
+  "day": 73,
+  "word": "go",
+  "en": "The lights went out.",
+  "ko": "불이 나갔어.",
+  "note": "go out = 꺼지다"
+ },
+ {
+  "no": 366,
+  "day": 74,
+  "word": "work",
+  "en": "Things didn't work out between us.",
+  "ko": "우리 사이는 잘 안 됐어.",
+  "note": "work out = 잘 되다"
+ },
+ {
+  "no": 367,
+  "day": 74,
+  "word": "set",
+  "en": "That set me back $200.",
+  "ko": "그거 200달러 들었어.",
+  "note": "set back = (비용이) 들다"
+ },
+ {
+  "no": 368,
+  "day": 74,
+  "word": "hold",
+  "en": "Hold it right there!",
+  "ko": "거기 멈춰!",
+  "note": "hold it = 멈추다"
+ },
+ {
+  "no": 369,
+  "day": 74,
+  "word": "catch",
+  "en": "You caught me at a bad time.",
+  "ko": "타이밍이 안 좋네.",
+  "note": "catch = 마주치다"
+ },
+ {
+  "no": 370,
+  "day": 74,
+  "word": "get",
+  "en": "We got stuck in traffic.",
+  "ko": "차가 막혀서 꼼짝 못 했어.",
+  "note": "get stuck = 갇히다"
+ },
+ {
+  "no": 371,
+  "day": 75,
+  "word": "take",
+  "en": "It takes guts to do that.",
+  "ko": "그거 하려면 배짱이 필요해.",
+  "note": "take = 필요로 하다"
+ },
+ {
+  "no": 372,
+  "day": 75,
+  "word": "keep",
+  "en": "Can you keep a secret?",
+  "ko": "비밀 지킬 수 있어?",
+  "note": "keep a secret = 비밀 지키다"
+ },
+ {
+  "no": 373,
+  "day": 75,
+  "word": "come",
+  "en": "He comes across as shy.",
+  "ko": "그는 수줍어 보여.",
+  "note": "come across as = ~처럼 보이다"
+ },
+ {
+  "no": 374,
+  "day": 75,
+  "word": "turn",
+  "en": "It turned out fine.",
+  "ko": "결국 잘 됐어.",
+  "note": "turn out = 결과가 ~이다"
+ },
+ {
+  "no": 375,
+  "day": 75,
+  "word": "pick",
+  "en": "I picked up some Spanish in Mexico.",
+  "ko": "멕시코에서 스페인어 좀 익혔어.",
+  "note": "pick up = 익히다"
+ },
+ {
+  "no": 376,
+  "day": 76,
+  "word": "drop",
+  "en": "I dropped the ball on that.",
+  "ko": "그거 내가 실수했어.",
+  "note": "drop the ball = 실수하다"
+ },
+ {
+  "no": 377,
+  "day": 76,
+  "word": "stick",
+  "en": "The name stuck.",
+  "ko": "그 이름이 굳어졌어.",
+  "note": "stick = 고정되다"
+ },
+ {
+  "no": 378,
+  "day": 76,
+  "word": "tell",
+  "en": "Don't tell on me.",
+  "ko": "나 이르지 마.",
+  "note": "tell on = 고자질하다"
+ },
+ {
+  "no": 379,
+  "day": 76,
+  "word": "fair",
+  "en": "Fair enough.",
+  "ko": "그럴 만하네. / 일리 있어.",
+  "note": "fair enough = 타당하다"
+ },
+ {
+  "no": 380,
+  "day": 76,
+  "word": "make",
+  "en": "We made a lot of progress.",
+  "ko": "우리 많이 진전했어.",
+  "note": "make progress = 진전하다"
+ },
+ {
+  "no": 381,
+  "day": 77,
+  "word": "have",
+  "en": "She's having a baby.",
+  "ko": "그녀는 아기를 가졌어(곧 낳아).",
+  "note": "have a baby = 출산하다"
+ },
+ {
+  "no": 382,
+  "day": 77,
+  "word": "put",
+  "en": "Can you put me through to sales?",
+  "ko": "영업부로 연결해 주시겠어요?",
+  "note": "put through = 전화 연결하다"
+ },
+ {
+  "no": 383,
+  "day": 77,
+  "word": "save",
+  "en": "Save it for later.",
+  "ko": "나중을 위해 남겨 둬.",
+  "note": "save = 남겨 두다"
+ },
+ {
+  "no": 384,
+  "day": 77,
+  "word": "leave",
+  "en": "I'm on leave this week.",
+  "ko": "이번 주 휴가야.",
+  "note": "leave = 휴가"
+ },
+ {
+  "no": 385,
+  "day": 77,
+  "word": "try",
+  "en": "I'll give it a try.",
+  "ko": "한번 해 볼게.",
+  "note": "try = 시도"
+ },
+ {
+  "no": 386,
+  "day": 78,
+  "word": "blow",
+  "en": "He blew up at me.",
+  "ko": "그가 나한테 폭발했어.",
+  "note": "blow up = 화내다"
+ },
+ {
+  "no": 387,
+  "day": 78,
+  "word": "go",
+  "en": "Are you two going out?",
+  "ko": "너희 둘 사귀어?",
+  "note": "go out = 사귀다"
+ },
+ {
+  "no": 388,
+  "day": 78,
+  "word": "get",
+  "en": "Get over it.",
+  "ko": "그만 잊어버려.",
+  "note": "get over = 극복하다"
+ },
+ {
+  "no": 389,
+  "day": 78,
+  "word": "take",
+  "en": "I'll take that as a yes.",
+  "ko": "그거 '응'으로 알게.",
+  "note": "take A as B = A를 B로 받아들이다"
+ },
+ {
+  "no": 390,
+  "day": 78,
+  "word": "pull",
+  "en": "She pulled out of the deal.",
+  "ko": "그녀는 거래에서 빠졌어.",
+  "note": "pull out = 철수하다"
+ },
+ {
+  "no": 391,
+  "day": 79,
+  "word": "hit",
+  "en": "The song was a big hit.",
+  "ko": "그 노래 대박 났어.",
+  "note": "hit = 히트작"
+ },
+ {
+  "no": 392,
+  "day": 79,
+  "word": "feel",
+  "en": "I feel bad about it.",
+  "ko": "그거 미안해.",
+  "note": "feel bad = 미안하다"
+ },
+ {
+  "no": 393,
+  "day": 79,
+  "word": "mind",
+  "en": "What's on your mind?",
+  "ko": "무슨 생각 해?",
+  "note": "on one's mind = 마음에 있는"
+ },
+ {
+  "no": 394,
+  "day": 79,
+  "word": "break",
+  "en": "Can you break it down for me?",
+  "ko": "쉽게 풀어서 설명해 줄래?",
+  "note": "break down = 분석하다/풀어 말하다"
+ },
+ {
+  "no": 395,
+  "day": 79,
+  "word": "give",
+  "en": "The chair gave way.",
+  "ko": "의자가 무너졌어.",
+  "note": "give way = 무너지다"
+ },
+ {
+  "no": 396,
+  "day": 80,
+  "word": "run",
+  "en": "He's running for mayor.",
+  "ko": "그는 시장에 출마해.",
+  "note": "run for = 출마하다"
+ },
+ {
+  "no": 397,
+  "day": 80,
+  "word": "look",
+  "en": "I've always looked up to her.",
+  "ko": "난 항상 그녀를 존경했어.",
+  "note": "look up to = 존경하다"
+ },
+ {
+  "no": 398,
+  "day": 80,
+  "word": "call",
+  "en": "That was a close call.",
+  "ko": "아슬아슬했어.",
+  "note": "close call = 위기일발"
+ },
+ {
+  "no": 399,
+  "day": 80,
+  "word": "cut",
+  "en": "I'm not cut out for this job.",
+  "ko": "난 이 일에 안 맞아.",
+  "note": "cut out for = 적임인"
+ },
+ {
+  "no": 400,
+  "day": 80,
+  "word": "make",
+  "en": "Don't make fun of me.",
+  "ko": "나 놀리지 마.",
+  "note": "make fun of = 놀리다"
+ },
+ {
+  "no": 401,
+  "day": 81,
+  "word": "hang",
+  "en": "Hang in there.",
+  "ko": "조금만 버텨.",
+  "note": "hang in there = 견디다"
+ },
+ {
+  "no": 402,
+  "day": 81,
+  "word": "miss",
+  "en": "Did I miss anything?",
+  "ko": "나 뭐 놓친 거 있어?",
+  "note": "miss = 놓치다"
+ },
+ {
+  "no": 403,
+  "day": 81,
+  "word": "mean",
+  "en": "It means a lot to me.",
+  "ko": "나한테 정말 의미 있어.",
+  "note": "mean = 중요하다"
+ },
+ {
+  "no": 404,
+  "day": 81,
+  "word": "move",
+  "en": "Nice move!",
+  "ko": "잘했다! / 좋은 수야!",
+  "note": "move = 수/행동"
+ },
+ {
+  "no": 405,
+  "day": 81,
+  "word": "point",
+  "en": "I see your point.",
+  "ko": "네 말 이해해.",
+  "note": "point = 주장"
+ },
+ {
+  "no": 406,
+  "day": 82,
+  "word": "bring",
+  "en": "Bring your own bottle.",
+  "ko": "술은 각자 가져와.",
+  "note": "bring = 가져오다"
+ },
+ {
+  "no": 407,
+  "day": 82,
+  "word": "fall",
+  "en": "I fell asleep on the couch.",
+  "ko": "소파에서 잠들었어.",
+  "note": "fall asleep = 잠들다"
+ },
+ {
+  "no": 408,
+  "day": 82,
+  "word": "way",
+  "en": "There's no way I'm doing that.",
+  "ko": "난 절대 그거 안 해.",
+  "note": "no way = 절대 안"
+ },
+ {
+  "no": 409,
+  "day": 82,
+  "word": "thing",
+  "en": "It's a guy thing.",
+  "ko": "남자들만 아는 거야.",
+  "note": "thing = ~만의 것"
+ },
+ {
+  "no": 410,
+  "day": 82,
+  "word": "come",
+  "en": "Come again?",
+  "ko": "뭐라고? 다시 말해 줄래?",
+  "note": "come again = 다시 말해 줘"
+ },
+ {
+  "no": 411,
+  "day": 83,
+  "word": "keep",
+  "en": "Keep it to yourself.",
+  "ko": "너만 알고 있어.",
+  "note": "keep to oneself = 비밀로 하다"
+ },
+ {
+  "no": 412,
+  "day": 83,
+  "word": "have",
+  "en": "I had a hard time finding it.",
+  "ko": "그거 찾느라 고생했어.",
+  "note": "have a hard time = 고생하다"
+ },
+ {
+  "no": 413,
+  "day": 83,
+  "word": "work",
+  "en": "I'm working on it.",
+  "ko": "지금 하고 있어.",
+  "note": "work on = 작업하다"
+ },
+ {
+  "no": 414,
+  "day": 83,
+  "word": "set",
+  "en": "We had a small setback.",
+  "ko": "작은 차질이 있었어.",
+  "note": "setback = 차질"
+ },
+ {
+  "no": 415,
+  "day": 83,
+  "word": "hold",
+  "en": "The room holds 50 people.",
+  "ko": "그 방은 50명 수용해.",
+  "note": "hold = 수용하다"
+ },
+ {
+  "no": 416,
+  "day": 84,
+  "word": "catch",
+  "en": "Let's catch up over coffee.",
+  "ko": "커피 마시면서 밀린 얘기 하자.",
+  "note": "catch up = 근황을 나누다"
+ },
+ {
+  "no": 417,
+  "day": 84,
+  "word": "sort",
+  "en": "I'm feeling out of sorts.",
+  "ko": "컨디션이 좀 안 좋아.",
+  "note": "out of sorts = 기분/몸이 별로인"
+ },
+ {
+  "no": 418,
+  "day": 84,
+  "word": "charge",
+  "en": "I need to charge my phone.",
+  "ko": "폰 충전해야 해.",
+  "note": "charge = 충전하다"
+ },
+ {
+  "no": 419,
+  "day": 84,
+  "word": "wear",
+  "en": "I'm worn out.",
+  "ko": "완전 지쳤어.",
+  "note": "worn out = 지친"
+ },
+ {
+  "no": 420,
+  "day": 84,
+  "word": "mess",
+  "en": "I messed up.",
+  "ko": "내가 망쳤어.",
+  "note": "mess up = 망치다"
+ },
+ {
+  "no": 421,
+  "day": 85,
+  "word": "kind",
+  "en": "I'm kind of tired.",
+  "ko": "좀 피곤해.",
+  "note": "kind of = 좀"
+ },
+ {
+  "no": 422,
+  "day": 85,
+  "word": "cool",
+  "en": "Cool it.",
+  "ko": "진정해.",
+  "note": "cool it = 진정하다"
+ },
+ {
+  "no": 423,
+  "day": 85,
+  "word": "watch",
+  "en": "Can you watch my kids?",
+  "ko": "우리 애들 좀 봐 줄래?",
+  "note": "watch = 돌보다"
+ },
+ {
+  "no": 424,
+  "day": 85,
+  "word": "get",
+  "en": "How do I get to the station?",
+  "ko": "역에 어떻게 가요?",
+  "note": "get to = ~에 가다"
+ },
+ {
+  "no": 425,
+  "day": 85,
+  "word": "take",
+  "en": "Take off your shoes, please.",
+  "ko": "신발 벗어 주세요.",
+  "note": "take off = 벗다"
+ },
+ {
+  "no": 426,
+  "day": 86,
+  "word": "go",
+  "en": "I'm going out tonight.",
+  "ko": "오늘 밤 놀러 나가.",
+  "note": "go out = 외출하다"
+ },
+ {
+  "no": 427,
+  "day": 86,
+  "word": "play",
+  "en": "He played a big part in this.",
+  "ko": "그는 여기에 큰 역할을 했어.",
+  "note": "play a part = 역할을 하다"
+ },
+ {
+  "no": 428,
+  "day": 86,
+  "word": "check",
+  "en": "Can you check on the kids?",
+  "ko": "애들 좀 살펴봐 줄래?",
+  "note": "check on = 살펴보다"
+ },
+ {
+  "no": 429,
+  "day": 86,
+  "word": "stand",
+  "en": "She really stands out.",
+  "ko": "그녀는 정말 눈에 띄어.",
+  "note": "stand out = 두드러지다"
+ },
+ {
+  "no": 430,
+  "day": 86,
+  "word": "deal",
+  "en": "I can't deal with this right now.",
+  "ko": "지금은 이거 감당 못 해.",
+  "note": "deal with = 감당하다"
+ },
+ {
+  "no": 431,
+  "day": 87,
+  "word": "pass",
+  "en": "Time passes so fast.",
+  "ko": "시간 정말 빨리 가.",
+  "note": "pass = (시간이) 지나다"
+ },
+ {
+  "no": 432,
+  "day": 87,
+  "word": "let",
+  "en": "Let me off here.",
+  "ko": "여기서 내려 줘.",
+  "note": "let off = 내려 주다"
+ },
+ {
+  "no": 433,
+  "day": 87,
+  "word": "turn",
+  "en": "It turns out he was right.",
+  "ko": "알고 보니 그가 맞았어.",
+  "note": "turn out = 알고 보니"
+ },
+ {
+  "no": 434,
+  "day": 87,
+  "word": "put",
+  "en": "Put out the fire.",
+  "ko": "불 꺼.",
+  "note": "put out = 끄다"
+ },
+ {
+  "no": 435,
+  "day": 87,
+  "word": "make",
+  "en": "Can you make room for one more?",
+  "ko": "한 명 더 앉을 자리 만들어 줄래?",
+  "note": "make room = 공간을 내다"
+ },
+ {
+  "no": 436,
+  "day": 88,
+  "word": "give",
+  "en": "Give it back!",
+  "ko": "돌려줘!",
+  "note": "give back = 돌려주다"
+ },
+ {
+  "no": 437,
+  "day": 88,
+  "word": "figure",
+  "en": "That figures.",
+  "ko": "그럴 줄 알았어.",
+  "note": "figure = 당연하다"
+ },
+ {
+  "no": 438,
+  "day": 88,
+  "word": "stop",
+  "en": "Is this your stop?",
+  "ko": "여기서 내리세요?",
+  "note": "stop = 정류장"
+ },
+ {
+  "no": 439,
+  "day": 88,
+  "word": "sound",
+  "en": "He was sound asleep.",
+  "ko": "그는 깊이 잠들어 있었어.",
+  "note": "sound = 깊이"
+ },
+ {
+  "no": 440,
+  "day": 88,
+  "word": "cover",
+  "en": "Don't judge a book by its cover.",
+  "ko": "겉만 보고 판단하지 마.",
+  "note": "cover = 표지"
+ },
+ {
+  "no": 441,
+  "day": 89,
+  "word": "just",
+  "en": "Just a minute.",
+  "ko": "잠깐만요.",
+  "note": "just = 단지"
+ },
+ {
+  "no": 442,
+  "day": 89,
+  "word": "back",
+  "en": "Can you back me up?",
+  "ko": "내 편 좀 들어 줄래?",
+  "note": "back up = 지지하다"
+ },
+ {
+  "no": 443,
+  "day": 89,
+  "word": "over",
+  "en": "Do it over.",
+  "ko": "다시 해.",
+  "note": "over = 다시"
+ },
+ {
+  "no": 444,
+  "day": 89,
+  "word": "out",
+  "en": "We're out of time.",
+  "ko": "시간이 없어.",
+  "note": "out of = ~이 다 떨어진"
+ },
+ {
+  "no": 445,
+  "day": 89,
+  "word": "get",
+  "en": "I didn't get a chance to call you.",
+  "ko": "너한테 전화할 기회가 없었어.",
+  "note": "get a chance = 기회가 생기다"
+ },
+ {
+  "no": 446,
+  "day": 90,
+  "word": "take",
+  "en": "The plane takes off at 9.",
+  "ko": "비행기가 9시에 이륙해.",
+  "note": "take off = 이륙하다"
+ },
+ {
+  "no": 447,
+  "day": 90,
+  "word": "come",
+  "en": "First come, first served.",
+  "ko": "선착순이에요.",
+  "note": "come = 오다"
+ },
+ {
+  "no": 448,
+  "day": 90,
+  "word": "break",
+  "en": "Someone broke into my car.",
+  "ko": "누가 내 차를 털었어.",
+  "note": "break into = 침입하다"
+ },
+ {
+  "no": 449,
+  "day": 90,
+  "word": "have",
+  "en": "Let me have a look.",
+  "ko": "좀 보자.",
+  "note": "have a look = 보다"
+ },
+ {
+  "no": 450,
+  "day": 90,
+  "word": "show",
+  "en": "Let me show you how.",
+  "ko": "어떻게 하는지 보여 줄게.",
+  "note": "show = 보여 주다"
+ },
+ {
+  "no": 451,
+  "day": 91,
+  "word": "right",
+  "en": "Right?",
+  "ko": "그렇지? / 맞지?",
+  "note": "right = 맞다(동의 구함)"
+ },
+ {
+  "no": 452,
+  "day": 91,
+  "word": "up",
+  "en": "I'm up for it.",
+  "ko": "나 할래.",
+  "note": "up for = ~할 의향이 있는"
+ },
+ {
+  "no": 453,
+  "day": 91,
+  "word": "run",
+  "en": "It runs in the family.",
+  "ko": "집안 내력이야.",
+  "note": "run in the family = 유전이다"
+ },
+ {
+  "no": 454,
+  "day": 91,
+  "word": "look",
+  "en": "Don't look down on people.",
+  "ko": "사람들 무시하지 마.",
+  "note": "look down on = 깔보다"
+ },
+ {
+  "no": 455,
+  "day": 91,
+  "word": "go",
+  "en": "Prices went up again.",
+  "ko": "가격이 또 올랐어.",
+  "note": "go up = 오르다"
+ },
+ {
+  "no": 456,
+  "day": 92,
+  "word": "keep",
+  "en": "He keeps to himself.",
+  "ko": "그는 남들과 잘 안 어울려.",
+  "note": "keep to oneself = 혼자 지내다"
+ },
+ {
+  "no": 457,
+  "day": 92,
+  "word": "pick",
+  "en": "Business is picking up.",
+  "ko": "장사가 살아나고 있어.",
+  "note": "pick up = 좋아지다"
+ },
+ {
+  "no": 458,
+  "day": 92,
+  "word": "drop",
+  "en": "Drop me a line.",
+  "ko": "연락 줘.",
+  "note": "drop a line = 짧게 연락하다"
+ },
+ {
+  "no": 459,
+  "day": 92,
+  "word": "stick",
+  "en": "I'm stuck.",
+  "ko": "막혔어. / 꼼짝 못 해.",
+  "note": "stuck = 막힌"
+ },
+ {
+  "no": 460,
+  "day": 92,
+  "word": "tell",
+  "en": "You never can tell.",
+  "ko": "그건 모르는 거야.",
+  "note": "tell = 알다/예측하다"
+ },
+ {
+  "no": 461,
+  "day": 93,
+  "word": "make",
+  "en": "I made a mistake.",
+  "ko": "내가 실수했어.",
+  "note": "make a mistake = 실수하다"
+ },
+ {
+  "no": 462,
+  "day": 93,
+  "word": "pull",
+  "en": "The car pulled up in front.",
+  "ko": "차가 앞에 섰어.",
+  "note": "pull up = 멈추다"
+ },
+ {
+  "no": 463,
+  "day": 93,
+  "word": "hit",
+  "en": "We hit it off right away.",
+  "ko": "우리는 바로 죽이 맞았어.",
+  "note": "hit it off = 금방 친해지다"
+ },
+ {
+  "no": 464,
+  "day": 93,
+  "word": "feel",
+  "en": "I'm not feeling well.",
+  "ko": "몸이 안 좋아.",
+  "note": "feel well = 몸이 좋다"
+ },
+ {
+  "no": 465,
+  "day": 93,
+  "word": "mind",
+  "en": "I changed my mind.",
+  "ko": "마음이 바뀌었어.",
+  "note": "change one's mind = 마음을 바꾸다"
+ },
+ {
+  "no": 466,
+  "day": 94,
+  "word": "call",
+  "en": "I'm calling in sick today.",
+  "ko": "오늘 아파서 못 간다고 연락할 거야.",
+  "note": "call in sick = 병가 내다"
+ },
+ {
+  "no": 467,
+  "day": 94,
+  "word": "cut",
+  "en": "Let's cut to the chase.",
+  "ko": "본론으로 들어가자.",
+  "note": "cut to the chase = 본론으로"
+ },
+ {
+  "no": 468,
+  "day": 94,
+  "word": "work",
+  "en": "You need to work on your attitude.",
+  "ko": "태도를 좀 고쳐야 해.",
+  "note": "work on = 개선하다"
+ },
+ {
+  "no": 469,
+  "day": 94,
+  "word": "set",
+  "en": "Let's set up a meeting.",
+  "ko": "회의 잡자.",
+  "note": "set up = 마련하다"
+ },
+ {
+  "no": 470,
+  "day": 94,
+  "word": "hold",
+  "en": "Hold the onions, please.",
+  "ko": "양파는 빼 주세요.",
+  "note": "hold = 빼다(주문)"
+ },
+ {
+  "no": 471,
+  "day": 95,
+  "word": "catch",
+  "en": "Go ahead, I'll catch up.",
+  "ko": "먼저 가, 따라갈게.",
+  "note": "catch up = 따라잡다"
+ },
+ {
+  "no": 472,
+  "day": 95,
+  "word": "get",
+  "en": "She gets along with everyone.",
+  "ko": "그녀는 모두와 잘 지내.",
+  "note": "get along = 잘 지내다"
+ },
+ {
+  "no": 473,
+  "day": 95,
+  "word": "take",
+  "en": "Her business really took off.",
+  "ko": "그녀의 사업이 크게 떴어.",
+  "note": "take off = 급성장하다"
+ },
+ {
+  "no": 474,
+  "day": 95,
+  "word": "turn",
+  "en": "It's your turn.",
+  "ko": "네 차례야.",
+  "note": "turn = 차례"
+ },
+ {
+  "no": 475,
+  "day": 95,
+  "word": "put",
+  "en": "Let me put it this way.",
+  "ko": "이렇게 말해 볼게.",
+  "note": "put = 표현하다"
+ },
+ {
+  "no": 476,
+  "day": 96,
+  "word": "give",
+  "en": "I'll give you a ride.",
+  "ko": "태워 줄게.",
+  "note": "give a ride = 태워 주다"
+ },
+ {
+  "no": 477,
+  "day": 96,
+  "word": "come",
+  "en": "The total comes to $50.",
+  "ko": "합계 50달러입니다.",
+  "note": "come to = 총 ~이 되다"
+ },
+ {
+  "no": 478,
+  "day": 96,
+  "word": "have",
+  "en": "You have a point.",
+  "ko": "일리 있네.",
+  "note": "have a point = 일리가 있다"
+ },
+ {
+  "no": 479,
+  "day": 96,
+  "word": "go",
+  "en": "Let's go over it one more time.",
+  "ko": "한 번 더 검토하자.",
+  "note": "go over = 검토하다"
+ },
+ {
+  "no": 480,
+  "day": 96,
+  "word": "make",
+  "en": "Two plus two makes four.",
+  "ko": "2 더하기 2는 4야.",
+  "note": "make = (합계가) ~이 되다"
+ },
+ {
+  "no": 481,
+  "day": 97,
+  "word": "get",
+  "en": "Let's get together this weekend.",
+  "ko": "이번 주말에 모이자.",
+  "note": "get together = 모이다"
+ },
+ {
+  "no": 482,
+  "day": 97,
+  "word": "take",
+  "en": "I'm taking the day off.",
+  "ko": "오늘 하루 쉬어.",
+  "note": "take ~ off = 휴가를 내다"
+ },
+ {
+  "no": 483,
+  "day": 97,
+  "word": "run",
+  "en": "The movie runs two hours.",
+  "ko": "그 영화는 두 시간짜리야.",
+  "note": "run = (시간이) 지속되다"
+ },
+ {
+  "no": 484,
+  "day": 97,
+  "word": "keep",
+  "en": "I'll keep that in mind.",
+  "ko": "명심할게.",
+  "note": "keep in mind = 명심하다"
+ },
+ {
+  "no": 485,
+  "day": 97,
+  "word": "look",
+  "en": "Can you look after my cat?",
+  "ko": "우리 고양이 좀 돌봐 줄래?",
+  "note": "look after = 돌보다"
+ },
+ {
+  "no": 486,
+  "day": 98,
+  "word": "break",
+  "en": "Do you have change? I need to break a twenty.",
+  "ko": "잔돈 있어? 20달러짜리 깨야 해.",
+  "note": "break = (큰돈을) 바꾸다"
+ },
+ {
+  "no": 487,
+  "day": 98,
+  "word": "play",
+  "en": "I was just playing.",
+  "ko": "그냥 장난이었어.",
+  "note": "play = 장난치다"
+ },
+ {
+  "no": 488,
+  "day": 98,
+  "word": "check",
+  "en": "Check your email.",
+  "ko": "이메일 확인해.",
+  "note": "check = 확인하다"
+ },
+ {
+  "no": 489,
+  "day": 98,
+  "word": "hang",
+  "en": "He's still hung up on his ex.",
+  "ko": "그는 아직 전 애인을 못 잊었어.",
+  "note": "hung up on = 집착하는"
+ },
+ {
+  "no": 490,
+  "day": 98,
+  "word": "stand",
+  "en": "He stood me up.",
+  "ko": "그가 날 바람맞혔어.",
+  "note": "stand up = 바람맞히다"
+ },
+ {
+  "no": 491,
+  "day": 99,
+  "word": "miss",
+  "en": "You're missing the point.",
+  "ko": "핵심을 놓치고 있어.",
+  "note": "miss the point = 요점을 놓치다"
+ },
+ {
+  "no": 492,
+  "day": 99,
+  "word": "mean",
+  "en": "I've been meaning to call you.",
+  "ko": "안 그래도 전화하려고 했어.",
+  "note": "been meaning to = 계속 ~하려 했다"
+ },
+ {
+  "no": 493,
+  "day": 99,
+  "word": "deal",
+  "en": "Deal with it.",
+  "ko": "그냥 받아들여.",
+  "note": "deal with = 받아들이다"
+ },
+ {
+  "no": 494,
+  "day": 99,
+  "word": "move",
+  "en": "He made the first move.",
+  "ko": "그가 먼저 다가갔어.",
+  "note": "make the first move = 먼저 행동하다"
+ },
+ {
+  "no": 495,
+  "day": 99,
+  "word": "pass",
+  "en": "I'm just passing through.",
+  "ko": "그냥 지나가는 길이야.",
+  "note": "pass through = 지나가다"
+ },
+ {
+  "no": 496,
+  "day": 100,
+  "word": "point",
+  "en": "At this point, I don't care.",
+  "ko": "이제 와선 상관없어.",
+  "note": "at this point = 이 시점에서"
+ },
+ {
+  "no": 497,
+  "day": 100,
+  "word": "save",
+  "en": "Save your breath.",
+  "ko": "말해 봤자 소용없어.",
+  "note": "save one's breath = 말을 아끼다"
+ },
+ {
+  "no": 498,
+  "day": 100,
+  "word": "bring",
+  "en": "That brings back memories.",
+  "ko": "추억이 떠오르네.",
+  "note": "bring back = 떠올리게 하다"
+ },
+ {
+  "no": 499,
+  "day": 100,
+  "word": "let",
+  "en": "I'll let you off this time.",
+  "ko": "이번엔 봐줄게.",
+  "note": "let off = 봐주다"
+ },
+ {
+  "no": 500,
+  "day": 100,
+  "word": "leave",
+  "en": "Don't leave me out.",
+  "ko": "나 빼놓지 마.",
+  "note": "leave out = 빼다"
+ },
+ {
+  "no": 501,
+  "day": 101,
+  "word": "fall",
+  "en": "I'm falling behind at work.",
+  "ko": "일이 밀리고 있어.",
+  "note": "fall behind = 뒤처지다"
+ },
+ {
+  "no": 502,
+  "day": 101,
+  "word": "try",
+  "en": "Try the soup, it's great.",
+  "ko": "수프 먹어 봐, 맛있어.",
+  "note": "try = 먹어 보다"
+ },
+ {
+  "no": 503,
+  "day": 101,
+  "word": "matter",
+  "en": "As a matter of fact, I do.",
+  "ko": "사실은 그래.",
+  "note": "as a matter of fact = 사실은"
+ },
+ {
+  "no": 504,
+  "day": 101,
+  "word": "way",
+  "en": "That's way too expensive.",
+  "ko": "그건 너무 비싸.",
+  "note": "way = 훨씬, 너무"
+ },
+ {
+  "no": 505,
+  "day": 101,
+  "word": "thing",
+  "en": "Is that a thing now?",
+  "ko": "요즘 그런 게 유행이야?",
+  "note": "a thing = 실제로 있는 것/유행"
+ },
+ {
+  "no": 506,
+  "day": 102,
+  "word": "sure",
+  "en": "For sure.",
+  "ko": "확실히. / 당연하지.",
+  "note": "for sure = 확실히"
+ },
+ {
+  "no": 507,
+  "day": 102,
+  "word": "fit",
+  "en": "Do whatever you see fit.",
+  "ko": "적절하다고 생각하는 대로 해.",
+  "note": "see fit = 적절하다고 여기다"
+ },
+ {
+  "no": 508,
+  "day": 102,
+  "word": "end",
+  "en": "I'll never hear the end of it.",
+  "ko": "두고두고 잔소리 듣겠네.",
+  "note": "hear the end of = 끝없이 듣다"
+ },
+ {
+  "no": 509,
+  "day": 102,
+  "word": "count",
+  "en": "Every little bit counts.",
+  "ko": "조금이라도 다 도움이 돼.",
+  "note": "count = 중요하다"
+ },
+ {
+  "no": 510,
+  "day": 102,
+  "word": "last",
+  "en": "At last!",
+  "ko": "드디어!",
+  "note": "at last = 마침내"
+ },
+ {
+  "no": 511,
+  "day": 103,
+  "word": "blow",
+  "en": "My phone is blowing up.",
+  "ko": "폰에 연락이 쏟아져.",
+  "note": "blow up = 폭주하다"
+ },
+ {
+  "no": 512,
+  "day": 103,
+  "word": "track",
+  "en": "We're on track.",
+  "ko": "우린 순조롭게 진행 중이야.",
+  "note": "on track = 순조로운"
+ },
+ {
+  "no": 513,
+  "day": 103,
+  "word": "pretty",
+  "en": "We're sitting pretty.",
+  "ko": "우리 아주 좋은 상황이야.",
+  "note": "sitting pretty = 유리한"
+ },
+ {
+  "no": 514,
+  "day": 103,
+  "word": "even",
+  "en": "Even so, it's not fair.",
+  "ko": "그래도 그건 불공평해.",
+  "note": "even so = 그렇다 해도"
+ },
+ {
+  "no": 515,
+  "day": 103,
+  "word": "still",
+  "en": "Still, I think you're wrong.",
+  "ko": "그래도 난 네가 틀렸다고 생각해.",
+  "note": "still = 그래도"
+ },
+ {
+  "no": 516,
+  "day": 104,
+  "word": "bet",
+  "en": "Wanna bet?",
+  "ko": "내기할래?",
+  "note": "bet = 내기하다"
+ },
+ {
+  "no": 517,
+  "day": 104,
+  "word": "fine",
+  "en": "I got a fine for parking.",
+  "ko": "주차 위반 벌금 받았어.",
+  "note": "fine = 벌금"
+ },
+ {
+  "no": 518,
+  "day": 104,
+  "word": "open",
+  "en": "Is this seat open?",
+  "ko": "이 자리 비었어요?",
+  "note": "open = 비어 있는"
+ },
+ {
+  "no": 519,
+  "day": 104,
+  "word": "spend",
+  "en": "I spent too much.",
+  "ko": "돈을 너무 많이 썼어.",
+  "note": "spend = (돈을) 쓰다"
+ },
+ {
+  "no": 520,
+  "day": 104,
+  "word": "carry",
+  "en": "I got carried away.",
+  "ko": "내가 좀 오버했어.",
+  "note": "carried away = 흥분한"
+ },
+ {
+  "no": 521,
+  "day": 105,
+  "word": "make",
+  "en": "He'll make a great dad.",
+  "ko": "그는 좋은 아빠가 될 거야.",
+  "note": "make = ~이 되다(자질)"
+ },
+ {
+  "no": 522,
+  "day": 105,
+  "word": "go",
+  "en": "I'm going through a lot right now.",
+  "ko": "요즘 힘든 일이 많아.",
+  "note": "go through = 겪다"
+ },
+ {
+  "no": 523,
+  "day": 105,
+  "word": "have",
+  "en": "I had a feeling you'd say that.",
+  "ko": "네가 그렇게 말할 줄 알았어.",
+  "note": "have a feeling = 예감이 들다"
+ },
+ {
+  "no": 524,
+  "day": 105,
+  "word": "come",
+  "en": "Dreams do come true.",
+  "ko": "꿈은 정말 이루어져.",
+  "note": "come true = 실현되다"
+ },
+ {
+  "no": 525,
+  "day": 105,
+  "word": "give",
+  "en": "Give it some thought.",
+  "ko": "좀 생각해 봐.",
+  "note": "give thought = 고려하다"
+ },
+ {
+  "no": 526,
+  "day": 106,
+  "word": "put",
+  "en": "To put it simply, no.",
+  "ko": "간단히 말해, 안 돼.",
+  "note": "put = 말하다"
+ },
+ {
+  "no": 527,
+  "day": 106,
+  "word": "turn",
+  "en": "She just turned 30.",
+  "ko": "그녀는 막 서른이 됐어.",
+  "note": "turn + 나이 = ~살이 되다"
+ },
+ {
+  "no": 528,
+  "day": 106,
+  "word": "get",
+  "en": "I got a cold.",
+  "ko": "감기 걸렸어.",
+  "note": "get = (병에) 걸리다"
+ },
+ {
+  "no": 529,
+  "day": 106,
+  "word": "take",
+  "en": "Take a deep breath.",
+  "ko": "숨 깊게 쉬어.",
+  "note": "take a breath = 숨쉬다"
+ },
+ {
+  "no": 530,
+  "day": 106,
+  "word": "work",
+  "en": "Don't get so worked up.",
+  "ko": "너무 흥분하지 마.",
+  "note": "worked up = 흥분한"
+ },
+ {
+  "no": 531,
+  "day": 107,
+  "word": "set",
+  "en": "I was set up!",
+  "ko": "나 함정에 빠졌어!",
+  "note": "set up = 누명 씌우다"
+ },
+ {
+  "no": 532,
+  "day": 107,
+  "word": "hold",
+  "en": "I got held up at work.",
+  "ko": "회사에서 일이 늦어졌어.",
+  "note": "held up = 지체되다"
+ },
+ {
+  "no": 533,
+  "day": 107,
+  "word": "catch",
+  "en": "I have a lot of work to catch up on.",
+  "ko": "밀린 일이 많아.",
+  "note": "catch up on = 밀린 걸 하다"
+ },
+ {
+  "no": 534,
+  "day": 107,
+  "word": "call",
+  "en": "Who called the cops?",
+  "ko": "누가 경찰 불렀어?",
+  "note": "call = 부르다"
+ },
+ {
+  "no": 535,
+  "day": 107,
+  "word": "cut",
+  "en": "Cut me some slack.",
+  "ko": "좀 봐줘.",
+  "note": "cut slack = 봐주다"
+ },
+ {
+  "no": 536,
+  "day": 108,
+  "word": "pull",
+  "en": "Pull up a chair.",
+  "ko": "의자 끌어다 앉아.",
+  "note": "pull up = 끌어오다"
+ },
+ {
+  "no": 537,
+  "day": 108,
+  "word": "hit",
+  "en": "Is he hitting on you?",
+  "ko": "그 사람 너한테 작업 거는 거야?",
+  "note": "hit on = 수작 걸다"
+ },
+ {
+  "no": 538,
+  "day": 108,
+  "word": "feel",
+  "en": "Let's feel it out first.",
+  "ko": "먼저 분위기 좀 보자.",
+  "note": "feel out = 떠보다"
+ },
+ {
+  "no": 539,
+  "day": 108,
+  "word": "mind",
+  "en": "Are you out of your mind?",
+  "ko": "너 정신 나갔어?",
+  "note": "out of one's mind = 미친"
+ },
+ {
+  "no": 540,
+  "day": 108,
+  "word": "make",
+  "en": "I can't make out what he's saying.",
+  "ko": "그가 뭐라는지 못 알아듣겠어.",
+  "note": "make out = 알아보다/알아듣다"
+ },
+ {
+  "no": 541,
+  "day": 109,
+  "word": "pick",
+  "en": "Let's pick up where we left off.",
+  "ko": "하던 데서부터 계속하자.",
+  "note": "pick up = 재개하다"
+ },
+ {
+  "no": 542,
+  "day": 109,
+  "word": "drop",
+  "en": "Prices dropped a lot.",
+  "ko": "가격이 많이 떨어졌어.",
+  "note": "drop = 떨어지다"
+ },
+ {
+  "no": 543,
+  "day": 109,
+  "word": "stick",
+  "en": "Stick to the plan.",
+  "ko": "계획대로 해.",
+  "note": "stick to = 지키다"
+ },
+ {
+  "no": 544,
+  "day": 109,
+  "word": "tell",
+  "en": "Time will tell.",
+  "ko": "시간이 말해 줄 거야.",
+  "note": "tell = 드러내다"
+ },
+ {
+  "no": 545,
+  "day": 109,
+  "word": "keep",
+  "en": "Bread doesn't keep long.",
+  "ko": "빵은 오래 못 가.",
+  "note": "keep = (음식이) 상하지 않다"
+ },
+ {
+  "no": 546,
+  "day": 110,
+  "word": "go",
+  "en": "Don't go there.",
+  "ko": "그 얘긴 꺼내지 마.",
+  "note": "go there = 그 얘기로 가다"
+ },
+ {
+  "no": 547,
+  "day": 110,
+  "word": "run",
+  "en": "Can you run to the store for me?",
+  "ko": "가게 좀 다녀와 줄래?",
+  "note": "run = 잠깐 다녀오다"
+ },
+ {
+  "no": 548,
+  "day": 110,
+  "word": "look",
+  "en": "We'll look into it.",
+  "ko": "저희가 알아볼게요.",
+  "note": "look into = 조사하다"
+ },
+ {
+  "no": 549,
+  "day": 110,
+  "word": "have",
+  "en": "Have it your way.",
+  "ko": "네 맘대로 해.",
+  "note": "have it one's way = 원하는 대로 하다"
+ },
+ {
+  "no": 550,
+  "day": 110,
+  "word": "show",
+  "en": "What's your favorite show?",
+  "ko": "제일 좋아하는 프로그램이 뭐야?",
+  "note": "show = TV 프로그램"
+ },
+ {
+  "no": 551,
+  "day": 111,
+  "word": "right",
+  "en": "Make it right.",
+  "ko": "바로잡아.",
+  "note": "right = 올바른"
+ },
+ {
+  "no": 552,
+  "day": 111,
+  "word": "up",
+  "en": "Are you up yet?",
+  "ko": "일어났어?",
+  "note": "up = 깨어 있는"
+ },
+ {
+  "no": 553,
+  "day": 111,
+  "word": "break",
+  "en": "I'm broke.",
+  "ko": "나 빈털터리야.",
+  "note": "broke = 돈 없는"
+ },
+ {
+  "no": 554,
+  "day": 111,
+  "word": "come",
+  "en": "Come to think of it, you're right.",
+  "ko": "생각해 보니 네 말이 맞아.",
+  "note": "come to think of it = 생각해 보니"
+ },
+ {
+  "no": 555,
+  "day": 111,
+  "word": "get",
+  "en": "Go get some rest.",
+  "ko": "가서 좀 쉬어.",
+  "note": "get rest = 쉬다"
+ },
+ {
+  "no": 556,
+  "day": 112,
+  "word": "take",
+  "en": "She takes after her mom.",
+  "ko": "그녀는 엄마를 닮았어.",
+  "note": "take after = 닮다"
+ },
+ {
+  "no": 557,
+  "day": 112,
+  "word": "give",
+  "en": "What gives?",
+  "ko": "무슨 일이야?",
+  "note": "what gives = 무슨 일이야"
+ },
+ {
+  "no": 558,
+  "day": 112,
+  "word": "figure",
+  "en": "We'll figure something out.",
+  "ko": "뭔가 방법을 찾을 거야.",
+  "note": "figure out = 해결하다"
+ },
+ {
+  "no": 559,
+  "day": 112,
+  "word": "stop",
+  "en": "Can we make a quick stop?",
+  "ko": "잠깐 들렀다 가도 돼?",
+  "note": "stop = 정차"
+ },
+ {
+  "no": 560,
+  "day": 112,
+  "word": "sound",
+  "en": "That's sound advice.",
+  "ko": "그건 합리적인 조언이야.",
+  "note": "sound = 건전한/타당한"
+ },
+ {
+  "no": 561,
+  "day": 113,
+  "word": "cover",
+  "en": "Take cover!",
+  "ko": "숨어!",
+  "note": "take cover = 피하다"
+ },
+ {
+  "no": 562,
+  "day": 113,
+  "word": "just",
+  "en": "I just can't.",
+  "ko": "도저히 못 하겠어.",
+  "note": "just = 정말로(강조)"
+ },
+ {
+  "no": 563,
+  "day": 113,
+  "word": "back",
+  "en": "Back up your files.",
+  "ko": "파일 백업해.",
+  "note": "back up = 백업하다"
+ },
+ {
+  "no": 564,
+  "day": 113,
+  "word": "over",
+  "en": "Think it over.",
+  "ko": "잘 생각해 봐.",
+  "note": "think over = 숙고하다"
+ },
+ {
+  "no": 565,
+  "day": 113,
+  "word": "out",
+  "en": "Hear me out.",
+  "ko": "내 말 끝까지 들어 봐.",
+  "note": "hear out = 끝까지 듣다"
+ },
+ {
+  "no": 566,
+  "day": 114,
+  "word": "make",
+  "en": "Let's make the most of it.",
+  "ko": "최대한 활용하자.",
+  "note": "make the most of = 최대한 이용하다"
+ },
+ {
+  "no": 567,
+  "day": 114,
+  "word": "put",
+  "en": "Put yourself in my shoes.",
+  "ko": "내 입장이 돼 봐.",
+  "note": "put oneself in = ~의 입장이 되다"
+ },
+ {
+  "no": 568,
+  "day": 114,
+  "word": "turn",
+  "en": "The leaves are turning red.",
+  "ko": "나뭇잎이 빨갛게 물들고 있어.",
+  "note": "turn + 형용사 = ~로 변하다"
+ },
+ {
+  "no": 569,
+  "day": 114,
+  "word": "play",
+  "en": "Stop playing games with me.",
+  "ko": "나 가지고 놀지 마.",
+  "note": "play games = 수작 부리다"
+ },
+ {
+  "no": 570,
+  "day": 114,
+  "word": "check",
+  "en": "I need to keep my spending in check.",
+  "ko": "지출을 좀 억제해야 해.",
+  "note": "in check = 억제된"
+ },
+ {
+  "no": 571,
+  "day": 115,
+  "word": "stand",
+  "en": "Stand up for yourself.",
+  "ko": "네 입장을 당당히 말해.",
+  "note": "stand up for = 옹호하다"
+ },
+ {
+  "no": 572,
+  "day": 115,
+  "word": "deal",
+  "en": "That's a good deal.",
+  "ko": "그거 싸게 잘 샀다.",
+  "note": "deal = 거래/좋은 가격"
+ },
+ {
+  "no": 573,
+  "day": 115,
+  "word": "pass",
+  "en": "Don't pass up this chance.",
+  "ko": "이 기회 놓치지 마.",
+  "note": "pass up = 놓치다"
+ },
+ {
+  "no": 574,
+  "day": 115,
+  "word": "let",
+  "en": "Let me get this straight.",
+  "ko": "정리 좀 해 보자.",
+  "note": "get straight = 분명히 하다"
+ },
+ {
+  "no": 575,
+  "day": 115,
+  "word": "go",
+  "en": "Way to go!",
+  "ko": "잘했어!",
+  "note": "way to go = 잘했다"
+ },
+ {
+  "no": 576,
+  "day": 116,
+  "word": "get",
+  "en": "What are you getting at?",
+  "ko": "무슨 말을 하려는 거야?",
+  "note": "get at = 의도하다"
+ },
+ {
+  "no": 577,
+  "day": 116,
+  "word": "take",
+  "en": "I'll take care of it.",
+  "ko": "내가 처리할게.",
+  "note": "take care of = 처리하다/돌보다"
+ },
+ {
+  "no": 578,
+  "day": 116,
+  "word": "have",
+  "en": "Do you have it in a smaller size?",
+  "ko": "이거 작은 사이즈 있어요?",
+  "note": "have = 갖추다"
+ },
+ {
+  "no": 579,
+  "day": 116,
+  "word": "work",
+  "en": "Nice work!",
+  "ko": "잘했어!",
+  "note": "work = 작업/결과"
+ },
+ {
+  "no": 580,
+  "day": 116,
+  "word": "set",
+  "en": "They set me up on a blind date.",
+  "ko": "그들이 소개팅 시켜 줬어.",
+  "note": "set up = 소개해 주다"
+ },
+ {
+  "no": 581,
+  "day": 117,
+  "word": "hold",
+  "en": "How are you holding up?",
+  "ko": "어떻게 버티고 있어?",
+  "note": "hold up = 견디다"
+ },
+ {
+  "no": 582,
+  "day": 117,
+  "word": "catch",
+  "en": "He caught me off guard.",
+  "ko": "그가 허를 찔렀어.",
+  "note": "catch off guard = 방심한 틈을 타다"
+ },
+ {
+  "no": 583,
+  "day": 117,
+  "word": "sort",
+  "en": "It's all sorted.",
+  "ko": "다 정리됐어.",
+  "note": "sorted = 해결된"
+ },
+ {
+  "no": 584,
+  "day": 117,
+  "word": "charge",
+  "en": "Can I charge it to my room?",
+  "ko": "방으로 청구해도 되나요?",
+  "note": "charge = 청구하다"
+ },
+ {
+  "no": 585,
+  "day": 117,
+  "word": "wear",
+  "en": "My shoes are worn out.",
+  "ko": "신발이 다 닳았어.",
+  "note": "worn out = 닳은"
+ },
+ {
+  "no": 586,
+  "day": 118,
+  "word": "mess",
+  "en": "Stop messing around.",
+  "ko": "장난 그만 쳐.",
+  "note": "mess around = 빈둥대다"
+ },
+ {
+  "no": 587,
+  "day": 118,
+  "word": "kind",
+  "en": "What kind of food do you like?",
+  "ko": "어떤 음식 좋아해?",
+  "note": "kind = 종류"
+ },
+ {
+  "no": 588,
+  "day": 118,
+  "word": "cool",
+  "en": "We're cool.",
+  "ko": "우리 사이 괜찮아.",
+  "note": "cool = 문제없는"
+ },
+ {
+  "no": 589,
+  "day": 118,
+  "word": "watch",
+  "en": "Watch your mouth.",
+  "ko": "입 조심해.",
+  "note": "watch = 조심하다"
+ },
+ {
+  "no": 590,
+  "day": 118,
+  "word": "keep",
+  "en": "Keep out!",
+  "ko": "출입 금지!",
+  "note": "keep out = 들어가지 않다"
+ },
+ {
+  "no": 591,
+  "day": 119,
+  "word": "come",
+  "en": "Where are you coming from?",
+  "ko": "어떤 생각에서 그런 말 하는 거야?",
+  "note": "come from = (생각이) 비롯되다"
+ },
+ {
+  "no": 592,
+  "day": 119,
+  "word": "hang",
+  "en": "Hang your coat over there.",
+  "ko": "코트 저기에 걸어.",
+  "note": "hang = 걸다"
+ },
+ {
+  "no": 593,
+  "day": 119,
+  "word": "miss",
+  "en": "My wallet is missing.",
+  "ko": "지갑이 없어졌어.",
+  "note": "missing = 없어진"
+ },
+ {
+  "no": 594,
+  "day": 119,
+  "word": "mean",
+  "en": "She makes a mean lasagna.",
+  "ko": "그녀는 라자냐를 끝내주게 만들어.",
+  "note": "mean = 훌륭한(속어)"
+ },
+ {
+  "no": 595,
+  "day": 119,
+  "word": "move",
+  "en": "Can you move over a little?",
+  "ko": "조금만 옆으로 가 줄래?",
+  "note": "move over = 자리를 비키다"
+ },
+ {
+  "no": 596,
+  "day": 120,
+  "word": "point",
+  "en": "He pointed out my mistake.",
+  "ko": "그가 내 실수를 지적했어.",
+  "note": "point out = 지적하다"
+ },
+ {
+  "no": 597,
+  "day": 120,
+  "word": "bring",
+  "en": "Rain always brings me down.",
+  "ko": "비 오면 늘 우울해져.",
+  "note": "bring down = 우울하게 하다"
+ },
+ {
+  "no": 598,
+  "day": 120,
+  "word": "fall",
+  "en": "Don't fall apart on me now.",
+  "ko": "지금 무너지지 마.",
+  "note": "fall apart = 무너지다"
+ },
+ {
+  "no": 599,
+  "day": 120,
+  "word": "way",
+  "en": "I've known him way back.",
+  "ko": "그 사람 오래전부터 알아.",
+  "note": "way back = 오래전부터"
+ },
+ {
+  "no": 600,
+  "day": 120,
+  "word": "thing",
+  "en": "Are they a thing?",
+  "ko": "쟤네 사귀어?",
+  "note": "a thing = 사귀는 사이"
+ },
+ {
+  "no": 601,
+  "day": 121,
+  "word": "make",
+  "en": "Did you make your bed?",
+  "ko": "이불 정리했어?",
+  "note": "make the bed = 침대 정리하다"
+ },
+ {
+  "no": 602,
+  "day": 121,
+  "word": "call",
+  "en": "He called me out in front of everyone.",
+  "ko": "그가 모두 앞에서 날 지적했어.",
+  "note": "call out = 공개적으로 지적하다"
+ },
+ {
+  "no": 603,
+  "day": 121,
+  "word": "cut",
+  "en": "Did you make the cut?",
+  "ko": "합격했어?",
+  "note": "make the cut = 선발되다"
+ },
+ {
+  "no": 604,
+  "day": 121,
+  "word": "run",
+  "en": "I have to run some errands.",
+  "ko": "볼일 좀 봐야 해.",
+  "note": "run errands = 심부름하다"
+ },
+ {
+  "no": 605,
+  "day": 121,
+  "word": "look",
+  "en": "Look, I'm sorry.",
+  "ko": "있잖아, 미안해.",
+  "note": "look = 저기/있잖아(주의 끌기)"
+ },
+ {
+  "no": 606,
+  "day": 122,
+  "word": "give",
+  "en": "I don't give up easily.",
+  "ko": "난 쉽게 포기 안 해.",
+  "note": "give up = 포기하다"
+ },
+ {
+  "no": 607,
+  "day": 122,
+  "word": "break",
+  "en": "We finally broke even.",
+  "ko": "드디어 본전 찾았어.",
+  "note": "break even = 손익분기점"
+ },
+ {
+  "no": 608,
+  "day": 122,
+  "word": "pull",
+  "en": "I pulled an all-nighter.",
+  "ko": "밤샜어.",
+  "note": "pull an all-nighter = 밤새다"
+ },
+ {
+  "no": 609,
+  "day": 122,
+  "word": "hit",
+  "en": "You hit the nail on the head.",
+  "ko": "정확히 맞혔어.",
+  "note": "hit the nail on the head = 핵심을 찌르다"
+ },
+ {
+  "no": 610,
+  "day": 122,
+  "word": "feel",
+  "en": "No hard feelings.",
+  "ko": "기분 나쁘게 생각하지 마.",
+  "note": "hard feelings = 악감정"
+ },
+ {
+  "no": 611,
+  "day": 123,
+  "word": "mind",
+  "en": "It slipped my mind.",
+  "ko": "깜빡했어.",
+  "note": "slip one's mind = 잊다"
+ },
+ {
+  "no": 612,
+  "day": 123,
+  "word": "get",
+  "en": "I'll get back to you.",
+  "ko": "다시 연락 드릴게요.",
+  "note": "get back to = 나중에 답하다"
+ },
+ {
+  "no": 613,
+  "day": 123,
+  "word": "take",
+  "en": "Who's going to take over?",
+  "ko": "누가 맡을 거야?",
+  "note": "take over = 인계받다"
+ },
+ {
+  "no": 614,
+  "day": 123,
+  "word": "go",
+  "en": "Anything goes.",
+  "ko": "뭐든 괜찮아.",
+  "note": "go = 허용되다"
+ },
+ {
+  "no": 615,
+  "day": 123,
+  "word": "save",
+  "en": "It'll save you time.",
+  "ko": "그러면 시간 절약될 거야.",
+  "note": "save = 절약하다"
+ },
+ {
+  "no": 616,
+  "day": 124,
+  "word": "leave",
+  "en": "Let's leave it at that.",
+  "ko": "그 정도로 해 두자.",
+  "note": "leave it at that = 그쯤 해 두다"
+ },
+ {
+  "no": 617,
+  "day": 124,
+  "word": "try",
+  "en": "He's trying out for the team.",
+  "ko": "그는 팀 입단 테스트를 받아.",
+  "note": "try out = 테스트 받다"
+ },
+ {
+  "no": 618,
+  "day": 124,
+  "word": "blow",
+  "en": "I need to blow off some steam.",
+  "ko": "스트레스 좀 풀어야 해.",
+  "note": "blow off steam = 울분을 풀다"
+ },
+ {
+  "no": 619,
+  "day": 124,
+  "word": "put",
+  "en": "I'll put you down for two tickets.",
+  "ko": "표 두 장으로 적어 둘게.",
+  "note": "put down = 적다"
+ },
+ {
+  "no": 620,
+  "day": 124,
+  "word": "have",
+  "en": "I'll have him call you back.",
+  "ko": "그에게 다시 전화하라고 할게요.",
+  "note": "have + 사람 + 동사 = 시키다"
+ },
+ {
+  "no": 621,
+  "day": 125,
+  "word": "make",
+  "en": "Make a wish.",
+  "ko": "소원 빌어.",
+  "note": "make a wish = 소원을 빌다"
+ },
+ {
+  "no": 622,
+  "day": 125,
+  "word": "come",
+  "en": "I see where you're coming from.",
+  "ko": "무슨 말인지 알겠어.",
+  "note": "come from = 입장/관점"
+ },
+ {
+  "no": 623,
+  "day": 125,
+  "word": "turn",
+  "en": "Things took a turn for the worse.",
+  "ko": "상황이 더 나빠졌어.",
+  "note": "turn = 전환"
+ },
+ {
+  "no": 624,
+  "day": 125,
+  "word": "pick",
+  "en": "Stop picking on him.",
+  "ko": "걔 그만 괴롭혀.",
+  "note": "pick on = 괴롭히다"
+ },
+ {
+  "no": 625,
+  "day": 125,
+  "word": "drop",
+  "en": "I'm dropping this class.",
+  "ko": "이 수업 철회할 거야.",
+  "note": "drop = (수업을) 취소하다"
+ },
+ {
+  "no": 626,
+  "day": 126,
+  "word": "stick",
+  "en": "Your tag is sticking out.",
+  "ko": "옷 태그 튀어나왔어.",
+  "note": "stick out = 튀어나오다"
+ },
+ {
+  "no": 627,
+  "day": 126,
+  "word": "tell",
+  "en": "To tell you the truth, I forgot.",
+  "ko": "사실대로 말하면, 잊었어.",
+  "note": "tell the truth = 사실을 말하다"
+ },
+ {
+  "no": 628,
+  "day": 126,
+  "word": "fair",
+  "en": "To be fair, he tried.",
+  "ko": "공정하게 말하면 그는 노력했어.",
+  "note": "to be fair = 공정하게 말하면"
+ },
+ {
+  "no": 629,
+  "day": 126,
+  "word": "keep",
+  "en": "Keep your head up.",
+  "ko": "기운 내.",
+  "note": "keep one's head up = 낙담하지 않다"
+ },
+ {
+  "no": 630,
+  "day": 126,
+  "word": "get",
+  "en": "Get out of here!",
+  "ko": "말도 안 돼! / 나가!",
+  "note": "get out of here = 말도 안 돼(놀람)"
+ },
+ {
+  "no": 631,
+  "day": 127,
+  "word": "take",
+  "en": "Take it or leave it.",
+  "ko": "받든지 말든지 해.",
+  "note": "take = 받아들이다"
+ },
+ {
+  "no": 632,
+  "day": 127,
+  "word": "work",
+  "en": "He's a piece of work.",
+  "ko": "그 사람 참 골치 아파.",
+  "note": "a piece of work = 피곤한 사람"
+ },
+ {
+  "no": 633,
+  "day": 127,
+  "word": "set",
+  "en": "Something set him off.",
+  "ko": "뭔가 그를 폭발하게 했어.",
+  "note": "set off = 촉발하다"
+ },
+ {
+  "no": 634,
+  "day": 127,
+  "word": "hold",
+  "en": "Don't hold back.",
+  "ko": "망설이지 마. / 다 털어놔.",
+  "note": "hold back = 참다/주저하다"
+ },
+ {
+  "no": 635,
+  "day": 127,
+  "word": "catch",
+  "en": "She caught on quickly.",
+  "ko": "그녀는 빨리 이해했어.",
+  "note": "catch on = 이해하다"
+ },
+ {
+  "no": 636,
+  "day": 128,
+  "word": "go",
+  "en": "It goes without saying.",
+  "ko": "말할 것도 없지.",
+  "note": "go without saying = 당연하다"
+ },
+ {
+  "no": 637,
+  "day": 128,
+  "word": "run",
+  "en": "My car is running low on gas.",
+  "ko": "차에 기름이 얼마 안 남았어.",
+  "note": "run low = 줄어들다"
+ },
+ {
+  "no": 638,
+  "day": 128,
+  "word": "look",
+  "en": "It looks like rain.",
+  "ko": "비 올 것 같아.",
+  "note": "look like = ~할 것 같다"
+ },
+ {
+  "no": 639,
+  "day": 128,
+  "word": "matter",
+  "en": "It's only a matter of time.",
+  "ko": "시간문제야.",
+  "note": "matter of time = 시간문제"
+ },
+ {
+  "no": 640,
+  "day": 128,
+  "word": "sure",
+  "en": "It sure is hot today.",
+  "ko": "오늘 진짜 덥다.",
+  "note": "sure = 정말(강조)"
+ },
+ {
+  "no": 641,
+  "day": 129,
+  "word": "fit",
+  "en": "She fits right in.",
+  "ko": "그녀는 금방 잘 어울려.",
+  "note": "fit in = 잘 어울리다"
+ },
+ {
+  "no": 642,
+  "day": 129,
+  "word": "end",
+  "en": "Hold up your end of the deal.",
+  "ko": "네가 맡은 몫은 지켜.",
+  "note": "one's end = 몫"
+ },
+ {
+  "no": 643,
+  "day": 129,
+  "word": "count",
+  "en": "That doesn't count.",
+  "ko": "그건 무효야.",
+  "note": "count = 인정되다"
+ },
+ {
+  "no": 644,
+  "day": 129,
+  "word": "last",
+  "en": "Last I heard, he moved.",
+  "ko": "내가 마지막으로 듣기로 그는 이사했어.",
+  "note": "last = 최근의"
+ },
+ {
+  "no": 645,
+  "day": 129,
+  "word": "even",
+  "en": "I'll get even with him.",
+  "ko": "그에게 갚아 줄 거야.",
+  "note": "get even = 복수하다"
+ },
+ {
+  "no": 646,
+  "day": 130,
+  "word": "make",
+  "en": "That made me cry.",
+  "ko": "그거 보고 울었어.",
+  "note": "make + 사람 + 동사 = ~하게 하다"
+ },
+ {
+  "no": 647,
+  "day": 130,
+  "word": "give",
+  "en": "Don't give in to pressure.",
+  "ko": "압박에 굴복하지 마.",
+  "note": "give in = 굴복하다"
+ },
+ {
+  "no": 648,
+  "day": 130,
+  "word": "have",
+  "en": "We had a great time.",
+  "ko": "정말 즐거웠어.",
+  "note": "have a time = 시간을 보내다"
+ },
+ {
+  "no": 649,
+  "day": 130,
+  "word": "show",
+  "en": "It was all for show.",
+  "ko": "다 보여 주기용이었어.",
+  "note": "for show = 겉치레로"
+ },
+ {
+  "no": 650,
+  "day": 130,
+  "word": "right",
+  "en": "It's on your right.",
+  "ko": "오른쪽에 있어.",
+  "note": "right = 오른쪽"
+ },
+ {
+  "no": 651,
+  "day": 131,
+  "word": "up",
+  "en": "Speak up!",
+  "ko": "크게 말해!",
+  "note": "up = (소리를) 높여"
+ },
+ {
+  "no": 652,
+  "day": 131,
+  "word": "play",
+  "en": "Let's see how it plays out.",
+  "ko": "어떻게 되는지 보자.",
+  "note": "play out = 전개되다"
+ },
+ {
+  "no": 653,
+  "day": 131,
+  "word": "check",
+  "en": "Check, please.",
+  "ko": "계산서 주세요.",
+  "note": "check = 계산서"
+ },
+ {
+  "no": 654,
+  "day": 131,
+  "word": "stand",
+  "en": "My offer still stands.",
+  "ko": "내 제안은 아직 유효해.",
+  "note": "stand = 유효하다"
+ },
+ {
+  "no": 655,
+  "day": 131,
+  "word": "deal",
+  "en": "Here's the deal.",
+  "ko": "상황은 이래.",
+  "note": "the deal = 사정/요점"
+ },
+ {
+  "no": 656,
+  "day": 132,
+  "word": "pass",
+  "en": "It'll pass.",
+  "ko": "지나갈 거야.",
+  "note": "pass = 사라지다"
+ },
+ {
+  "no": 657,
+  "day": 132,
+  "word": "let",
+  "en": "Let's just say I was busy.",
+  "ko": "그냥 바빴다고 해 두자.",
+  "note": "let's just say = ~라고 해 두자"
+ },
+ {
+  "no": 658,
+  "day": 132,
+  "word": "call",
+  "en": "I'm on call this weekend.",
+  "ko": "이번 주말에 대기 근무야.",
+  "note": "on call = 대기 중인"
+ },
+ {
+  "no": 659,
+  "day": 132,
+  "word": "cut",
+  "en": "That was a short cut.",
+  "ko": "그건 지름길이었어.",
+  "note": "shortcut = 지름길"
+ },
+ {
+  "no": 660,
+  "day": 132,
+  "word": "break",
+  "en": "Who's going to break the news to her?",
+  "ko": "누가 그녀에게 소식을 전할래?",
+  "note": "break the news = 소식을 전하다"
+ },
+ {
+  "no": 661,
+  "day": 133,
+  "word": "put",
+  "en": "Stop putting yourself down.",
+  "ko": "자기 비하 그만해.",
+  "note": "put down = 깎아내리다"
+ },
+ {
+  "no": 662,
+  "day": 133,
+  "word": "come",
+  "en": "He's coming around.",
+  "ko": "그가 마음을 돌리고 있어.",
+  "note": "come around = 생각을 바꾸다"
+ },
+ {
+  "no": 663,
+  "day": 133,
+  "word": "get",
+  "en": "I can't get this lid off.",
+  "ko": "이 뚜껑이 안 열려.",
+  "note": "get ~ off = 떼어내다"
+ },
+ {
+  "no": 664,
+  "day": 133,
+  "word": "take",
+  "en": "I can't take it anymore.",
+  "ko": "더 이상 못 참겠어.",
+  "note": "take = 견디다"
+ },
+ {
+  "no": 665,
+  "day": 133,
+  "word": "make",
+  "en": "I'll make dinner tonight.",
+  "ko": "오늘 저녁은 내가 할게.",
+  "note": "make = 만들다(요리)"
+ },
+ {
+  "no": 666,
+  "day": 134,
+  "word": "go",
+  "en": "The song goes like this.",
+  "ko": "그 노래는 이렇게 시작해.",
+  "note": "go = (가사·내용이) ~이다"
+ },
+ {
+  "no": 667,
+  "day": 134,
+  "word": "keep",
+  "en": "I kept my word.",
+  "ko": "난 약속 지켰어.",
+  "note": "keep one's word = 약속을 지키다"
+ },
+ {
+  "no": 668,
+  "day": 134,
+  "word": "turn",
+  "en": "Turn around.",
+  "ko": "뒤돌아 봐.",
+  "note": "turn around = 돌아서다"
+ },
+ {
+  "no": 669,
+  "day": 134,
+  "word": "pull",
+  "en": "We're pulling for you.",
+  "ko": "우리가 응원할게.",
+  "note": "pull for = 응원하다"
+ },
+ {
+  "no": 670,
+  "day": 134,
+  "word": "hit",
+  "en": "Hit me up later.",
+  "ko": "나중에 연락해.",
+  "note": "hit up = 연락하다"
+ },
+ {
+  "no": 671,
+  "day": 135,
+  "word": "feel",
+  "en": "I have mixed feelings.",
+  "ko": "감정이 복잡해.",
+  "note": "mixed feelings = 복잡한 감정"
+ },
+ {
+  "no": 672,
+  "day": 135,
+  "word": "mind",
+  "en": "Keep an open mind.",
+  "ko": "열린 마음을 가져.",
+  "note": "open mind = 열린 마음"
+ },
+ {
+  "no": 673,
+  "day": 135,
+  "word": "hang",
+  "en": "I'm hungover.",
+  "ko": "숙취 있어.",
+  "note": "hungover = 숙취가 있는"
+ },
+ {
+  "no": 674,
+  "day": 135,
+  "word": "miss",
+  "en": "I wouldn't miss it for the world.",
+  "ko": "무슨 일이 있어도 꼭 갈게.",
+  "note": "miss = 빠지다"
+ },
+ {
+  "no": 675,
+  "day": 135,
+  "word": "mean",
+  "en": "By all means.",
+  "ko": "물론이죠.",
+  "note": "by all means = 그럼요"
+ },
+ {
+  "no": 676,
+  "day": 136,
+  "word": "move",
+  "en": "Don't move!",
+  "ko": "움직이지 마!",
+  "note": "move = 움직이다"
+ },
+ {
+  "no": 677,
+  "day": 136,
+  "word": "point",
+  "en": "It's rude to point.",
+  "ko": "손가락질하는 건 무례해.",
+  "note": "point = 가리키다"
+ },
+ {
+  "no": 678,
+  "day": 136,
+  "word": "bring",
+  "en": "Don't bring me into this.",
+  "ko": "나 이 일에 끌어들이지 마.",
+  "note": "bring into = 끌어들이다"
+ },
+ {
+  "no": 679,
+  "day": 136,
+  "word": "fall",
+  "en": "My birthday falls on a Sunday.",
+  "ko": "내 생일이 일요일이야.",
+  "note": "fall on = (날짜가) ~이다"
+ },
+ {
+  "no": 680,
+  "day": 136,
+  "word": "way",
+  "en": "Either way, I'm fine.",
+  "ko": "어느 쪽이든 난 괜찮아.",
+  "note": "either way = 어느 쪽이든"
+ },
+ {
+  "no": 681,
+  "day": 137,
+  "word": "thing",
+  "en": "Poor thing.",
+  "ko": "가엾어라.",
+  "note": "thing = 사람·동물(애칭)"
+ },
+ {
+  "no": 682,
+  "day": 137,
+  "word": "have",
+  "en": "I have a headache.",
+  "ko": "머리 아파.",
+  "note": "have = (병을) 앓다"
+ },
+ {
+  "no": 683,
+  "day": 137,
+  "word": "give",
+  "en": "They were giving out free samples.",
+  "ko": "무료 샘플 나눠 주고 있었어.",
+  "note": "give out = 나눠 주다"
+ },
+ {
+  "no": 684,
+  "day": 137,
+  "word": "figure",
+  "en": "She has a great figure.",
+  "ko": "그녀는 몸매가 좋아.",
+  "note": "figure = 몸매"
+ },
+ {
+  "no": 685,
+  "day": 137,
+  "word": "stop",
+  "en": "She pulled out all the stops.",
+  "ko": "그녀는 온갖 수단을 다 썼어.",
+  "note": "pull out all the stops = 총력을 다하다"
+ },
+ {
+  "no": 686,
+  "day": 138,
+  "word": "sound",
+  "en": "Let me sound him out.",
+  "ko": "그 사람 의중을 떠볼게.",
+  "note": "sound out = 떠보다"
+ },
+ {
+  "no": 687,
+  "day": 138,
+  "word": "cover",
+  "en": "They tried to cover it up.",
+  "ko": "그들은 그걸 은폐하려 했어.",
+  "note": "cover up = 숨기다"
+ },
+ {
+  "no": 688,
+  "day": 138,
+  "word": "just",
+  "en": "Just in case.",
+  "ko": "혹시 모르니까.",
+  "note": "just in case = 만일을 위해"
+ },
+ {
+  "no": 689,
+  "day": 138,
+  "word": "back",
+  "en": "Traffic is backed up.",
+  "ko": "차가 꽉 막혔어.",
+  "note": "backed up = 정체된"
+ },
+ {
+  "no": 690,
+  "day": 138,
+  "word": "over",
+  "en": "Can I sleep over?",
+  "ko": "자고 가도 돼?",
+  "note": "sleep over = 외박하다"
+ },
+ {
+  "no": 691,
+  "day": 139,
+  "word": "out",
+  "en": "Out of the question.",
+  "ko": "절대 안 돼.",
+  "note": "out of the question = 불가능한"
+ },
+ {
+  "no": 692,
+  "day": 139,
+  "word": "get",
+  "en": "It gets better.",
+  "ko": "점점 나아져.",
+  "note": "get better = 나아지다"
+ },
+ {
+  "no": 693,
+  "day": 139,
+  "word": "take",
+  "en": "Let me take a picture.",
+  "ko": "사진 찍어 줄게.",
+  "note": "take a picture = 사진 찍다"
+ },
+ {
+  "no": 694,
+  "day": 139,
+  "word": "run",
+  "en": "Let's run through it once more.",
+  "ko": "한 번 더 쭉 훑어 보자.",
+  "note": "run through = 훑어보다"
+ },
+ {
+  "no": 695,
+  "day": 139,
+  "word": "look",
+  "en": "You look just like your dad.",
+  "ko": "너 아빠랑 똑같이 생겼다.",
+  "note": "look like = 닮다"
+ },
+ {
+  "no": 696,
+  "day": 140,
+  "word": "work",
+  "en": "I'm off work tomorrow.",
+  "ko": "나 내일 쉬어.",
+  "note": "off work = 쉬는"
+ },
+ {
+  "no": 697,
+  "day": 140,
+  "word": "set",
+  "en": "We set off at dawn.",
+  "ko": "우리는 새벽에 출발했어.",
+  "note": "set off = 출발하다"
+ },
+ {
+  "no": 698,
+  "day": 140,
+  "word": "hold",
+  "en": "I couldn't hold back my tears.",
+  "ko": "눈물을 참을 수 없었어.",
+  "note": "hold back = 참다"
+ },
+ {
+  "no": 699,
+  "day": 140,
+  "word": "catch",
+  "en": "The trend caught on fast.",
+  "ko": "그 유행은 빠르게 퍼졌어.",
+  "note": "catch on = 유행하다"
+ },
+ {
+  "no": 700,
+  "day": 140,
+  "word": "come",
+  "en": "Come by anytime.",
+  "ko": "언제든 들러.",
+  "note": "come by = 들르다"
+ },
+ {
+  "no": 701,
+  "day": 141,
+  "word": "make",
+  "en": "We barely made the train.",
+  "ko": "겨우 기차 탔어.",
+  "note": "make = 시간 맞춰 타다"
+ },
+ {
+  "no": 702,
+  "day": 141,
+  "word": "track",
+  "en": "Let's get back on track.",
+  "ko": "다시 본론으로 돌아가자.",
+  "note": "back on track = 정상 궤도"
+ },
+ {
+  "no": 703,
+  "day": 141,
+  "word": "pretty",
+  "en": "That cost a pretty penny.",
+  "ko": "그거 꽤 비쌌어.",
+  "note": "pretty penny = 큰돈"
+ },
+ {
+  "no": 704,
+  "day": 141,
+  "word": "still",
+  "en": "It's still early.",
+  "ko": "아직 이르잖아.",
+  "note": "still = 아직"
+ },
+ {
+  "no": 705,
+  "day": 141,
+  "word": "bet",
+  "en": "Your best bet is the subway.",
+  "ko": "지하철이 제일 나아.",
+  "note": "best bet = 최선책"
+ },
+ {
+  "no": 706,
+  "day": 142,
+  "word": "fine",
+  "en": "That's cutting it fine.",
+  "ko": "아슬아슬하네.",
+  "note": "cut it fine = 빠듯하게 하다"
+ },
+ {
+  "no": 707,
+  "day": 142,
+  "word": "open",
+  "en": "She opened up to me.",
+  "ko": "그녀가 나한테 속을 털어놨어.",
+  "note": "open up = 마음을 열다"
+ },
+ {
+  "no": 708,
+  "day": 142,
+  "word": "carry",
+  "en": "She carried out the plan.",
+  "ko": "그녀는 계획을 실행했어.",
+  "note": "carry out = 실행하다"
+ },
+ {
+  "no": 709,
+  "day": 142,
+  "word": "go",
+  "en": "I could go for a pizza.",
+  "ko": "피자 먹고 싶다.",
+  "note": "go for = 원하다"
+ },
+ {
+  "no": 710,
+  "day": 142,
+  "word": "put",
+  "en": "Put the phone down.",
+  "ko": "전화 내려놔.",
+  "note": "put down = 내려놓다"
+ },
+ {
+  "no": 711,
+  "day": 143,
+  "word": "pick",
+  "en": "He's a picky eater.",
+  "ko": "그는 편식해.",
+  "note": "picky = 까다로운"
+ },
+ {
+  "no": 712,
+  "day": 143,
+  "word": "drop",
+  "en": "I nodded off. I must have dropped off.",
+  "ko": "깜빡 잠들었나 봐.",
+  "note": "drop off = 잠들다"
+ },
+ {
+  "no": 713,
+  "day": 143,
+  "word": "stick",
+  "en": "He sticks out like a sore thumb.",
+  "ko": "그는 너무 눈에 띄어.",
+  "note": "stick out = 눈에 띄다"
+ },
+ {
+  "no": 714,
+  "day": 143,
+  "word": "tell",
+  "en": "Can you tell the time?",
+  "ko": "시계 볼 줄 알아?",
+  "note": "tell time = 시간을 읽다"
+ },
+ {
+  "no": 715,
+  "day": 143,
+  "word": "break",
+  "en": "Let's take a five-minute break.",
+  "ko": "5분 쉬자.",
+  "note": "break = 휴식"
+ },
+ {
+  "no": 716,
+  "day": 144,
+  "word": "get",
+  "en": "He gets on my nerves.",
+  "ko": "그 사람 신경 거슬려.",
+  "note": "get on one's nerves = 짜증나게 하다"
+ },
+ {
+  "no": 717,
+  "day": 144,
+  "word": "take",
+  "en": "Did you take your medicine?",
+  "ko": "약 먹었어?",
+  "note": "take = (약을) 먹다"
+ },
+ {
+  "no": 718,
+  "day": 144,
+  "word": "have",
+  "en": "You had me worried.",
+  "ko": "너 때문에 걱정했잖아.",
+  "note": "have + 사람 + 형용사 = ~하게 하다"
+ },
+ {
+  "no": 719,
+  "day": 144,
+  "word": "keep",
+  "en": "What's keeping him?",
+  "ko": "그 사람 왜 이렇게 늦어?",
+  "note": "keep = 붙들다/지체시키다"
+ },
+ {
+  "no": 720,
+  "day": 144,
+  "word": "call",
+  "en": "Let's call it even.",
+  "ko": "이걸로 퉁치자.",
+  "note": "call it even = 비긴 걸로 하다"
+ },
+ {
+  "no": 721,
+  "day": 145,
+  "word": "cut",
+  "en": "He cut class again.",
+  "ko": "그는 또 수업 빼먹었어.",
+  "note": "cut class = 땡땡이치다"
+ },
+ {
+  "no": 722,
+  "day": 145,
+  "word": "save",
+  "en": "Don't forget to save the file.",
+  "ko": "파일 저장하는 거 잊지 마.",
+  "note": "save = 저장하다"
+ },
+ {
+  "no": 723,
+  "day": 145,
+  "word": "leave",
+  "en": "Is there any pizza left?",
+  "ko": "피자 남은 거 있어?",
+  "note": "left = 남은"
+ },
+ {
+  "no": 724,
+  "day": 145,
+  "word": "try",
+  "en": "Don't try so hard.",
+  "ko": "너무 애쓰지 마.",
+  "note": "try hard = 애쓰다"
+ },
+ {
+  "no": 725,
+  "day": 145,
+  "word": "blow",
+  "en": "She blew me off.",
+  "ko": "그녀가 날 무시했어. / 약속 펑크 냈어.",
+  "note": "blow off = 무시하다"
+ },
+ {
+  "no": 726,
+  "day": 146,
+  "word": "make",
+  "en": "How do you make a living?",
+  "ko": "뭐 해서 먹고 살아?",
+  "note": "make a living = 생계를 꾸리다"
+ },
+ {
+  "no": 727,
+  "day": 146,
+  "word": "turn",
+  "en": "He turned the company around.",
+  "ko": "그가 회사를 살려 냈어.",
+  "note": "turn around = 회생시키다"
+ },
+ {
+  "no": 728,
+  "day": 146,
+  "word": "give",
+  "en": "My legs gave out.",
+  "ko": "다리에 힘이 풀렸어.",
+  "note": "give out = 고장 나다/힘이 다하다"
+ },
+ {
+  "no": 729,
+  "day": 146,
+  "word": "play",
+  "en": "Don't play it down.",
+  "ko": "별일 아닌 척하지 마.",
+  "note": "play down = 축소하다"
+ },
+ {
+  "no": 730,
+  "day": 146,
+  "word": "check",
+  "en": "She totally checked out during the meeting.",
+  "ko": "그녀는 회의 중에 완전 딴생각했어.",
+  "note": "check out = 정신이 딴 데 가다"
+ },
+ {
+  "no": 731,
+  "day": 147,
+  "word": "stand",
+  "en": "Can you stand in for me?",
+  "ko": "나 대신 좀 해 줄래?",
+  "note": "stand in for = 대신하다"
+ },
+ {
+  "no": 732,
+  "day": 147,
+  "word": "deal",
+  "en": "No deal.",
+  "ko": "안 돼.",
+  "note": "deal = 거래"
+ },
+ {
+  "no": 733,
+  "day": 147,
+  "word": "pass",
+  "en": "Can you pass it on to him?",
+  "ko": "그에게 전해 줄래?",
+  "note": "pass on = 전달하다"
+ },
+ {
+  "no": 734,
+  "day": 147,
+  "word": "let",
+  "en": "The rain finally let up.",
+  "ko": "드디어 비가 그쳤어.",
+  "note": "let up = 약해지다/그치다"
+ },
+ {
+  "no": 735,
+  "day": 147,
+  "word": "come",
+  "en": "Jobs like this are hard to come by.",
+  "ko": "이런 일자리는 구하기 어려워.",
+  "note": "come by = 얻다"
+ },
+ {
+  "no": 736,
+  "day": 148,
+  "word": "go",
+  "en": "Go for it!",
+  "ko": "해 봐! / 도전해!",
+  "note": "go for it = 도전하다"
+ },
+ {
+  "no": 737,
+  "day": 148,
+  "word": "run",
+  "en": "The car ran over a nail.",
+  "ko": "차가 못을 밟고 지나갔어.",
+  "note": "run over = (차로) 치다"
+ },
+ {
+  "no": 738,
+  "day": 148,
+  "word": "look",
+  "en": "Can you look over my resume?",
+  "ko": "내 이력서 좀 봐 줄래?",
+  "note": "look over = 검토하다"
+ },
+ {
+  "no": 739,
+  "day": 148,
+  "word": "get",
+  "en": "We got married in May.",
+  "ko": "우리는 5월에 결혼했어.",
+  "note": "get married = 결혼하다"
+ },
+ {
+  "no": 740,
+  "day": 148,
+  "word": "take",
+  "en": "I took a shower.",
+  "ko": "샤워했어.",
+  "note": "take a shower = 샤워하다"
+ },
+ {
+  "no": 741,
+  "day": 149,
+  "word": "make",
+  "en": "You're making a big deal out of nothing.",
+  "ko": "별것도 아닌 걸로 호들갑이야.",
+  "note": "make a big deal = 크게 만들다"
+ },
+ {
+  "no": 742,
+  "day": 149,
+  "word": "have",
+  "en": "What do we have here?",
+  "ko": "이게 뭐지?",
+  "note": "have = 있다"
+ },
+ {
+  "no": 743,
+  "day": 149,
+  "word": "put",
+  "en": "They put me up for the night.",
+  "ko": "그들이 하룻밤 재워줬어.",
+  "note": "put up = 재워 주다"
+ },
+ {
+  "no": 744,
+  "day": 149,
+  "word": "work",
+  "en": "The elevator isn't working.",
+  "ko": "엘리베이터 고장 났어.",
+  "note": "work = 작동하다"
+ },
+ {
+  "no": 745,
+  "day": 149,
+  "word": "set",
+  "en": "Set it aside for later.",
+  "ko": "나중을 위해 따로 둬.",
+  "note": "set aside = 따로 두다"
+ },
+ {
+  "no": 746,
+  "day": 150,
+  "word": "hold",
+  "en": "Don't hold it against me.",
+  "ko": "그걸로 나 원망하지 마.",
+  "note": "hold against = 원망하다"
+ },
+ {
+  "no": 747,
+  "day": 150,
+  "word": "catch",
+  "en": "My sleeve got caught on the door.",
+  "ko": "소매가 문에 걸렸어.",
+  "note": "caught on = 걸리다"
+ },
+ {
+  "no": 748,
+  "day": 150,
+  "word": "pull",
+  "en": "Don't pull that on me.",
+  "ko": "나한테 그런 수작 부리지 마.",
+  "note": "pull = (못된 짓을) 하다"
+ },
+ {
+  "no": 749,
+  "day": 150,
+  "word": "show",
+  "en": "Show me what you got.",
+  "ko": "실력 좀 보여 봐.",
+  "note": "show = 보여 주다"
+ },
+ {
+  "no": 750,
+  "day": 150,
+  "word": "hit",
+  "en": "The storm hit last night.",
+  "ko": "폭풍이 어젯밤 덮쳤어.",
+  "note": "hit = 강타하다"
+ },
+ {
+  "no": 751,
+  "day": 151,
+  "word": "feel",
+  "en": "I know the feeling.",
+  "ko": "그 기분 알아.",
+  "note": "feeling = 기분"
+ },
+ {
+  "no": 752,
+  "day": 151,
+  "word": "mind",
+  "en": "I'm in two minds about it.",
+  "ko": "그거 망설여져.",
+  "note": "in two minds = 갈팡질팡"
+ },
+ {
+  "no": 753,
+  "day": 151,
+  "word": "sort",
+  "en": "What sort of music do you like?",
+  "ko": "어떤 종류의 음악 좋아해?",
+  "note": "sort = 종류"
+ },
+ {
+  "no": 754,
+  "day": 151,
+  "word": "right",
+  "en": "Right now, I'm busy.",
+  "ko": "지금은 바빠.",
+  "note": "right now = 지금"
+ },
+ {
+  "no": 755,
+  "day": 151,
+  "word": "charge",
+  "en": "They charged him with theft.",
+  "ko": "그는 절도죄로 기소됐어.",
+  "note": "charge = 기소하다"
+ },
+ {
+  "no": 756,
+  "day": 152,
+  "word": "wear",
+  "en": "That joke is wearing thin.",
+  "ko": "그 농담 이제 지겨워.",
+  "note": "wear thin = 지겨워지다"
+ },
+ {
+  "no": 757,
+  "day": 152,
+  "word": "mess",
+  "en": "I'm a mess today.",
+  "ko": "오늘 나 엉망이야.",
+  "note": "mess = 엉망인 상태"
+ },
+ {
+  "no": 758,
+  "day": 152,
+  "word": "kind",
+  "en": "He's one of a kind.",
+  "ko": "그는 독보적이야.",
+  "note": "one of a kind = 유일무이한"
+ },
+ {
+  "no": 759,
+  "day": 152,
+  "word": "cool",
+  "en": "She kept her cool.",
+  "ko": "그녀는 침착함을 유지했어.",
+  "note": "keep one's cool = 침착하다"
+ },
+ {
+  "no": 760,
+  "day": 152,
+  "word": "up",
+  "en": "Drink up.",
+  "ko": "쭉 마셔.",
+  "note": "up = 완전히"
+ },
+ {
+  "no": 761,
+  "day": 153,
+  "word": "watch",
+  "en": "I'm watching my weight.",
+  "ko": "체중 관리 중이야.",
+  "note": "watch = 신경 쓰다"
+ },
+ {
+  "no": 762,
+  "day": 153,
+  "word": "keep",
+  "en": "Keep it real.",
+  "ko": "솔직하게 살아.",
+  "note": "keep it real = 진실하게 하다"
+ },
+ {
+  "no": 763,
+  "day": 153,
+  "word": "break",
+  "en": "That was a lucky break.",
+  "ko": "그건 행운이었어.",
+  "note": "break = 기회/운"
+ },
+ {
+  "no": 764,
+  "day": 153,
+  "word": "go",
+  "en": "My phone went dead.",
+  "ko": "폰 배터리가 나갔어.",
+  "note": "go dead = 꺼지다"
+ },
+ {
+  "no": 765,
+  "day": 153,
+  "word": "come",
+  "en": "Don't come crying to me.",
+  "ko": "나중에 울면서 오지 마.",
+  "note": "come = 오다"
+ },
+ {
+  "no": 766,
+  "day": 154,
+  "word": "get",
+  "en": "Did you get the joke?",
+  "ko": "그 농담 이해했어?",
+  "note": "get = 알아듣다"
+ },
+ {
+  "no": 767,
+  "day": 154,
+  "word": "take",
+  "en": "This seat is taken.",
+  "ko": "이 자리 주인 있어요.",
+  "note": "taken = 사용 중인"
+ },
+ {
+  "no": 768,
+  "day": 154,
+  "word": "give",
+  "en": "I'll give it to you, you're good.",
+  "ko": "인정할게, 너 잘한다.",
+  "note": "give it to = 인정하다"
+ },
+ {
+  "no": 769,
+  "day": 154,
+  "word": "hang",
+  "en": "Let me hang onto it for now.",
+  "ko": "일단 내가 갖고 있을게.",
+  "note": "hang onto = 보관하다"
+ },
+ {
+  "no": 770,
+  "day": 154,
+  "word": "miss",
+  "en": "That was a near miss.",
+  "ko": "하마터면 큰일 날 뻔했어.",
+  "note": "near miss = 아슬아슬한 순간"
+ },
+ {
+  "no": 771,
+  "day": 155,
+  "word": "mean",
+  "en": "It was meant to be.",
+  "ko": "운명이었어.",
+  "note": "meant to be = 운명인"
+ },
+ {
+  "no": 772,
+  "day": 155,
+  "word": "move",
+  "en": "She moved in with her boyfriend.",
+  "ko": "그녀는 남자친구와 동거를 시작했어.",
+  "note": "move in = 입주하다"
+ },
+ {
+  "no": 773,
+  "day": 155,
+  "word": "point",
+  "en": "I was on the point of leaving.",
+  "ko": "막 나가려던 참이었어.",
+  "note": "on the point of = 막 ~하려는"
+ },
+ {
+  "no": 774,
+  "day": 155,
+  "word": "bring",
+  "en": "I can't bring myself to do it.",
+  "ko": "차마 그걸 못 하겠어.",
+  "note": "bring oneself to = 마음먹고 ~하다"
+ },
+ {
+  "no": 775,
+  "day": 155,
+  "word": "fall",
+  "en": "I love the fall in New York.",
+  "ko": "뉴욕의 가을이 좋아.",
+  "note": "fall = 가을"
+ },
+ {
+  "no": 776,
+  "day": 156,
+  "word": "way",
+  "en": "You're in my way.",
+  "ko": "네가 내 앞을 막고 있어.",
+  "note": "in the way = 방해가 되는"
+ },
+ {
+  "no": 777,
+  "day": 156,
+  "word": "thing",
+  "en": "It's just one of those things.",
+  "ko": "어쩔 수 없는 일이야.",
+  "note": "one of those things = 피할 수 없는 일"
+ },
+ {
+  "no": 778,
+  "day": 156,
+  "word": "turn",
+  "en": "I turned in my report.",
+  "ko": "보고서 냈어.",
+  "note": "turn in = 제출하다"
+ },
+ {
+  "no": 779,
+  "day": 156,
+  "word": "make",
+  "en": "Let me make a quick call.",
+  "ko": "잠깐 전화 좀 할게.",
+  "note": "make a call = 전화하다"
+ },
+ {
+  "no": 780,
+  "day": 156,
+  "word": "call",
+  "en": "Feel free to call on me.",
+  "ko": "언제든 나한테 부탁해.",
+  "note": "call on = 요청하다"
+ },
+ {
+  "no": 781,
+  "day": 157,
+  "word": "cut",
+  "en": "I'll cut you a deal.",
+  "ko": "좋은 조건으로 해 줄게.",
+  "note": "cut a deal = 거래하다"
+ },
+ {
+  "no": 782,
+  "day": 157,
+  "word": "have",
+  "en": "I've got to hand it to you.",
+  "ko": "너 인정한다.",
+  "note": "hand it to = 인정하다"
+ },
+ {
+  "no": 783,
+  "day": 157,
+  "word": "run",
+  "en": "The meeting ran over.",
+  "ko": "회의가 길어졌어.",
+  "note": "run over = 시간을 넘기다"
+ },
+ {
+  "no": 784,
+  "day": 157,
+  "word": "look",
+  "en": "I don't like the look of this.",
+  "ko": "이거 느낌이 안 좋아.",
+  "note": "look = 모양/분위기"
+ },
+ {
+  "no": 785,
+  "day": 157,
+  "word": "matter",
+  "en": "To make matters worse, it rained.",
+  "ko": "설상가상으로 비까지 왔어.",
+  "note": "to make matters worse = 설상가상으로"
+ },
+ {
+  "no": 786,
+  "day": 158,
+  "word": "sure",
+  "en": "Sure enough, he was late.",
+  "ko": "아니나 다를까 그는 늦었어.",
+  "note": "sure enough = 아니나 다를까"
+ },
+ {
+  "no": 787,
+  "day": 158,
+  "word": "fit",
+  "en": "Can you fit me in today?",
+  "ko": "오늘 저 예약 끼워 주실 수 있어요?",
+  "note": "fit in = 시간을 내다"
+ },
+ {
+  "no": 788,
+  "day": 158,
+  "word": "end",
+  "en": "We're at a dead end.",
+  "ko": "우리 막다른 길에 왔어.",
+  "note": "dead end = 막다른 길"
+ },
+ {
+  "no": 789,
+  "day": 158,
+  "word": "count",
+  "en": "I lost count.",
+  "ko": "몇 번인지 잊어버렸어.",
+  "note": "lose count = 수를 잊다"
+ },
+ {
+  "no": 790,
+  "day": 158,
+  "word": "last",
+  "en": "He's the last person I'd trust.",
+  "ko": "그는 내가 절대 안 믿을 사람이야.",
+  "note": "last person = 가장 ~하지 않을 사람"
+ },
+ {
+  "no": 791,
+  "day": 159,
+  "word": "even",
+  "en": "It's an even split.",
+  "ko": "정확히 반반이야.",
+  "note": "even = 균등한"
+ },
+ {
+  "no": 792,
+  "day": 159,
+  "word": "pick",
+  "en": "I have a bone to pick with you.",
+  "ko": "너한테 따질 게 있어.",
+  "note": "bone to pick = 따질 일"
+ },
+ {
+  "no": 793,
+  "day": 159,
+  "word": "drop",
+  "en": "Their new album drops Friday.",
+  "ko": "그들의 새 앨범이 금요일에 나와.",
+  "note": "drop = 공개되다"
+ },
+ {
+  "no": 794,
+  "day": 159,
+  "word": "stick",
+  "en": "Just stick it in the fridge.",
+  "ko": "그냥 냉장고에 넣어.",
+  "note": "stick = (대충) 넣다"
+ },
+ {
+  "no": 795,
+  "day": 159,
+  "word": "tell",
+  "en": "I'll tell you what, let's split it.",
+  "ko": "이렇게 하자, 반반 내자.",
+  "note": "I'll tell you what = 이렇게 하자"
+ },
+ {
+  "no": 796,
+  "day": 160,
+  "word": "put",
+  "en": "She put a lot of work into this.",
+  "ko": "그녀는 이것에 공을 많이 들였어.",
+  "note": "put into = 쏟다"
+ },
+ {
+  "no": 797,
+  "day": 160,
+  "word": "go",
+  "en": "Where does this box go?",
+  "ko": "이 상자 어디에 둬?",
+  "note": "go = (있어야 할 곳에) 놓이다"
+ },
+ {
+  "no": 798,
+  "day": 160,
+  "word": "get",
+  "en": "I'll get you a drink.",
+  "ko": "마실 거 갖다 줄게.",
+  "note": "get A B = A에게 B를 가져다주다"
+ },
+ {
+  "no": 799,
+  "day": 160,
+  "word": "take",
+  "en": "Sorry, he's taken.",
+  "ko": "미안, 걔 임자 있어.",
+  "note": "taken = 사귀는 사람이 있는"
+ },
+ {
+  "no": 800,
+  "day": 160,
+  "word": "make",
+  "en": "It doesn't make a difference.",
+  "ko": "별 차이 없어.",
+  "note": "make a difference = 차이를 만들다"
+ },
+ {
+  "no": 801,
+  "day": 161,
+  "word": "come",
+  "en": "The shirt comes in three colors.",
+  "ko": "그 셔츠는 세 가지 색이 있어.",
+  "note": "come in = (종류로) 나오다"
+ },
+ {
+  "no": 802,
+  "day": 161,
+  "word": "keep",
+  "en": "I'll keep you posted.",
+  "ko": "진행 상황 계속 알려줄게.",
+  "note": "keep posted = 소식을 전하다"
+ },
+ {
+  "no": 803,
+  "day": 161,
+  "word": "work",
+  "en": "Let's work together on this.",
+  "ko": "이거 같이 하자.",
+  "note": "work together = 협력하다"
+ },
+ {
+  "no": 804,
+  "day": 161,
+  "word": "set",
+  "en": "Let me set the record straight.",
+  "ko": "사실을 바로잡을게.",
+  "note": "set straight = 바로잡다"
+ },
+ {
+  "no": 805,
+  "day": 161,
+  "word": "hold",
+  "en": "Can you put my order on hold?",
+  "ko": "주문 좀 보류해 줄래요?",
+  "note": "on hold = 보류된"
+ },
+ {
+  "no": 806,
+  "day": 162,
+  "word": "catch",
+  "en": "I got caught in the rain.",
+  "ko": "비를 만났어.",
+  "note": "caught in = (비 등을) 만나다"
+ },
+ {
+  "no": 807,
+  "day": 162,
+  "word": "play",
+  "en": "My back is playing up again.",
+  "ko": "허리가 또 말썽이야.",
+  "note": "play up = 말썽 부리다"
+ },
+ {
+  "no": 808,
+  "day": 162,
+  "word": "check",
+  "en": "I'll check with my wife.",
+  "ko": "아내한테 물어볼게.",
+  "note": "check with = 상의하다"
+ },
+ {
+  "no": 809,
+  "day": 162,
+  "word": "stand",
+  "en": "We're on standby.",
+  "ko": "우리 대기 중이야.",
+  "note": "standby = 대기"
+ },
+ {
+  "no": 810,
+  "day": 162,
+  "word": "deal",
+  "en": "It's a done deal.",
+  "ko": "이미 결정된 일이야.",
+  "note": "done deal = 확정된 일"
+ },
+ {
+  "no": 811,
+  "day": 163,
+  "word": "pass",
+  "en": "Let it pass.",
+  "ko": "그냥 넘어가.",
+  "note": "pass = 넘어가다"
+ },
+ {
+  "no": 812,
+  "day": 163,
+  "word": "let",
+  "en": "Don't let it bother you.",
+  "ko": "그거 신경 쓰지 마.",
+  "note": "let = ~하게 두다"
+ },
+ {
+  "no": 813,
+  "day": 163,
+  "word": "give",
+  "en": "Give me five!",
+  "ko": "하이파이브!",
+  "note": "give five = 손바닥 치다"
+ },
+ {
+  "no": 814,
+  "day": 163,
+  "word": "figure",
+  "en": "It was a six-figure salary.",
+  "ko": "10만 달러가 넘는 연봉이었어.",
+  "note": "figure = 숫자 자리"
+ },
+ {
+  "no": 815,
+  "day": 163,
+  "word": "stop",
+  "en": "The rain stopped.",
+  "ko": "비 그쳤어.",
+  "note": "stop = 그치다"
+ },
+ {
+  "no": 816,
+  "day": 164,
+  "word": "sound",
+  "en": "I don't like the sound of that.",
+  "ko": "그 말 별로 느낌이 안 좋아.",
+  "note": "sound = 느낌/어감"
+ },
+ {
+  "no": 817,
+  "day": 164,
+  "word": "cover",
+  "en": "We covered a lot today.",
+  "ko": "오늘 많은 걸 다뤘어.",
+  "note": "cover = 다루다"
+ },
+ {
+  "no": 818,
+  "day": 164,
+  "word": "just",
+  "en": "Just my luck.",
+  "ko": "내가 그렇지 뭐.",
+  "note": "just my luck = 운이 없다"
+ },
+ {
+  "no": 819,
+  "day": 164,
+  "word": "back",
+  "en": "I'll pay you back.",
+  "ko": "돈 갚을게.",
+  "note": "pay back = 갚다"
+ },
+ {
+  "no": 820,
+  "day": 164,
+  "word": "over",
+  "en": "Don't fight over it.",
+  "ko": "그걸로 싸우지 마.",
+  "note": "over = ~를 두고"
+ },
+ {
+  "no": 821,
+  "day": 165,
+  "word": "out",
+  "en": "I'm out of here.",
+  "ko": "나 간다.",
+  "note": "out of here = 떠나다"
+ },
+ {
+  "no": 822,
+  "day": 165,
+  "word": "break",
+  "en": "Break a leg!",
+  "ko": "행운을 빌어!",
+  "note": "break a leg = 행운을 빌다"
+ },
+ {
+  "no": 823,
+  "day": 165,
+  "word": "have",
+  "en": "He has a way with words.",
+  "ko": "그는 말을 잘해.",
+  "note": "have a way with = 다루는 재주가 있다"
+ },
+ {
+  "no": 824,
+  "day": 165,
+  "word": "pull",
+  "en": "I pulled a muscle.",
+  "ko": "근육 결렸어.",
+  "note": "pull a muscle = 근육을 다치다"
+ },
+ {
+  "no": 825,
+  "day": 165,
+  "word": "hit",
+  "en": "We hit a lot of traffic.",
+  "ko": "차가 많이 막혔어.",
+  "note": "hit = 마주치다"
+ },
+ {
+  "no": 826,
+  "day": 166,
+  "word": "feel",
+  "en": "You hurt my feelings.",
+  "ko": "네가 내 감정을 상하게 했어.",
+  "note": "feelings = 감정"
+ },
+ {
+  "no": 827,
+  "day": 166,
+  "word": "mind",
+  "en": "Great minds think alike.",
+  "ko": "역시 통했어.",
+  "note": "mind = 생각하는 사람"
+ },
+ {
+  "no": 828,
+  "day": 166,
+  "word": "get",
+  "en": "Get in the car.",
+  "ko": "차에 타.",
+  "note": "get in = 타다"
+ },
+ {
+  "no": 829,
+  "day": 166,
+  "word": "take",
+  "en": "I'm taking a class on Saturdays.",
+  "ko": "토요일마다 수업 들어.",
+  "note": "take a class = 수업 듣다"
+ },
+ {
+  "no": 830,
+  "day": 166,
+  "word": "turn",
+  "en": "I'm going to turn in early.",
+  "ko": "오늘 일찍 잘 거야.",
+  "note": "turn in = 잠자리에 들다"
+ },
+ {
+  "no": 831,
+  "day": 167,
+  "word": "go",
+  "en": "I'll have a burger to go.",
+  "ko": "햄버거 포장이요.",
+  "note": "to go = 포장"
+ },
+ {
+  "no": 832,
+  "day": 167,
+  "word": "make",
+  "en": "Make up your mind already!",
+  "ko": "빨리 좀 정해!",
+  "note": "make up one's mind = 결정하다"
+ },
+ {
+  "no": 833,
+  "day": 167,
+  "word": "run",
+  "en": "In the long run, it's worth it.",
+  "ko": "길게 보면 그럴 가치가 있어.",
+  "note": "in the long run = 장기적으로"
+ },
+ {
+  "no": 834,
+  "day": 167,
+  "word": "look",
+  "en": "Look on the bright side.",
+  "ko": "좋은 면을 봐.",
+  "note": "look on = 보다"
+ },
+ {
+  "no": 835,
+  "day": 167,
+  "word": "save",
+  "en": "Nice save!",
+  "ko": "잘 막았어! / 잘 수습했어!",
+  "note": "save = 선방/수습"
+ },
+ {
+  "no": 836,
+  "day": 168,
+  "word": "leave",
+  "en": "We left off on page 20.",
+  "ko": "우린 20쪽에서 멈췄어.",
+  "note": "leave off = 중단하다"
+ },
+ {
+  "no": 837,
+  "day": 168,
+  "word": "try",
+  "en": "It's worth a try.",
+  "ko": "해 볼 만해.",
+  "note": "try = 시도"
+ },
+ {
+  "no": 838,
+  "day": 168,
+  "word": "blow",
+  "en": "Don't blow your money.",
+  "ko": "돈 낭비하지 마.",
+  "note": "blow = 탕진하다"
+ },
+ {
+  "no": 839,
+  "day": 168,
+  "word": "spend",
+  "en": "I'm totally spent.",
+  "ko": "완전 녹초야.",
+  "note": "spent = 지친"
+ },
+ {
+  "no": 840,
+  "day": 168,
+  "word": "come",
+  "en": "Your hard work will come in handy.",
+  "ko": "네 노력이 쓸모 있을 거야.",
+  "note": "come in handy = 쓸모 있다"
+ },
+ {
+  "no": 841,
+  "day": 169,
+  "word": "put",
+  "en": "Put it back where you found it.",
+  "ko": "원래 있던 데 갖다 놔.",
+  "note": "put back = 되돌려 놓다"
+ },
+ {
+  "no": 842,
+  "day": 169,
+  "word": "call",
+  "en": "The teacher called on me.",
+  "ko": "선생님이 나를 지목했어.",
+  "note": "call on = 지명하다"
+ },
+ {
+  "no": 843,
+  "day": 169,
+  "word": "cut",
+  "en": "Don't cut corners.",
+  "ko": "대충 하지 마.",
+  "note": "cut corners = 절차를 생략하다"
+ },
+ {
+  "no": 844,
+  "day": 169,
+  "word": "keep",
+  "en": "Keep away from the edge.",
+  "ko": "가장자리에서 떨어져.",
+  "note": "keep away = 멀리하다"
+ },
+ {
+  "no": 845,
+  "day": 169,
+  "word": "have",
+  "en": "Let's have a talk.",
+  "ko": "얘기 좀 하자.",
+  "note": "have a talk = 대화하다"
+ },
+ {
+  "no": 846,
+  "day": 170,
+  "word": "show",
+  "en": "Whose show is this?",
+  "ko": "여기 책임자가 누구야?",
+  "note": "show = 일/운영"
+ },
+ {
+  "no": 847,
+  "day": 170,
+  "word": "right",
+  "en": "Serves you right.",
+  "ko": "꼴좋다.",
+  "note": "serve right = 당연한 벌이다"
+ },
+ {
+  "no": 848,
+  "day": 170,
+  "word": "up",
+  "en": "Hurry up!",
+  "ko": "서둘러!",
+  "note": "up = (동작 강조)"
+ },
+ {
+  "no": 849,
+  "day": 170,
+  "word": "get",
+  "en": "I need to get my hair cut.",
+  "ko": "머리 잘라야 해.",
+  "note": "get + 목적어 + p.p. = ~하게 하다"
+ },
+ {
+  "no": 850,
+  "day": 170,
+  "word": "take",
+  "en": "Take back what you said.",
+  "ko": "한 말 취소해.",
+  "note": "take back = 철회하다"
+ },
+ {
+  "no": 851,
+  "day": 171,
+  "word": "give",
+  "en": "I'll give you a heads-up.",
+  "ko": "미리 알려 줄게.",
+  "note": "give a heads-up = 미리 알려 주다"
+ },
+ {
+  "no": 852,
+  "day": 171,
+  "word": "make",
+  "en": "I made friends with my neighbor.",
+  "ko": "이웃과 친해졌어.",
+  "note": "make friends = 친구가 되다"
+ },
+ {
+  "no": 853,
+  "day": 171,
+  "word": "go",
+  "en": "We still have two days to go.",
+  "ko": "아직 이틀 남았어.",
+  "note": "to go = 남은"
+ },
+ {
+  "no": 854,
+  "day": 171,
+  "word": "work",
+  "en": "It's a work in progress.",
+  "ko": "아직 진행 중이야.",
+  "note": "work in progress = 진행 중인 일"
+ },
+ {
+  "no": 855,
+  "day": 171,
+  "word": "set",
+  "en": "The movie is set in New York.",
+  "ko": "그 영화는 뉴욕이 배경이야.",
+  "note": "be set in = 배경이 ~이다"
+ },
+ {
+  "no": 856,
+  "day": 172,
+  "word": "hold",
+  "en": "I'm on hold with the bank.",
+  "ko": "은행 전화 대기 중이야.",
+  "note": "on hold = 통화 대기"
+ },
+ {
+  "no": 857,
+  "day": 172,
+  "word": "catch",
+  "en": "He's a great catch.",
+  "ko": "그는 정말 좋은 신랑감이야.",
+  "note": "catch = 좋은 짝"
+ },
+ {
+  "no": 858,
+  "day": 172,
+  "word": "hang",
+  "en": "Don't leave me hanging.",
+  "ko": "나 애태우지 마. / 답 좀 해.",
+  "note": "leave hanging = 답 없이 두다"
+ },
+ {
+  "no": 859,
+  "day": 172,
+  "word": "miss",
+  "en": "It's hit or miss.",
+  "ko": "복불복이야.",
+  "note": "hit or miss = 될 때도 안 될 때도"
+ },
+ {
+  "no": 860,
+  "day": 172,
+  "word": "mean",
+  "en": "You know what I mean?",
+  "ko": "무슨 말인지 알지?",
+  "note": "mean = 의미하다"
+ },
+ {
+  "no": 861,
+  "day": 173,
+  "word": "move",
+  "en": "The meeting was moved to Friday.",
+  "ko": "회의가 금요일로 옮겨졌어.",
+  "note": "move = 옮기다"
+ },
+ {
+  "no": 862,
+  "day": 173,
+  "word": "point",
+  "en": "Point taken.",
+  "ko": "무슨 말인지 알겠어.",
+  "note": "point taken = 인정한다"
+ },
+ {
+  "no": 863,
+  "day": 173,
+  "word": "bring",
+  "en": "What brought that on?",
+  "ko": "왜 갑자기 그래?",
+  "note": "bring on = 일으키다"
+ },
+ {
+  "no": 864,
+  "day": 173,
+  "word": "fall",
+  "en": "It fell short of our goal.",
+  "ko": "목표에 못 미쳤어.",
+  "note": "fall short = 못 미치다"
+ },
+ {
+  "no": 865,
+  "day": 173,
+  "word": "way",
+  "en": "I like the way you think.",
+  "ko": "네 생각하는 방식이 좋아.",
+  "note": "way = 방식"
+ },
+ {
+  "no": 866,
+  "day": 174,
+  "word": "thing",
+  "en": "I have a thing for old movies.",
+  "ko": "난 옛날 영화에 꽂혀 있어.",
+  "note": "have a thing for = 좋아하다"
+ },
+ {
+  "no": 867,
+  "day": 174,
+  "word": "break",
+  "en": "He broke his promise.",
+  "ko": "그는 약속을 어겼어.",
+  "note": "break = 어기다"
+ },
+ {
+  "no": 868,
+  "day": 174,
+  "word": "come",
+  "en": "It all comes down to money.",
+  "ko": "결국 다 돈 문제야.",
+  "note": "come down to = 결국 ~이다"
+ },
+ {
+  "no": 869,
+  "day": 174,
+  "word": "turn",
+  "en": "That's a real turn-off.",
+  "ko": "그거 진짜 정 떨어져.",
+  "note": "turn-off = 흥미를 잃게 하는 것"
+ },
+ {
+  "no": 870,
+  "day": 174,
+  "word": "pick",
+  "en": "Pick up after yourself.",
+  "ko": "네가 어지른 건 네가 치워.",
+  "note": "pick up after = 치우다"
+ },
+ {
+  "no": 871,
+  "day": 175,
+  "word": "drop",
+  "en": "Let's drop the subject.",
+  "ko": "그 얘기는 그만하자.",
+  "note": "drop = 그만두다"
+ },
+ {
+  "no": 872,
+  "day": 175,
+  "word": "stick",
+  "en": "I got stuck with the bill.",
+  "ko": "내가 계산 떠안았어.",
+  "note": "stuck with = 떠맡다"
+ },
+ {
+  "no": 873,
+  "day": 175,
+  "word": "tell",
+  "en": "He got told off by his boss.",
+  "ko": "그는 상사한테 혼났어.",
+  "note": "tell off = 꾸짖다"
+ },
+ {
+  "no": 874,
+  "day": 175,
+  "word": "fair",
+  "en": "We're going to the state fair.",
+  "ko": "우리 주 박람회에 가.",
+  "note": "fair = 박람회"
+ },
+ {
+  "no": 875,
+  "day": 175,
+  "word": "get",
+  "en": "We have to get up early tomorrow.",
+  "ko": "우리 내일 일찍 일어나야 해.",
+  "note": "get up = 일어나다"
+ },
+ {
+  "no": 876,
+  "day": 176,
+  "word": "take",
+  "en": "Can I take a rain check?",
+  "ko": "다음으로 미뤄도 될까?",
+  "note": "take a rain check = 다음 기회로 미루다"
+ },
+ {
+  "no": 877,
+  "day": 176,
+  "word": "run",
+  "en": "He's been running around all day.",
+  "ko": "그는 하루 종일 바빴어.",
+  "note": "run around = 바쁘게 돌아다니다"
+ },
+ {
+  "no": 878,
+  "day": 176,
+  "word": "look",
+  "en": "She was looking at me funny.",
+  "ko": "그녀가 날 이상하게 쳐다봤어.",
+  "note": "look at = 보다"
+ },
+ {
+  "no": 879,
+  "day": 176,
+  "word": "make",
+  "en": "What do you make of this?",
+  "ko": "이거 어떻게 생각해?",
+  "note": "make of = 이해하다/판단하다"
+ },
+ {
+  "no": 880,
+  "day": 176,
+  "word": "have",
+  "en": "I had a bad dream.",
+  "ko": "나쁜 꿈 꿨어.",
+  "note": "have a dream = 꿈 꾸다"
+ },
+ {
+  "no": 881,
+  "day": 177,
+  "word": "play",
+  "en": "Play along.",
+  "ko": "맞장구 좀 쳐 줘.",
+  "note": "play along = 맞춰 주다"
+ },
+ {
+  "no": 882,
+  "day": 177,
+  "word": "check",
+  "en": "Do you want to check this bag?",
+  "ko": "이 가방 부치실래요?",
+  "note": "check = (짐을) 부치다"
+ },
+ {
+  "no": 883,
+  "day": 177,
+  "word": "stand",
+  "en": "You don't stand a chance.",
+  "ko": "넌 가망 없어.",
+  "note": "stand a chance = 가능성이 있다"
+ },
+ {
+  "no": 884,
+  "day": 177,
+  "word": "deal",
+  "en": "Who's dealing?",
+  "ko": "누가 카드 돌려?",
+  "note": "deal = (카드를) 돌리다"
+ },
+ {
+  "no": 885,
+  "day": 177,
+  "word": "pass",
+  "en": "He passed me on the highway.",
+  "ko": "그가 고속도로에서 나를 추월했어.",
+  "note": "pass = 추월하다"
+ },
+ {
+  "no": 886,
+  "day": 178,
+  "word": "let",
+  "en": "Let alone a car, I can't buy a bike.",
+  "ko": "차는커녕 자전거도 못 사.",
+  "note": "let alone = ~는커녕"
+ },
+ {
+  "no": 887,
+  "day": 178,
+  "word": "put",
+  "en": "Don't put words in my mouth.",
+  "ko": "내가 안 한 말 지어내지 마.",
+  "note": "put words in mouth = 말을 지어내다"
+ },
+ {
+  "no": 888,
+  "day": 178,
+  "word": "go",
+  "en": "He went crazy.",
+  "ko": "그는 미쳐 버렸어.",
+  "note": "go crazy = 미치다"
+ },
+ {
+  "no": 889,
+  "day": 178,
+  "word": "keep",
+  "en": "She's a keeper.",
+  "ko": "그녀는 놓치면 안 될 사람이야.",
+  "note": "keeper = 놓치면 안 될 사람"
+ },
+ {
+  "no": 890,
+  "day": 178,
+  "word": "pull",
+  "en": "He'll pull through.",
+  "ko": "그는 이겨낼 거야.",
+  "note": "pull through = 회복하다"
+ },
+ {
+  "no": 891,
+  "day": 179,
+  "word": "hit",
+  "en": "Sales hit a record high.",
+  "ko": "매출이 최고치를 찍었어.",
+  "note": "hit = 도달하다"
+ },
+ {
+  "no": 892,
+  "day": 179,
+  "word": "feel",
+  "en": "Feel better soon.",
+  "ko": "빨리 나아.",
+  "note": "feel better = 나아지다"
+ },
+ {
+  "no": 893,
+  "day": 179,
+  "word": "mind",
+  "en": "Would you mind closing the window?",
+  "ko": "창문 좀 닫아 줄래요?",
+  "note": "would you mind = ~해 주시겠어요"
+ },
+ {
+  "no": 894,
+  "day": 179,
+  "word": "give",
+  "en": "Give or take.",
+  "ko": "대략. / 많거나 적거나.",
+  "note": "give or take = 대략"
+ },
+ {
+  "no": 895,
+  "day": 179,
+  "word": "track",
+  "en": "I got sidetracked.",
+  "ko": "딴 데 정신이 팔렸어.",
+  "note": "sidetracked = 곁길로 샌"
+ },
+ {
+  "no": 896,
+  "day": 180,
+  "word": "pretty",
+  "en": "Pretty much.",
+  "ko": "거의 그래.",
+  "note": "pretty much = 거의"
+ },
+ {
+  "no": 897,
+  "day": 180,
+  "word": "still",
+  "en": "Still waters run deep.",
+  "ko": "조용한 사람이 속이 깊어.",
+  "note": "still = 고요한"
+ },
+ {
+  "no": 898,
+  "day": 180,
+  "word": "bet",
+  "en": "Don't bet on it.",
+  "ko": "기대하지 마.",
+  "note": "bet on = 기대하다"
+ },
+ {
+  "no": 899,
+  "day": 180,
+  "word": "fine",
+  "en": "Read the fine print.",
+  "ko": "작은 글씨까지 읽어.",
+  "note": "fine print = 세부 조항"
+ },
+ {
+  "no": 900,
+  "day": 180,
+  "word": "open",
+  "en": "Are you free Tuesday? I'm wide open.",
+  "ko": "화요일 시간 돼? 난 완전 비어 있어.",
+  "note": "open = 일정이 빈"
+ },
+ {
+  "no": 901,
+  "day": 181,
+  "word": "carry",
+  "en": "Can I carry this on the plane?",
+  "ko": "이거 기내에 갖고 타도 돼요?",
+  "note": "carry on = 기내 반입하다"
+ },
+ {
+  "no": 902,
+  "day": 181,
+  "word": "get",
+  "en": "I finally got the job!",
+  "ko": "드디어 취직했어!",
+  "note": "get = 얻다"
+ },
+ {
+  "no": 903,
+  "day": 181,
+  "word": "take",
+  "en": "That took a while.",
+  "ko": "시간 좀 걸렸네.",
+  "note": "take a while = 오래 걸리다"
+ },
+ {
+  "no": 904,
+  "day": 181,
+  "word": "call",
+  "en": "There's no call for that.",
+  "ko": "그럴 필요까진 없잖아.",
+  "note": "call for = 필요/이유"
+ },
+ {
+  "no": 905,
+  "day": 181,
+  "word": "cut",
+  "en": "She cut her hair short.",
+  "ko": "그녀는 머리를 짧게 잘랐어.",
+  "note": "cut = 자르다"
+ },
+ {
+  "no": 906,
+  "day": 182,
+  "word": "make",
+  "en": "Let's make it 7 instead.",
+  "ko": "대신 7시로 하자.",
+  "note": "make it + 시간 = ~로 정하다"
+ },
+ {
+  "no": 907,
+  "day": 182,
+  "word": "come",
+  "en": "I think I'm coming down with something.",
+  "ko": "나 뭔가 걸리려나 봐.",
+  "note": "come down with = (병에) 걸리다"
+ },
+ {
+  "no": 908,
+  "day": 182,
+  "word": "have",
+  "en": "You'll have to excuse me.",
+  "ko": "실례 좀 할게요.",
+  "note": "have to = ~해야 하다"
+ },
+ {
+  "no": 909,
+  "day": 182,
+  "word": "work",
+  "en": "Work your magic.",
+  "ko": "네 실력 좀 보여 줘.",
+  "note": "work magic = 마법을 부리다"
+ },
+ {
+  "no": 910,
+  "day": 182,
+  "word": "set",
+  "en": "He's set in his ways.",
+  "ko": "그는 고집이 세.",
+  "note": "set in one's ways = 습관이 굳은"
+ },
+ {
+  "no": 911,
+  "day": 183,
+  "word": "hold",
+  "en": "Let's hold off on that.",
+  "ko": "그건 잠시 미루자.",
+  "note": "hold off = 미루다"
+ },
+ {
+  "no": 912,
+  "day": 183,
+  "word": "catch",
+  "en": "Let me catch my breath.",
+  "ko": "숨 좀 돌릴게.",
+  "note": "catch one's breath = 숨을 돌리다"
+ },
+ {
+  "no": 913,
+  "day": 183,
+  "word": "sort",
+  "en": "Sort the laundry by color.",
+  "ko": "빨래를 색깔별로 분류해.",
+  "note": "sort = 분류하다"
+ },
+ {
+  "no": 914,
+  "day": 183,
+  "word": "charge",
+  "en": "Take charge of the situation.",
+  "ko": "상황을 주도해.",
+  "note": "take charge = 맡다"
+ },
+ {
+  "no": 915,
+  "day": 183,
+  "word": "wear",
+  "en": "She wears her heart on her sleeve.",
+  "ko": "그녀는 감정을 숨기지 못해.",
+  "note": "wear = 드러내다"
+ },
+ {
+  "no": 916,
+  "day": 184,
+  "word": "mess",
+  "en": "You're messing with my head.",
+  "ko": "너 때문에 헷갈려.",
+  "note": "mess with one's head = 혼란스럽게 하다"
+ },
+ {
+  "no": 917,
+  "day": 184,
+  "word": "kind",
+  "en": "Nothing of the kind.",
+  "ko": "전혀 그런 거 아니야.",
+  "note": "nothing of the kind = 전혀 아니다"
+ },
+ {
+  "no": 918,
+  "day": 184,
+  "word": "cool",
+  "en": "Let it cool down first.",
+  "ko": "먼저 식혀.",
+  "note": "cool down = 식다"
+ },
+ {
+  "no": 919,
+  "day": 184,
+  "word": "watch",
+  "en": "Who's on watch tonight?",
+  "ko": "오늘 밤 누가 당번이야?",
+  "note": "on watch = 당번인"
+ },
+ {
+  "no": 920,
+  "day": 184,
+  "word": "break",
+  "en": "The story broke this morning.",
+  "ko": "그 뉴스가 오늘 아침 터졌어.",
+  "note": "break = (뉴스가) 알려지다"
+ },
+ {
+  "no": 921,
+  "day": 185,
+  "word": "go",
+  "en": "That's how it goes.",
+  "ko": "원래 그런 거야.",
+  "note": "go = 흘러가다"
+ },
+ {
+  "no": 922,
+  "day": 185,
+  "word": "turn",
+  "en": "You can always turn to me.",
+  "ko": "언제든 나한테 기대도 돼.",
+  "note": "turn to = 의지하다"
+ },
+ {
+  "no": 923,
+  "day": 185,
+  "word": "run",
+  "en": "Stop giving me the runaround.",
+  "ko": "나 그만 뺑뺑이 돌려.",
+  "note": "runaround = 핑계 대며 피하기"
+ },
+ {
+  "no": 924,
+  "day": 185,
+  "word": "look",
+  "en": "Let's look around.",
+  "ko": "둘러보자.",
+  "note": "look around = 둘러보다"
+ },
+ {
+  "no": 925,
+  "day": 185,
+  "word": "matter",
+  "en": "What does it matter?",
+  "ko": "그게 뭐가 중요해?",
+  "note": "matter = 중요하다"
+ },
+ {
+  "no": 926,
+  "day": 186,
+  "word": "sure",
+  "en": "Are you sure about this?",
+  "ko": "이거 확실해?",
+  "note": "sure = 확신하는"
+ },
+ {
+  "no": 927,
+  "day": 186,
+  "word": "fit",
+  "en": "That's a perfect fit.",
+  "ko": "딱 맞아.",
+  "note": "fit = 맞음"
+ },
+ {
+  "no": 928,
+  "day": 186,
+  "word": "end",
+  "en": "It's the end of an era.",
+  "ko": "한 시대가 끝났네.",
+  "note": "end = 끝"
+ },
+ {
+  "no": 929,
+  "day": 186,
+  "word": "count",
+  "en": "Don't count your chickens before they hatch.",
+  "ko": "김칫국부터 마시지 마.",
+  "note": "count = 세다"
+ },
+ {
+  "no": 930,
+  "day": 186,
+  "word": "last",
+  "en": "This battery lasts all day.",
+  "ko": "이 배터리는 하루 종일 가.",
+  "note": "last = 오래가다"
+ },
+ {
+  "no": 931,
+  "day": 187,
+  "word": "even",
+  "en": "Even if it rains, we're going.",
+  "ko": "비가 와도 우린 갈 거야.",
+  "note": "even if = ~하더라도"
+ },
+ {
+  "no": 932,
+  "day": 187,
+  "word": "put",
+  "en": "Put it together.",
+  "ko": "조립해. / 합쳐 봐.",
+  "note": "put together = 조립하다/모으다"
+ },
+ {
+  "no": 933,
+  "day": 187,
+  "word": "get",
+  "en": "Don't get mad.",
+  "ko": "화내지 마.",
+  "note": "get mad = 화나다"
+ },
+ {
+  "no": 934,
+  "day": 187,
+  "word": "take",
+  "en": "I'll take your word for it.",
+  "ko": "네 말 믿을게.",
+  "note": "take one's word = 믿다"
+ },
+ {
+  "no": 935,
+  "day": 187,
+  "word": "make",
+  "en": "We made it home safely.",
+  "ko": "우리 무사히 집에 왔어.",
+  "note": "make it = 도착하다"
+ },
+ {
+  "no": 936,
+  "day": 188,
+  "word": "keep",
+  "en": "You can keep it.",
+  "ko": "너 가져도 돼.",
+  "note": "keep = 갖다"
+ },
+ {
+  "no": 937,
+  "day": 188,
+  "word": "give",
+  "en": "Don't give me that look.",
+  "ko": "그런 눈으로 보지 마.",
+  "note": "give a look = 쳐다보다"
+ },
+ {
+  "no": 938,
+  "day": 188,
+  "word": "figure",
+  "en": "It's just a figure of speech.",
+  "ko": "그냥 말이 그렇다는 거야.",
+  "note": "figure of speech = 비유적 표현"
+ },
+ {
+  "no": 939,
+  "day": 188,
+  "word": "stop",
+  "en": "I stopped to tie my shoe.",
+  "ko": "신발 끈 묶으려고 멈췄어.",
+  "note": "stop to = ~하려고 멈추다"
+ },
+ {
+  "no": 940,
+  "day": 188,
+  "word": "sound",
+  "en": "How does that sound?",
+  "ko": "그거 어때?",
+  "note": "sound = ~하게 들리다"
+ },
+ {
+  "no": 941,
+  "day": 189,
+  "word": "cover",
+  "en": "Is this covered by insurance?",
+  "ko": "이거 보험 처리 돼요?",
+  "note": "cover = 보장하다"
+ },
+ {
+  "no": 942,
+  "day": 189,
+  "word": "just",
+  "en": "It's just as well.",
+  "ko": "차라리 잘됐어.",
+  "note": "just as well = 차라리 낫다"
+ },
+ {
+  "no": 943,
+  "day": 189,
+  "word": "back",
+  "en": "Talk behind my back?",
+  "ko": "내 뒤에서 험담해?",
+  "note": "behind one's back = 몰래"
+ },
+ {
+  "no": 944,
+  "day": 189,
+  "word": "over",
+  "en": "Over here!",
+  "ko": "여기야!",
+  "note": "over = 이쪽"
+ },
+ {
+  "no": 945,
+  "day": 189,
+  "word": "out",
+  "en": "Watch out!",
+  "ko": "조심해!",
+  "note": "watch out = 조심하다"
+ },
+ {
+  "no": 946,
+  "day": 190,
+  "word": "save",
+  "en": "Save the date!",
+  "ko": "날짜 비워 둬!",
+  "note": "save the date = 날짜를 비워 두다"
+ },
+ {
+  "no": 947,
+  "day": 190,
+  "word": "leave",
+  "en": "I'm leaving for Chicago tomorrow.",
+  "ko": "나 내일 시카고로 떠나.",
+  "note": "leave for = ~로 떠나다"
+ },
+ {
+  "no": 948,
+  "day": 190,
+  "word": "try",
+  "en": "It's been a trying week.",
+  "ko": "힘든 한 주였어.",
+  "note": "trying = 힘든"
+ },
+ {
+  "no": 949,
+  "day": 190,
+  "word": "blow",
+  "en": "That was a big blow.",
+  "ko": "그건 큰 타격이었어.",
+  "note": "blow = 타격"
+ },
+ {
+  "no": 950,
+  "day": 190,
+  "word": "come",
+  "en": "Can you come up with a better idea?",
+  "ko": "더 좋은 아이디어 낼 수 있어?",
+  "note": "come up with = 생각해내다"
+ },
+ {
+  "no": 951,
+  "day": 191,
+  "word": "have",
+  "en": "I have nothing to do with it.",
+  "ko": "난 그거랑 아무 상관 없어.",
+  "note": "have nothing to do with = 무관하다"
+ },
+ {
+  "no": 952,
+  "day": 191,
+  "word": "show",
+  "en": "I'll show myself out.",
+  "ko": "혼자 나갈게요.",
+  "note": "show out = 배웅하다"
+ },
+ {
+  "no": 953,
+  "day": 191,
+  "word": "right",
+  "en": "Right off the bat, I liked her.",
+  "ko": "처음부터 그녀가 좋았어.",
+  "note": "right off the bat = 즉시"
+ },
+ {
+  "no": 954,
+  "day": 191,
+  "word": "up",
+  "en": "Something's up with him.",
+  "ko": "그에게 무슨 일 있나 봐.",
+  "note": "up = 일어나는"
+ },
+ {
+  "no": 955,
+  "day": 191,
+  "word": "go",
+  "en": "Easy come, easy go.",
+  "ko": "쉽게 얻은 건 쉽게 잃어.",
+  "note": "go = 사라지다"
+ },
+ {
+  "no": 956,
+  "day": 192,
+  "word": "hang",
+  "en": "Where do you usually hang out?",
+  "ko": "보통 어디서 놀아?",
+  "note": "hang out = 시간을 보내다"
+ },
+ {
+  "no": 957,
+  "day": 192,
+  "word": "miss",
+  "en": "You missed out.",
+  "ko": "너 좋은 기회 놓쳤어.",
+  "note": "miss out = 기회를 놓치다"
+ },
+ {
+  "no": 958,
+  "day": 192,
+  "word": "mean",
+  "en": "I mean, it's not that bad.",
+  "ko": "내 말은, 그렇게 나쁘진 않다는 거야.",
+  "note": "I mean = 내 말은"
+ },
+ {
+  "no": 959,
+  "day": 192,
+  "word": "move",
+  "en": "He's on the move.",
+  "ko": "그는 계속 이동 중이야.",
+  "note": "on the move = 이동 중인"
+ },
+ {
+  "no": 960,
+  "day": 192,
+  "word": "point",
+  "en": "There's no point in waiting.",
+  "ko": "기다려도 소용없어.",
+  "note": "no point in = ~해도 소용없다"
+ },
+ {
+  "no": 961,
+  "day": 193,
+  "word": "bring",
+  "en": "Who's going to bring home the bacon?",
+  "ko": "누가 생활비 벌어 와?",
+  "note": "bring home the bacon = 생계를 책임지다"
+ },
+ {
+  "no": 962,
+  "day": 193,
+  "word": "fall",
+  "en": "You can always fall back on your degree.",
+  "ko": "학위가 있으니 언제든 기댈 데가 있지.",
+  "note": "fall back on = 의지하다"
+ },
+ {
+  "no": 963,
+  "day": 193,
+  "word": "way",
+  "en": "We went all the way to Boston.",
+  "ko": "우리는 보스턴까지 갔어.",
+  "note": "all the way = 끝까지"
+ },
+ {
+  "no": 964,
+  "day": 193,
+  "word": "thing",
+  "en": "Sure thing.",
+  "ko": "물론이지.",
+  "note": "sure thing = 확실한 것"
+ },
+ {
+  "no": 965,
+  "day": 193,
+  "word": "pick",
+  "en": "She picked out a dress.",
+  "ko": "그녀는 드레스를 골랐어.",
+  "note": "pick out = 고르다"
+ },
+ {
+  "no": 966,
+  "day": 194,
+  "word": "drop",
+  "en": "I'm ready to drop.",
+  "ko": "쓰러질 것 같아.",
+  "note": "drop = 쓰러지다"
+ },
+ {
+  "no": 967,
+  "day": 194,
+  "word": "stick",
+  "en": "Stick it out.",
+  "ko": "끝까지 버텨.",
+  "note": "stick it out = 견디다"
+ },
+ {
+  "no": 968,
+  "day": 194,
+  "word": "tell",
+  "en": "What did I tell you?",
+  "ko": "내가 뭐랬어?",
+  "note": "tell = 말하다"
+ },
+ {
+  "no": 969,
+  "day": 194,
+  "word": "get",
+  "en": "How much did you get for your car?",
+  "ko": "차 얼마 받고 팔았어?",
+  "note": "get = (돈을) 받다"
+ },
+ {
+  "no": 970,
+  "day": 194,
+  "word": "take",
+  "en": "Take a left at the light.",
+  "ko": "신호등에서 좌회전해.",
+  "note": "take a left = 좌회전하다"
+ },
+ {
+  "no": 971,
+  "day": 195,
+  "word": "make",
+  "en": "She made the team.",
+  "ko": "그녀는 팀에 뽑혔어.",
+  "note": "make = (선발에) 들다"
+ },
+ {
+  "no": 972,
+  "day": 195,
+  "word": "play",
+  "en": "It's your turn to play.",
+  "ko": "네가 할 차례야.",
+  "note": "play = (게임을) 하다"
+ },
+ {
+  "no": 973,
+  "day": 195,
+  "word": "check",
+  "en": "Reality check!",
+  "ko": "현실을 봐!",
+  "note": "reality check = 현실 자각"
+ },
+ {
+  "no": 974,
+  "day": 195,
+  "word": "stand",
+  "en": "Stand by me.",
+  "ko": "내 곁에 있어 줘.",
+  "note": "stand by = 곁에 있다"
+ },
+ {
+  "no": 975,
+  "day": 195,
+  "word": "deal",
+  "en": "A great deal of time was wasted.",
+  "ko": "엄청난 시간이 낭비됐어.",
+  "note": "a great deal = 많은 양"
+ },
+ {
+  "no": 976,
+  "day": 196,
+  "word": "pass",
+  "en": "She tried to pass it off as her idea.",
+  "ko": "그녀는 그걸 자기 아이디어인 척했어.",
+  "note": "pass off = 속이다"
+ },
+ {
+  "no": 977,
+  "day": 196,
+  "word": "let",
+  "en": "Let off some steam.",
+  "ko": "스트레스 좀 풀어.",
+  "note": "let off steam = 울분을 풀다"
+ },
+ {
+  "no": 978,
+  "day": 196,
+  "word": "pull",
+  "en": "Pull your weight.",
+  "ko": "네 몫은 해.",
+  "note": "pull one's weight = 제 몫을 하다"
+ },
+ {
+  "no": 979,
+  "day": 196,
+  "word": "hit",
+  "en": "Hit the brakes!",
+  "ko": "브레이크 밟아!",
+  "note": "hit = 밟다/누르다"
+ },
+ {
+  "no": 980,
+  "day": 196,
+  "word": "feel",
+  "en": "I'm feeling lucky today.",
+  "ko": "오늘 운이 좋을 것 같아.",
+  "note": "feel = ~한 느낌이다"
+ },
+ {
+  "no": 981,
+  "day": 197,
+  "word": "mind",
+  "en": "Mind your manners.",
+  "ko": "예의 지켜.",
+  "note": "mind = 조심하다"
+ },
+ {
+  "no": 982,
+  "day": 197,
+  "word": "call",
+  "en": "This calls for a celebration!",
+  "ko": "이건 축하해야지!",
+  "note": "call for = 필요로 하다"
+ },
+ {
+  "no": 983,
+  "day": 197,
+  "word": "cut",
+  "en": "It's cutting it close.",
+  "ko": "시간이 빠듯해.",
+  "note": "cut it close = 아슬아슬하다"
+ },
+ {
+  "no": 984,
+  "day": 197,
+  "word": "work",
+  "en": "Work comes first.",
+  "ko": "일이 먼저야.",
+  "note": "work = 일"
+ },
+ {
+  "no": 985,
+  "day": 197,
+  "word": "set",
+  "en": "Ready, set, go!",
+  "ko": "준비, 땅!",
+  "note": "set = 준비 자세"
+ },
+ {
+  "no": 986,
+  "day": 198,
+  "word": "hold",
+  "en": "Hold your horses.",
+  "ko": "진정해, 서두르지 마.",
+  "note": "hold your horses = 진정해"
+ },
+ {
+  "no": 987,
+  "day": 198,
+  "word": "catch",
+  "en": "Nice catch!",
+  "ko": "잘 잡았어! / 잘 찾았다!",
+  "note": "catch = 잡기/발견"
+ },
+ {
+  "no": 988,
+  "day": 198,
+  "word": "break",
+  "en": "It's not going to break the bank.",
+  "ko": "그거 그렇게 비싸지 않아.",
+  "note": "break the bank = 큰돈 들다"
+ },
+ {
+  "no": 989,
+  "day": 198,
+  "word": "turn",
+  "en": "Don't turn your back on me.",
+  "ko": "나 외면하지 마.",
+  "note": "turn one's back on = 등지다"
+ },
+ {
+  "no": 990,
+  "day": 198,
+  "word": "run",
+  "en": "Is the app running?",
+  "ko": "앱 실행 중이야?",
+  "note": "run = 작동하다"
+ },
+ {
+  "no": 991,
+  "day": 199,
+  "word": "look",
+  "en": "I'll look you up when I'm in town.",
+  "ko": "그쪽 가면 연락할게.",
+  "note": "look up = 찾아가다/연락하다"
+ },
+ {
+  "no": 992,
+  "day": 199,
+  "word": "put",
+  "en": "Stay put.",
+  "ko": "가만히 있어.",
+  "note": "stay put = 그 자리에 있다"
+ },
+ {
+  "no": 993,
+  "day": 199,
+  "word": "keep",
+  "en": "Keep your voice down.",
+  "ko": "목소리 좀 낮춰.",
+  "note": "keep down = 낮추다"
+ },
+ {
+  "no": 994,
+  "day": 199,
+  "word": "give",
+  "en": "Give my love to your family.",
+  "ko": "가족들한테 안부 전해 줘.",
+  "note": "give love = 안부 전하다"
+ },
+ {
+  "no": 995,
+  "day": 199,
+  "word": "come",
+  "en": "Christmas is coming up.",
+  "ko": "크리스마스가 다가오고 있어.",
+  "note": "come up = 다가오다"
+ },
+ {
+  "no": 996,
+  "day": 200,
+  "word": "have",
+  "en": "It has to be here somewhere.",
+  "ko": "분명 여기 어딘가 있을 거야.",
+  "note": "have to be = 틀림없이 ~이다"
+ },
+ {
+  "no": 997,
+  "day": 200,
+  "word": "go",
+  "en": "Who's going to go first?",
+  "ko": "누가 먼저 할래?",
+  "note": "go = 차례를 하다"
+ },
+ {
+  "no": 998,
+  "day": 200,
+  "word": "get",
+  "en": "I'll get the check.",
+  "ko": "계산은 내가 할게.",
+  "note": "get the check = 계산하다"
+ },
+ {
+  "no": 999,
+  "day": 200,
+  "word": "take",
+  "en": "What took you so long?",
+  "ko": "왜 이렇게 오래 걸렸어?",
+  "note": "take = (시간이) 걸리다"
+ },
+ {
+  "no": 1000,
+  "day": 200,
+  "word": "make",
+  "en": "Make way!",
+  "ko": "비켜 주세요!",
+  "note": "make way = 길을 비키다"
+ }
+]
