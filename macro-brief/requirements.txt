@@ -1,0 +1,4 @@
+requests>=2.31
+PyYAML>=6.0
+# 선택: PDF 본문 추출 (블랙록·JPM PDF 등)
+pypdf>=4.0

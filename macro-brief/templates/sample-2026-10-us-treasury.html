@@ -1,0 +1,304 @@
+<title>미국채 금리 캐러셀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800;900&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a working sheet — header, then the 10 Instagram cards (4:5) in a grid, then caption copy and production notes. */
+:root{
+  /* page (theme-aware) */
+  --page:#E6E9EE; --page-ink:#18233A; --page-mute:#5A6478; --page-line:#C9CFD9; --page-panel:#F4F6F9;
+  /* card (fixed brand look, same in both themes) */
+  --c-paper:#F3F4F0; --c-ink:#14213D; --c-mute:#5D6679; --c-line:#D4D8DE;
+  --c-rise:#D9442B; --c-teal:#2E7A77; --c-navy:#14213D; --c-navy-ink:#EEF0F4;
+  --f-display:"Gothic A1","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#0F1522;--page-ink:#E4E8F0;--page-mute:#98A2B6;--page-line:#2A3448;--page-panel:#161E2E;color-scheme:dark}}
+:root[data-theme="dark"]{--page:#0F1522;--page-ink:#E4E8F0;--page-mute:#98A2B6;--page-line:#2A3448;--page-panel:#161E2E;color-scheme:dark}
+
+body{background:var(--page);color:var(--page-ink);font-family:var(--f-body);font-size:15px;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:40px 16px 64px;display:grid;gap:40px}
+header{display:grid;gap:8px;max-width:68ch}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--page-mute)}
+h1{font-family:var(--f-display);font-weight:900;font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0;text-wrap:balance}
+header p{margin:0;color:var(--page-mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:24px}
+figure.slot{margin:0;display:grid;gap:8px;min-width:0}
+figure.slot figcaption{font-family:var(--f-mono);font-size:12px;color:var(--page-mute);display:flex;justify-content:space-between}
+
+/* ---------- card ---------- */
+.card{container-type:inline-size;aspect-ratio:4/5;width:100%;max-width:100%;background:var(--c-paper);color:var(--c-ink);
+  position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(10,20,40,.12),0 8px 24px rgba(10,20,40,.10)}
+.in{position:absolute;inset:0;padding:7cqw 7cqw 6cqw;display:flex;flex-direction:column;gap:3.4cqw}
+.top{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--f-mono);font-size:2.4cqw;letter-spacing:.06em;color:var(--c-mute);text-transform:uppercase}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-family:var(--f-mono);font-size:2.3cqw;color:var(--c-mute);border-top:.25cqw solid var(--c-line);padding-top:2.4cqw}
+.kicker{font-family:var(--f-display);font-weight:800;font-size:3.3cqw;color:var(--c-rise);letter-spacing:.02em}
+.h{font-family:var(--f-display);font-weight:900;font-size:7cqw;line-height:1.22;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.h.s{font-size:6cqw}
+.p{font-size:3.5cqw;line-height:1.6;margin:0}
+.mute{color:var(--c-mute)}
+.rise{color:var(--c-rise)}
+.num{font-family:var(--f-mono);font-weight:600;font-variant-numeric:tabular-nums}
+b{font-weight:700}
+
+/* cover */
+.cover{background:var(--c-navy);color:var(--c-navy-ink)}
+.cover .top,.cover .foot{color:#9AA5BC;border-color:#2C3A5A}
+.cover .big{font-family:var(--f-mono);font-weight:600;font-size:27cqw;line-height:.9;letter-spacing:-.04em;color:var(--c-navy-ink);margin-top:2cqw}
+.cover .big small{font-size:12cqw;color:var(--c-rise)}
+.cover .label{font-family:var(--f-mono);font-size:2.8cqw;color:#9AA5BC;letter-spacing:.04em}
+.cover .h{font-size:7.6cqw;color:#fff}
+.cover .swipe{font-family:var(--f-display);font-weight:800;font-size:3cqw;color:var(--c-rise)}
+
+/* source tags */
+.tag{font-family:var(--f-mono);font-weight:600;font-size:2.3cqw;letter-spacing:.04em;text-transform:none;padding:.6cqw 1.8cqw;border-radius:.6cqw;white-space:nowrap}
+.tag.bv{background:var(--c-navy);color:var(--c-navy-ink)}
+.tag.ed{background:var(--c-teal);color:#fff}
+.tag.dt{background:transparent;color:var(--c-mute);box-shadow:inset 0 0 0 .25cqw var(--c-line)}
+.top{align-items:center}
+.legend{display:grid;grid-template-columns:auto 1fr;gap:1.4cqw 2cqw;align-items:center;font-size:2.7cqw}
+.legend .tag{justify-self:start}
+/* lists */
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:3.2cqw}
+.tl li{display:grid;grid-template-columns:7cqw 1fr;gap:2cqw;font-size:3.5cqw;line-height:1.55}
+.tl li .n{font-family:var(--f-mono);font-weight:600;font-size:3.4cqw;color:var(--c-rise);padding-top:.2cqw}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.stat div{border-top:.5cqw solid var(--c-ink);padding-top:1.6cqw;display:grid;gap:.4cqw}
+.stat .k{font-size:2.7cqw;color:var(--c-mute)}
+.stat .v{font-family:var(--f-mono);font-weight:600;font-size:7.4cqw;line-height:1.05;letter-spacing:-.02em}
+.stat .d{font-family:var(--f-mono);font-size:2.7cqw;color:var(--c-rise)}
+.quote{border-left:1cqw solid var(--c-rise);padding:.6cqw 0 .6cqw 3.4cqw;font-size:3.6cqw;line-height:1.55;margin:0}
+.quote cite{display:block;font-style:normal;font-family:var(--f-mono);font-size:2.4cqw;color:var(--c-mute);margin-top:1.4cqw}
+
+/* positioning table */
+.pos{width:100%;border-collapse:collapse;font-size:3.3cqw}
+.pos td{padding:2.1cqw 0;border-bottom:.25cqw solid var(--c-line);vertical-align:middle}
+.pos td:last-child{text-align:right;white-space:nowrap}
+.chip{display:inline-block;font-family:var(--f-mono);font-weight:600;font-size:2.6cqw;padding:.7cqw 1.8cqw;border-radius:99px;letter-spacing:.02em}
+.chip.uw{background:var(--c-rise);color:#fff}
+.chip.ow{background:var(--c-teal);color:#fff}
+.chip.nt{background:var(--c-line);color:var(--c-ink)}
+
+/* term cards */
+.term{display:grid;gap:1.2cqw;padding-bottom:3cqw;border-bottom:.25cqw solid var(--c-line)}
+.term:last-of-type{border-bottom:0}
+.term .t{font-family:var(--f-display);font-weight:900;font-size:4.6cqw}
+.term .t span{font-family:var(--f-mono);font-weight:500;font-size:2.6cqw;color:var(--c-mute);margin-left:1.6cqw}
+
+.chart{width:100%;height:auto;display:block}
+.src{font-size:2.3cqw;color:var(--c-mute);line-height:1.5;margin:0}
+
+/* ---------- caption & notes ---------- */
+.below{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px}
+.panel{background:var(--page-panel);border:1px solid var(--page-line);padding:20px;display:grid;gap:12px;align-content:start;min-width:0}
+.panel h2{font-family:var(--f-display);font-weight:800;font-size:18px;margin:0}
+.panel pre{white-space:pre-wrap;word-break:keep-all;font-family:var(--f-body);font-size:14px;line-height:1.7;margin:0}
+.panel ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.panel a{color:inherit}
+button{font:600 13px var(--f-body);background:var(--page-ink);color:var(--page);border:0;padding:8px 14px;cursor:pointer;justify-self:start}
+button:focus-visible{outline:2px solid var(--page-mute);outline-offset:2px}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">샘플 캐러셀 · 2026년 10월 2일 기준</div>
+  <h1>미국 10년물 5.29%, 블랙록이 본 미국채 금리</h1>
+  <p>무료로 공개된 블랙록 인베스트먼트 인스티튜트(BII) 주간 코멘터리(2026년 9월 28일자)를 1080×1350 인스타 캐러셀 10장으로 정리했어요. 금리 수치는 FRED(세인트루이스 연은) 데이터로 다시 그렸어요. 리포트 내용은 <b>BlackRock View</b>, 운영자 해석은 <b>Editor's Note</b> 태그로 구분했어요. 계정명 <b>@macro.brief.kr</b>는 임시로 넣은 이름이에요.</p>
+</header>
+
+<section class="grid" aria-label="캐러셀 10장">
+
+<!-- 1 COVER -->
+<figure class="slot"><div class="card cover"><div class="in">
+  <div class="top"><span>Macro Brief · Rates</span><span>2026.10</span></div>
+  <div class="label">US 10Y TREASURY · 9/30 종가</div>
+  <div class="big">5.29<small>%</small></div>
+  <h2 class="h">24년 만의 최고치.<br>블랙록이 본<br>미국채 금리</h2>
+  <div class="foot"><span>@macro.brief.kr</span><span class="swipe">넘겨보기 →</span></div>
+</div></div><figcaption><span>01 표지 (훅)</span><span>1/10</span></figcaption></figure>
+
+<!-- 2 TL;DR -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>3줄 요약</span><span class="tag bv">BlackRock View</span></div>
+  <h2 class="h s">바쁘면 이 장만 보세요</h2>
+  <ul class="tl">
+    <li><span class="n">01</span><span>미국 10년물 <b class="num">5.29%</b>, 30년물 <b class="num">5.64%</b>. 연초보다 <b class="rise">1%p 넘게</b> 올랐어요.</span></li>
+    <li><span class="n">02</span><span>블랙록은 시장이 연준의 추가 인상을 <b>너무 앞서 반영</b>하고 있다고 봐요.</span></li>
+    <li><span class="n">03</span><span>그래도 <b>장기 국채는 비중 축소</b>를 유지해요. 끈적한 인플레이션과 큰 정부 부채 때문에 투자자가 <b>더 큰 보상</b>을 요구할 거라는 판단이에요.</span></li>
+  </ul>
+  <div class="foot"><span>BII 주간 코멘터리 2026.9.28 · 수치 FRED</span><span>2/10</span></div>
+</div></div><figcaption><span>02 TL;DR</span><span>2/10</span></figcaption></figure>
+
+<!-- 3 CHART yields -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>무슨 일이 있었나</span><span class="tag dt">Data · FRED</span></div>
+  <h2 class="h s">10년물, <span class="rise">2002년 이후</span><br>가장 높은 수준</h2>
+  <svg class="chart" id="ch-yield" viewBox="0 0 1000 640" role="img" aria-label="2000년부터 2026년 9월까지 미국 10년물과 30년물 금리 추이"></svg>
+  <p class="src">월평균, 마지막 점은 2026.9.30 종가 · 자료: FRED (DGS10, DGS30)</p>
+  <div class="foot"><span>@macro.brief.kr</span><span>3/10</span></div>
+</div></div><figcaption><span>03 차트: 금리 추이</span><span>3/10</span></figcaption></figure>
+
+<!-- 4 DRIVER 1 -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>왜 올랐나 ①</span><span class="tag bv">BlackRock View</span></div>
+  <div class="kicker">금리 인상 기대가 다시 살아났다</div>
+  <h2 class="h s">단기 금리부터<br>먼저 뛰었어요</h2>
+  <div class="stat">
+    <div><span class="k">2년물 · 연초 → 9/30</span><span class="v">4.88%</span><span class="d">+1.41%p (3.47%에서)</span></div>
+    <div><span class="k">10년물 · 연초 → 9/30</span><span class="v">5.29%</span><span class="d">+1.11%p (4.18%에서)</span></div>
+  </div>
+  <p class="p">근원 인플레이션이 아직 <b class="num">3%</b>를 넘고, 임금 상승 압력도 꺾이지 않았어요. 시장은 연준이 <b>금리를 더 올릴 것</b>이라는 쪽에 베팅하고 있어요.</p>
+  <p class="p mute">블랙록 해석: 고용 증가가 줄어든 건 경기 약화가 아니라 <b>노동 공급 증가가 느려진 결과</b>일 수 있어요. 그래서 임금 압력은 계속 남는다고 봐요.</p>
+  <div class="foot"><span>내용 BII 2026.9.28 · 금리 수치 FRED</span><span>4/10</span></div>
+</div></div><figcaption><span>04 원인 ① 인상 기대</span><span>4/10</span></figcaption></figure>
+
+<!-- 5 DRIVER 2 term premium -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>왜 올랐나 ②</span><span class="tag bv">BlackRock View</span></div>
+  <div class="kicker">'오래 빌려주는 값'이 비싸졌다</div>
+  <h2 class="h s">기간 프리미엄 1.02%p,<br>2010년 이후 최고</h2>
+  <svg class="chart" id="ch-tp" viewBox="0 0 1000 520" role="img" aria-label="2000년부터 2026년 9월까지 미국 10년물 기간 프리미엄 추이"></svg>
+  <p class="p" style="font-size:3.2cqw"><b>블랙록:</b> 높은 정부 부채와 끈적한 인플레이션 탓에 투자자들이 장기채를 들고 있는 대가로 <b>더 많은 이자</b>를 요구하고 있어요.</p>
+  <p class="src">차트·수치는 FRED 자료(원문에 없음). 월평균, 마지막 점은 2026.9.25 · THREEFYTP10, Kim-Wright 모형</p>
+  <div class="foot"><span>@macro.brief.kr</span><span>5/10</span></div>
+</div></div><figcaption><span>05 원인 ② 기간 프리미엄</span><span>5/10</span></figcaption></figure>
+
+<!-- 6 BII VIEW -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>블랙록의 시각</span><span class="tag bv">BlackRock View</span></div>
+  <h2 class="h s">"시장이 너무<br>앞서가고 있다"</h2>
+  <blockquote class="quote">시장은 추가 금리 인상 기대를 너무 앞서 반영하고 있을 수 있다. 성장이 탄탄한 상황에서 연준의 신뢰를 높이는 인상이라면, 위험자산에는 전체적으로 좋은 소식이다.<cite>BlackRock Investment Institute, Weekly Commentary 2026.9.28 (요약 번역)</cite></blockquote>
+  <p class="p">블랙록은 <b>미국 주식 비중 확대</b>를 유지했어요. 반면 장기채는 "새로운 체제에서 <b>덜 믿을 만한 분산 수단</b>"이라고 평가했어요.</p>
+  <div class="foot"><span>@macro.brief.kr</span><span>6/10</span></div>
+</div></div><figcaption><span>06 하우스 뷰</span><span>6/10</span></figcaption></figure>
+
+<!-- 7 POSITIONING -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>블랙록 포지션</span><span class="tag bv">BlackRock View</span></div>
+  <h2 class="h s">길게 말고,<br>짧게 받는다</h2>
+  <table class="pos">
+    <tr><td>미국 장기 국채</td><td><span class="chip uw">비중 축소 −1</span></td></tr>
+    <tr><td>미국 단기 국채</td><td><span class="chip nt">중립</span></td></tr>
+    <tr><td>단·중기 국채 (인컴용)</td><td><span class="chip ow">선호</span></td></tr>
+    <tr><td>미국 정부기관 MBS</td><td><span class="chip ow">비중 확대</span></td></tr>
+    <tr><td>미국 주식</td><td><span class="chip ow">비중 확대 +1</span></td></tr>
+  </table>
+  <p class="p mute" style="font-size:3.1cqw">장기채는 금리 변화에 크게 흔들리고 분산 효과도 약해졌으니, 이자 수익은 만기가 짧은 채권으로 받겠다는 전략이에요.</p>
+  <div class="foot"><span>출처: BII 2026.9.28</span><span>7/10</span></div>
+</div></div><figcaption><span>07 포지셔닝 표</span><span>7/10</span></figcaption></figure>
+
+<!-- 8 COUNTER / RISK -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>반대 시각 · 리스크</span><span class="tag ed">Editor's Note</span></div>
+  <h2 class="h s">이 시나리오가<br>틀릴 수 있는 경우</h2>
+  <p class="p mute" style="font-size:3cqw">블랙록 리포트가 아닌 운영자의 정리예요.</p>
+  <ul class="tl">
+    <li><span class="n">A</span><span><b>고용이 급격히 식으면</b> 인상 기대가 꺼지고 장기채가 반등할 수 있어요. 10월 2일 고용지표가 첫 시험대예요.</span></li>
+    <li><span class="n">B</span><span><b>PCE 물가가 예상보다 낮으면</b> "인플레가 끈적하다"는 전제가 약해져요.</span></li>
+    <li><span class="n">C</span><span><b>전망은 자주 빗나가요.</b> 찰스 슈왑은 연중 전망에서 10년물이 당분간 4~4.5%에 머물 거라 봤지만, 금리는 이미 그 위로 올라섰어요.</span></li>
+  </ul>
+  <div class="foot"><span>운영자 해석 · C 참고: Schwab 연중 전망</span><span>8/10</span></div>
+</div></div><figcaption><span>08 반대 시각</span><span>8/10</span></figcaption></figure>
+
+<!-- 9 KOREA -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>한국 투자자 체크포인트</span><span class="tag ed">Editor's Note</span></div>
+  <h2 class="h s">내 계좌에는<br>어떤 의미일까?</h2>
+  <p class="p mute" style="font-size:3cqw">블랙록 리포트에는 한국 관련 내용이 없어요. 운영자의 해석이에요.</p>
+  <ul class="tl">
+    <li><span class="n">01</span><span><b>미국 장기채 ETF</b>(국내 상장 미국채 30년 상품, TLT 등)는 금리가 1%p 오르면 가격이 대략 <b class="rise">15% 넘게</b> 빠질 수 있어요. 레버리지 상품은 더 크게 움직여요.</span></li>
+    <li><span class="n">02</span><span>미국 금리가 높게 유지되면 <b>한·미 금리차</b>가 벌어져 원/달러 환율에 상승 압력이 생기기 쉬워요. 환노출 여부를 확인해 보세요.</span></li>
+    <li><span class="n">03</span><span>고금리가 길어지면 <b>성장주 밸류에이션</b>에 부담이 될 수 있어요.</span></li>
+  </ul>
+  <div class="foot"><span>운영자 해석 · 투자 권유 아님</span><span>9/10</span></div>
+</div></div><figcaption><span>09 한국 시사점</span><span>9/10</span></figcaption></figure>
+
+<!-- 10 TERMS + SOURCES -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>오늘의 용어 · 출처</span><span>10</span></div>
+  <div class="term"><div class="t">기간 프리미엄<span>Term Premium</span></div><p class="p" style="font-size:3.2cqw">돈을 오래 묶어두는 위험에 대해 투자자가 추가로 요구하는 이자예요. 높을수록 "장기채는 불안하다"는 뜻이에요.</p></div>
+  <div class="term"><div class="t">듀레이션<span>Duration</span></div><p class="p" style="font-size:3.2cqw">금리가 1%p 움직일 때 채권 가격이 몇 % 변하는지 나타내는 숫자예요. 장기채일수록 커요.</p></div>
+  <div class="legend"><span class="tag bv">BlackRock View</span><span>리포트 내용을 옮긴 장</span><span class="tag ed">Editor's Note</span><span>운영자 해석</span></div>
+  <p class="src" style="font-size:2.5cqw">출처: BlackRock Investment Institute Weekly Commentary(2026.9.28) · FRED DGS10/DGS30/DGS2/THREEFYTP10 · Charles Schwab 2026 Mid-Year Outlook<br>블랙록 원문은 주간 코멘터리의 시장 동향·포지셔닝 부분이며, 번역·요약 과정에서 표현이 달라질 수 있어요. 본 콘텐츠는 정보 제공용이며, 특정 상품의 매수·매도를 권유하지 않아요.</p>
+  <div class="foot"><span>저장하고 다음 브리프도 받아보세요</span><span>10/10</span></div>
+</div></div><figcaption><span>10 용어 + 출처 + 고지</span><span>10/10</span></figcaption></figure>
+
+</section>
+
+<section class="below">
+  <div class="panel">
+    <h2>캡션 (복사해서 사용)</h2>
+<pre id="caption">미국 10년물 국채금리 5.29%. 2002년 이후 가장 높은 수준이에요.
+
+블랙록 주간 코멘터리(9/28)는 "시장이 금리 인상을 너무 앞서 반영하고 있다"면서도 장기 국채 비중 축소를 유지했어요.
+
+✔️ 10년물·30년물 모두 20여 년 만의 최고치
+✔️ 원인: 금리 인상 기대 + 기간 프리미엄 상승
+✔️ 블랙록 전략: 장기채 대신 단·중기 채권으로 이자 받기
+✔️ 한국 투자자 체크포인트는 운영자 해석으로 따로 정리했어요
+
+여러분은 지금 장기채, 들고 계신가요? 댓글로 알려주세요 👇
+
+출처: BlackRock Investment Institute Weekly Commentary (2026.9.28), FRED
+※ 공개 자료를 요약한 정보 제공용 콘텐츠이며 투자 권유가 아닙니다.
+
+#미국채 #국채금리 #미국10년물 #블랙록 #채권투자 #장기채 #TLT #거시경제 #매크로 #경제공부 #재테크 #미국주식</pre>
+    <button type="button" id="copy">캡션 복사</button>
+  </div>
+  <div class="panel">
+    <h2>제작 메모</h2>
+    <ul>
+      <li><b>원문 리포트:</b> <a href="https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary" target="_blank" rel="noopener">BlackRock Weekly Market Commentary (2026.9.28)</a>. 이번 호 메인 주제는 중국이고, 금리 내용은 시장 동향과 포지셔닝 부분에서 가져왔어요.</li>
+      <li><b>차트 데이터:</b> <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener">FRED DGS10</a>, DGS30, DGS2, <a href="https://fred.stlouisfed.org/series/THREEFYTP10" target="_blank" rel="noopener">THREEFYTP10</a>. 원본 차트를 캡처하지 않고 공공 데이터로 다시 그렸어요.</li>
+      <li><b>숫자 차이:</b> 블랙록 원문의 "10년물 5.22%(19년 만의 최고)"는 9월 넷째 주 기준이에요. 카드에는 더 최근인 9/30 종가 5.29%를 썼어요. 일별 종가 기준으로는 2002년 5월(5.32%) 이후 최고예요.</li>
+      <li><b>9번 장의 "1%p 상승 시 15% 넘게 하락"</b>은 듀레이션 약 16~17년인 30년물 ETF 기준의 대략적인 계산이에요. 게시 전에 실제 상품의 듀레이션을 확인하세요.</li>
+      <li><b>원문 대조:</b> 블랙록 페이지는 웹 도구의 요약본으로 확인했어요. 6장 인용문과 7장 포지션은 게시 전에 원문과 한 번 대조하세요.</li>
+      <li><b>8번 장의 슈왑 전망</b>은 연중 전망 발표 시점 기준이에요. 더 최근 수정 전망이 있으면 바꿔 넣으세요.</li>
+      <li><b>게시 전 체크:</b> 10월 2일 고용지표 발표 후 금리가 크게 움직였으면 표지 숫자를 업데이트하세요.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<script>
+const D = {"DGS10":[6.66,6.52,6.26,5.99,6.44,6.1,6.05,5.83,5.8,5.74,5.72,5.24,5.16,5.1,4.89,5.14,5.39,5.28,5.24,4.97,4.73,4.57,4.65,5.09,5.04,4.91,5.28,5.21,5.16,4.93,4.65,4.26,3.87,3.94,4.05,4.03,4.05,3.9,3.81,3.96,3.57,3.33,3.98,4.45,4.27,4.29,4.3,4.27,4.15,4.08,3.83,4.35,4.72,4.73,4.5,4.28,4.13,4.1,4.19,4.23,4.22,4.17,4.5,4.34,4.14,4.0,4.18,4.26,4.2,4.46,4.53,4.47,4.42,4.57,4.72,4.99,5.11,5.11,5.09,4.88,4.72,4.73,4.6,4.56,4.76,4.72,4.56,4.69,4.75,5.1,5.0,4.67,4.52,4.53,4.15,4.1,3.74,3.74,3.51,3.67,3.88,4.1,4.01,3.89,3.69,3.81,3.53,2.42,2.52,2.87,2.82,2.93,3.29,3.72,3.56,3.59,3.4,3.39,3.4,3.59,3.73,3.69,3.73,3.85,3.42,3.2,3.01,2.7,2.65,2.54,2.76,3.29,3.39,3.58,3.41,3.45,3.17,3.0,3.0,2.3,1.98,2.15,2.01,1.98,1.97,1.97,2.17,2.05,1.8,1.62,1.53,1.68,1.72,1.75,1.65,1.72,1.91,1.98,1.96,1.76,1.93,2.3,2.58,2.74,2.81,2.62,2.72,2.9,2.86,2.71,2.72,2.71,2.56,2.6,2.54,2.42,2.53,2.3,2.33,2.21,1.88,1.98,2.04,1.93,2.2,2.36,2.32,2.17,2.17,2.07,2.26,2.24,2.09,1.78,1.89,1.81,1.81,1.64,1.5,1.56,1.63,1.76,2.14,2.49,2.43,2.42,2.48,2.3,2.3,2.19,2.32,2.21,2.2,2.36,2.35,2.4,2.58,2.86,2.84,2.87,2.98,2.91,2.89,2.89,3.0,3.15,3.12,2.83,2.71,2.68,2.57,2.53,2.4,2.07,2.06,1.63,1.7,1.71,1.81,1.86,1.76,1.5,0.87,0.66,0.67,0.73,0.62,0.65,0.68,0.79,0.87,0.93,1.08,1.26,1.61,1.63,1.62,1.52,1.32,1.28,1.37,1.58,1.56,1.47,1.76,1.93,2.13,2.75,2.9,3.14,2.9,2.9,3.52,3.98,3.89,3.62,3.53,3.75,3.66,3.46,3.57,3.75,3.9,4.17,4.38,4.8,4.5,4.02,4.06,4.21,4.21,4.54,4.48,4.31,4.25,3.87,3.72,4.1,4.36,4.39,4.63,4.45,4.28,4.28,4.42,4.38,4.39,4.26,4.12,4.06,4.09,4.14,4.21,4.13,4.25,4.32,4.48,4.47,4.6,4.68,5.29],"DGS30":[6.63,6.23,6.05,5.85,6.15,5.93,5.85,5.72,5.83,5.8,5.78,5.49,5.54,5.45,5.34,5.65,5.78,5.67,5.61,5.48,5.48,5.32,5.12,5.48,5.45,5.45,5.81,5.79,5.76,5.68,5.59,5.28,4.96,5.18,5.18,5.13,5.14,5.02,5.03,5.13,4.76,4.62,5.13,5.45,5.28,5.3,5.25,5.21,5.13,5.08,4.9,5.28,5.51,5.48,5.31,5.15,4.98,4.94,4.95,4.91,4.76,4.56,4.77,4.65,4.49,4.28,4.38,4.44,4.45,4.64,4.7,4.62,4.57,4.57,4.73,5.06,5.2,5.15,5.13,5.0,4.85,4.85,4.69,4.68,4.85,4.82,4.72,4.87,4.9,5.2,5.11,4.93,4.79,4.77,4.52,4.53,4.33,4.52,4.39,4.44,4.6,4.69,4.57,4.5,4.27,4.17,4.0,2.87,3.13,3.59,3.64,3.76,4.23,4.52,4.41,4.37,4.19,4.19,4.31,4.49,4.6,4.62,4.64,4.69,4.29,4.13,3.99,3.8,3.77,3.87,4.19,4.42,4.52,4.65,4.51,4.5,4.29,4.23,4.27,3.65,3.18,3.13,3.02,2.98,3.03,3.11,3.28,3.18,2.93,2.7,2.59,2.77,2.88,2.9,2.8,2.88,3.08,3.17,3.16,2.93,3.11,3.4,3.6,3.76,3.79,3.68,3.8,3.89,3.77,3.66,3.62,3.52,3.39,3.42,3.33,3.2,3.26,3.04,3.04,2.83,2.46,2.57,2.63,2.59,2.96,3.11,3.07,2.86,2.95,2.89,3.03,2.97,2.86,2.62,2.68,2.62,2.63,2.45,2.23,2.26,2.35,2.5,2.86,3.11,3.02,3.03,3.08,2.94,2.96,2.8,2.88,2.8,2.78,2.88,2.8,2.77,2.88,3.13,3.09,3.07,3.13,3.05,3.01,3.04,3.15,3.34,3.36,3.1,3.04,3.02,2.98,2.94,2.82,2.57,2.57,2.12,2.16,2.19,2.28,2.3,2.22,1.97,1.45,1.27,1.38,1.49,1.31,1.36,1.42,1.57,1.62,1.67,1.82,2.04,2.34,2.3,2.32,2.16,1.94,1.92,1.94,2.06,1.94,1.85,2.1,2.25,2.41,2.81,3.07,3.25,3.1,3.13,3.56,4.04,4.0,3.66,3.66,3.8,3.77,3.68,3.86,3.87,3.96,4.28,4.47,4.95,4.66,4.14,4.26,4.38,4.36,4.66,4.62,4.44,4.46,4.15,4.04,4.38,4.54,4.58,4.85,4.68,4.6,4.71,4.9,4.89,4.92,4.87,4.74,4.64,4.7,4.8,4.84,4.76,4.84,4.91,5.03,4.95,5.1,5.22,5.64],"THREEFYTP10":[1.62,1.54,1.4,1.26,1.44,1.27,1.19,1.07,1.06,0.98,0.94,0.78,0.87,0.93,0.92,1.14,1.33,1.32,1.28,1.2,1.2,1.22,1.34,1.65,1.63,1.55,1.73,1.69,1.64,1.5,1.35,1.13,0.91,0.94,1.07,1.08,1.07,0.99,0.93,1.01,0.78,0.66,1.02,1.32,1.21,1.2,1.22,1.21,1.14,1.1,0.94,1.24,1.45,1.4,1.24,1.1,0.97,0.92,0.92,0.9,0.87,0.81,0.96,0.85,0.73,0.64,0.68,0.68,0.64,0.74,0.75,0.7,0.61,0.67,0.73,0.83,0.87,0.84,0.8,0.69,0.63,0.62,0.54,0.54,0.63,0.61,0.53,0.6,0.65,0.88,0.79,0.73,0.7,0.71,0.63,0.65,0.5,0.66,0.68,0.79,0.86,0.95,0.92,0.83,0.8,1.03,1.0,0.5,0.53,0.7,0.64,0.65,0.85,1.14,1.03,1.06,0.95,0.93,0.92,0.98,1.07,1.02,1.02,1.09,0.87,0.76,0.61,0.42,0.39,0.3,0.4,0.73,0.78,0.91,0.82,0.87,0.69,0.56,0.56,0.19,0.04,0.14,0.05,0.03,0.01,-0.01,0.11,0.04,-0.09,-0.17,-0.23,-0.15,-0.15,-0.14,-0.18,-0.15,-0.05,-0.01,-0.03,-0.12,-0.03,0.2,0.36,0.45,0.5,0.37,0.4,0.52,0.53,0.44,0.47,0.49,0.41,0.44,0.42,0.37,0.45,0.32,0.34,0.29,0.12,0.18,0.2,0.12,0.27,0.36,0.32,0.23,0.23,0.18,0.28,0.24,0.15,-0.03,0.04,-0.01,-0.01,-0.09,-0.17,-0.14,-0.11,-0.05,0.14,0.34,0.31,0.3,0.29,0.16,0.14,0.06,0.11,0.06,0.05,0.13,0.11,0.13,0.2,0.32,0.29,0.29,0.33,0.29,0.27,0.25,0.29,0.34,0.3,0.13,0.05,0.03,-0.02,-0.04,-0.11,-0.25,-0.24,-0.42,-0.37,-0.33,-0.24,-0.21,-0.27,-0.4,-0.47,-0.56,-0.57,-0.57,-0.61,-0.61,-0.6,-0.55,-0.5,-0.48,-0.41,-0.32,-0.11,-0.08,-0.1,-0.13,-0.23,-0.24,-0.19,-0.06,-0.04,-0.08,0.07,0.13,0.21,0.48,0.51,0.53,0.23,0.14,0.38,0.52,0.37,0.15,0.05,0.15,0.12,-0.05,-0.05,0.05,0.11,0.24,0.35,0.58,0.44,0.18,0.19,0.28,0.27,0.45,0.42,0.32,0.29,0.12,0.1,0.36,0.54,0.58,0.72,0.62,0.53,0.51,0.57,0.54,0.53,0.49,0.46,0.46,0.48,0.55,0.6,0.55,0.61,0.65,0.77,0.75,0.79,0.85,1.02],"start":"2000-01"};
+const NS = "http://www.w3.org/2000/svg";
+const C = {ink:"#14213D", mute:"#5D6679", line:"#D4D8DE", rise:"#D9442B", teal:"#2E7A77"};
+function el(tag, attrs, parent, text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;parent.appendChild(e);return e;}
+function chart(id, series, opt){
+  const svg=document.getElementById(id), [W,H]=svg.getAttribute("viewBox").split(" ").slice(2).map(Number);
+  const m={l:70,r:150,t:24,b:56}, n=series[0].data.length;
+  const x=i=>m.l+(W-m.l-m.r)*i/(n-1), y=v=>m.t+(H-m.t-m.b)*(opt.max-v)/(opt.max-opt.min);
+  for(let v=opt.min; v<=opt.max+1e-9; v+=opt.step){
+    el("line",{x1:m.l,x2:W-m.r,y1:y(v),y2:y(v),stroke:v===0?C.mute:C.line,"stroke-width":v===0?2:1.5},svg);
+    el("text",{x:m.l-12,y:y(v)+9,"text-anchor":"end","font-size":24,fill:C.mute,"font-family":"IBM Plex Mono, monospace"},svg,v+"%");
+  }
+  const y0=+D.start.slice(0,4);
+  for(let yr=2000; yr<=2025; yr+=5){const i=(yr-y0)*12; el("text",{x:x(i),y:H-16,"text-anchor":"middle","font-size":24,fill:C.mute,"font-family":"IBM Plex Mono, monospace"},svg,yr);}
+  if(opt.ref){const i=opt.ref.i; el("line",{x1:x(i),x2:x(n-1),y1:y(opt.ref.v),y2:y(opt.ref.v),stroke:C.rise,"stroke-width":2,"stroke-dasharray":"6 7"},svg);
+    el("circle",{cx:x(i),cy:y(opt.ref.v),r:6,fill:C.rise},svg);
+    el("text",{x:x(i)+12,y:y(opt.ref.v)-14,"font-size":24,fill:C.rise,"font-weight":700,"font-family":"IBM Plex Sans KR, sans-serif"},svg,opt.ref.label);}
+  series.forEach(s=>{
+    const d=s.data.map((v,i)=>(i?"L":"M")+x(i).toFixed(1)+","+y(v).toFixed(1)).join("");
+    el("path",{d,fill:"none",stroke:s.color,"stroke-width":s.w||3.5,"stroke-linejoin":"round"},svg);
+    const lv=s.data[n-1];
+    el("circle",{cx:x(n-1),cy:y(lv),r:8,fill:s.color},svg);
+    el("text",{x:x(n-1)+16,y:y(lv)+(s.dy||0)+10,"font-size":30,"font-weight":600,fill:s.color,"font-family":"IBM Plex Mono, monospace"},svg,lv.toFixed(2)+"%");
+    el("text",{x:x(n-1)+16,y:y(lv)+(s.dy||0)+40,"font-size":21,fill:C.mute,"font-family":"IBM Plex Sans KR, sans-serif"},svg,s.name);
+  });
+}
+// 2002-05 index for the 10Y reference line
+const i2002 = (2002-2000)*12+4;
+chart("ch-yield",[
+  {name:"30년물",data:D.DGS30,color:C.teal,w:3,dy:-26},
+  {name:"10년물",data:D.DGS10,color:C.ink,w:4,dy:22}
+],{min:0,max:7,step:1,ref:{i:i2002,v:5.29,label:"2002년 이후 최고"}});
+chart("ch-tp",[{name:"기간 프리미엄",data:D.THREEFYTP10,color:C.rise,w:4}],{min:-1,max:2,step:1});
+
+document.getElementById("copy").addEventListener("click",e=>{
+  const t=document.getElementById("caption").textContent, b=e.currentTarget;
+  navigator.clipboard.writeText(t).then(()=>{b.textContent="복사됨";setTimeout(()=>b.textContent="캡션 복사",1600)}).catch(()=>{
+    const r=document.createRange();r.selectNodeContents(document.getElementById("caption"));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="텍스트를 선택했어요. Ctrl+C로 복사하세요";});
+});
+</script>

@@ -1,0 +1,169 @@
+# 수집 대상 출처 목록
+#
+# kind     : rss | wp_json | listing | page_pdf | manual
+# tier     : public  = 중앙은행·국제기구 (인용 자유로운 편)
+#            private = 민간 운용사·IB (요약 + 출처 + 링크만, 원본 차트 캡처 금지)
+# tag      : 카드에 붙일 출처 태그 (예: "BlackRock View")
+#
+# listing  : 목록 페이지에서 link_pattern(정규식)에 맞는 글 링크를 뽑고,
+#            각 글의 제목·요약·날짜(메타 태그)를 읽어요.
+# page_pdf : 페이지에서 pdf_pattern에 맞는 PDF 링크를 찾아 내려받고 본문을 추출해요.
+
+sources:
+  # ---------- 민간 운용사·IB ----------
+  - id: blackrock_weekly
+    name: BlackRock Investment Institute 주간 코멘터리
+    tier: private
+    tag: BlackRock View
+    kind: page_pdf
+    url: https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary
+    pdf_pattern: '/us/individual/literature/market-commentary/weekly-investment-commentary-[^"]+\.pdf'
+
+  - id: ms_thoughts_podcast
+    name: Morgan Stanley Thoughts on the Market (팟캐스트)
+    tier: private
+    tag: Morgan Stanley View
+    kind: rss
+    url: https://rss.art19.com/thoughts-on-the-market
+    max_items: 15
+    save_text: true   # 피드 설명란에 방송 스크립트 전문이 들어 있어요
+
+  - id: ms_insights
+    name: Morgan Stanley Insights
+    tier: private
+    tag: Morgan Stanley View
+    kind: listing
+    url: https://www.morganstanley.com/insights
+    base: https://www.morganstanley.com
+    link_pattern: '/insights/articles/[a-z0-9-]+'
+
+  - id: gs_insights
+    name: Goldman Sachs Insights
+    tier: private
+    tag: Goldman Sachs View
+    kind: listing
+    url: https://www.goldmansachs.com/insights
+    base: https://www.goldmansachs.com
+    link_pattern: '/insights/articles/[a-z0-9-]+'
+
+  - id: apollo_academy
+    name: Apollo Academy (토르스텐 슬록 매크로 업데이트 등)
+    tier: private
+    tag: Apollo View
+    kind: wp_json
+    url: https://www.apolloacademy.com/wp-json/wp/v2/posts?per_page=20&_fields=date,link,title,excerpt
+
+  - id: jpm_gtm
+    name: J.P. Morgan Guide to the Markets
+    tier: private
+    tag: J.P. Morgan View
+    kind: page_pdf
+    url: https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/guide-to-the-markets/
+    pdf_pattern: 'https://cdn\.jpmorganfunds\.com/[^"&]+mi-guide-to-the-markets-us\.pdf'
+    extract_text: false   # 차트 70여 장짜리 자료집이라 본문 추출 대신 링크만 기록
+
+  - id: pimco_insights
+    name: PIMCO Insights
+    tier: private
+    tag: PIMCO View
+    kind: listing
+    url: https://www.pimco.com/us/en/insights
+    base: https://www.pimco.com
+    link_pattern: '/us/en/insights/[a-z0-9-]+'
+
+  - id: vanguard_vemo
+    name: Vanguard 경제·시장 전망 (VEMO)
+    tier: private
+    tag: Vanguard View
+    kind: listing
+    url: https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html
+    base: https://corporate.vanguard.com
+    link_pattern: '/content/corporatesite/us/en/corp/vemo/[a-z0-9-]+\.html'
+
+  - id: schwab_commentary
+    name: Charles Schwab 시장 코멘터리
+    tier: private
+    tag: Schwab View
+    kind: listing
+    url: https://www.schwab.com/learn/market-commentary
+    base: https://www.schwab.com
+    link_pattern: '/learn/story/[a-z0-9-]+'
+
+  # ---------- 중앙은행·국제기구 ----------
+  - id: fed_press
+    name: 연준 보도자료 (FOMC 성명 포함)
+    tier: public
+    tag: Fed
+    kind: rss
+    url: https://www.federalreserve.gov/feeds/press_all.xml
+
+  - id: fed_speeches
+    name: 연준 인사 연설
+    tier: public
+    tag: Fed
+    kind: rss
+    url: https://www.federalreserve.gov/feeds/speeches.xml
+
+  - id: fed_feds_notes
+    name: 연준 FEDS Notes
+    tier: public
+    tag: Fed
+    kind: rss
+    url: https://www.federalreserve.gov/feeds/feds_notes.xml
+
+  - id: nyfed_liberty_street
+    name: 뉴욕 연은 Liberty Street Economics
+    tier: public
+    tag: NY Fed
+    kind: rss
+    url: https://libertystreeteconomics.newyorkfed.org/feed/
+    max_items: 20
+
+  - id: stlfed_fred_blog
+    name: 세인트루이스 연은 FRED Blog
+    tier: public
+    tag: St. Louis Fed
+    kind: rss
+    url: https://fredblog.stlouisfed.org/feed/
+
+  - id: ecb_press
+    name: ECB 보도자료
+    tier: public
+    tag: ECB
+    kind: rss
+    url: https://www.ecb.europa.eu/rss/press.html
+
+  - id: bis_cbspeeches
+    name: BIS 중앙은행 연설 모음
+    tier: public
+    tag: BIS
+    kind: rss
+    url: https://www.bis.org/doclist/cbspeeches.rss
+    max_items: 25
+
+  - id: eia_today
+    name: EIA Today in Energy
+    tier: public
+    tag: EIA
+    kind: rss
+    url: https://www.eia.gov/rss/todayinenergy.xml
+
+  - id: imf
+    name: IMF 블로그·출판물 (WEO, GFSR 등)
+    tier: public
+    tag: IMF
+    kind: manual   # 자동 접근이 차단돼요(403). inbox/manual/ 에 PDF를 직접 넣어주세요.
+    url: https://www.imf.org/en/Blogs
+
+# 주제 분류용 키워드 (제목·요약에서 대소문자 무시하고 찾아요)
+topics:
+  rates:     [treasury, yield, bond, duration, term premium, curve, rate hike, rate cut, fomc, monetary policy, interest rate]
+  inflation: [inflation, cpi, pce, prices, wage]
+  labor:     [payroll, jobs, employment, unemployment, labor market]
+  fx:        [dollar, currency, fx, yen, won, euro]
+  ai_semis:  [ai, artificial intelligence, semiconductor, chip, data center, capex, nvidia]
+  energy:    [oil, gas, energy, opec, brent, lng, power grid, electricity]
+  china:     [china, chinese, yuan, beijing]
+  credit:    [credit, spread, high yield, private credit, default]
+  equities:  [equity, equities, stocks, s&p, earnings, valuation]
+  korea:     [korea, korean, kospi]
