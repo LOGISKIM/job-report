@@ -1,0 +1,344 @@
+<title>디젤 가격 캐러셀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800;900&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a working sheet — header, then the 10 Instagram cards (4:5) in a grid, then caption copy and production notes. */
+:root{
+  /* page (theme-aware) */
+  --page:#E6E9EE; --page-ink:#18233A; --page-mute:#5A6478; --page-line:#C9CFD9; --page-panel:#F4F6F9;
+  /* card (fixed brand look, same in both themes) */
+  --c-paper:#F3F4F0; --c-ink:#14213D; --c-mute:#5D6679; --c-line:#D4D8DE;
+  --c-rise:#D9442B; --c-teal:#2E7A77; --c-navy:#14213D; --c-navy-ink:#EEF0F4;
+  --f-display:"Gothic A1","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#0F1522;--page-ink:#E4E8F0;--page-mute:#98A2B6;--page-line:#2A3448;--page-panel:#161E2E;color-scheme:dark}}
+:root[data-theme="dark"]{--page:#0F1522;--page-ink:#E4E8F0;--page-mute:#98A2B6;--page-line:#2A3448;--page-panel:#161E2E;color-scheme:dark}
+
+body{background:var(--page);color:var(--page-ink);font-family:var(--f-body);font-size:15px;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:40px 16px 64px;display:grid;gap:40px}
+header{display:grid;gap:8px;max-width:68ch}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--page-mute)}
+h1{font-family:var(--f-display);font-weight:900;font-size:clamp(26px,4vw,38px);line-height:1.2;margin:0;text-wrap:balance}
+header p{margin:0;color:var(--page-mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:24px}
+figure.slot{margin:0;display:grid;gap:8px;min-width:0}
+figure.slot figcaption{font-family:var(--f-mono);font-size:12px;color:var(--page-mute);display:flex;justify-content:space-between}
+
+/* ---------- card ---------- */
+.card{container-type:inline-size;aspect-ratio:4/5;width:100%;max-width:100%;background:var(--c-paper);color:var(--c-ink);
+  position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(10,20,40,.12),0 8px 24px rgba(10,20,40,.10)}
+.in{position:absolute;inset:0;padding:7cqw 7cqw 6cqw;display:flex;flex-direction:column;gap:3.4cqw}
+.top{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--f-mono);font-size:2.4cqw;letter-spacing:.06em;color:var(--c-mute);text-transform:uppercase}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-family:var(--f-mono);font-size:2.3cqw;color:var(--c-mute);border-top:.25cqw solid var(--c-line);padding-top:2.4cqw}
+.kicker{font-family:var(--f-display);font-weight:800;font-size:3.3cqw;color:var(--c-rise);letter-spacing:.02em}
+.h{font-family:var(--f-display);font-weight:900;font-size:7cqw;line-height:1.22;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.h.s{font-size:6cqw}
+.p{font-size:3.5cqw;line-height:1.6;margin:0}
+.mute{color:var(--c-mute)}
+.rise{color:var(--c-rise)}
+.num{font-family:var(--f-mono);font-weight:600;font-variant-numeric:tabular-nums}
+b{font-weight:700}
+
+/* cover */
+.cover{background:var(--c-navy);color:var(--c-navy-ink)}
+.cover .top,.cover .foot{color:#9AA5BC;border-color:#2C3A5A}
+.cover .big{font-family:var(--f-mono);font-weight:600;font-size:27cqw;line-height:.9;letter-spacing:-.04em;color:var(--c-navy-ink);margin-top:2cqw}
+.cover .big small{font-size:12cqw;color:var(--c-rise)}
+.cover .label{font-family:var(--f-mono);font-size:2.8cqw;color:#9AA5BC;letter-spacing:.04em}
+.cover .h{font-size:7.6cqw;color:#fff}
+.cover .swipe{font-family:var(--f-display);font-weight:800;font-size:3cqw;color:var(--c-rise)}
+
+/* source tags */
+.tag{font-family:var(--f-mono);font-weight:600;font-size:2.3cqw;letter-spacing:.04em;text-transform:none;padding:.6cqw 1.8cqw;border-radius:.6cqw;white-space:nowrap}
+.tag.bv{background:var(--c-navy);color:var(--c-navy-ink)}
+.tag.ed{background:var(--c-teal);color:#fff}
+.tag.dt{background:transparent;color:var(--c-mute);box-shadow:inset 0 0 0 .25cqw var(--c-line)}
+.top{align-items:center}
+.legend{display:grid;grid-template-columns:auto 1fr;gap:1.4cqw 2cqw;align-items:center;font-size:2.7cqw}
+.legend .tag{justify-self:start}
+/* lists */
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:3.2cqw}
+.tl li{display:grid;grid-template-columns:7cqw 1fr;gap:2cqw;font-size:3.5cqw;line-height:1.55}
+.tl li .n{font-family:var(--f-mono);font-weight:600;font-size:3.4cqw;color:var(--c-rise);padding-top:.2cqw}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.stat div{border-top:.5cqw solid var(--c-ink);padding-top:1.6cqw;display:grid;gap:.4cqw}
+.stat .k{font-size:2.7cqw;color:var(--c-mute)}
+.stat .v{font-family:var(--f-mono);font-weight:600;font-size:7.4cqw;line-height:1.05;letter-spacing:-.02em}
+.stat .d{font-family:var(--f-mono);font-size:2.7cqw;color:var(--c-rise)}
+.quote{border-left:1cqw solid var(--c-rise);padding:.6cqw 0 .6cqw 3.4cqw;font-size:3.6cqw;line-height:1.55;margin:0}
+.quote cite{display:block;font-style:normal;font-family:var(--f-mono);font-size:2.4cqw;color:var(--c-mute);margin-top:1.4cqw}
+
+/* positioning table */
+.pos{width:100%;border-collapse:collapse;font-size:3.3cqw}
+.pos td{padding:2.1cqw 0;border-bottom:.25cqw solid var(--c-line);vertical-align:middle}
+.pos td:last-child{text-align:right;white-space:nowrap}
+.chip{display:inline-block;font-family:var(--f-mono);font-weight:600;font-size:2.6cqw;padding:.7cqw 1.8cqw;border-radius:99px;letter-spacing:.02em}
+.chip.uw{background:var(--c-rise);color:#fff}
+.chip.ow{background:var(--c-teal);color:#fff}
+.chip.nt{background:var(--c-line);color:var(--c-ink)}
+
+/* term cards */
+.term{display:grid;gap:1.2cqw;padding-bottom:3cqw;border-bottom:.25cqw solid var(--c-line)}
+.term:last-of-type{border-bottom:0}
+.term .t{font-family:var(--f-display);font-weight:900;font-size:4.6cqw}
+.term .t span{font-family:var(--f-mono);font-weight:500;font-size:2.6cqw;color:var(--c-mute);margin-left:1.6cqw}
+
+.chart{width:100%;height:auto;display:block}
+.src{font-size:2.3cqw;color:var(--c-mute);line-height:1.5;margin:0}
+
+/* ---------- caption & notes ---------- */
+.below{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px}
+.panel{background:var(--page-panel);border:1px solid var(--page-line);padding:20px;display:grid;gap:12px;align-content:start;min-width:0}
+.panel h2{font-family:var(--f-display);font-weight:800;font-size:18px;margin:0}
+.panel pre{white-space:pre-wrap;word-break:keep-all;font-family:var(--f-body);font-size:14px;line-height:1.7;margin:0}
+.panel ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.panel a{color:inherit}
+button{font:600 13px var(--f-body);background:var(--page-ink);color:var(--page);border:0;padding:8px 14px;cursor:pointer;justify-self:start}
+button:focus-visible{outline:2px solid var(--page-mute);outline-offset:2px}
+</style>
+
+<style>
+.cover .big2{font-family:var(--f-mono);font-weight:600;font-size:24cqw;line-height:.9;letter-spacing:-.04em;color:var(--c-navy-ink);margin-top:2cqw}
+.cover .big2 small{font-size:9cqw;color:var(--c-rise);letter-spacing:0}
+.eq{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:end;gap:1.6cqw;text-align:center}
+.eq div{display:grid;gap:.8cqw}
+.eq .k{font-size:2.6cqw;color:var(--c-mute)}
+.eq .v{font-family:var(--f-mono);font-weight:600;font-size:7.4cqw;line-height:1}
+.eq .op{font-family:var(--f-mono);font-size:6cqw;color:var(--c-mute);padding-bottom:.6cqw}
+.eq .v.r{color:var(--c-rise)}
+.eq .then{font-family:var(--f-mono);font-size:2.6cqw;color:var(--c-mute)}
+.hbars{display:grid;gap:1.8cqw}
+.hb{display:grid;grid-template-columns:23cqw 1fr 11cqw;align-items:center;gap:2cqw;font-size:3cqw}
+.hb .track{height:4.4cqw;background:#E2E5DF;position:relative}
+.hb .fill{position:absolute;inset:0 auto 0 0;background:var(--c-mute)}
+.hb.now .fill{background:var(--c-rise)}
+.hb.y22 .fill{background:var(--c-ink)}
+.hb b{font-family:var(--f-mono);font-size:3.2cqw;text-align:right}
+.hb.now b{color:var(--c-rise)}
+.share{display:grid;gap:1.4cqw}
+.share .row{display:flex;justify-content:space-between;font-size:3.1cqw}
+.share .row b{font-family:var(--f-mono)}
+.share .track{height:6cqw;background:#E2E5DF;position:relative}
+.share .fill{position:absolute;inset:0 auto 0 0;background:var(--c-rise)}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.mini div{border-top:.4cqw solid var(--c-ink);padding-top:1.2cqw;display:grid;gap:.2cqw}
+.mini .k{font-size:2.4cqw;color:var(--c-mute)}
+.mini .v{font-family:var(--f-mono);font-weight:600;font-size:5.2cqw;line-height:1.1}
+.mini .d{font-family:var(--f-mono);font-size:2.4cqw;color:var(--c-rise)}
+.uses{display:flex;flex-wrap:wrap;gap:1.4cqw}
+.uses span{font-size:3cqw;padding:1cqw 2.2cqw;border:.25cqw solid var(--c-line);background:#fff}
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">샘플 캐러셀 #3 · 2026년 10월 3일 기준</div>
+  <h1>기름값 중에 디젤만 유독 비싼 이유</h1>
+  <p>모건스탠리 무료 팟캐스트 <b>Thoughts on the Market</b> 9월 24일 방송(앤드루 시츠 × 마르테인 랏츠 원자재 리서치 헤드)을 스크립트 원문으로 읽고 10장으로 정리했어요. 가격 차트는 FRED 데이터로 다시 그렸어요. 리포트 내용은 <b>Morgan Stanley View</b>, 운영자 해석은 <b>Editor's Note</b> 태그로 구분했어요.</p>
+</header>
+
+<section class="grid" aria-label="캐러셀 10장">
+
+<!-- 1 COVER -->
+<figure class="slot"><div class="card cover"><div class="in">
+  <div class="top"><span>Macro Brief · Energy</span><span>2026.10</span></div>
+  <div class="label">디젤 1배럴 가격 · 명목 기준 사상 최고</div>
+  <div class="big2">$200<small> 돌파</small></div>
+  <h2 class="h">원유는 $100인데<br>디젤은 왜 $200일까?</h2>
+  <div class="foot"><span>@macro.brief.kr</span><span class="swipe">넘겨보기 →</span></div>
+</div></div><figcaption><span>01 표지 (훅)</span><span>1/10</span></figcaption></figure>
+
+<!-- 2 TL;DR -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>3줄 요약</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">바쁘면 이 장만 보세요</h2>
+  <ul class="tl">
+    <li><span class="n">01</span><span>중동과 러시아 정유 시설이 멈추면서 <b>바다로 거래되는 디젤의 약 5분의 1</b>이 사라졌어요.</span></li>
+    <li><span class="n">02</span><span>원유값에 붙는 정제 웃돈(크랙 스프레드)이 평소 <b class="num">$20</b>에서 <b class="rise num">$100</b>로 뛰었어요. 처음 보는 수준이에요.</span></li>
+    <li><span class="n">03</span><span>정유소는 디젤만 골라 더 만들 수 없어요. 가격은 <b>중동·러시아 지정학</b>에 따라 크게 흔들릴 거예요.</span></li>
+  </ul>
+  <div class="foot"><span>Thoughts on the Market 2026.9.24 · 랏츠 × 시츠</span><span>2/10</span></div>
+</div></div><figcaption><span>02 TL;DR</span><span>2/10</span></figcaption></figure>
+
+<!-- 3 CHART -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>무슨 일이 있었나</span><span class="tag dt">Data · FRED</span></div>
+  <h2 class="h s">디젤과 원유의 간격이<br>크게 벌어졌어요</h2>
+  <svg class="chart" id="ch-oil" viewBox="0 0 1000 560" role="img" aria-label="2021년부터 2026년 9월까지 뉴욕항 디젤과 브렌트유의 배럴당 가격"></svg>
+  <div class="mini">
+    <div><span class="k">미국 소매 디젤 (갤런당, 9/28)</span><span class="v">$6.38</span><span class="d">1년 전 $3.75</span></div>
+    <div><span class="k">미국 소매 휘발유 (갤런당, 9/28)</span><span class="v">$4.47</span><span class="d">1년 전 $3.12</span></div>
+  </div>
+  <p class="src">주간 평균, 2021.1 ~ 2026.9 · 뉴욕항 초저유황 디젤(갤런당 가격 × 42) · 자료: FRED (DDFUELNYH, DCOILBRENTEU, GASDESW, GASREGW), 원자료 EIA</p>
+  <div class="foot"><span>@macro.brief.kr</span><span>3/10</span></div>
+</div></div><figcaption><span>03 차트: 디젤 vs 원유</span><span>3/10</span></figcaption></figure>
+
+<!-- 4 WHAT IS DIESEL -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>디젤이 뭐길래</span><span class="tag bv">Morgan Stanley View</span></div>
+  <div class="kicker">"산업 경제의 연료"</div>
+  <h2 class="h s">경유·항공유·난방유는<br>사실 한 식구예요</h2>
+  <p class="p">정유소에서 같은 분자 묶음으로 나와요. 그래서 디젤이 부족하면 항공유와 난방유도 같이 부족해져요.</p>
+  <div class="uses"><span>트럭</span><span>기차</span><span>선박</span><span>농기계</span><span>굴착기</span><span>발전기</span><span>가정 난방</span><span>항공기</span></div>
+  <p class="p">에너지 밀도가 매우 높아서, 휘발유와 달리 <b>전기로 대체하기도 어려워요.</b></p>
+  <div class="foot"><span>Thoughts on the Market 2026.9.24</span><span>4/10</span></div>
+</div></div><figcaption><span>04 디젤이란</span><span>4/10</span></figcaption></figure>
+
+<!-- 5 SUPPLY -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>원인 ① 공급</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">바다에서 거래되는 디젤,<br>5분의 1이 사라졌어요</h2>
+  <ul class="tl" style="gap:2.2cqw">
+    <li><span class="n">01</span><span>전 세계 정유 처리량 하루 8,500만 배럴 중 <b class="num">400~500만</b> 배럴이 멈췄어요 (5~6%).</span></li>
+    <li><span class="n">02</span><span>절반은 <b>중동</b>(호르무즈 해협에 막힌 정유소), 절반은 <b>러시아</b>(우크라이나 드론 공격)예요.</span></li>
+  </ul>
+  <div class="share">
+    <div class="row"><span>해상 디젤 시장 하루 800만 배럴 중 부족분</span><b class="rise">약 150만 배럴</b></div>
+    <div class="track"><div class="fill" style="width:18.75%"></div></div>
+  </div>
+  <p class="p mute" style="font-size:3cqw">해상 시장은 트레이더들이 화물을 사고파는 곳이라, 가격이 실제로 정해지는 곳이에요.</p>
+  <div class="foot"><span>Thoughts on the Market 2026.9.24</span><span>5/10</span></div>
+</div></div><figcaption><span>05 원인 ① 공급 차질</span><span>5/10</span></figcaption></figure>
+
+<!-- 6 CRACK -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>원인 ② 정제 웃돈</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">원유 위에 붙는 웃돈이<br>다섯 배가 됐어요</h2>
+  <div class="eq">
+    <div><span class="k">원유</span><span class="v">$100</span><span class="then">1년 전 $70</span></div>
+    <span class="op">+</span>
+    <div><span class="k">크랙 스프레드</span><span class="v r">$100</span><span class="then">1년 전 $20</span></div>
+    <span class="op">=</span>
+    <div><span class="k">디젤</span><span class="v">$200</span><span class="then">1년 전 $90</span></div>
+  </div>
+  <div class="hbars">
+    <div class="hb"><span>시장 약할 때</span><div class="track"><div class="fill" style="width:9%"></div></div><b>$8~10</b></div>
+    <div class="hb"><span>평상시</span><div class="track"><div class="fill" style="width:20%"></div></div><b>~$20</b></div>
+    <div class="hb"><span>강할 때</span><div class="track"><div class="fill" style="width:30%"></div></div><b>$25~30</b></div>
+    <div class="hb y22"><span>2022년 디젤 위기</span><div class="track"><div class="fill" style="width:70%"></div></div><b>$60~70</b></div>
+    <div class="hb now"><span>지금</span><div class="track"><div class="fill" style="width:100%"></div></div><b>$100</b></div>
+  </div>
+  <div class="foot"><span>배럴당 · 모건스탠리 수치 · 2026.9.24</span><span>6/10</span></div>
+</div></div><figcaption><span>06 원인 ② 크랙 스프레드</span><span>6/10</span></figcaption></figure>
+
+<!-- 7 WHY NOT MORE -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>왜 더 못 만드나</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">"디젤만 더" 버튼은<br>없어요</h2>
+  <ul class="tl">
+    <li><span class="n">01</span><span>정유소는 지을 때 <b>제품 구성이 정해져요.</b> 디젤 비중은 몇 %포인트만 조정할 수 있어요.</span></li>
+    <li><span class="n">02</span><span>남은 방법은 가동률을 100%로 올리는 것뿐인데, <b>이미 그렇게 돌리고 있어요.</b> 정제 마진은 사상 최고예요.</span></li>
+    <li><span class="n">03</span><span>배럴당 $200은 2022년에도 꼭지였던 가격이에요. 그런데 <b>수요가 줄었다는 증거는 아직 약해요.</b> 뚜렷한 곳은 중국 정도예요.</span></li>
+  </ul>
+  <blockquote class="quote">미국 철도 회사들은 트럭 디젤이 너무 비싸서 화물이 트럭에서 기차로 옮겨오고 있다고 말했다.<cite>마르테인 랏츠, 2026.9.24 (요약 번역)</cite></blockquote>
+  <div class="foot"><span>Thoughts on the Market 2026.9.24</span><span>7/10</span></div>
+</div></div><figcaption><span>07 공급 경직성 · 수요</span><span>7/10</span></figcaption></figure>
+
+<!-- 8 RISK -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>리스크 · 변수</span><span class="tag bv">Morgan Stanley View</span></div>
+  <h2 class="h s">"우리 것부터 지키자"<br>수출 금지 리스크</h2>
+  <ul class="tl">
+    <li><span class="n">A</span><span>3~4월 호르무즈 위기 때 <b>중국</b>은 정제유 수출 금지를 발표했어요. 실제 집행은 발표만큼 강하지 않았어요.</span></li>
+    <li><span class="n">B</span><span><b>한국 정부</b>도 한때 정제유 수출을 금지했어요.</span></li>
+    <li><span class="n">C</span><span>미국이 디젤 수출을 막으면 오히려 <b class="rise">휘발유값이 오를 수 있어요.</b> 디젤 재고가 차면 정유소 가동을 줄여야 하고, 그러면 휘발유 생산도 같이 줄어서예요.</span></li>
+  </ul>
+  <p class="p mute" style="font-size:3cqw">가격은 중동·러시아 소식에 따라 주마다 크게 출렁일 수 있어요.</p>
+  <div class="foot"><span>Thoughts on the Market 2026.9.24</span><span>8/10</span></div>
+</div></div><figcaption><span>08 리스크: 수출 금지</span><span>8/10</span></figcaption></figure>
+
+<!-- 9 KOREA -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>한국 투자자 체크포인트</span><span class="tag ed">Editor's Note</span></div>
+  <h2 class="h s">우리 생활과 계좌에는<br>어떤 의미일까?</h2>
+  <p class="p mute" style="font-size:3cqw">8장의 한국 수출 금지 언급 외에는 운영자의 해석이에요.</p>
+  <ul class="tl">
+    <li><span class="n">01</span><span>디젤은 트럭·선박·농기계 연료라서 <b>물류비와 식료품 가격</b>으로 번지기 쉬워요. 다음 물가 지표에서 운송비 항목을 보세요.</span></li>
+    <li><span class="n">02</span><span>항공유가 같은 분자 묶음이라 <b>유류할증료</b>에도 영향을 줄 수 있어요. 해외여행 계획이 있다면 발권 시점을 확인해 보세요.</span></li>
+    <li><span class="n">03</span><span>정제 마진이 높은 건 정유 업종에 우호적인 환경이지만, <b>정부의 수출 제한</b>은 큰 변수예요. 업종 뉴스를 볼 때 두 가지를 같이 보세요.</span></li>
+  </ul>
+  <div class="foot"><span>운영자 해석 · 투자 권유 아님</span><span>9/10</span></div>
+</div></div><figcaption><span>09 한국 시사점</span><span>9/10</span></figcaption></figure>
+
+<!-- 10 TERMS + SOURCES -->
+<figure class="slot"><div class="card"><div class="in">
+  <div class="top"><span>오늘의 용어 · 출처</span><span>10</span></div>
+  <div class="term"><div class="t">크랙 스프레드<span>Crack Spread</span></div><p class="p" style="font-size:3.2cqw">원유를 정제해 만든 제품 가격과 원유 가격의 차이예요. 정유소가 원유를 "쪼개서(crack)" 버는 마진이라는 뜻이에요.</p></div>
+  <div class="term"><div class="t">수요 파괴<span>Demand Destruction</span></div><p class="p" style="font-size:3.2cqw">가격이 너무 올라 사람들이 덜 쓰거나 다른 것으로 바꾸면서 수요가 줄어드는 현상이에요. "높은 가격의 해결책은 높은 가격"이라는 말이 여기서 나와요.</p></div>
+  <div class="legend"><span class="tag bv">Morgan Stanley View</span><span>방송 내용을 옮긴 장</span><span class="tag ed">Editor's Note</span><span>운영자 해석</span></div>
+  <p class="src" style="font-size:2.5cqw">출처: Morgan Stanley Thoughts on the Market "The Global Diesel Problem" (2026.9.24) · FRED DDFUELNYH, DCOILBRENTEU, GASDESW, GASREGW (원자료 EIA)<br>번역·요약 과정에서 표현이 달라질 수 있어요. 본 콘텐츠는 정보 제공용이며, 특정 상품의 매수·매도를 권유하지 않아요.</p>
+  <div class="foot"><span>저장하고 다음 브리프도 받아보세요</span><span>10/10</span></div>
+</div></div><figcaption><span>10 용어 + 출처 + 고지</span><span>10/10</span></figcaption></figure>
+
+</section>
+
+<section class="below">
+  <div class="panel">
+    <h2>캡션 (복사해서 사용)</h2>
+<pre id="caption">원유는 배럴당 $100 언저리인데, 디젤은 $200을 넘었어요. 명목 기준 사상 최고예요.
+
+모건스탠리 원자재 리서치 헤드 마르테인 랏츠의 9월 24일 방송을 정리했어요.
+
+✔️ 중동·러시아 정유소가 멈추면서 해상 디젤 공급의 약 5분의 1이 사라졌어요
+✔️ 원유에 붙는 정제 웃돈이 평소 $20에서 $100로 뛰었어요
+✔️ 정유소는 디젤만 골라서 더 만들 수 없어요
+✔️ 수출 금지 리스크: 한국도 한때 정제유 수출을 막은 적이 있어요
+
+요즘 주유소에서 경유값 체감하시나요? 👇
+
+출처: Morgan Stanley Thoughts on the Market (2026.9.24), FRED/EIA
+※ 공개 자료를 요약한 정보 제공용 콘텐츠이며 투자 권유가 아닙니다.
+
+#디젤 #경유 #유가 #국제유가 #정유 #원자재 #모건스탠리 #호르무즈 #거시경제 #매크로 #경제공부 #재테크</pre>
+    <button type="button" id="copy">캡션 복사</button>
+  </div>
+  <div class="panel">
+    <h2>제작 메모</h2>
+    <ul>
+      <li><b>원문:</b> Morgan Stanley <i>Thoughts on the Market</i> "The Global Diesel Problem" (2026.9.24). 팟캐스트 RSS의 스크립트 전문을 직접 읽고 썼어요 (<code>macro-brief/out/2026-10-02/texts/</code>).</li>
+      <li><b>표지·6장 수치($100 + $100 = $200)</b>는 방송 시점(9/24) 모건스탠리의 설명이에요. 어느 지역 디젤 가격 기준인지는 방송에 나오지 않아요.</li>
+      <li><b>3장 차트는 미국 뉴욕항 디젤</b>이라 모건스탠리 수치와 기준이 달라요. 이 데이터로 원유와의 차이를 계산하면 2022년 5월이 더 컸어요(약 $117). 그래서 차트에는 크랙 스프레드를 따로 그리지 않고 두 가격만 그렸어요.</li>
+      <li><b>뉴욕항 디젤 일간 최고치:</b> 2026.9.16 배럴당 $225.33으로, 2006년 데이터 시작 이후 최고예요 (종전 2022.5.11 $224.24). 차트는 주간 평균이라 꼭짓점이 $219로 보여요.</li>
+      <li><b>브렌트유:</b> FRED 최신값은 9/29 $113.96이에요. 방송(9/24)에서는 "약 $100"이라고 했어요.</li>
+      <li><b>9장</b>은 운영자 해석이에요. 정유 업종 언급은 특정 종목 추천처럼 읽히지 않게 업종 수준에서만 썼어요.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<script>
+const D = {"ulsd":[["2021-01-08",64.03],["2021-01-15",66.85],["2021-01-22",66.65],["2021-01-29",67.09],["2021-02-05",70.96],["2021-02-12",73.8],["2021-02-19",76.73],["2021-02-26",79.17],["2021-03-05",78.31],["2021-03-12",80.92],["2021-03-19",78.66],["2021-03-26",74.98],["2021-04-01",75.5],["2021-04-09",75.59],["2021-04-16",78.15],["2021-04-23",78.62],["2021-04-30",80.66],["2021-05-07",83.69],["2021-05-14",85.71],["2021-05-21",84.83],["2021-05-28",85.84],["2021-06-04",88.34],["2021-06-11",89.43],["2021-06-18",88.03],["2021-06-25",90.25],["2021-07-02",89.9],["2021-07-09",89.11],["2021-07-16",89.64],["2021-07-23",86.88],["2021-07-30",91.01],["2021-08-06",88.29],["2021-08-13",87.33],["2021-08-20",83.6],["2021-08-27",87.03],["2021-09-03",90.01],["2021-09-10",89.32],["2021-09-17",91.98],["2021-09-24",93.11],["2021-10-01",97.58],["2021-10-08",103.63],["2021-10-15",107.3],["2021-10-22",107.84],["2021-10-29",106.23],["2021-11-05",103.5],["2021-11-12",103.37],["2021-11-19",99.88],["2021-11-24",99.26],["2021-12-03",88.05],["2021-12-10",93.86],["2021-12-17",93.78],["2021-12-23",95.48],["2021-12-31",99.21],["2022-01-07",102.46],["2022-01-14",108.86],["2022-01-21",112.59],["2022-01-28",114.84],["2022-02-04",117.24],["2022-02-11",122.08],["2022-02-18",121.0],["2022-02-25",119.92],["2022-03-04",147.01],["2022-03-11",162.82],["2022-03-18",143.19],["2022-03-25",174.57],["2022-04-01",156.6],["2022-04-08",155.56],["2022-04-14",157.89],["2022-04-22",171.83],["2022-04-29",196.78],["2022-05-06",209.03],["2022-05-13",218.91],["2022-05-20",189.52],["2022-05-27",168.52],["2022-06-03",178.46],["2022-06-10",186.46],["2022-06-17",188.51],["2022-06-24",184.4],["2022-07-01",171.54],["2022-07-08",153.96],["2022-07-15",158.67],["2022-07-22",152.64],["2022-07-29",152.59],["2022-08-05",142.21],["2022-08-12",142.04],["2022-08-19",150.03],["2022-08-26",164.45],["2022-09-02",157.05],["2022-09-09",151.14],["2022-09-16",143.63],["2022-09-23",140.29],["2022-09-30",140.18],["2022-10-07",164.2],["2022-10-14",188.11],["2022-10-21",186.19],["2022-10-28",188.75],["2022-11-04",189.55],["2022-11-10",197.16],["2022-11-18",175.06],["2022-11-25",146.81],["2022-12-02",137.47],["2022-12-09",120.43],["2022-12-16",131.4],["2022-12-23",131.52],["2022-12-30",140.08],["2023-01-06",129.43],["2023-01-13",135.03],["2023-01-20",142.12],["2023-01-27",143.63],["2023-02-03",126.52],["2023-02-10",120.34],["2023-02-17",118.64],["2023-02-24",115.12],["2023-03-03",120.01],["2023-03-10",117.26],["2023-03-17",114.14],["2023-03-24",113.66],["2023-03-31",112.81],["2023-04-06",114.51],["2023-04-14",113.59],["2023-04-21",107.27],["2023-04-28",101.36],["2023-05-05",96.25],["2023-05-12",99.27],["2023-05-19",100.16],["2023-05-26",99.64],["2023-06-02",97.05],["2023-06-09",100.15],["2023-06-16",102.18],["2023-06-23",105.09],["2023-06-30",103.03],["2023-07-07",104.9],["2023-07-14",109.08],["2023-07-21",110.95],["2023-07-28",119.65],["2023-08-04",127.85],["2023-08-11",131.0],["2023-08-18",129.02],["2023-08-25",133.29],["2023-09-01",132.27],["2023-09-08",137.07],["2023-09-15",143.57],["2023-09-22",140.76],["2023-09-29",138.42],["2023-10-06",130.41],["2023-10-13",131.02],["2023-10-20",135.19],["2023-10-27",128.63],["2023-11-03",126.4],["2023-11-10",120.04],["2023-11-17",120.86],["2023-11-24",122.23],["2023-12-01",120.52],["2023-12-08",111.96],["2023-12-15",108.22],["2023-12-22",112.27],["2023-12-29",108.47],["2024-01-05",108.74],["2024-01-12",110.78],["2024-01-19",111.75],["2024-01-26",115.01],["2024-02-02",116.18],["2024-02-09",118.74],["2024-02-16",119.42],["2024-02-23",113.91],["2024-03-01",113.65],["2024-03-08",112.06],["2024-03-15",112.78],["2024-03-22",113.5],["2024-03-28",110.01],["2024-04-05",113.37],["2024-04-12",112.88],["2024-04-19",108.52],["2024-04-26",107.03],["2024-05-03",103.95],["2024-05-10",102.99],["2024-05-17",102.12],["2024-05-24",101.97],["2024-05-31",100.57],["2024-06-07",96.49],["2024-06-14",101.91],["2024-06-21",104.35],["2024-06-28",105.36],["2024-07-05",109.33],["2024-07-12",105.59],["2024-07-19",103.09],["2024-07-26",101.5],["2024-08-02",98.76],["2024-08-09",96.24],["2024-08-16",97.72],["2024-08-23",93.73],["2024-08-30",94.34],["2024-09-06",89.15],["2024-09-13",87.16],["2024-09-20",88.97],["2024-09-27",89.38],["2024-10-04",92.22],["2024-10-11",97.05],["2024-10-18",90.76],["2024-10-25",92.57],["2024-11-01",91.64],["2024-11-08",95.21],["2024-11-15",91.88],["2024-11-22",93.96],["2024-11-29",92.28],["2024-12-06",90.22],["2024-12-13",92.34],["2024-12-20",93.17],["2024-12-27",92.61],["2025-01-03",97.67],["2025-01-10",100.57],["2025-01-17",108.61],["2025-01-24",105.87],["2025-01-31",104.11],["2025-02-07",103.77],["2025-02-14",107.19],["2025-02-21",104.08],["2025-02-28",100.18],["2025-03-07",95.05],["2025-03-14",92.08],["2025-03-21",93.84],["2025-03-28",95.89],["2025-04-04",94.13],["2025-04-11",87.07],["2025-04-17",88.92],["2025-04-25",90.04],["2025-05-02",86.68],["2025-05-09",84.72],["2025-05-16",90.64],["2025-05-23",89.16],["2025-05-30",86.3],["2025-06-06",87.78],["2025-06-13",93.37],["2025-06-20",105.27],["2025-06-27",97.95],["2025-07-03",99.95],["2025-07-11",102.38],["2025-07-18",102.82],["2025-07-25",104.61],["2025-08-01",103.08],["2025-08-08",97.38],["2025-08-15",96.54],["2025-08-22",98.02],["2025-08-29",98.55],["2025-09-05",100.2],["2025-09-12",99.09],["2025-09-19",100.59],["2025-09-26",101.74],["2025-10-03",98.36],["2025-10-10",96.97],["2025-10-17",93.71],["2025-10-24",98.41],["2025-10-31",103.35],["2025-11-07",105.07],["2025-11-14",106.95],["2025-11-21",110.06],["2025-11-28",101.06],["2025-12-05",99.86],["2025-12-12",96.94],["2025-12-19",92.33],["2025-12-26",92.45],["2026-01-02",90.47],["2026-01-09",89.6],["2026-01-16",93.42],["2026-01-23",97.03],["2026-01-30",100.92],["2026-02-06",98.32],["2026-02-13",99.82],["2026-02-20",108.14],["2026-02-27",114.53],["2026-03-06",141.16],["2026-03-13",156.86],["2026-03-20",180.41],["2026-03-27",179.2],["2026-04-02",181.88],["2026-04-10",171.66],["2026-04-17",156.75],["2026-04-24",164.02],["2026-05-01",172.59],["2026-05-08",167.17],["2026-05-15",171.9],["2026-05-22",171.41],["2026-05-29",153.23],["2026-06-05",155.05],["2026-06-12",148.13],["2026-06-18",134.24],["2026-06-26",133.92],["2026-07-02",136.62],["2026-07-10",147.41],["2026-07-17",168.5],["2026-07-24",176.27],["2026-07-31",177.12],["2026-08-07",162.53],["2026-08-14",180.76],["2026-08-21",190.22],["2026-08-28",179.0],["2026-09-04",193.38],["2026-09-11",206.98],["2026-09-18",219.37],["2026-09-25",208.12],["2026-09-29",208.09]],"brent":[["2021-01-08",53.31],["2021-01-15",55.38],["2021-01-22",55.23],["2021-01-29",55.18],["2021-02-05",58.22],["2021-02-12",61.13],["2021-02-19",63.9],["2021-02-26",65.86],["2021-03-05",65.94],["2021-03-12",68.15],["2021-03-19",66.11],["2021-03-26",62.51],["2021-04-01",63.68],["2021-04-09",61.83],["2021-04-16",64.69],["2021-04-23",65.34],["2021-04-30",66.96],["2021-05-07",68.99],["2021-05-14",68.73],["2021-05-21",67.48],["2021-05-28",69.02],["2021-06-04",70.66],["2021-06-11",71.46],["2021-06-18",73.11],["2021-06-25",75.41],["2021-07-02",76.26],["2021-07-09",76.13],["2021-07-16",75.8],["2021-07-23",72.2],["2021-07-30",75.75],["2021-08-06",72.26],["2021-08-13",71.09],["2021-08-20",68.08],["2021-08-27",71.02],["2021-09-03",73.02],["2021-09-10",72.01],["2021-09-17",74.13],["2021-09-24",75.32],["2021-10-01",78.44],["2021-10-08",82.01],["2021-10-15",83.87],["2021-10-22",84.98],["2021-10-29",84.12],["2021-11-05",82.52],["2021-11-12",83.39],["2021-11-19",81.63],["2021-11-26",80.24],["2021-12-03",71.0],["2021-12-10",74.79],["2021-12-17",73.76],["2021-12-24",73.91],["2021-12-31",78.16],["2022-01-07",80.5],["2022-01-14",85.07],["2022-01-21",89.16],["2022-01-28",90.12],["2022-02-04",92.77],["2022-02-11",96.43],["2022-02-18",97.8],["2022-02-25",99.36],["2022-03-04",114.43],["2022-03-11",122.29],["2022-03-18",109.59],["2022-03-25",123.6],["2022-04-01",111.26],["2022-04-08",103.33],["2022-04-14",105.41],["2022-04-22",105.72],["2022-04-29",103.92],["2022-05-06",110.36],["2022-05-13",107.43],["2022-05-20",112.93],["2022-05-27",117.66],["2022-06-03",124.11],["2022-06-10",127.4],["2022-06-17",125.08],["2022-06-24",116.83],["2022-07-01",120.34],["2022-07-08",113.64],["2022-07-15",109.8],["2022-07-22",113.53],["2022-07-29",109.28],["2022-08-05",102.54],["2022-08-12",104.64],["2022-08-19",96.73],["2022-08-26",98.87],["2022-09-02",95.31],["2022-09-09",90.43],["2022-09-16",91.41],["2022-09-23",88.54],["2022-09-30",87.28],["2022-10-07",94.66],["2022-10-14",94.62],["2022-10-21",91.04],["2022-10-28",93.01],["2022-11-04",95.86],["2022-11-11",96.08],["2022-11-18",92.09],["2022-11-25",86.4],["2022-12-02",85.03],["2022-12-09",78.56],["2022-12-16",80.8],["2022-12-23",80.68],["2022-12-30",81.83],["2023-01-06",77.2],["2023-01-13",80.61],["2023-01-20",84.57],["2023-01-27",85.9],["2023-02-03",81.87],["2023-02-10",83.3],["2023-02-17",84.17],["2023-02-24",81.77],["2023-03-03",83.6],["2023-03-10",82.86],["2023-03-17",74.98],["2023-03-24",74.24],["2023-03-31",78.0],["2023-04-06",85.99],["2023-04-14",87.36],["2023-04-21",84.62],["2023-04-28",81.4],["2023-05-05",74.62],["2023-05-12",76.08],["2023-05-19",75.75],["2023-05-26",76.48],["2023-06-02",73.89],["2023-06-09",76.06],["2023-06-16",74.39],["2023-06-23",75.26],["2023-06-30",73.55],["2023-07-07",76.6],["2023-07-14",79.79],["2023-07-21",79.48],["2023-07-28",83.55],["2023-08-04",85.63],["2023-08-11",87.83],["2023-08-18",85.87],["2023-08-25",84.71],["2023-09-01",87.57],["2023-09-08",91.29],["2023-09-15",93.87],["2023-09-22",94.86],["2023-09-29",95.61],["2023-10-06",90.33],["2023-10-13",90.48],["2023-10-20",92.47],["2023-10-27",89.84],["2023-11-03",88.21],["2023-11-10",83.52],["2023-11-17",81.93],["2023-11-24",81.62],["2023-12-01",80.91],["2023-12-08",75.98],["2023-12-15",75.58],["2023-12-22",80.15],["2023-12-29",79.23],["2024-01-05",76.88],["2024-01-12",78.4],["2024-01-19",80.11],["2024-01-26",82.31],["2024-02-02",82.57],["2024-02-09",81.51],["2024-02-16",84.44],["2024-02-23",85.02],["2024-03-01",84.26],["2024-03-08",85.63],["2024-03-15",84.52],["2024-03-22",85.88],["2024-03-28",85.8],["2024-04-05",90.34],["2024-04-12",92.01],["2024-04-19",89.59],["2024-04-26",88.53],["2024-05-03",85.73],["2024-05-10",82.95],["2024-05-17",81.61],["2024-05-24",80.24],["2024-05-31",80.92],["2024-06-07",76.59],["2024-06-14",80.64],["2024-06-21",85.04],["2024-06-28",86.72],["2024-07-05",88.02],["2024-07-12",86.8],["2024-07-19",86.05],["2024-07-26",82.52],["2024-08-02",80.26],["2024-08-09",78.84],["2024-08-16",82.47],["2024-08-23",79.57],["2024-08-30",80.83],["2024-09-06",75.25],["2024-09-13",72.1],["2024-09-20",74.98],["2024-09-27",74.07],["2024-10-04",75.88],["2024-10-11",79.34],["2024-10-18",74.58],["2024-10-25",74.69],["2024-11-01",72.61],["2024-11-08",75.63],["2024-11-15",72.89],["2024-11-22",74.84],["2024-11-29",74.16],["2024-12-06",73.97],["2024-12-13",74.03],["2024-12-20",73.79],["2024-12-27",73.13],["2025-01-03",75.42],["2025-01-10",78.14],["2025-01-17",82.79],["2025-01-24",79.92],["2025-01-31",77.37],["2025-02-07",75.4],["2025-02-14",76.01],["2025-02-21",76.09],["2025-02-28",74.25],["2025-03-07",71.93],["2025-03-14",71.54],["2025-03-21",72.21],["2025-03-28",74.35],["2025-04-04",74.64],["2025-04-11",66.1],["2025-04-17",67.76],["2025-04-25",67.92],["2025-05-02",63.5],["2025-05-09",62.29],["2025-05-16",65.54],["2025-05-23",65.86],["2025-05-30",64.74],["2025-06-06",67.18],["2025-06-13",71.05],["2025-06-20",78.25],["2025-06-27",69.96],["2025-07-04",69.61],["2025-07-11",71.77],["2025-07-18",70.66],["2025-07-25",70.09],["2025-08-01",72.41],["2025-08-08",68.17],["2025-08-15",67.17],["2025-08-22",67.82],["2025-08-29",67.77],["2025-09-05",66.85],["2025-09-12",67.23],["2025-09-19",68.33],["2025-09-26",69.22],["2025-10-03",67.15],["2025-10-10",66.65],["2025-10-17",62.36],["2025-10-24",63.22],["2025-10-31",65.02],["2025-11-07",64.3],["2025-11-14",62.87],["2025-11-21",63.64],["2025-11-28",64.38],["2025-12-05",63.98],["2025-12-12",62.6],["2025-12-19",60.83],["2025-12-24",63.21],["2026-01-02",62.18],["2026-01-09",62.93],["2026-01-16",67.0],["2026-01-23",66.99],["2026-01-30",70.43],["2026-02-06",69.84],["2026-02-13",70.7],["2026-02-20",71.66],["2026-02-27",71.36],["2026-03-06",85.28],["2026-03-13",96.16],["2026-03-20",111.4],["2026-03-27",111.24],["2026-04-02",123.94],["2026-04-10",124.61],["2026-04-17",114.43],["2026-04-24",109.62],["2026-05-01",119.63],["2026-05-08",105.88],["2026-05-15",110.53],["2026-05-22",110.61],["2026-05-29",97.05],["2026-06-05",98.95],["2026-06-12",93.76],["2026-06-19",81.0],["2026-06-26",73.63],["2026-07-03",69.7],["2026-07-10",73.33],["2026-07-17",82.93],["2026-07-24",96.12],["2026-07-31",91.63],["2026-08-07",87.86],["2026-08-14",92.51],["2026-08-21",94.2],["2026-08-28",89.73],["2026-09-04",99.09],["2026-09-11",111.83],["2026-09-18",124.15],["2026-09-25",117.08],["2026-09-29",116.97]]};
+const NS = "http://www.w3.org/2000/svg";
+const C = {ink:"#14213D", mute:"#5D6679", line:"#D4D8DE", rise:"#D9442B", teal:"#2E7A77"};
+function el(tag, a, p, t){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(t!=null)e.textContent=t;p.appendChild(e);return e;}
+const svg=document.getElementById("ch-oil");
+const L=84, R=820, T=24, B=510, lo=0, hi=250;
+const t0=Date.parse(D.ulsd[0][0]), t1=Date.parse(D.ulsd[D.ulsd.length-1][0]);
+const X=d=>L+(R-L)*(Date.parse(d)-t0)/(t1-t0), Y=v=>T+(B-T)*(hi-v)/(hi-lo);
+for(let v=lo; v<=hi; v+=50){
+  el("line",{x1:L,x2:R,y1:Y(v),y2:Y(v),stroke:C.line,"stroke-width":1.5},svg);
+  el("text",{x:L-12,y:Y(v)+8,"text-anchor":"end","font-size":22,fill:C.mute,"font-family":"IBM Plex Mono, monospace"},svg,"$"+v);
+}
+for(let yr=2021; yr<=2026; yr++) el("text",{x:X(yr+"-01-01"),y:548,"text-anchor":"middle","font-size":22,fill:C.mute,"font-family":"IBM Plex Mono, monospace"},svg,yr);
+// gap between the two lines
+const area="M"+D.ulsd.map(r=>X(r[0]).toFixed(1)+","+Y(r[1]).toFixed(1)).join("L")+"L"+D.brent.slice().reverse().map(r=>X(r[0]).toFixed(1)+","+Y(r[1]).toFixed(1)).join("L")+"Z";
+el("path",{d:area,fill:C.rise,"fill-opacity":0.10},svg);
+[["ulsd",C.rise,"디젤 (뉴욕항)"],["brent",C.ink,"브렌트유"]].forEach(([k,col,name],i)=>{
+  const rows=D[k];
+  el("path",{d:rows.map((r,j)=>(j?"L":"M")+X(r[0]).toFixed(1)+","+Y(r[1]).toFixed(1)).join(""),fill:"none",stroke:col,"stroke-width":3.5,"stroke-linejoin":"round"},svg);
+  const last=rows[rows.length-1];
+  el("circle",{cx:X(last[0]),cy:Y(last[1]),r:7,fill:col},svg);
+  el("text",{x:X(last[0])+14,y:Y(last[1])+8,"font-size":28,"font-weight":600,fill:col,"font-family":"IBM Plex Mono, monospace"},svg,"$"+Math.round(last[1]));
+  el("text",{x:X(last[0])+14,y:Y(last[1])+36,"font-size":20,fill:C.mute,"font-family":"IBM Plex Sans KR, sans-serif"},svg,name);
+});
+el("text",{x:X("2026-01-01")-10,y:Y(238),"text-anchor":"end","font-size":21,"font-weight":700,fill:C.rise,"font-family":"IBM Plex Sans KR, sans-serif"},svg,"9/16 일간 $225 · 2006년 이후 최고");
+el("rect",{x:L+10,y:Y(30)-16,width:22,height:16,fill:C.rise,"fill-opacity":0.18},svg);
+el("text",{x:L+40,y:Y(30),"font-size":20,fill:C.mute,"font-family":"IBM Plex Sans KR, sans-serif"},svg,"음영 = 두 가격의 차이 (≈ 정제 마진)");
+
+document.getElementById("copy").addEventListener("click",e=>{
+  const t=document.getElementById("caption").textContent, b=e.currentTarget;
+  navigator.clipboard.writeText(t).then(()=>{b.textContent="복사됨";setTimeout(()=>b.textContent="캡션 복사",1600)}).catch(()=>{
+    const r=document.createRange();r.selectNodeContents(document.getElementById("caption"));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="텍스트를 선택했어요. Ctrl+C로 복사하세요";});
+});
+</script>
